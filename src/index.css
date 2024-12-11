@@ -8,24 +8,10 @@ khac voi tailwindconfig// cai nay no dinh nghia san ma khong can goi lai
 
 /* va khai bao 1 so phuong thuc ma tailwind khong ho tro, chung ta tu add vao */
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
 }
 @layer utilities {
-  /* variants cho phep dung responsiv cho may cai nay */
-  @variants responsive {
-    .scroll-snap-mandatory {
-      scroll-snap-type: x mandatory; /* Tạo kiểu snap theo chiều ngang */
+    /* variants cho phep dung responsiv cho may cai nay */
+    .text-underline-offset-4 {
+        text-underline-offset: 4px;
     }
-    .scroll-snap-always {
-      scroll-snap-stop: always; /* Dừng ở mỗi điểm snap */
-    }
-    .scroll-snap-align-start {
-      scroll-snap-align: start; /* Đảm bảo căn chỉnh các phần tử ở đầu */
-    }
-  }
 }
