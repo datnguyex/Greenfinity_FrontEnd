@@ -14,4 +14,7 @@ khac voi tailwindconfig// cai nay no dinh nghia san ma khong can goi lai
     .text-underline-offset-4 {
         text-underline-offset: 4px;
     }
+    .text-underline-offset-3 {
+        text-underline-offset: 3px;
+    }
 }

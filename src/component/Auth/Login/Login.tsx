@@ -15,7 +15,7 @@ function Login() {
                         <span className="text-[#009383] underline decoration-solid decoration-[2px] decoration-[#009383] font-bold text-[20px] leading-6 text-underline-offset-4 cursor-pointer">
                             ĐĂNG NHẬP
                         </span>
-                        <span className="font-bold text-[20px] leading-6 text-[#888888]">ĐĂNG KÝ</span>
+                        <span className="font-bold text-[20px] leading-6 text-[#888888] cursor-pointer">ĐĂNG KÝ</span>
                     </div>
                     <div className="flex justify-center mt-20">
                         <div className="flex flex-col items-start justify-center gap-2">
