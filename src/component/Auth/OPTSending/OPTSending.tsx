@@ -1,8 +1,7 @@
 import classNames from 'classnames/bind';
 // import style from './Login.module.scss';
-import imgTitleWeb from '../../Images/imgTitleWeb.webp';
-import flowerUp from '../../Images/flowerUp.png';
-import flowerDown from '../../Images/flowerDown.png';
+import { flowerDown, flowerUp, imgTitleWeb } from '~/Images';
+
 import { useState } from 'react';
 // const cx = classNames.bind(style);
 function OPTSending() {

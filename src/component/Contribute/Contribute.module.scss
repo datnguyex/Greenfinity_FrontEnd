@@ -1,0 +1,19 @@
+.activeTime {
+    background-color: #009383;
+    color: white;
+}
+.ranking-item::before {
+    content: '';
+    position: absolute;
+    border-bottom: calc(60px / 2) solid transparent;
+    border-right: 28px solid #fff;
+    border-top: calc(60px / 2) solid transparent;
+    height: 60px;
+    left: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.score-rank {
+    border-bottom: calc(60px / 2) solid;
+    border-top: calc(60px / 2) solid;
+}

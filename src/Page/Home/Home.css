@@ -1,0 +1,52 @@
+.home-banner-slider .slick-dots {
+    bottom: 12%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.home-banner-slider .slick-active {
+    background-color: #009383 !important;
+}
+
+.home-banner-slider .slick-dots li {
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 0.8rem;
+    transition: all 0.3s ease-in-out;
+    height: 16px;
+    width: 16px;
+}
+.home-banner-slider .slick-dots li button:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: transparent;
+    content: '•';
+    font-family: slick;
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: 0.25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+}
+.home-banner-sliderc .slick-dots li.slick-active button:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: transparent;
+    content: '•';
+    font-family: slick;
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: 0.25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+}

@@ -1,5 +1,7 @@
-import imgTitleWeb from '../../../Images/imgTitleWeb.webp';
-import flowerDown from '../../../Images/flowerDown.png';
+import classNames from 'classnames/bind';
+import style from './Signup.module.scss';
+import { imgTitleWeb, flowerDown } from '~/Images';
+const cx = classNames.bind(style);
 
 function Signup() {
     return (
@@ -42,7 +44,7 @@ function Signup() {
                     <div className="flex max-w-[489px] mx-auto mt-8 ">
                         <input
                             type="checkbox"
-                            className="appearance-none rounded w-[20px] h-[20px] border-[1px] border-solid border-[#009383] checked:bg-[#009383]"
+                            className="appearance-none relative rounded w-[20px] h-[20px] border-[1px] border-solid border-[#009383] checked:bg-[#009383]"
                         />
                         <div className="ml-3 flex-1 item ">
                             <span className="text-center text-[14px] font-normal leading-[21px]">
