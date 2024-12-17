@@ -17,3 +17,25 @@
     border-bottom: calc(60px / 2) solid;
     border-top: calc(60px / 2) solid;
 }
+.scoreBar:before {
+    border-bottom: 2px solid #009383;
+    content: '';
+    height: calc(44px / 1.4142);
+    position: absolute;
+    top: 38%;
+    width: calc(44px / 1.4142);
+    border-left: 2px solid #009383;
+    left: -2.7rem;
+    transform: rotate(45deg) translateY(-50%);
+}
+.scoreBar:after {
+    border-bottom: 2px solid #009383;
+    content: '';
+    height: calc(44px / 1.4142);
+    position: absolute;
+    top: 38%;
+    width: calc(44px / 1.4142);
+    border-right: 2px solid #009383;
+    right: -2.7rem;
+    transform: rotate(-45deg) translateY(-50%);
+}

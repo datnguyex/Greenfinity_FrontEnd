@@ -8,6 +8,7 @@ import HomePage from './Page/Home/Home';
 import GreezStation from './Page/GreezStation/GreezStation';
 import Map from './Page/Map/Map';
 import WorldRebirth from './Page/WorldRebirth/WorldRebirth';
+import ContributeRanking from './Page/ContributeRanking/ContributeRanking';
 
 export default function App() {
     return (
@@ -20,6 +21,7 @@ export default function App() {
                 <Route path="/tram-greez" element={<GreezStation />} />
                 <Route path="/ban-do" element={<Map />} />
                 <Route path="/the-gioi-tai-sinh" element={<WorldRebirth />} />
+                <Route path="/thang-dong-gop" element={<ContributeRanking />} />
             </Routes>
         </Router>
     );

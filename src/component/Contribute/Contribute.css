@@ -1,3 +1,42 @@
 .contribute-time-slider .slick-slider {
     display: flex;
 }
+.ant-paginate-contribute .ant-pagination-item {
+    margin-inline-end: 2rem;
+    display: inline-block;
+    min-width: 32px;
+    height: 32px;
+    margin-inline-end: 8px;
+    font-family: inherit;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    a {
+        color: #13250e;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+.ant-paginate-contribute .ant-pagination-item-active {
+    background-color: #009383;
+    border-radius: 999px;
+    border-color: #009383;
+    a {
+        color: #ffff !important;
+    }
+}
+.ant-paginate-contribute .ant-pagination-item:hover {
+    background-color: #009383 !important;
+    border-radius: 999px;
+    border-color: #009383 !important;
+    a {
+        color: #ffff !important;
+    }
+}

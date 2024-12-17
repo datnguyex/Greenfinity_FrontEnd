@@ -223,60 +223,10 @@ function HomePage() {
                             <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
                         </div>
                         {/* thanh phan */}
-                        <div className="items-center flex gap-[40px] mx-[30px] mb-[60px]">
-                            {/* //con */}
-                            <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                                <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                                <div
-                                    className="bg-[#fff] flex items-center flex-1
-                                        border-b-solid border-b-[5px] 
-                                        border-[#e0e0e0] justify-center relative
-                                        h-[100%]
-                                        w-[100%]
-                                        "
-                                >
-                                    {/* <h2 className="text-4xl text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                        Thang đóng góp
-                                    </h2> */}
-                                    <img className="h-[100%] ml-[-1px] w-auto" src={cornerTitle} alt="" />
-                                    <h2
-                                        className="flex-1 items-center bg-[#33a99c] text-[#fff] 
-                                    flex h-[100%] justify-center text-4xl text-center uppercase"
-                                    >
-                                        ĐÓNG GÓP TUẦN
-                                    </h2>
-                                    <img className="h-[100%] mr-[-1px] scale-x-[-1] w-auto" src={cornerTitle} alt="" />
-                                </div>
 
-                                <img
-                                    className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]"
-                                    src={Headerleft}
-                                    alt=""
-                                />
-                            </div>
-                            {/* //con */}
-                            <div className="flex relative mx-auto mb-[40px] w-[65%]  h-[74px] filter-home-title ">
-                                <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                                <div
-                                    className="bg-[#fff] flex items-center flex-1
-                                        border-b-solid border-b-[5px] 
-                                        border-[#e0e0e0] justify-center relative
-                                        h-[100%]
-                                        w-[100%]
-                                        "
-                                >
-                                    <h2 className="text-4xl text-[#009383] text-4xl leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                        Đóng góp tích lũy
-                                    </h2>
-                                </div>
-                                <img
-                                    className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]"
-                                    src={Headerleft}
-                                    alt=""
-                                />
-                            </div>
+                        <div className="mb-[120px]">
+                            <Contribute />
                         </div>
-                        <Contribute />
                         <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
                             <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
                             <div
