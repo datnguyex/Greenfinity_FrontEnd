@@ -15,6 +15,7 @@ import {
     cornerTitle,
     leafProductRight,
     leafProductLeft,
+    HomeVoucer,
 } from '~/Images';
 import Banner1 from '~/component/Banner/Banner1';
 import Banner2 from '~/component/Banner/Banner2';
@@ -291,6 +292,31 @@ function HomePage() {
                                 </h2>
                             </div>
                             <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
+                        </div>
+                        <div className="pb-[120px] h-[50rem] mx-auto] max-w-[145.5rem relative]">
+                            <div className="flex items-center w-[100%] p-[100px] gap-[4.5rem] height-[50rem]">
+                                <div className="w-[50%]">
+                                    <img src={HomeVoucer} alt="" />
+                                </div>
+                                <div className="flex flex-col w-[50%] gap-[1.7rem]">
+                                    <h3 className="text-[#009383] text-[4.4rem] font-bold w-[90%]">
+                                        Voucher quà tặng từ MOMO
+                                    </h3>
+                                    <div className="text-[#13250] text-[2.4rem] font-bold">
+                                        Hãy cùng nhau thu gom những chai nhựa/lon nhôm để nhận nhiều voucher có giá trị
+                                        cao.
+                                    </div>
+                                    <button
+                                        className="flex items-center bg-[#009383] border
+                                     border-[#fff] text-[#fff] text-[1.8rem] gap-[0.8rem] min-h-[5.2rem]
+                                        min-w-[20rem] justify-center whitespace-nowrap
+                                        p-[1rem] w-[16rem] rounded-[0.8rem]
+                                     "
+                                    >
+                                        Đổi quà
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,8 @@ import Signup from './component/Auth/Signup/Signup';
 import Header from './component/Layout/Header/Header';
 import Footer from './component/Layout/Footer/Footer';
 import HomePage from './Page/Home/Home';
+import GreezStation from './Page/GreezStation/GreezStation';
+import Map from './Page/Map/Map';
 
 export default function App() {
     return (
@@ -16,6 +18,8 @@ export default function App() {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/opt" element={<OPTSending />} />
+                <Route path="/tram-greez" element={<GreezStation />} />
+                <Route path="/ban-do" element={<Map />} />
             </Routes>
         </Router>
     );
