@@ -1,4 +1,16 @@
-import { leafHomeLeft, leafHomeRight, Headerleft, HomeVoucer, RecycleWithGreez, AquafinaLogo } from '~/Images';
+import {
+    leafHomeLeft,
+    leafHomeRight,
+    Headerleft,
+    HomeVoucer,
+    RecycleWithGreez,
+    AquafinaLogo,
+    AltaPlasticLogo,
+    AltaMediaLogo,
+    AltaSoftwareLogo,
+    uniGonLogo,
+    DataSLogo,
+} from '~/Images';
 import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 
@@ -120,10 +132,30 @@ function WorldRebirth() {
                     </div>
                     <div className="mt-[2.4rem]">
                         <h3 className="text-[#009383] text-[4rem] font-bold uppercase text-center">Đối tác</h3>
-                        <div className="flex items-center gap-[8rem] justify-center mt-[4rem] pb-[12rem]"></div>
+                        <div className="flex items-center gap-[8rem] mx-auto justify-center mt-[4rem] pb-[12rem max-w-[142.5rem]">
+                            <img
+                                className="object-cover block w-[20%] h-auto max-w-[100%]"
+                                src={AltaPlasticLogo}
+                                alt=""
+                            />
+                            <img
+                                className="object-cover block w-[20%] h-auto max-w-[100%]"
+                                src={AltaMediaLogo}
+                                alt=""
+                            />
+                            <img
+                                className="object-cover block w-[20%] h-auto max-w-[100%]"
+                                src={AltaSoftwareLogo}
+                                alt=""
+                            />
+                            <img className="object-cover block w-[20%] h-auto max-w-[100%]" src={uniGonLogo} alt="" />
+
+                            <img className="object-cover block w-[20%] h-auto max-w-[100%]" src={DataSLogo} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

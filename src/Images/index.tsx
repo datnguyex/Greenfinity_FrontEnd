@@ -30,3 +30,8 @@ export { default as finishRecycleApp } from './Items/finish-app-recycle.webp';
 export { default as IconLocationMap } from './Items/icon-location-map.webp';
 export { default as RecycleWithGreez } from './Items/recyclewithgreez.webp';
 export { default as AquafinaLogo } from './Items/aquafinaLogo.webp';
+export { default as AltaPlasticLogo } from './Items/altaplastic.webp';
+export { default as AltaMediaLogo } from './Items/altamedia.webp';
+export { default as AltaSoftwareLogo } from './Items/altasoftware.webp';
+export { default as uniGonLogo } from './Items/unigonsLogo.webp';
+export { default as DataSLogo } from './Items/dataSIcon.webp';
