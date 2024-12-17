@@ -4,11 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import OPTSending from './component/Auth/OPTSending/OPTSending';
 import Login from './component/Auth/Login/Login';
 import Signup from './component/Auth/Signup/Signup';
-import Header from './component/Layout/Header/Header';
-import Footer from './component/Layout/Footer/Footer';
 import HomePage from './Page/Home/Home';
 import GreezStation from './Page/GreezStation/GreezStation';
 import Map from './Page/Map/Map';
+import WorldRebirth from './Page/WorldRebirth/WorldRebirth';
 
 export default function App() {
     return (
@@ -20,6 +19,7 @@ export default function App() {
                 <Route path="/opt" element={<OPTSending />} />
                 <Route path="/tram-greez" element={<GreezStation />} />
                 <Route path="/ban-do" element={<Map />} />
+                <Route path="/the-gioi-tai-sinh" element={<WorldRebirth />} />
             </Routes>
         </Router>
     );

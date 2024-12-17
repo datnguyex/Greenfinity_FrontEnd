@@ -27,3 +27,6 @@ export { default as startRecycleApp } from './Items/start-app-recycle.webp';
 export { default as startRecycleMachine } from './Items/start-recycle-machine.webp';
 export { default as qrRecycleApp } from './Items/qr-app-recycle.webp';
 export { default as finishRecycleApp } from './Items/finish-app-recycle.webp';
+export { default as IconLocationMap } from './Items/icon-location-map.webp';
+export { default as RecycleWithGreez } from './Items/recyclewithgreez.webp';
+export { default as AquafinaLogo } from './Items/aquafinaLogo.webp';

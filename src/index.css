@@ -40,4 +40,10 @@ khac voi tailwindconfig// cai nay no dinh nghia san ma khong can goi lai
     .showdown-instruct-station {
         box-shadow: 0 0 16px 0 rgba(8, 15, 52, 0.08);
     }
+    .showdown-map {
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+    }
+    .showdown-location-map {
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    }
 }
