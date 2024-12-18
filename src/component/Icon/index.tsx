@@ -1,3 +1,5 @@
+import { FrameIntroduceGift } from './BigIcon';
+
 export {
     ArrowIntoHaftSquare,
     Cart,
@@ -13,4 +15,9 @@ export {
     ArrowRight,
     FrameAvatarRank,
     ScoreRankHome,
+    EditSign,
+    HandSaveMoney,
+    Clockclockwise,
+    Tote,
+    RimVoucher,
 } from './Icon';
