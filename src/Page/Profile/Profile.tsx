@@ -2,16 +2,8 @@ import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { leafHomeLeft, leafHomeRight } from '~/Images';
 import { ManRankAvatar } from '~/Images';
-import {
-    EditSign,
-    GoldCoin,
-    HandSaveMoney,
-    Clockclockwise,
-    Tote,
-    ArrowIntoHaftSquare,
-    RimVoucher,
-} from '~/component/Icon';
-import { FrameIntroduceGift } from '~/component/Icon/BigIcon';
+import { EditSign, GoldCoin, HandSaveMoney, Clockclockwise, Tote, ArrowIntoHaftSquare } from '~/component/Icon';
+import { FrameIntroduceGift, RimVoucher } from '~/component/Icon/index';
 import { Pagination } from 'antd';
 
 function Profile() {

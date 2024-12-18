@@ -1,4 +1,4 @@
-import { FrameIntroduceGift } from './BigIcon';
+export { FrameIntroduceGift, RimVoucher } from './BigIcon';
 
 export {
     ArrowIntoHaftSquare,
@@ -19,5 +19,4 @@ export {
     HandSaveMoney,
     Clockclockwise,
     Tote,
-    RimVoucher,
 } from './Icon';

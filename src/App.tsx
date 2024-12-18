@@ -9,6 +9,7 @@ import Map from './Page/Map/Map';
 import WorldRebirth from './Page/WorldRebirth/WorldRebirth';
 import ContributeRanking from './Page/ContributeRanking/ContributeRanking';
 import Profile from './Page/Profile/Profile';
+import UpdateProfile from './Page/UpdateProfile/UpdateProfile';
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
                 <Route path="/the-gioi-tai-sinh" element={<WorldRebirth />} />
                 <Route path="/thang-dong-gop" element={<ContributeRanking />} />
                 <Route path="/trang-ca-nhan" element={<Profile />} />
+                <Route path="/sua-trang-ca-nhan" element={<UpdateProfile />} />
             </Routes>
         </Router>
     );
