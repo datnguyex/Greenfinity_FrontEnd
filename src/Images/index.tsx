@@ -47,3 +47,4 @@ export { default as AvatarWoman3 } from './Items/avatarWoman3.webp';
 export { default as AvatarWoman4 } from './Items/avatarWoman4.webp';
 export { default as AvatarWoman1 } from './Items/avatarWoman1.webp';
 export { default as MyItem } from './Items/myproduct.png';
+export { default as Error404 } from './Items/error404.webp';
