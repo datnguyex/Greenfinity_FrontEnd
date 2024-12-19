@@ -1,55 +1,66 @@
 import { ArrowIntoHaftSquare, Cart, ArrowDown, GoldCoin, SubNavbar } from '~/component/Icon';
 import { Headerleft, logoTitle, UserHeader } from '~/Images';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function Header() {
+    const navigate = useNavigate();
+    const navigateHome = () => {
+        navigate('/');
+    };
     return (
         <>
             <div className="flex flex-col z-[100] fixed translate-x-[-50%] left-[50%] items-center w-[95%]">
                 {/* fiter-header */}
                 <div className="mt-10 z-50 rounded-xl  w-[100%] h-[64px] flex bg-transparent ">
-                    <img className="" src={Headerleft} alt="" />
+                    <img src={Headerleft} alt="" />
                     <div className="flex items-center justify-between w-[100%] bg-white h-full relative border-b-[0.45rem] border-solid border-[#e0e0e0]">
-                        <img className="h-[118%] w-[auto] translate-y-[0%]" src={logoTitle} alt="" />
+                        <img
+                            onClick={navigateHome}
+                            className="h-[118%] w-[auto] translate-y-[0%] cursor-pointer"
+                            src={logoTitle}
+                            alt=""
+                        />
                         <div className="items-center flex  h-[100%] w-[50%] justify-center">
                             <ul className="flex flex-row justify-between list-none m-0 p-0">
                                 <li className="">
-                                    <a
-                                        className="hover:text-[#009383] text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
-                                        href=""
+                                    <Link
+                                        to="/tram-greez"
+                                        className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        TRANG CHỦ
-                                    </a>
+                                        TRẠM GREEZ
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        className="hover:text-[#009383] text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
-                                        href=""
+                                    <Link
+                                        to="/the-gioi-tai-sinh"
+                                        className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
                                         THẾ GIỚI TÁI SINH
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        className=" hover:text-[#009383] text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
-                                        href=""
+                                    <Link
+                                        to="/thang-dong-gop"
+                                        className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        THANG ĐÓNG GÓP
-                                    </a>
+                                        THANG DONG GOP
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        className="hover:text-[#009383] text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
-                                        href=""
+                                    <Link
+                                        to="/ban-do"
+                                        className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        BẢN ĐỒ
-                                    </a>
+                                        BAN DO
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        className="hover:text-[#009383] text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
-                                        href=""
+                                    <Link
+                                        to="/mini-game"
+                                        className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
                                         MINI GAME
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -77,22 +88,25 @@ function Header() {
                                 </div>
                             </div>
                             <div className="flex gap-[9px]">
-                                <div className="cursor-pointer relative bg-white border-[2px] w-[44px] h-[44px] border-[#33A99C] rounded-full">
+                                <Link
+                                    to="/trang-ca-nhan"
+                                    className="cursor-pointer relative bg-white border-[2px] w-[44px] h-[44px] border-[#33A99C] rounded-full"
+                                >
                                     <img
                                         className="absolute  w-full h-full object-contain rounded-full"
                                         src={UserHeader}
                                         alt="User"
                                     />
-                                </div>
+                                </Link>
                                 <div className="flex flex-col items-start justify-center">
-                                    <div className="gap-[11px] flex items-center">
+                                    <Link to="/trang-ca-nhan" className="gap-[11px] flex items-center">
                                         <span className="cursor-pointer text-[20px] leading-6 font-semibold text-[#009383]">
                                             Tuyết Anh
                                         </span>
                                         <span className="cursor-pointer">
                                             <ArrowDown />
                                         </span>
-                                    </div>
+                                    </Link>
                                     <div className="gap-[8px] flex items-center mt-[5px]">
                                         <span className="cursor-pointer text-[#494949] leading-[18.75px] text-[16px] font-medium">
                                             250
@@ -110,10 +124,10 @@ function Header() {
                 <div className="w-[97%] flex max-h-[72px] mt-[-10px] relative overflow-hidden">
                     <SubNavbar />
                     <div className="absolute inset-0 flex h-[100%] justify-center items-center gap-[32px] flex-nowrap">
-                        <p className="cursor-pointer px-[4px] py-[14px] font-bold items-center text-[16px] leading-[18.75px] text-[#494949]">
+                        <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold items-center text-[16px] leading-[18.75px] text-[#494949]">
                             CỬA HÀNG
                         </p>
-                        <p className="cursor-pointer px-[4px] py-[14px] font-bold text-[16px] leading-[18.75px] text-[#494949]">
+                        <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold text-[16px] leading-[18.75px] text-[#494949]">
                             CÂU CHUYỆN
                         </p>
                     </div>

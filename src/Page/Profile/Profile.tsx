@@ -5,7 +5,7 @@ import { ManRankAvatar } from '~/Images';
 import { EditSign, GoldCoin, HandSaveMoney, Clockclockwise, Tote, ArrowIntoHaftSquare } from '~/component/Icon';
 import { FrameIntroduceGift, RimVoucher } from '~/component/Icon/index';
 import { Pagination } from 'antd';
-
+import { Link } from 'react-router-dom';
 function Profile() {
     const vouchers = Array(6).fill({
         title: 'Giải tư - Voucher Quà tặng thời trang Uniqlo',
@@ -42,12 +42,15 @@ function Profile() {
                                 {/* // */}
                                 <div className="w-[260px] h-12 px-6 py-[23px] rounded-lg border border-[#009383] justify-center items-center gap-2 inline-flex">
                                     <div className="w-7 h-7 relative" />
-                                    <button className="text-[#009383] text-[20px] font-medium font-['Roboto'] flex items-center justify-center">
+                                    <Link
+                                        to="/sua-trang-ca-nhan"
+                                        className="text-[#009383] text-[20px] font-medium font-['Roboto'] flex items-center justify-center"
+                                    >
                                         <span>
                                             <EditSign />
                                         </span>
                                         Chỉnh sửa thông tin
-                                    </button>
+                                    </Link>
                                 </div>
                                 {/* // */}
                                 <div className="h-[53px] flex-col justify-center items-start inline-flex">
@@ -99,27 +102,36 @@ function Profile() {
                                 <div className="">
                                     {/* // */}
                                     <div className="h-28 justify-start items-start gap-4 inline-flex w-full">
-                                        <div className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex">
+                                        <Link
+                                            to="/lich-su-quyen-gop"
+                                            className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
+                                        >
                                             <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
                                                 <HandSaveMoney />
                                                 Lịch sử quyên góp
                                             </div>
-                                        </div>
+                                        </Link>
                                         {/* // */}
-                                        <div className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex">
+                                        <Link
+                                            to="/lich-su-greecoin"
+                                            className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
+                                        >
                                             <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
                                                 <Clockclockwise />
                                                 Lịch sử quyên góp
                                             </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                     {/* // */}
-                                    <div className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex">
+                                    <Link
+                                        to="/vat-pham"
+                                        className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
+                                    >
                                         <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
                                             <Tote />
                                             Sản phẩm của bạn
                                         </div>
-                                    </div>
+                                    </Link>
                                     {/* // */}
                                     <div className="cursor-pointer flex-1 mt-[20px] h-12 px-6 py-[24px] bg-[#fff] border border-[#009383] rounded-md justify-center items-center gap-1 flex">
                                         <div className="text-[#009383] text-[16px] font-bold font-['Roboto'] flex justify-center items-center gap-[5px]">
@@ -132,9 +144,15 @@ function Profile() {
                         </div>
                         {/* item */}
                         <div className="mt-[15rem]">
-                            <div className="cursor-pointer italic text-center text-[#15bdd6] text-[24px] font-normal font-['Roboto'] underline leading-[28.80px] tracking-tight">
+                            <Link
+                                to="/the-le"
+                                className="cursor-pointer italic text-center text-[#15bdd6] text-[24px] font-normal
+                                 font-['Roboto'] underline leading-[28.80px] tracking-tight flex justify-center items-center
+                                
+                                 "
+                            >
                                 Thể lệ chương trình
-                            </div>
+                            </Link>
                             <div className="flex justify-between items-center mt-[36px]">
                                 {/* // */}
                                 <div className="relative inline-block">

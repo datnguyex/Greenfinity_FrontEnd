@@ -1,6 +1,5 @@
 import { leafHomeLeft, leafHomeRight, Error404 } from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import { Link } from 'react-router-dom';
 function NotFound() {
     return (
         <>
@@ -22,7 +21,8 @@ function NotFound() {
                             several ways to get you back on the right track. You can go back to the previous page , or
                             visit our home page.
                         </div>
-                        <button
+                        <Link
+                            to="/"
                             className="flex items-center bg-[#009383] border
                                      border-[#fff] text-[#fff] text-[1.8rem] gap-[0.8rem] min-h-[5.2rem]
                                         min-w-[20rem] justify-center whitespace-nowrap
@@ -30,7 +30,7 @@ function NotFound() {
                                      "
                         >
                             Về trang chủ
-                        </button>
+                        </Link>
                     </div>
                     {/* //item */}
                     <div className="w-[40%]">

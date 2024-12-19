@@ -14,6 +14,7 @@ import Item from './Page/Item/Item';
 import DonationHistory from './Page/DonationHistory/DonationHistory';
 import CoinHistory from './Page/CoinHistory/CoinHistory';
 import NotFound from './Page/NotFound/NotFound';
+import Rules from './Page/Rules/Rules';
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/opt" element={<OPTSending />} />
+                {/* // */}
                 <Route path="/tram-greez" element={<GreezStation />} />
                 <Route path="/ban-do" element={<Map />} />
                 <Route path="/the-gioi-tai-sinh" element={<WorldRebirth />} />
@@ -32,6 +34,7 @@ export default function App() {
                 <Route path="/vat-pham" element={<Item />} />
                 <Route path="/lich-su-quyen-gop" element={<DonationHistory />} />
                 <Route path="/lich-su-greecoin" element={<CoinHistory />} />
+                <Route path="/the-le" element={<Rules />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
