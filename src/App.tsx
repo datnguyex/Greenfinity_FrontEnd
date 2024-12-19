@@ -12,6 +12,7 @@ import Profile from './Page/Profile/Profile';
 import UpdateProfile from './Page/UpdateProfile/UpdateProfile';
 import Item from './Page/Item/Item';
 import DonationHistory from './Page/DonationHistory/DonationHistory';
+import CoinHistory from './Page/CoinHistory/CoinHistory';
 
 export default function App() {
     return (
@@ -29,6 +30,7 @@ export default function App() {
                 <Route path="/sua-trang-ca-nhan" element={<UpdateProfile />} />
                 <Route path="/vat-pham" element={<Item />} />
                 <Route path="/lich-su-quyen-gop" element={<DonationHistory />} />
+                <Route path="/lich-su-greecoin" element={<CoinHistory />} />
             </Routes>
         </Router>
     );
