@@ -19,4 +19,9 @@ export {
     HandSaveMoney,
     Clockclockwise,
     Tote,
+    Bin,
+    Minus,
+    Plus,
+    CartSad,
+    LeafCateProduct,
 } from './Icon';

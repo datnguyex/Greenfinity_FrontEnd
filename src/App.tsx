@@ -15,7 +15,8 @@ import DonationHistory from './Page/DonationHistory/DonationHistory';
 import CoinHistory from './Page/CoinHistory/CoinHistory';
 import NotFound from './Page/NotFound/NotFound';
 import Rules from './Page/Rules/Rules';
-
+import Cart from './Page/Cart/Cart';
+import ShippingInfomation from './Page/Cart/ShippingInfomation/ShippingInfomation';
 export default function App() {
     return (
         <Router>
@@ -36,6 +37,9 @@ export default function App() {
                 <Route path="/lich-su-greecoin" element={<CoinHistory />} />
                 <Route path="/the-le" element={<Rules />} />
                 <Route path="*" element={<NotFound />} />
+                {/* // */}
+                <Route path="gio-hang" element={<Cart />} />
+                <Route path="thong-tin-van-chuyen" element={<ShippingInfomation />} />
             </Routes>
         </Router>
     );
