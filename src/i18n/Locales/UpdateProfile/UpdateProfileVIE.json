@@ -1,0 +1,7 @@
+{
+    "description": "Nhập mô tả về bạn tại đây (giới hạn 250 ký tự)",
+    "fullname": "Họ và tên",
+    "phoneNumber": "Số điện thoại",
+    "email": "Email",
+    "dob": "Ngày Sinh"
+}

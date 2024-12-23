@@ -24,4 +24,5 @@ export {
     Plus,
     CartSad,
     LeafCateProduct,
+    ArrownDown,
 } from './Icon';

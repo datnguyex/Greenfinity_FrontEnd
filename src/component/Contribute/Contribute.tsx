@@ -10,7 +10,7 @@ import { RankNo1, RankNo2, RankNo3, ManRankAvatar, WomenRankAvatar, Headerleft, 
 import { Pagination } from 'antd';
 const cx = classNames.bind(style);
 
-function Contribute() {
+function Contribute({ t }: { t: (key: string) => string }) {
     const CustomArrowNext = () => {
         return (
             <div
@@ -94,16 +94,16 @@ function Contribute() {
         speed: 800,
         slidesToShow: 5,
         slidesToScroll: 5,
-        autoplay: false,
+
         nextArrow: <CustomArrowNext />,
         prevArrow: <CustomArrowPrev />,
-        initialSlide: weeks.length - 1,
+        initialSlide: weeks.length - 2,
     };
     const [timeActive, setTimeActive] = useState(weeks.length);
     const handleTimeActive = (index: any) => {
         setTimeActive(index);
     };
-    console.log('sliderRef', sliderRef);
+    // console.log('sliderRef', sliderRef);
 
     return (
         <>
@@ -127,7 +127,7 @@ function Contribute() {
                             className="flex-1 items-center bg-[#33a99c] text-[#fff] 
                 flex h-[100%] justify-center text-4xl text-center uppercase"
                         >
-                            ĐÓNG GÓP TUẦN
+                            {t('weekContribute')}
                         </h2>
                         <img className="h-[100%] mr-[-1px] scale-x-[-1] w-auto" src={cornerTitle} alt="" />
                     </div>
@@ -145,30 +145,31 @@ function Contribute() {
                     w-[100%]
                     "
                     >
-                        <h2 className="text-4xl text-[#009383] text-4xl leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                            Đóng góp tích lũy
+                        <h2 className="text-[#009383] text-4xl leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
+                            {t('cumulativeContribution')}
                         </h2>
                     </div>
                     <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
                 </div>
             </div>
             <div className="contribute-time-slider">
-                <Slider ref={sliderRef} {...settings} className="gap-[10px]">
+                <Slider ref={sliderRef} {...settings} className="gap-[10px] w-full">
                     {weeks.map((week, index) => (
                         <div key={index} className="inline-block">
                             <div
                                 onClick={() => handleTimeActive(week.weekNumber)}
                                 className={`items-center flex justify-center border-solid border-[1px] border-[#009383]
-                             text-[#009383] cursor-pointer text-[20px] font-semibold overflow-hidden
-                             py-[22px] mx-[12px] transition-all ease-out duration-200 gap-[10px] rounded-[12px] px-[11px] ${
-                                 timeActive === week.weekNumber ? 'text-[#fff] bg-[#009383]' : ''
-                             }`}
+                 text-[#009383] cursor-pointer text-[20px] font-semibold overflow-hidden
+                 py-[22px] mx-[12px] transition-all ease-out duration-200 gap-[10px] rounded-[12px] px-[11px] ${
+                     timeActive === week.weekNumber ? 'text-[#fff] bg-[#009383]' : ''
+                 }`}
                             >
-                                Tuần {week.weekNumber} - {week.date}
+                                {t('week')} {week.weekNumber} - {week.date}
                             </div>
                         </div>
                     ))}
                 </Slider>
+
                 <div className="mb-[6rem] flex justify-center items-end relative mt-[50px]">
                     {/* no2 */}
                     <div className="w-[27.4%] h-[100%] relative ">
@@ -514,16 +515,16 @@ function Contribute() {
                 </div>
                 <div>
                     {/* <h1 className="text-center text-[#15bdd7] text-[2.6rem] font-semibold">
-                        Vui lòng đăng nhập để xem hạng của bạn
+                        {t('pleaseLogin')}
                     </h1>
                     <button className="text-[#fff] mb-[120px] bg-[#15bdd7] flex justify-center items-center mx-auto font-bold border p-[1rem] border-[#fff] size-[1.8rem] gap-[0.8rem] min-h-[5.2rem] w-[16rem] rounded-[0.8rem] ">
-                        Đăng Nhập
+                       {t('login')}
                     </button> */}
                     <div
                         className={`text-[#009383] flex text-[1.6rem] font-bold justify-center items-center w-[40%]
                         mx-auto relative border-t-2 border-b-2 border-[#009383] h-[4.4rem] ${cx('scoreBar')}`}
                     >
-                        Tuần này bạn chưa tham gia tích điểm
+                        {t('weekContribute')}
                     </div>
                 </div>
             </div>

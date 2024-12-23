@@ -1,0 +1,7 @@
+{
+    "description": "Enter a description about yourself here (250 character limit)",
+    "fullname": "Full name",
+    "phoneNumber": "Phone number",
+    "email": "Email",
+    "dob": "Date of birth"
+}

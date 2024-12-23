@@ -47,4 +47,11 @@ khac voi tailwindconfig// cai nay no dinh nghia san ma khong can goi lai
     .showdown-location-map {
         box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
     }
+    .shadown-header-language {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    }
+    .shadown-header-language-child {
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+            0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    }
 }

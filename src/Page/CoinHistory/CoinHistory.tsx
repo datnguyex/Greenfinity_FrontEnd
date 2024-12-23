@@ -2,7 +2,9 @@ import { leafHomeLeft, leafHomeRight } from '~/Images';
 import { GoldCoin } from '~/component/Icon';
 import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
+import { useTranslation } from 'react-i18next';
 function CoinHistory() {
+    const { t } = useTranslation(['CoinHistory']);
     const items = [1, 2, 3];
     return (
         <>
@@ -19,14 +21,14 @@ function CoinHistory() {
                     <div className="px-[30px] flex flex-col justify-center mx-auto max-w-[132.7rem] w-[100%] ">
                         {/* //ITEM */}
                         <div className="text-center text-[#009383] text-[64px] font-bold font-['Roboto'] uppercase leading-[76.80px]">
-                            LỊCH SỬ GREECOIN
+                            {t('title')}
                         </div>
                         {/* //ITEM */}
                         {items.map((item, index) => (
                             <div className="w-[1071px] mt-[30px] mx-auto h-[459px] bg-white rounded-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] flex-col justify-start items-center gap-6 inline-flex overflow-hidden">
                                 <div className="self-stretch h-[55px] px-8 py-[19px] bg-[#009383] rounded-tl-3xl rounded-tr-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] border border-[#009383] justify-between items-center inline-flex">
                                     <div className="text-white text-[24px] font-bold font-['Roboto']">
-                                        THÁNG 11/2023
+                                        {t('month')} 11/2023
                                     </div>
                                     <div className="justify-start items-center gap-3 flex">
                                         <div className="text-white text-[20px] font-medium font-['Roboto']">+5000 </div>
@@ -38,7 +40,7 @@ function CoinHistory() {
                                     <div className="w-[237px] flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] rounded-bl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
                                             <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                Thời gian
+                                                {t('time')}
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg rounded-bl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
@@ -75,7 +77,7 @@ function CoinHistory() {
                                     <div className="w-[377px] flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] justify-start items-center gap-2 inline-flex overflow-hidden">
                                             <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                Giao dịch
+                                                {t('transaction')}
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
@@ -106,7 +108,7 @@ function CoinHistory() {
                                     <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] justify-end items-center gap-2 inline-flex overflow-hidden">
                                             <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                Hoạt động
+                                                {t('work')}
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
@@ -149,7 +151,7 @@ function CoinHistory() {
                                     <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
                                             <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                Số dư Greecoin
+                                                {t('balance')}
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">

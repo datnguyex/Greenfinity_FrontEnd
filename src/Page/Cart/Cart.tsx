@@ -3,7 +3,10 @@ import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { Bin, Minus, Plus, CartSad } from '~/component/Icon';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 function Cart() {
+    const { t } = useTranslation(['Cart']);
     const products = [
         {
             id: 1,
@@ -66,7 +69,7 @@ function Cart() {
                 <div className="my-[140px]">
                     <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%]">
                         <div className="text-[#006e62] text-[32px] font-semibold font-['Roboto'] mb-[15px]">
-                            Giỏ hàng
+                            {t('title')}
                         </div>
                         <div className="flex justify-center gap-[20px]">
                             {/* //chil */}
@@ -80,17 +83,17 @@ function Cart() {
                                             className="appearance-none relative rounded w-[20px] h-[20px] border-[1px] border-solid border-[#009383] checked:bg-[#009383]"
                                         />
                                         <div className="text-black text-[18px] font-normal font-['Roboto'] leading-normal">
-                                            Tất cả sản phẩm
+                                            {t('allProducts')}
                                         </div>
                                     </div>
                                     <div className="left-[400px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
-                                        Đơn giá
+                                        {t('price')}
                                     </div>
                                     <div className="left-[550px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
-                                        Số lượng
+                                        {t('quantity')}
                                     </div>
                                     <div className="left-[700px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
-                                        Thành tiền
+                                        {t('totalPrice')}
                                     </div>
                                     <div className="left-[840px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
                                         <Bin />
@@ -166,23 +169,26 @@ function Cart() {
                                     <div className="h-[138px] bg-white rounded-xl shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] flex-col justify-start items-start gap-6 flex">
                                         <div className="w-[342px] h-[138px] relative rounded-xl">
                                             <div className="left-[16px] top-[24px] absolute text-[#494949] text-[16px] font-['Roboto']">
-                                                Tạm tính
+                                                {t('provisional')}
                                             </div>
                                             <div className="left-[307px] top-[24px] absolute text-right text-[#494949] text-[16px] font-[16px] font-['Roboto']">
                                                 0đ
                                             </div>
                                             <div className="w-[309px] h-[0px] left-[16px] top-[73px] absolute border border-[#b6b6b6]"></div>
                                             <div className="left-[16px] top-[91px] absolute text-right text-[#494949] text-[16px] font-semibold font-['Roboto']">
-                                                Tổng cộng:
+                                                {t('totalPricePre')}
                                             </div>
                                             <div className="left-[301px] top-[91px] absolute text-right text-[#009383] text-[16px] font-bold font-['Roboto']">
                                                 0đ
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="w-[342px] h-12 px-6 py-9 bg-[#009383] rounded-lg cursor-pointer justify-center items-center gap-2 inline-flex overflow-hidden">
+                                    <Link
+                                        to="/thong-tin-van-chuyen"
+                                        className="w-[342px] h-12 px-6 py-9 bg-[#009383] rounded-lg cursor-pointer justify-center items-center gap-2 inline-flex overflow-hidden"
+                                    >
                                         <div className="text-white text-[16px] font-bold font-['Roboto']">Mua ngay</div>
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

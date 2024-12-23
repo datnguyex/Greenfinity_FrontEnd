@@ -5,8 +5,9 @@ import { ManRankAvatar, AvatarMan2, AvatarWoman1, AvatarWoman2, AvatarWoman3, Av
 import { EditSign } from '~/component/Icon';
 import { useState } from 'react';
 import { RoundedMan1, RoundedMan2, RoundedWoman1, RoundedWoman2, RoundedWoman3, RoundedWoman4 } from '~/Images';
-
+import { useTranslation } from 'react-i18next';
 function Profile() {
+    const { t } = useTranslation(['updateProfile']);
     const [infoUser, setInfoUser] = useState({
         name: 'Nguyễn Thành Đạt',
         gender: 'male',
@@ -106,7 +107,7 @@ function Profile() {
 
                                 {/* // */}
                                 <textarea
-                                    placeholder="Nhập mô tả về bạn tại đây (giới hạn 250 ký tự)"
+                                    placeholder={t('description')}
                                     className="outline-none bg-transparent py-[12px] max-w-[100%] h-auto min-h-[100px] transition-all duration-300
                                  px-[16px] text-[#666] rounded-lg border border-[#009383] gap-2"
                                 ></textarea>
@@ -134,12 +135,12 @@ function Profile() {
                                     <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex">
                                         <div className="justify-start items-start gap-0.5 inline-flex">
                                             <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
-                                                Họ và tên
+                                                {t('fullname')}
                                             </div>
                                         </div>
                                         <div className="w-[524px] h-12 px-4 py-2.5 bg-white rounded-lg border border-[#b6b6b6] justify-start items-center gap-2.5 inline-flex">
                                             <input
-                                                placeholder="Tên đăng nhập"
+                                                placeholder="Nguyễn Thành Đạt"
                                                 className="text-[#333] outline-none w-[100%]  text-[16px]"
                                             ></input>
                                         </div>
@@ -147,12 +148,12 @@ function Profile() {
                                     <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex">
                                         <div className="justify-start items-start gap-0.5 inline-flex">
                                             <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
-                                                Số điện thoại
+                                                {t('phoneNumber')}
                                             </div>
                                         </div>
                                         <div className="w-[524px] h-12 px-4 py-2.5 bg-white rounded-lg border border-[#b6b6b6] justify-start items-center gap-2.5 inline-flex">
                                             <input
-                                                placeholder="Số điện thoại"
+                                                placeholder="0329169799"
                                                 className="text-[#333] outline-none w-[100%]  text-[16px]"
                                             ></input>
                                         </div>
@@ -160,12 +161,12 @@ function Profile() {
                                     <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex">
                                         <div className="justify-start items-start gap-0.5 inline-flex">
                                             <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
-                                                Email
+                                                {t('email')}
                                             </div>
                                         </div>
                                         <div className="w-[524px] h-12 px-4 py-2.5 bg-white rounded-lg border border-[#b6b6b6] justify-start items-center gap-2.5 inline-flex">
                                             <input
-                                                placeholder="Email"
+                                                placeholder="nnguyendat72@gmail.com"
                                                 className="text-[#333] outline-none w-[100%]  text-[16px]"
                                             ></input>
                                         </div>
@@ -173,7 +174,7 @@ function Profile() {
                                     <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex">
                                         <div className="justify-start items-start gap-0.5 inline-flex">
                                             <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
-                                                Ngày sinh
+                                                {t('dob')}
                                             </div>
                                         </div>
                                         <div className="w-[524px] h-12 flex-col justify-start items-start gap-2.5 flex">

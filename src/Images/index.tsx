@@ -51,3 +51,5 @@ export { default as Error404 } from './Items/error404.webp';
 export { default as SharkProduct } from './Items/sharkProduct.png';
 export { default as MoMoLogo } from './Items/momoLogo.png';
 export { default as VNPayLogo } from './Items/vnpayLogo.png';
+export { default as VietnameseLanguage } from './Items/vietnamsesLanguage.png';
+export { default as EnglandLanguage } from './Items/EnglandLanguage.png';

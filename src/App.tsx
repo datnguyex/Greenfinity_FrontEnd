@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import OPTSending from './component/Auth/OPTSending/OPTSending';
-import Login from './component/Auth/Login/Login';
-import Signup from './component/Auth/Signup/Signup';
+import OPTSending from './Page/Auth/OPTSending/OPTSending';
+import Login from './Page/Auth/Login/Login';
+import Signup from './Page/Auth/Signup/Signup';
 import HomePage from './Page/Home/Home';
 import GreezStation from './Page/GreezStation/GreezStation';
 import Map from './Page/Map/Map';

@@ -1,6 +1,12 @@
+import { useTranslation } from 'react-i18next';
+import { locales } from '~/i18n/i18n';
 import { LogoFooterText, LogoFooterImages, Facebook, Messenger, Youtube } from '~/component/Icon'; // Đảm bảo import đúng tên component
 
 function Footer() {
+    const { t } = useTranslation(['footer']);
+    const { i18n } = useTranslation();
+    const currentLanguage = locales[i18n.language as keyof typeof locales];
+    console.log('currentLangugae', currentLanguage);
     return (
         <>
             <div className="w-[100%] bg-white h-[341px] fiter-footer">
@@ -11,23 +17,20 @@ function Footer() {
                             <LogoFooterText />
                         </div>
                         <div>
-                            <p className="font-normal text-[16px] skew-x-[-3deg] text-[#494949]">
-                                Xuất hiện vào năm 2023, chúng tôi mang đến một giải pháp bảo vệ môi trường tốt nhất.
-                                Chúng tôi mong rằng Trái Đất trong tương lai sẽ trở nên xanh - sạch - đẹp.
-                            </p>
+                            <p className="font-normal text-[16px] skew-x-[-3deg] text-[#494949]">{t('introduce')}</p>
                         </div>
                     </div>
                     <div className="text-[#494949] leading-[25.78px] text-[22px] font-bold flex flex-col justify-center items-center gap-[32px]">
                         <div className="flex gap-[32px]">
-                            <h4 className="cursor-pointer">Trạm GreeZ</h4>
-                            <h4 className="cursor-pointer">Thế giới tái sinh</h4>
-                            <h4 className="cursor-pointer">Thang đóng góp</h4>
-                            <h4 className="cursor-pointer">Bản Đồ</h4>
-                            <h4 className="cursor-pointer">MINI GAME</h4>
+                            <h4 className="cursor-pointer"> {t('station')}</h4>
+                            <h4 className="cursor-pointer">{t('wordReborn')}</h4>
+                            <h4 className="cursor-pointer">{t('contributeLadder')}</h4>
+                            <h4 className="cursor-pointer">{t('MAP')}</h4>
+                            <h4 className="cursor-pointer">{t('MINI GAME')}</h4>
                         </div>
                         <div className="flex gap-[32px]">
-                            <h4 className="cursor-pointer">Cửa hàng</h4>
-                            <h4 className="cursor-pointer">Câu chuyện</h4>
+                            <h4 className="cursor-pointer">{t('store')}</h4>
+                            <h4 className="cursor-pointer">{t('story')}</h4>
                         </div>
                     </div>
                 </div>

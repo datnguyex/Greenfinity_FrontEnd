@@ -2,8 +2,10 @@ import { leafHomeLeft, leafHomeRight } from '~/Images';
 import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import Contribute from '~/component/Contribute/Contribute';
+import { useTranslation } from 'react-i18next';
 
 function ContributeRanking() {
+    const { t } = useTranslation(['ContributeRanking']);
     return (
         <>
             <Header />
@@ -17,7 +19,7 @@ function ContributeRanking() {
             >
                 <div className="my-[140px]">
                     <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%]">
-                        <Contribute />
+                        <Contribute t={t} />
                     </div>
                 </div>
             </div>

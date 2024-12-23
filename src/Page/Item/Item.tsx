@@ -3,7 +3,9 @@ import Footer from '~/component/Layout/Footer/Footer';
 import { Pagination } from 'antd';
 import './Item.css';
 import { leafHomeLeft, leafHomeRight, MyItem } from '~/Images';
+import { useTranslation } from 'react-i18next';
 function Item() {
+    const { t } = useTranslation(['CoinHistory']);
     const data = [
         { name: 'Jasmine', imageSrc: MyItem },
         { name: 'Lily', imageSrc: MyItem },
@@ -38,7 +40,7 @@ function Item() {
                         <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%] ">
                             {/* //item */}
                             <div className="text-center text-[#009383] text-[64px] font-bold font-['Roboto'] uppercase leading-[76.80px]">
-                                Sản phẩm của bạn
+                                {t('title')}
                             </div>
                             {/* //item */}
                             <div className="w-[1314px] mt-[70px] h-[1272px] relative rounded-[20px] shadow-[0px_2px_40px_0px_rgba(0,0,0,0.10)] border-2 border-[#009383] overflow-hidden">

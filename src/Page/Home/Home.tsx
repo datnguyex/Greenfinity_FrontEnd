@@ -6,24 +6,18 @@ import React, { useRef } from 'react';
 import './Home.css';
 import Slider from 'react-slick';
 import { ArrowLeft, ArrowRight } from '~/component/Icon';
-import {
-    leafHomeRight,
-    leafHomeLeft,
-    Headerleft,
-    plasticbottle,
-    AluminumCan,
-    cornerTitle,
-    leafProductRight,
-    leafProductLeft,
-    HomeVoucer,
-} from '~/Images';
+import { leafHomeRight, leafHomeLeft, Headerleft, plasticbottle, AluminumCan } from '~/Images';
 import Banner1 from '~/component/Banner/Banner1';
 import Banner2 from '~/component/Banner/Banner2';
 import Contribute from '~/component/Contribute/Contribute';
 import Banner3 from '~/component/Banner/Banner3';
+import { useTranslation } from 'react-i18next';
+import Gift from '~/component/Gift/Gift';
+
 const cx = classNames.bind(style);
 
 function HomePage() {
+    const { t } = useTranslation(['home']);
     const sliderRef = useRef<Slider | null>(null);
 
     // Custom Arrow Next
@@ -115,9 +109,9 @@ function HomePage() {
             <div className="max-w-[100vw] bg-red-50">
                 <div className="home-banner-slider">
                     <Slider ref={sliderRef} {...settings}>
-                        <Banner3 />
-                        <Banner2 />
-                        <Banner1 />
+                        <Banner3 t={t} />
+                        <Banner2 t={t} />
+                        <Banner1 t={t} />
                     </Slider>
                 </div>
                 <div
@@ -143,7 +137,7 @@ function HomePage() {
                              "
                             >
                                 <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    Tổng Số Lượng Thu Gom
+                                    {t('titleTotalCollect')}
                                 </h2>
                             </div>
                             <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
@@ -172,7 +166,7 @@ function HomePage() {
                                             438.425
                                         </div>
                                         <div className="text-[3.5rem] leading-[57.6px] text-[#fff] font-bold overflow-hidden whitespace-nowrap">
-                                            Chai nhựa
+                                            {t('plasticBottle')}
                                         </div>
                                     </div>
                                 </div>
@@ -199,7 +193,7 @@ function HomePage() {
                                             47.332
                                         </div>
                                         <div className="text-[3.5rem] leading-[57.6px] text-[#fff] font-bold overflow-hidden whitespace-nowrap">
-                                            Lon nhom
+                                            {t('aluminumCan')}
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +211,7 @@ function HomePage() {
                              "
                             >
                                 <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    Thang đóng góp
+                                    {t('titleContribute')}
                                 </h2>
                             </div>
                             <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
@@ -225,49 +219,10 @@ function HomePage() {
                         {/* thanh phan */}
 
                         <div className="mb-[120px]">
-                            <Contribute />
+                            <Contribute t={t} />
                         </div>
-                        <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                            <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                            <div
-                                className="bg-[#fff] flex items-center flex-1
-                            border-b-solid border-b-[5px] 
-                             border-[#e0e0e0] justify-center relative
-                             h-[100%]
-                             w-[100%]
-                             "
-                            >
-                                <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    Quà tặng
-                                </h2>
-                            </div>
-                            <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                        </div>
-                        <div className="pb-[120px] h-[50rem] mx-auto] max-w-[145.5rem relative]">
-                            <div className="flex items-center w-[100%] p-[100px] gap-[4.5rem] height-[50rem]">
-                                <div className="w-[50%]">
-                                    <img src={HomeVoucer} alt="" />
-                                </div>
-                                <div className="flex flex-col w-[50%] gap-[1.7rem]">
-                                    <h3 className="text-[#009383] text-[4.4rem] font-bold w-[90%]">
-                                        Voucher quà tặng từ MOMO
-                                    </h3>
-                                    <div className="text-[#13250] text-[2.4rem] font-bold">
-                                        Hãy cùng nhau thu gom những chai nhựa/lon nhôm để nhận nhiều voucher có giá trị
-                                        cao.
-                                    </div>
-                                    <button
-                                        className="flex items-center bg-[#009383] border
-                                     border-[#fff] text-[#fff] text-[1.8rem] gap-[0.8rem] min-h-[5.2rem]
-                                        min-w-[20rem] justify-center whitespace-nowrap
-                                        p-[1rem] w-[16rem] rounded-[0.8rem]
-                                     "
-                                    >
-                                        Đổi quà
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        <Gift t={t} />
+                        {/* // */}
                     </div>
                 </div>
             </div>

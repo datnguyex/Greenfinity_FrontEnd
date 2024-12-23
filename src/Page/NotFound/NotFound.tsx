@@ -1,6 +1,8 @@
 import { leafHomeLeft, leafHomeRight, Error404 } from '~/Images';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 function NotFound() {
+    const { t } = useTranslation(['notFound']);
     return (
         <>
             <div
@@ -29,7 +31,7 @@ function NotFound() {
                                         p-[1rem] w-[16rem] rounded-[0.8rem] mt-[20px]
                                      "
                         >
-                            Về trang chủ
+                            {t('backHome')}
                         </Link>
                     </div>
                     {/* //item */}

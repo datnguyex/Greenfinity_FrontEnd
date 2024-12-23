@@ -1,12 +1,42 @@
-import { ArrowIntoHaftSquare, Cart, ArrowDown, GoldCoin, SubNavbar } from '~/component/Icon';
-import { Headerleft, logoTitle, UserHeader } from '~/Images';
+import { ArrowIntoHaftSquare, Cart, ArrowDown, GoldCoin, SubNavbar, ArrownDown } from '~/component/Icon';
+import { EnglandLanguage, Headerleft, logoTitle, UserHeader, VietnameseLanguage } from '~/Images';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { locales } from '~/i18n/i18n';
+import { StoreReducer } from '~/Redux/Store';
+import { useSelector } from 'react-redux';
+import { changeLanguageAction } from '~/Redux/Action';
+import { useDispatch } from 'react-redux';
+
 function Header() {
+    const { t } = useTranslation(['header']);
+    const { i18n } = useTranslation();
+    const currentLanguage = locales[i18n.language as keyof typeof locales];
+    // console.log('currentLanguage', i18n.language);
+    const dispatch = useDispatch();
+
+    const languageState = useSelector((state: any) => state.language.language);
+    // console.log('Current language from Redux:', languageState);
     const navigate = useNavigate();
     const navigateHome = () => {
         navigate('/');
     };
+    // console.log('home', t);
+
+    const [useLanguages, setUseLanguages] = useState(true);
+    const handleLanguage = (name: string) => {
+        StoreReducer.dispatch(changeLanguageAction(name));
+    };
+    const handleUseLanguage = () => {
+        setUseLanguages(!useLanguages);
+    };
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+        handleUseLanguage();
+    }, [languageState]);
+
     return (
         <>
             <div className="flex flex-col z-[100] fixed translate-x-[-50%] left-[50%] items-center w-[95%]">
@@ -27,7 +57,7 @@ function Header() {
                                         to="/tram-greez"
                                         className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        TRẠM GREEZ
+                                        {t('station')}
                                     </Link>
                                 </li>
                                 <li>
@@ -35,7 +65,7 @@ function Header() {
                                         to="/the-gioi-tai-sinh"
                                         className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        THẾ GIỚI TÁI SINH
+                                        {t('wordReborn')}
                                     </Link>
                                 </li>
                                 <li>
@@ -43,7 +73,7 @@ function Header() {
                                         to="/thang-dong-gop"
                                         className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        THANG DONG GOP
+                                        {t('contributeLadder')}
                                     </Link>
                                 </li>
                                 <li>
@@ -51,7 +81,7 @@ function Header() {
                                         to="/ban-do"
                                         className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        BAN DO
+                                        {t('map')}
                                     </Link>
                                 </li>
                                 <li>
@@ -59,7 +89,7 @@ function Header() {
                                         to="/mini-game"
                                         className="hover:text-[#009383] h-[100%] flex items-center cursor-pointer text-[1.6rem] px-[1.6rem] py-[1.2rem] text-[#494949] font-bold space: text-nowrap uppercase transition duration-200"
                                     >
-                                        MINI GAME
+                                        {t('miniGame')}
                                     </Link>
                                 </li>
                             </ul>
@@ -74,8 +104,67 @@ function Header() {
                             </button>
                         </div> */}
 
-                        <div className=" mr-5 flex gap-[16px] items-center">
-                            <div className="relative cursor-pointer">
+                        <div className=" mr-5 flex gap-[16px] items-center relative">
+                            {/* item */}
+                            <div className="flex flex-col justify-center items-center">
+                                <button
+                                    className="min-w-[11.4rem]  justify-around rounded-[0.66rem] shadown-header-language flex items-center gap-[0.8rem] 
+                                 bg-[#fff] min-h-[4.6rem] text-[18px] text-[#333333] px-[5px] border-[1px] border-[#009383]
+                                "
+                                    onClick={() => handleUseLanguage()}
+                                >
+                                    <div className="flex items-center gap-[0.8rem] justify-center">
+                                        <img className="w-[2rem] h-[2rem]" src={currentLanguage.image} alt="" />
+                                        <span className="text-[#009383] font-bold">{currentLanguage.name}</span>
+                                    </div>
+                                    <div>
+                                        <ArrownDown />
+                                    </div>
+                                </button>
+                                {useLanguages == true ? (
+                                    <div
+                                        className="min-w-[114px] py-[4px] absolute top-[50px] flex flex-col bg-[#fff]
+                             rounded-[8px] shadown-header-language-chil overflow-hidden transition-all duration-300
+                             "
+                                    >
+                                        {/* //item */}
+
+                                        <div
+                                            className={`font-semibold px-[12px] py-[5px]
+                                    min-h-[32px] text-[14px] cursor-pointer rounded-[4px] items-center flex justify-start ${
+                                        currentLanguage.name == 'VIE'
+                                            ? 'bg-[#6eb7ac] text-[#fff]'
+                                            : 'text-[#6eb7ac] bg-[#fff]'
+                                    }`}
+                                            onClick={() => handleLanguage('VIE')}
+                                        >
+                                            <div className="flex items-center gap-[0.8rem] justify-center">
+                                                <img className="w-[2rem] h-[2rem]" src={VietnameseLanguage} alt="" />
+                                                <span className="font-bold">VIE</span>
+                                            </div>
+                                        </div>
+                                        {/* //item */}
+                                        <div
+                                            className={`font-semibold px-[12px] py-[5px]
+                                    min-h-[32px] text-[14px] cursor-pointer rounded-[4px] items-center flex justify-start ${
+                                        currentLanguage.name == 'ENG'
+                                            ? 'bg-[#6eb7ac] text-[#fff]'
+                                            : 'text-[#6eb7ac] bg-[#fff]'
+                                    }`}
+                                            onClick={() => handleLanguage('ENG')}
+                                        >
+                                            <div className="flex items-center gap-[0.8rem] justify-center">
+                                                <img className="w-[2rem] h-[2rem]" src={EnglandLanguage} alt="" />
+                                                <span className="font-bold">ENG</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <></>
+                                )}
+                            </div>
+                            {/* item */}
+                            <Link to="/gio-hang" className="relative cursor-pointer">
                                 <span className="">
                                     <Cart />
                                 </span>
@@ -86,7 +175,8 @@ function Header() {
                                 >
                                     2
                                 </div>
-                            </div>
+                            </Link>
+                            {/* item */}
                             <div className="flex gap-[9px]">
                                 <Link
                                     to="/trang-ca-nhan"
@@ -125,10 +215,10 @@ function Header() {
                     <SubNavbar />
                     <div className="absolute inset-0 flex h-[100%] justify-center items-center gap-[32px] flex-nowrap">
                         <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold items-center text-[16px] leading-[18.75px] text-[#494949]">
-                            CỬA HÀNG
+                            {t('store')}
                         </p>
                         <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold text-[16px] leading-[18.75px] text-[#494949]">
-                            CÂU CHUYỆN
+                            {t('story')}
                         </p>
                     </div>
                 </div>

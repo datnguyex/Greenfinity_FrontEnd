@@ -1,5 +1,5 @@
 import { banner3 } from '~/Images';
-function Banner3() {
+function Banner3({ t }: { t: (key: string) => string }) {
     return (
         <>
             <div className="h-[1080px] relative">
@@ -8,9 +8,9 @@ function Banner3() {
                     <div className="flex-col justify-start items-start gap-6 flex">
                         <div className="justify-start items-center gap-5 inline-flex">
                             <div className="text-white text-[54px] font-extrabold  uppercase leading-[60px]">
-                                Hãy hành động hôm nay,
+                                {t('tileBannerTop3')}
                                 <br />
-                                kiến tạo trái đất mai sau
+                                {t('tileBannerBottom3')}
                             </div>
                         </div>
                         <p className="text-[19px] leading-[27px] text-[#fff] font-normal">
@@ -31,7 +31,7 @@ function Banner3() {
                             flex justify-center items-center py-[12px] px-[15px]
                             "
                     >
-                        Tìm hiểu thêm
+                        {t('learnMore')}
                     </button>
                 </div>
             </div>

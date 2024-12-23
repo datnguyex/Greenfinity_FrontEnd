@@ -2,8 +2,9 @@ import { leafHomeLeft, leafHomeRight, IconLocationMap } from '~/Images';
 import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { useState } from 'react';
-
+import { useTranslation } from 'react-i18next';
 function Map() {
+    const { t } = useTranslation(['Map']);
     const [selectedDepot, setSelectedDepot] = useState(null);
     function truncateLocation(location: string) {
         let truncated = location.slice(0, 50);
@@ -95,14 +96,14 @@ function Map() {
                         {/* //item */}
                         <div className="text-[1.6rem] gap-[15px] flex flex-col">
                             <div className="text-[6.4rem] font-bold text-center uppercase text-[#009383]">
-                                Bản đồ trạm GreeZ
+                                {t('titleMap')}
                             </div>
                             <div
                                 className="flex items-center mx-auto justify-center bg-[#15bdd7] rounded-[0.8rem] text-[#fff] font-bold
                                 h-[6.8rem] text-center uppercase w-[70%] px-[24px] mb-[33px] text-[4rem]
                             "
                             >
-                                ĐỊA ĐIỂM ĐẶT RECYCLE DEPOT
+                                {t('titleLocation')}
                             </div>
                         </div>
                         {/* //item */}
@@ -124,7 +125,7 @@ function Map() {
                                         className="flex items-center text-[#494949] flex-wrap text-[2rem]
                                     font-bold text-center px-[24px] pb-[5px] justify-center"
                                     >
-                                        Hiện tại đang có
+                                        {t('currentAvailable')}
                                         <span className="opacity-0">.</span>
                                         <div className="text-[#009383]">{listRecycleDepot.length} Recycle Depot</div>
                                     </h2>

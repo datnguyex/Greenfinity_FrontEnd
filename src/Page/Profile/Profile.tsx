@@ -6,12 +6,14 @@ import { EditSign, GoldCoin, HandSaveMoney, Clockclockwise, Tote, ArrowIntoHaftS
 import { FrameIntroduceGift, RimVoucher } from '~/component/Icon/index';
 import { Pagination } from 'antd';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 function Profile() {
+    const { t } = useTranslation(['profile']);
     const vouchers = Array(6).fill({
         title: 'Giải tư - Voucher Quà tặng thời trang Uniqlo',
         quantity: 5,
         method: 'Trao cho (05) người có Điểm Chi Tiêu cao tiếp theo Giải ba.',
-        giftValue: '800.000 đồng/voucher',
+        giftValue: '800.000',
         points: 50,
     });
     return (
@@ -49,7 +51,7 @@ function Profile() {
                                         <span>
                                             <EditSign />
                                         </span>
-                                        Chỉnh sửa thông tin
+                                        {t('editInfomation')}
                                     </Link>
                                 </div>
                                 {/* // */}
@@ -63,7 +65,7 @@ function Profile() {
                                 <div className="h-[104px] flex-col justify-center items-start gap-4 inline-flex">
                                     <div>
                                         <span className="text-[#006e62] text-[20px] font-normal font-['Roboto'] leading-normal tracking-tight">
-                                            Thứ hạng hiện tại:
+                                            {t('currentRank')}
                                         </span>
                                         <span className="text-[#006e62] text-xl font-semibold font-['Roboto'] leading-normal tracking-tight">
                                             {' '}
@@ -75,7 +77,7 @@ function Profile() {
                                     <div className="justify-start items-center gap-0.5 inline-flex">
                                         <div className="flex items-center justify-center gap-[5px]">
                                             <span className="text-[#006e62] text-[20px] font-normal font-['Roboto'] leading-normal tracking-tight">
-                                                Gree coin hiện có:
+                                                {t('currentCoin')}
                                             </span>
 
                                             <span className="text-[#ff0000] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
@@ -88,7 +90,7 @@ function Profile() {
                                     </div>
                                     <div>
                                         <span className="text-[#006e62] text-[20px] font-normal font-['Roboto'] leading-normal tracking-tight">
-                                            Điểm đã chi tiêu tuần này:
+                                            {t('pointsSpent')}
                                         </span>
                                         <span className="text-[#006e62] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
                                             {' '}
@@ -108,7 +110,7 @@ function Profile() {
                                         >
                                             <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
                                                 <HandSaveMoney />
-                                                Lịch sử quyên góp
+                                                {t('donateHistory')}
                                             </div>
                                         </Link>
                                         {/* // */}
@@ -118,7 +120,7 @@ function Profile() {
                                         >
                                             <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
                                                 <Clockclockwise />
-                                                Lịch sử quyên góp
+                                                {t('pointCollectHistoty')}
                                             </div>
                                         </Link>
                                     </div>
@@ -129,14 +131,14 @@ function Profile() {
                                     >
                                         <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
                                             <Tote />
-                                            Sản phẩm của bạn
+                                            {t('myProduct')}
                                         </div>
                                     </Link>
                                     {/* // */}
                                     <div className="cursor-pointer flex-1 mt-[20px] h-12 px-6 py-[24px] bg-[#fff] border border-[#009383] rounded-md justify-center items-center gap-1 flex">
                                         <div className="text-[#009383] text-[16px] font-bold font-['Roboto'] flex justify-center items-center gap-[5px]">
                                             <ArrowIntoHaftSquare />
-                                            Đăng xuất
+                                            {t('logout')}
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +153,7 @@ function Profile() {
                                 
                                  "
                             >
-                                Thể lệ chương trình
+                                {t('rules')}
                             </Link>
                             <div className="flex justify-between items-center mt-[36px]">
                                 {/* // */}
@@ -160,10 +162,10 @@ function Profile() {
                                     <div className="absolute top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]">
                                         <div className="w-[350px] h-[66px]">
                                             <div className="text-center text-white text-[30px] font-black font-['Roboto'] uppercase leading-[40.80px]">
-                                                nhập hội nuôi rồng
+                                                {t('dragonClub')}
                                             </div>
                                             <div className="text-center text-white text-2xl font-semibold font-['Roboto'] leading-[28.80px]">
-                                                Nhận quà hấp dẫn
+                                                {t('getAttactGift')}
                                             </div>
                                         </div>
                                     </div>
@@ -174,10 +176,10 @@ function Profile() {
                                     <div className="absolute top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]">
                                         <div className="w-[350px] h-[66px]">
                                             <div className="text-center text-white text-[30px] font-black font-['Roboto'] uppercase leading-[40.80px]">
-                                                nhập hội nuôi rồng
+                                                {t('voucherGift')}
                                             </div>
                                             <div className="text-center text-white text-2xl font-semibold font-['Roboto'] leading-[28.80px]">
-                                                Nhận quà hấp dẫn
+                                                {t('changeNow')}
                                             </div>
                                         </div>
                                     </div>
@@ -205,32 +207,33 @@ function Profile() {
                                                 <div className="px-4 py-5 w-[90%] left-[50%] translate-x-[-50%] top-[337px] absolute bg-white rounded-xl border border-[#66beb5] flex-col justify-center items-start gap-2.5 inline-flex">
                                                     <div className=" flex-col over justify-start items-start gap-3 flex">
                                                         <div className="self-stretch text-[#006e62] text-[21px] font-semibold font-['Roboto'] leading-relaxed">
-                                                            {voucher.title}
+                                                            {t('rank')}
                                                         </div>
                                                         <div className="self-stretch">
                                                             <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
-                                                                Số lượng quà mỗi tuần:
+                                                                {t('numberPerWeek')}
                                                             </span>
                                                             <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
                                                                 {voucher.quantity}
                                                                 <br />
                                                             </span>
                                                             <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
-                                                                Cách thức đổi quà:
+                                                                {t('howRedeemGift')}
                                                             </span>
                                                             <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
-                                                                {voucher.method}
+                                                                {t('contentHowRedeem')}
                                                                 <br />
                                                             </span>
                                                             <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
-                                                                Giá trị quà tặng(+VAT):
+                                                                {t('giftValue')}
                                                             </span>
                                                             <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
-                                                                {voucher.giftValue}
+                                                                {voucher.giftValue} <span className="op"></span>{' '}
+                                                                {t('vndVoucher')}
                                                             </span>
                                                             <div className="self-stretch w-[100%] h-10 px-8 py-6 bg-[#009383] rounded-lg justify-center items-center gap-2.5 inline-flex mt-[5px]">
                                                                 <div className="text-center text-white text-[18px] font-semibold font-['Roboto'] leading-snug">
-                                                                    Đổi Voucher
+                                                                    {t('changeGift')}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -245,7 +248,7 @@ function Profile() {
                                                         </div>
                                                     </div>
                                                     <div className=" text-white text-[15px] font-semibold font-['Roboto'] leading-[18px] text-nowrap">
-                                                        {voucher.points} điểm
+                                                        {voucher.points} {t('poin')}
                                                     </div>
                                                 </div>
                                             </div>
@@ -272,12 +275,12 @@ function Profile() {
                                 <div className="p-[3.80px] left-[89px] top-0 absolute bg-gradient-to-l from-[#009383] via-[#018273] to-[#008b7c] rounded-[95px] justify-center items-center inline-flex">
                                     <div className="w-[186.20px] h-[53.20px] px-[29.45px] py-[14.72px] bg-white rounded-[27px] justify-center items-center flex">
                                         <div className="text-center text-[#009383] text-[19px] font-bold font-['Inter']">
-                                            Săn Voucher
+                                            {t('voucherHunting')}
                                         </div>
                                     </div>
                                     <div className="w-[186.20px] h-[53.20px] px-[29.45px] py-[14.72px] rounded-[27px] justify-center items-center flex">
                                         <div className="text-center text-white text-[19px] font-semibold font-['Inter']">
-                                            Voucher của tôi
+                                            {t('myVoucer')}
                                         </div>
                                     </div>
                                 </div>
