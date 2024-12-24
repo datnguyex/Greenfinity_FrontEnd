@@ -17,6 +17,9 @@ import NotFound from './Page/NotFound/NotFound';
 import Rules from './Page/Rules/Rules';
 import Cart from './Page/Cart/Cart';
 import ShippingInfomation from './Page/Cart/ShippingInfomation/ShippingInfomation';
+import Deposit from './Page/Deposit/deposit';
+import PaymentMethod from './Page/Deposit/PaymentMethod/PaymentMethod';
+import TransactionResult from './Page/Deposit/TransactionResult/TransactionResult';
 export default function App() {
     return (
         <Router>
@@ -40,6 +43,10 @@ export default function App() {
                 {/* // */}
                 <Route path="gio-hang" element={<Cart />} />
                 <Route path="thong-tin-van-chuyen" element={<ShippingInfomation />} />
+                <Route path="nap-tien" element={<Deposit />} />
+                {/* // */}
+                <Route path="phuong-thuc-thanh-toan" element={<PaymentMethod />} />
+                <Route path="ket-qua-nap-tien" element={<TransactionResult />} />
             </Routes>
         </Router>
     );

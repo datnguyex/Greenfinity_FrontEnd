@@ -1,4 +1,13 @@
-export { FrameIntroduceGift, RimVoucher } from './BigIcon';
+export {
+    FrameIntroduceGift,
+    RimVoucher,
+    OneCoinAndStarts,
+    TwoCoinAndStarts,
+    ThreeCoinAndStarts,
+    APilOfCoinAndStart,
+    TwoPilOfCoinAndStart,
+    ThreeilOfCoinAndStart,
+} from './BigIcon';
 
 export {
     ArrowIntoHaftSquare,
@@ -25,4 +34,17 @@ export {
     CartSad,
     LeafCateProduct,
     ArrownDown,
+    DepositLineStep,
+    CheckDeposit,
+    CheckMethodPayment,
+    ApplePayLogo,
+    MomoLogo,
+    VNPaylogo,
+    AmazonePay,
+    DomesticCard,
+    VisaMasterCardLogo,
+    FrameMethodPaymentBottom,
+    CheckWhite,
+    CircleAnimaSussesTransac,
+    CircleAnimafailTransac,
 } from './Icon';

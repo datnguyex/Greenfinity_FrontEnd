@@ -1,0 +1,11 @@
+{
+    "inputOTP": "Enter OPT code",
+    "optSent": "An OPT Code have been sent to the number",
+    "optNotValid": "OPT code invalid",
+    "notReciveOPT": "Bạn chưa nhận được mã ?",
+    "timeRemain": "Thời gian còn lại",
+    "resend": "Gửi lại mã",
+    "confirm": "Xác nhận",
+    "minute": "Minute",
+    "second": "Second"
+}

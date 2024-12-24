@@ -29,6 +29,14 @@ import ShippingInfomationVIE from './Locales/ShippingInfomation/ShippingInfomati
 import ShippingInfomationENG from './Locales/ShippingInfomation/ShippingInfomationENG.json';
 import HomeVIE from './Locales/Home/HomeVIE.json';
 import HomeENG from './Locales/Home/HomeENG.json';
+import DepositENG from './Locales/Deposit/DepositENG.json';
+import DepositVIE from './Locales/Deposit/DepositVIE.json';
+import signUpVIE from './Locales/SignUp/SignUpVIE.json';
+import signUpENG from './Locales/SignUp/SignUpENG.json';
+import signInVIE from './Locales/Login/LoginVIE.json';
+import signInENG from './Locales/Login/LoginENG.json';
+import optSendingVIE from './Locales/OPTSending/OPTSendingVIE.json';
+import optSendingENG from './Locales/OPTSending/OPTSendingENG.json';
 export const locales = {
     ENG: EnglandIfomation,
     VIE: VietnameseInfomation,
@@ -50,6 +58,10 @@ const resources = {
         Cart: cartENG,
         shippingInfomation: ShippingInfomationENG,
         home: HomeENG,
+        Deposit: DepositENG,
+        signUp: signUpENG,
+        signIn: signInENG,
+        optSending: optSendingENG,
     },
     VIE: {
         header: HeaderVIE,
@@ -66,6 +78,10 @@ const resources = {
         Cart: cartVIE,
         shippingInfomation: ShippingInfomationVIE,
         home: HomeVIE,
+        Deposit: DepositVIE,
+        signUp: signUpVIE,
+        signIn: signInVIE,
+        optSending: optSendingVIE,
     },
 };
 
@@ -87,6 +103,10 @@ i18n.use(initReactI18next).init({
         'Cart',
         'shippingInfomation',
         'home',
+        'Deposit',
+        'signUp',
+        'signIn',
+        'optSending',
     ],
     interpolation: {
         escapeValue: false,

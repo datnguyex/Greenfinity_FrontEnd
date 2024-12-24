@@ -1,0 +1,11 @@
+{
+    "inputOTP": "Nhập OTP",
+    "optSent": "Một mã OTP vừa được gửi vào số",
+    "optNotValid": "Mã OTP không hợp lệ",
+    "notReciveOPT": "Bạn chưa nhận được mã?",
+    "timeRemain": "Thời gian còn lại",
+    "resend": "Gửi lại mã",
+    "confirm": "Xác nhận",
+    "minute": "Phút",
+    "second": "Giây"
+}

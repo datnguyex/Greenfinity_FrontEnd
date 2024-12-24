@@ -14,9 +14,11 @@ import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import Gift from '~/component/Gift/Gift';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 function WorldRebirth() {
     const { t } = useTranslation(['WorldRebirth']);
+
     return (
         <>
             <Header />
