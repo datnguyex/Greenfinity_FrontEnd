@@ -1,9 +1,16 @@
 import { flowerDown, flowerUp, imgTitleWeb } from '~/Images';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function Login() {
     const { t } = useTranslation(['signIn']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <div className="w-[100vw] h-[100vh] bg-[#CCE9E6] flex justify-center items-center">

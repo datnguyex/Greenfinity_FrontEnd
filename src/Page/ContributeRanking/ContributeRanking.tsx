@@ -3,9 +3,16 @@ import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import Contribute from '~/component/Contribute/Contribute';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function ContributeRanking() {
     const { t } = useTranslation(['ContributeRanking']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

@@ -37,6 +37,12 @@ import signInVIE from './Locales/Login/LoginVIE.json';
 import signInENG from './Locales/Login/LoginENG.json';
 import optSendingVIE from './Locales/OPTSending/OPTSendingVIE.json';
 import optSendingENG from './Locales/OPTSending/OPTSendingENG.json';
+import paymentMethodENG from './Locales/PaymentMethod/PaymentMethodENG.json';
+import paymentMethodVIE from './Locales/PaymentMethod/PaymentMethodVIE.json';
+import transactionResulttENG from './Locales/TransactionResult/TransactionResulttENG.json';
+import transactionResultVIE from './Locales/TransactionResult/TransactionResultVIE.json';
+import RuleENG from './Locales/Rules/RulesENG.json';
+import RuleVIE from './Locales/Rules/RulesVIE.json';
 export const locales = {
     ENG: EnglandIfomation,
     VIE: VietnameseInfomation,
@@ -49,7 +55,7 @@ const resources = {
         GreezStaion: GreezStationENG,
         WorldRebirth: WorldRebirthENG,
         ContributeRanking: ContributeRankingENG,
-        Map: MapVIE,
+        Map: MapENG,
         profile: profileENG,
         updateProfile: updateProfileENG,
         CoinHistory: CoinHistoryENG,
@@ -62,6 +68,9 @@ const resources = {
         signUp: signUpENG,
         signIn: signInENG,
         optSending: optSendingENG,
+        paymentMethod: paymentMethodENG,
+        transactionResult: transactionResulttENG,
+        Rule: RuleENG,
     },
     VIE: {
         header: HeaderVIE,
@@ -69,7 +78,7 @@ const resources = {
         GreezStaion: GreezStationVIE,
         WorldRebirth: WorldRebirthVIE,
         ContributeRanking: ContributeRankingVIE,
-        Map: MapENG,
+        Map: MapVIE,
         profile: profileVIE,
         updateProfile: updateProfileVIE,
         CoinHistory: CoinHistoryVIE,
@@ -82,6 +91,9 @@ const resources = {
         signUp: signUpVIE,
         signIn: signInVIE,
         optSending: optSendingVIE,
+        paymentMethod: paymentMethodVIE,
+        transactionResult: transactionResultVIE,
+        Rule: RuleVIE,
     },
 };
 
@@ -107,6 +119,9 @@ i18n.use(initReactI18next).init({
         'signUp',
         'signIn',
         'optSending',
+        'paymentMethod',
+        'transactionResult',
+        'Rule',
     ],
     interpolation: {
         escapeValue: false,

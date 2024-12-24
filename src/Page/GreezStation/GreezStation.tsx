@@ -11,9 +11,16 @@ import {
 import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function GreezStation() {
     const { t } = useTranslation(['GreezStaion']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header></Header>

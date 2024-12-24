@@ -1,0 +1,13 @@
+{
+    "deposit": "Deposit",
+    "pay": "Pay money",
+    "finish": "Finish",
+    "continue": "Continue",
+    "resultTransact": "Transaction Result",
+    "textReultFail": "Transaction Failed",
+    "textReultSuccess": "Successful Transaction",
+    "contact": "Contact support",
+    "viewCurrentCoin": "View current GreeCoin balance",
+    "continueTrading": "Continue trading",
+    "timeTrading": "Payment time"
+}

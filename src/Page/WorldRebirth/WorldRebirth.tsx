@@ -15,9 +15,17 @@ import Footer from '~/component/Layout/Footer/Footer';
 import Gift from '~/component/Gift/Gift';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function WorldRebirth() {
     const { t } = useTranslation(['WorldRebirth']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
 
     return (
         <>

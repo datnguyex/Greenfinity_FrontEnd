@@ -1,8 +1,17 @@
 import { leafHomeLeft, leafHomeRight, Error404 } from '~/Images';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
 function NotFound() {
     const { t } = useTranslation(['notFound']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
+
     return (
         <>
             <div

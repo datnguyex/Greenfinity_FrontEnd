@@ -5,8 +5,13 @@ import { Bin, Minus, Plus, CartSad } from '~/component/Icon';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 function Cart() {
     const { t } = useTranslation(['Cart']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
     const products = [
         {
             id: 1,
@@ -54,6 +59,9 @@ function Cart() {
     const handleIncrease = () => {
         setCount(count + 1);
     };
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
 
     return (
         <>

@@ -6,8 +6,6 @@ import {
     TwoCoinAndStarts,
     ThreeCoinAndStarts,
     APilOfCoinAndStart,
-    TwoPilOfCoinAndStart,
-    ThreeilOfCoinAndStart,
     GoldCoin,
     CheckDeposit,
 } from '~/component/Icon';
@@ -15,13 +13,20 @@ import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function Deposit() {
     const { t } = useTranslation(['Deposit']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
     const [amountDeposited, setAmountDeposited] = useState();
     const handleAmountDeposited = (value: any) => {
         setAmountDeposited(value);
     };
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />
@@ -33,7 +38,7 @@ function Deposit() {
                     backgroundSize: '10% auto, 10% auto',
                 }}
             >
-                <div className="my-[50px]">
+                <div className="my-[120px]">
                     <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%] flex flex-col justify-center">
                         {/* //item */}
                         <div className="w-[677px] h-11 justify-center items-center inline-flex mx-auto">

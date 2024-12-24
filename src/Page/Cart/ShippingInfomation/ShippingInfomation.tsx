@@ -7,8 +7,13 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useFetcher } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+
 function ShippingInfomation() {
     const { t } = useTranslation(['shippingInfomation']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
     const [shipInfo, setShipInfo] = useState({
         type: true,
         name: '',
@@ -167,7 +172,9 @@ function ShippingInfomation() {
         fetchDistrict();
     }, [provine]);
     useEffect(() => {}, []);
-
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

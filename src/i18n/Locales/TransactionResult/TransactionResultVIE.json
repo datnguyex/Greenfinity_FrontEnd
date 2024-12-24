@@ -1,0 +1,13 @@
+{
+    "deposit": "Nạp tiền",
+    "pay": "Thanh toán",
+    "finish": "Hoàn tất",
+    "continue": "Tiếp tục",
+    "resultTransact": "Kết quả giao dịch",
+    "textReultFail": "Giao dịch không thành công",
+    "textReultSuccess": "Giao dịch thành công",
+    "contact": "Liên hệ hỗ trợ",
+    "viewCurrentCoin": "Xem số GreeCoin hiện có",
+    "continueTrading": "Tiếp tục giao dịch",
+    "timeTrading": "Thời gian thanh toán"
+}

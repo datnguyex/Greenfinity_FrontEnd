@@ -3,9 +3,16 @@ import { GoldCoin } from '~/component/Icon';
 import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 function CoinHistory() {
     const { t } = useTranslation(['CoinHistory']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
     const items = [1, 2, 3];
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

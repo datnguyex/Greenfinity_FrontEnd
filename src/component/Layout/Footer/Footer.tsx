@@ -1,12 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import { locales } from '~/i18n/i18n';
 import { LogoFooterText, LogoFooterImages, Facebook, Messenger, Youtube } from '~/component/Icon'; // Đảm bảo import đúng tên component
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 function Footer() {
     const { t } = useTranslation(['footer']);
+    const languageState = useSelector((state: any) => state.language.language);
     const { i18n } = useTranslation();
-    const currentLanguage = locales[i18n.language as keyof typeof locales];
-    console.log('currentLangugae', currentLanguage);
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
+
     return (
         <>
             <div className="w-[100%] bg-white h-[341px] fiter-footer">

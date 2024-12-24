@@ -6,8 +6,14 @@ import { EditSign } from '~/component/Icon';
 import { useState } from 'react';
 import { RoundedMan1, RoundedMan2, RoundedWoman1, RoundedWoman2, RoundedWoman3, RoundedWoman4 } from '~/Images';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 function Profile() {
     const { t } = useTranslation(['updateProfile']);
+
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
     const [infoUser, setInfoUser] = useState({
         name: 'Nguyễn Thành Đạt',
         gender: 'male',
@@ -69,7 +75,9 @@ function Profile() {
             bigAvatar: bigAvatar,
         }));
     };
-
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

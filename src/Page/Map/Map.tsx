@@ -3,7 +3,11 @@ import Header from '~/component/Layout/Header/Header';
 import Footer from '~/component/Layout/Footer/Footer';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 function Map() {
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
     const { t } = useTranslation(['Map']);
     const [selectedDepot, setSelectedDepot] = useState(null);
     function truncateLocation(location: string) {
@@ -79,7 +83,9 @@ function Map() {
             location: 'Bình Phú, Phường 11, 6, Hồ Chí Minh',
         },
     ];
-
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

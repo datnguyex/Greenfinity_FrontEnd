@@ -7,8 +7,13 @@ import { FrameIntroduceGift, RimVoucher } from '~/component/Icon/index';
 import { Pagination } from 'antd';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 function Profile() {
     const { t } = useTranslation(['profile']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
     const vouchers = Array(6).fill({
         title: 'Giải tư - Voucher Quà tặng thời trang Uniqlo',
         quantity: 5,
@@ -16,6 +21,9 @@ function Profile() {
         giftValue: '800.000',
         points: 50,
     });
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

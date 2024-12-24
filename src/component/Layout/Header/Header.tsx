@@ -8,17 +8,14 @@ import { locales } from '~/i18n/i18n';
 import { StoreReducer } from '~/Redux/Store';
 import { useSelector } from 'react-redux';
 import { changeLanguageAction } from '~/Redux/Action';
-import { useDispatch } from 'react-redux';
 
 function Header() {
     const { t } = useTranslation(['header']);
     const { i18n } = useTranslation();
     const currentLanguage = locales[i18n.language as keyof typeof locales];
-    // console.log('currentLanguage', i18n.language);
-    const dispatch = useDispatch();
 
     const languageState = useSelector((state: any) => state.language.language);
-    // console.log('Current language from Redux:', languageState);
+
     const navigate = useNavigate();
     const navigateHome = () => {
         navigate('/');

@@ -4,8 +4,14 @@ import { Pagination } from 'antd';
 import './Item.css';
 import { leafHomeLeft, leafHomeRight, MyItem } from '~/Images';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
 function Item() {
     const { t } = useTranslation(['CoinHistory']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
     const data = [
         { name: 'Jasmine', imageSrc: MyItem },
         { name: 'Lily', imageSrc: MyItem },
@@ -24,6 +30,9 @@ function Item() {
     const handlePageChange = (page: any) => {
         console.log(`Current page: ${page}`);
     };
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />

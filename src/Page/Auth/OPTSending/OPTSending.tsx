@@ -4,9 +4,16 @@ import { flowerDown, flowerUp, imgTitleWeb } from '~/Images';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 // const cx = classNames.bind(style);
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 function OPTSending() {
     const { t } = useTranslation(['optSending']);
     const [optValid, setOptValid] = useState(false);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <div className="w-[100vw] h-[100vh] bg-[#CCE9E6] flex justify-center items-center">
