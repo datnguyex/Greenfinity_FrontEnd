@@ -5,7 +5,7 @@ import { SunflowerProduct, SharkProduct, OreonProduct, CatChair, Headerleft, dum
 import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner';
 import Slider from 'react-slick';
 import StoreBanner from '~/component/Banner/StoreBanner/StoreBanner';
-import { ArrowLeft, ArrowRight, LeafBlue, LeafPupple } from '~/component/Icon';
+import { ArrowLeft, ArrowRight, Cart, LeafBlue, LeafPupple } from '~/component/Icon';
 import { useRef, useState } from 'react';
 import AllProductStore from '~/component/AllProductStore/AllProductStore';
 
@@ -211,6 +211,9 @@ function Store() {
                                     src={product.image}
                                     alt=""
                                 />
+                                <div className="absolute right-7 top-7">
+                                    <Cart />
+                                </div>
                                 <div className="w-[277px] h-[178.53px] px-4 pt-3 pb-5 left-[12px] top-[220.47px] absolute bg-white rounded-xl border border-[#66beb5] flex-col justify-center items-start gap-4 inline-flex">
                                     <div className="self-stretch h-[82.53px] flex-col justify-start items-start gap-4 flex">
                                         <div className="self-stretch h-[52.53px] flex-col justify-start items-start gap-3.5 flex">

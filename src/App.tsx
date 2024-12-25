@@ -21,6 +21,7 @@ import Deposit from './Page/Deposit/deposit';
 import PaymentMethod from './Page/Deposit/PaymentMethod/PaymentMethod';
 import TransactionResult from './Page/Deposit/TransactionResult/TransactionResult';
 import Store from './Page/Store/Store';
+import ProductDetail from './Page/ProductDetail/ProductDetail';
 export default function App() {
     return (
         <Router>
@@ -49,6 +50,7 @@ export default function App() {
                 <Route path="phuong-thuc-thanh-toan" element={<PaymentMethod />} />
                 <Route path="ket-qua-nap-tien" element={<TransactionResult />} />
                 <Route path="cua-hang" element={<Store />} />
+                <Route path="chi-tiet-san-pham" element={<ProductDetail />} />
             </Routes>
         </Router>
     );

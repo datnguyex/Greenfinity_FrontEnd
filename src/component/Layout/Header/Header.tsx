@@ -211,9 +211,12 @@ function Header() {
                 <div className="w-[97%] flex max-h-[72px] mt-[-10px] relative overflow-hidden">
                     <SubNavbar />
                     <div className="absolute inset-0 flex h-[100%] justify-center items-center gap-[32px] flex-nowrap">
-                        <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold items-center text-[16px] leading-[18.75px] text-[#494949]">
+                        <Link
+                            to={'/cua-hang'}
+                            className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold items-center text-[16px] leading-[18.75px] text-[#494949]"
+                        >
                             {t('store')}
-                        </p>
+                        </Link>
                         <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold text-[16px] leading-[18.75px] text-[#494949]">
                             {t('story')}
                         </p>

@@ -1,0 +1,4 @@
+/* Cập nhật hình ảnh trong phần tử hiện tại */
+.slider-detail-product .slick-current .item {
+    opacity: 1 !important;
+}

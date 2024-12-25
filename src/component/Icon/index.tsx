@@ -51,4 +51,6 @@ export {
     LeafPupple,
     SearchGreen,
     PlustGreen,
+    YellowStar,
+    HalfAYelloStar,
 } from './Icon';

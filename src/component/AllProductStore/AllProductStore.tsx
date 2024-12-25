@@ -1,6 +1,6 @@
 import { OreonProduct, CatChair, dumplingsProduct, Headerleft } from '~/Images';
 import { useState } from 'react';
-import { LeafPupple } from '../Icon';
+import { Cart, LeafPupple } from '../Icon';
 function AllProductStore() {
     const products2 = [
         {
@@ -343,6 +343,9 @@ function AllProductStore() {
                                 src={product.image}
                                 alt=""
                             />
+                            <div className="absolute right-7 top-7">
+                                <Cart />
+                            </div>
                             <div className="w-[277px] h-[178.53px] px-4 pt-3 pb-5 left-[12px] top-[220.47px] absolute bg-white rounded-xl border border-[#66beb5] flex-col justify-center items-start gap-4 inline-flex">
                                 <div className="self-stretch h-[82.53px] flex-col justify-start items-start gap-4 flex">
                                     <div className="self-stretch h-[52.53px] flex-col justify-start items-start gap-3.5 flex">
