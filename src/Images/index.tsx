@@ -53,3 +53,7 @@ export { default as MoMoLogo } from './Items/momoLogo.png';
 export { default as VNPayLogo } from './Items/vnpayLogo.png';
 export { default as VietnameseLanguage } from './Items/vietnamsesLanguage.png';
 export { default as EnglandLanguage } from './Items/EnglandLanguage.png';
+export { default as SunflowerProduct } from './Items/SunflowerProduct.png';
+export { default as OreonProduct } from './Items/oreonProduct.png';
+export { default as CatChair } from './Items/catChair.png';
+export { default as dumplingsProduct } from './Items/dumplingsProduct.png';

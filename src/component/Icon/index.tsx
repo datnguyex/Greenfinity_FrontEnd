@@ -47,4 +47,8 @@ export {
     CheckWhite,
     CircleAnimaSussesTransac,
     CircleAnimafailTransac,
+    LeafBlue,
+    LeafPupple,
+    SearchGreen,
+    PlustGreen,
 } from './Icon';

@@ -7,10 +7,10 @@ import './Home.css';
 import Slider from 'react-slick';
 import { ArrowLeft, ArrowRight } from '~/component/Icon';
 import { leafHomeRight, leafHomeLeft, Headerleft, plasticbottle, AluminumCan } from '~/Images';
-import Banner1 from '~/component/Banner/Banner1';
-import Banner2 from '~/component/Banner/Banner2';
+import Banner1 from '~/component/Banner/HomeBanner/Banner1';
+import Banner2 from '~/component/Banner/HomeBanner/Banner2';
+import Banner3 from '~/component/Banner/HomeBanner/Banner3';
 import Contribute from '~/component/Contribute/Contribute';
-import Banner3 from '~/component/Banner/Banner3';
 import { useTranslation } from 'react-i18next';
 import Gift from '~/component/Gift/Gift';
 
@@ -106,7 +106,7 @@ function HomePage() {
     return (
         <>
             <Header />
-            <div className="max-w-[100vw] bg-red-50">
+            <div className="max-w-[100vw]">
                 <div className="home-banner-slider">
                     <Slider ref={sliderRef} {...settings}>
                         <Banner3 t={t} />

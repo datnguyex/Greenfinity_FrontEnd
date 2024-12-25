@@ -20,6 +20,7 @@ import ShippingInfomation from './Page/Cart/ShippingInfomation/ShippingInfomatio
 import Deposit from './Page/Deposit/deposit';
 import PaymentMethod from './Page/Deposit/PaymentMethod/PaymentMethod';
 import TransactionResult from './Page/Deposit/TransactionResult/TransactionResult';
+import Store from './Page/Store/Store';
 export default function App() {
     return (
         <Router>
@@ -47,6 +48,7 @@ export default function App() {
                 {/* // */}
                 <Route path="phuong-thuc-thanh-toan" element={<PaymentMethod />} />
                 <Route path="ket-qua-nap-tien" element={<TransactionResult />} />
+                <Route path="cua-hang" element={<Store />} />
             </Routes>
         </Router>
     );

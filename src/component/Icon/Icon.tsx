@@ -823,3 +823,71 @@ export const CircleAnimafailTransac: React.FC<IconType> = ({ width = '6.7rem', h
         </svg>
     );
 };
+export const LeafBlue: React.FC<IconType> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width={width} height={height} viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.03484 13.0743C0.774838 13.7429 0.719104 14.337 0.71109 14.6624C0.707394 14.8106 0.589986 14.928 0.441429 14.9321C0.285251 14.936 0.152699 14.8128 0.144875 14.6568C0.0893448 13.5534 0.00416262 11.4158 2.39565 8.77635C5.27754 5.59574 8.26126 7.22143 10.4149 3.97562C10.4149 3.97562 9.20438 5.40076 4.8727 6.122C1.44392 6.69261 0.258568 10.1213 0.229993 10.1769C0.219598 10.1288 -0.422023 7.03921 1.97636 4.64083C4.64471 1.97247 9.30747 4.31219 11.9663 0.818152C11.9663 0.818152 13.5855 6.32996 10.1951 9.72034C7.95714 11.9583 5.11627 11.6577 2.94045 11.7296C2.08821 11.7576 1.34204 12.2853 1.03484 13.0743Z"
+                fill="#0085FF"
+            />
+        </svg>
+    );
+};
+
+export const LeafPupple: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.03484 12.8087C0.774838 13.4773 0.719104 14.0714 0.71109 14.3968C0.707394 14.545 0.589986 14.6624 0.441429 14.6664C0.285251 14.6704 0.152699 14.5472 0.144875 14.3912C0.0893448 13.2878 0.00416262 11.1502 2.39565 8.51073C5.27754 5.33011 8.26126 6.95581 10.4149 3.70999C10.4149 3.70999 9.20438 5.13513 4.8727 5.85637C1.44392 6.42699 0.258568 9.8557 0.229993 9.91125C0.219598 9.86319 -0.422023 6.77359 1.97636 4.3752C4.64471 1.70685 9.30747 4.04656 11.9663 0.552527C11.9663 0.552527 13.5855 6.06433 10.1951 9.45471C7.95714 11.6927 5.11627 11.3921 2.94045 11.464C2.08821 11.492 1.34204 12.0197 1.03484 12.8087Z"
+                fill="#9644FF"
+            />
+        </svg>
+    );
+};
+export const SearchGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                stroke="#009383"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M17.5 17.5L13.875 13.875"
+                stroke="#009383"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+export const PlustGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_8317_32219)">
+                <path
+                    d="M3.75 12H20.25"
+                    stroke="#009383"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M12 3.75V20.25"
+                    stroke="#009383"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+            <defs>
+                <clipPath id="clip0_8317_32219">
+                    <rect width="24" height="24" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    );
+};
