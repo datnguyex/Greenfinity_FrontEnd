@@ -58,4 +58,5 @@ export {
     ImageChoosen,
     LineComment,
     TitleFundList,
+    HorizonTwoCircle,
 } from './Icon';

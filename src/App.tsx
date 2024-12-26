@@ -23,7 +23,7 @@ import TransactionResult from './Page/Deposit/TransactionResult/TransactionResul
 import Store from './Page/Store/Store';
 import ProductDetail from './Page/ProductDetail/ProductDetail';
 import Forum from './Page/Forum/Forum';
-
+import ForumProfile from './Page/ForumProfile/ForumProfile';
 export default function App() {
     return (
         <Router>
@@ -55,6 +55,7 @@ export default function App() {
                 <Route path="chi-tiet-san-pham" element={<ProductDetail />} />
                 {/* // */}
                 <Route path="dien-dan" element={<Forum />} />
+                <Route path="ho-so-dien-dan" element={<ForumProfile />} />
             </Routes>
         </Router>
     );
