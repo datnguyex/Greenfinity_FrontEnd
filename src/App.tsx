@@ -22,6 +22,8 @@ import PaymentMethod from './Page/Deposit/PaymentMethod/PaymentMethod';
 import TransactionResult from './Page/Deposit/TransactionResult/TransactionResult';
 import Store from './Page/Store/Store';
 import ProductDetail from './Page/ProductDetail/ProductDetail';
+import Forum from './Page/Forum/Forum';
+
 export default function App() {
     return (
         <Router>
@@ -51,6 +53,8 @@ export default function App() {
                 <Route path="ket-qua-nap-tien" element={<TransactionResult />} />
                 <Route path="cua-hang" element={<Store />} />
                 <Route path="chi-tiet-san-pham" element={<ProductDetail />} />
+                {/* // */}
+                <Route path="dien-dan" element={<Forum />} />
             </Routes>
         </Router>
     );

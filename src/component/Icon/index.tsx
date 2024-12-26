@@ -53,4 +53,9 @@ export {
     PlustGreen,
     YellowStar,
     HalfAYelloStar,
+    MagnifyingGlass,
+    ListCircleAndDash,
+    ImageChoosen,
+    LineComment,
+    TitleFundList,
 } from './Icon';

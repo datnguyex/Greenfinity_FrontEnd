@@ -57,3 +57,5 @@ export { default as SunflowerProduct } from './Items/SunflowerProduct.png';
 export { default as OreonProduct } from './Items/oreonProduct.png';
 export { default as CatChair } from './Items/catChair.png';
 export { default as dumplingsProduct } from './Items/dumplingsProduct.png';
+export { default as capybara } from './Items/capybara.jpg';
+export { default as FundList } from './Items/FundList.png';

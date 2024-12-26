@@ -1,6 +1,7 @@
 import { OreonProduct, CatChair, dumplingsProduct, Headerleft } from '~/Images';
 import { useState } from 'react';
 import { Cart, LeafPupple } from '../Icon';
+import { Link } from 'react-router-dom';
 function AllProductStore() {
     const products2 = [
         {
@@ -363,9 +364,12 @@ function AllProductStore() {
                                         {product.price}
                                     </div>
                                 </div>
-                                <div className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden">
+                                <Link
+                                    to={'/chi-tiet-san-pham'}
+                                    className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
+                                >
                                     <div className="text-white text-[17px] font-bold font-['Roboto']">Mua ngay</div>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     ))}
