@@ -67,4 +67,5 @@ export {
     ArrowLeftWhite,
     ArrowLeftBlack,
     MagnifyingGlassBlack,
+    BarCode,
 } from './Icon';
