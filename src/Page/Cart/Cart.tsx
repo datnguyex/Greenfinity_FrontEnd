@@ -76,9 +76,7 @@ function Cart() {
             >
                 <div className="my-[140px]">
                     <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%]">
-                        <div className="text-[#006e62] text-[32px] font-semibold font-['Roboto'] mb-[15px]">
-                            {t('title')}
-                        </div>
+                        <div className="text-[#006e62] text-[32px] font-semibold mb-[15px]">{t('title')}</div>
                         <div className="flex justify-center gap-[20px]">
                             {/* //chil */}
 
@@ -90,20 +88,20 @@ function Cart() {
                                             type="checkbox"
                                             className="appearance-none relative rounded w-[20px] h-[20px] border-[1px] border-solid border-[#009383] checked:bg-[#009383]"
                                         />
-                                        <div className="text-black text-[18px] font-normal font-['Roboto'] leading-normal">
+                                        <div className="text-black text-[18px] font-normal leading-normal">
                                             {t('allProducts')}
                                         </div>
                                     </div>
-                                    <div className="left-[400px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
+                                    <div className="left-[400px] top-[22.50px] absolute text-black text-[18px] font-normal leading-normal">
                                         {t('price')}
                                     </div>
-                                    <div className="left-[550px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
+                                    <div className="left-[550px] top-[22.50px] absolute text-black text-[18px] font-normal leading-normal">
                                         {t('quantity')}
                                     </div>
-                                    <div className="left-[700px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
+                                    <div className="left-[700px] top-[22.50px] absolute text-black text-[18px] font-normal leading-normal">
                                         {t('totalPrice')}
                                     </div>
-                                    <div className="left-[840px] top-[22.50px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
+                                    <div className="left-[840px] top-[22.50px] absolute text-black text-[18px] font-normal leading-normal">
                                         <Bin />
                                     </div>
                                 </div>
@@ -121,7 +119,7 @@ function Cart() {
                                             <img className="w-[100%] h-[100%]" src={SharkProduct} alt={product.name} />
                                         </div>
                                         <div className="left-[165px] absolute flex-col justify-start items-start gap-4">
-                                            <div className="max-w-[220px] text-[#373737] text-[18px] font-semibold font-['Roboto'] leading-normal">
+                                            <div className="max-w-[220px] text-[#373737] text-[18px] font-semibold leading-normal">
                                                 {product.name}
                                             </div>
                                             <div className="h-7 px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
@@ -130,7 +128,7 @@ function Cart() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="left-[400px] absolute text-[#009383] text-[20px] font-semibold font-['Roboto'] leading-relaxed">
+                                        <div className="left-[400px] absolute text-[#009383] text-[20px] font-semibold leading-relaxed">
                                             {product.price}
                                         </div>
                                         <div className="h-10 px-3 left-[530px] w-[10%] absolute bg-white rounded-lg border border-[#929292] inline-flex gap-3.5 items-center">
@@ -142,7 +140,7 @@ function Cart() {
                                                     <Minus />
                                                 </div>
                                                 <input
-                                                    className="text-[#494949] text-[18px] font-medium font-['Roboto'] block w-[100%] outline-none text-center"
+                                                    className="text-[#494949] text-[18px] font-medium block w-[100%] outline-none text-center"
                                                     value={count}
                                                     onChange={handleCount}
                                                 />
@@ -155,10 +153,10 @@ function Cart() {
                                             </div>
                                         </div>
 
-                                        <div className="left-[700px] absolute text-[#009383] text-[20px] font-semibold font-['Roboto'] leading-relaxed">
+                                        <div className="left-[700px] absolute text-[#009383] text-[20px] font-semibold leading-relaxed">
                                             {product.totalPrice}
                                         </div>
-                                        <div className="cursor-pointer left-[840px] absolute text-black text-[18px] font-normal font-['Roboto'] leading-normal">
+                                        <div className="cursor-pointer left-[840px] absolute text-black text-[18px] font-normal leading-normal">
                                             <Bin />
                                         </div>
                                     </div>

@@ -1170,3 +1170,219 @@ export const HorizonTwoCircle: React.FC<{ width?: string; height?: string }> = (
         </svg>
     );
 };
+export const UserGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_51_10527)">
+                <path
+                    d="M14 17.5C17.866 17.5 21 14.366 21 10.5C21 6.63401 17.866 3.5 14 3.5C10.134 3.5 7 6.63401 7 10.5C7 14.366 10.134 17.5 14 17.5Z"
+                    stroke="#009383"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M3.5 23.625C5.61859 19.9642 9.46641 17.5 14 17.5C18.5336 17.5 22.3814 19.9642 24.5 23.625"
+                    stroke="#009383"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+            <defs>
+                <clipPath id="clip0_51_10527">
+                    <rect width="28" height="28" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    );
+};
+export const CartWhite: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_51_10537)">
+                <path
+                    d="M19.6875 20.125H9.09672C8.68689 20.1249 8.29008 19.981 7.97547 19.7184C7.66086 19.4558 7.44841 19.091 7.37516 18.6878L4.585 3.34359C4.54837 3.14198 4.44215 2.95962 4.28484 2.8283C4.12754 2.69698 3.92913 2.62503 3.72422 2.625H1.75"
+                    stroke="white"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M9.1875 24.5C10.3956 24.5 11.375 23.5206 11.375 22.3125C11.375 21.1044 10.3956 20.125 9.1875 20.125C7.97938 20.125 7 21.1044 7 22.3125C7 23.5206 7.97938 24.5 9.1875 24.5Z"
+                    stroke="white"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M19.6875 24.5C20.8956 24.5 21.875 23.5206 21.875 22.3125C21.875 21.1044 20.8956 20.125 19.6875 20.125C18.4794 20.125 17.5 21.1044 17.5 22.3125C17.5 23.5206 18.4794 24.5 19.6875 24.5Z"
+                    stroke="white"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M6.84141 15.75H20.5734C20.9833 15.7499 21.3801 15.606 21.6947 15.3434C22.0093 15.0808 22.2217 14.716 22.295 14.3128L23.625 7H5.25"
+                    stroke="white"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+            <defs>
+                <clipPath id="clip0_51_10537">
+                    <rect width="28" height="28" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    );
+};
+export const ThreeDrawCabinet: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_51_10549)">
+                <g clip-path="url(#clip1_51_10549)">
+                    <path
+                        d="M14.875 21H13.125"
+                        stroke="#009383"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M14.875 7H13.125"
+                        stroke="#009383"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M14.875 14H13.125"
+                        stroke="#009383"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M21.875 3.5H6.125C5.64175 3.5 5.25 3.89175 5.25 4.375V23.625C5.25 24.1082 5.64175 24.5 6.125 24.5H21.875C22.3582 24.5 22.75 24.1082 22.75 23.625V4.375C22.75 3.89175 22.3582 3.5 21.875 3.5Z"
+                        stroke="#009383"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M5.25 10.5H22.75"
+                        stroke="#009383"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M5.25 17.5H22.75"
+                        stroke="#009383"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </g>
+            </g>
+            <defs>
+                <clipPath id="clip0_51_10549">
+                    <rect width="28" height="28" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_51_10549">
+                    <rect width="28" height="28" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    );
+};
+export const LogoutRed: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+    return (
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M8 15L12.6667 10.3333M12.6667 10.3333L8 5.66667M12.6667 10.3333H1M10.3333 1H15.9333C17.2401 1 17.8935 1 18.3926 1.25432C18.8317 1.47802 19.1886 1.83498 19.4123 2.27402C19.6667 2.77315 19.6667 3.42654 19.6667 4.73333V15.9333C19.6667 17.2401 19.6667 17.8935 19.4123 18.3926C19.1886 18.8317 18.8317 19.1886 18.3926 19.4123C17.8935 19.6667 17.2401 19.6667 15.9333 19.6667H10.3333"
+                stroke="#FF4444"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+export const ArrowLeftWhite: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.54693 1.70508L7.00293 7.00008L1.54693 12.2951"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+export const ArrowLeftBlack: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.54693 1.70508L7.00293 7.00008L1.54693 12.2951"
+                stroke="#505050"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+
+export const ArrowLeftRed: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.54693 1.70508L7.00293 7.00008L1.54693 12.2951"
+                stroke="#FF4444"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+export const MagnifyingGlassBlack: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                stroke="#505050"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M17.5 17.5L13.875 13.875"
+                stroke="#505050"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};

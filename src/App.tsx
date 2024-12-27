@@ -24,6 +24,8 @@ import Store from './Page/Store/Store';
 import ProductDetail from './Page/ProductDetail/ProductDetail';
 import Forum from './Page/Forum/Forum';
 import ForumProfile from './Page/ForumProfile/ForumProfile';
+import AllOrder from './Page/Order/AllOrder/AllOrder';
+import OrderDetail from './Page/Order/OrderDetail.tsx/OrderDetail';
 export default function App() {
     return (
         <Router>
@@ -56,6 +58,8 @@ export default function App() {
                 {/* // */}
                 <Route path="dien-dan" element={<Forum />} />
                 <Route path="ho-so-dien-dan" element={<ForumProfile />} />
+                <Route path="don-hang" element={<AllOrder />} />
+                <Route path="chi-tiet-don-hang" element={<OrderDetail />} />
             </Routes>
         </Router>
     );

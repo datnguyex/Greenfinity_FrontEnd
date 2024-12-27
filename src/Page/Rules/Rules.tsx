@@ -34,11 +34,11 @@ function Rules() {
             >
                 <div className="my-[140px]">
                     <div className="px-[30px] gap-[10px] mx-auto max-w-[132.7rem] w-[100%] flex flex-col items-center justify-center">
-                        <div className="text-center text-[#009383] text-[64px] font-bold font-['Roboto'] uppercase leading-[76.80px]">
+                        <div className="text-center text-[#009383] text-[64px] font-bold uppercase leading-[76.80px]">
                             {t('programRules')}
                         </div>
                         <div className="h-[68px] px-5 bg-[#15bdd6] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                            <div className="text-center text-white text-[40px] font-bold font-['Roboto'] uppercase leading-[48px]">
+                            <div className="text-center text-white text-[40px] font-bold uppercase leading-[48px]">
                                 {t('rebirthWith')}
                             </div>
                         </div>
@@ -47,113 +47,111 @@ function Rules() {
                         </div>
                         {/* //item */}
                         <div className="w-[1267px]">
-                            <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                            <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                 {t('participant')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentParticipant')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
-                                {t('howToJoim')}
-                            </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">{t('howToJoim')}</span>
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentHowtoJoin')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('Step1')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('contentStep1')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('Step2')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentStep2')}
                                 <br />
                                 {t('contenChild1step2')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('linkAquafinaPepsi')}
                                 <br />- {t('aquafinaBottle')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('TwoPoinAqua')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('notBottleAqua')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('OnePoinAqua')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('step3')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentStep3')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('step4')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('contentStep4')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('form1')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('contentForm1')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('form2')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('contenForm2')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] underline leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal underline leading-[27px]">
                                 {t('linkAquafinaPepsi')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 và trên fanpage{' '}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] underline leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal underline leading-[27px]">
                                 {t('facebookAqua')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {' '}
                                 {t('timePublication')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                 {t('step5')}
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentStep5')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                            <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                 {t('step2.2')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentStep2.2')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                            <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                 {t('step2.3')}
                                 <br />
                             </span>
-                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                 {t('contentStep2.3')}
                             </span>
                             {/* //itemz */}
@@ -167,28 +165,28 @@ function Rules() {
                                         </div>
                                         <div className="px-4 py-5 w-[90%] left-[50%] translate-x-[-50%] top-[337px] absolute bg-white rounded-xl border border-[#66beb5] flex-col justify-center items-start gap-2.5 inline-flex">
                                             <div className="flex-col justify-start items-start gap-3 flex">
-                                                <div className="self-stretch text-[#006e62] text-[21px] font-semibold font-['Roboto'] leading-relaxed">
+                                                <div className="self-stretch text-[#006e62] text-[21px] font-semibold leading-relaxed">
                                                     {voucher.title}
                                                 </div>
                                                 <div className="self-stretch">
-                                                    <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
+                                                    <span className="text-[#3f3f3f] text-[15px] font-semibold leading-snug">
                                                         {t('amountGiftPerWeek')}
                                                     </span>
-                                                    <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
+                                                    <span className="text-[#3f3f3f] text-[15px] font-normal leading-snug">
                                                         {voucher.quantity}
                                                         <br />
                                                     </span>
-                                                    <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
+                                                    <span className="text-[#3f3f3f] text-[15px] font-semibold leading-snug">
                                                         {t('howToReedem')}
                                                     </span>
-                                                    <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
+                                                    <span className="text-[#3f3f3f] text-[15px] font-normal leading-snug">
                                                         {voucher.method}
                                                         <br />
                                                     </span>
-                                                    <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
+                                                    <span className="text-[#3f3f3f] text-[15px] font-semibold leading-snug">
                                                         {t('valueOfGift')}
                                                     </span>
-                                                    <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
+                                                    <span className="text-[#3f3f3f] text-[15px] font-normal leading-snug">
                                                         {voucher.giftValue}
                                                     </span>
                                                 </div>
@@ -199,88 +197,84 @@ function Rules() {
                             </div>
                             {/* //item */}
                             <div className="w-[1267px]">
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('step2.4')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('contentStep2.4')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                     {t('linkAquafinaPepsi')}
                                 </span>
 
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('content2Step2.4')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('step3Child')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('contentStep3Child')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
-                                    {' '}
-                                </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] underline leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]"> </span>
+                                <span className="text-[#3f3f3f] text-[15px] font-semibold underline leading-[27px]">
                                     {t('facebookAqua')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('content2Step3Child')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
-                                    {' '}
-                                </span>
+                                <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]"> </span>
 
-                                <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] underline leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-semibold underline leading-[27px]">
                                     {t('facebookAqua')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {' '}
                                     {t('content3Step3Child')}
                                     <br />
                                 </span>
 
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('clauseSecurity')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('contentClause')}
                                     <br />
                                 </span>
 
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('personalData')}
                                 </span>
 
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('contentPersonalData')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('howtoShareData')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('conyentHowtoShareData')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('howtoShareData')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('conyentHowtoShareData')}
                                     <br />
                                 </span>
-                                <span className="text-[#3f3f3f] text-[18px] font-semibold font-['Roboto'] leading-9">
+                                <span className="text-[#3f3f3f] text-[18px] font-semibold leading-9">
                                     {t('titleObligationParticipant')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-normal leading-[27px]">
                                     {t('obligationOfParticipant')}
                                 </span>
-                                <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-[27px]">
+                                <span className="text-[#3f3f3f] text-[15px] font-semibold leading-[27px]">
                                     {t('emailPepsi')}
                                 </span>
                             </div>

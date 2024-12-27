@@ -59,4 +59,12 @@ export {
     LineComment,
     TitleFundList,
     HorizonTwoCircle,
+    LogoutRed,
+    ThreeDrawCabinet,
+    CartWhite,
+    UserGreen,
+    ArrowLeftRed,
+    ArrowLeftWhite,
+    ArrowLeftBlack,
+    MagnifyingGlassBlack,
 } from './Icon';

@@ -76,7 +76,7 @@ function PaymentMethod() {
                         {/* //item */}
                         <div className="min-h-[200px] w-[80%] mx-auto py-[50px] mt-[50px] bg-white rounded-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] flex-col justify-center items-center gap-7 inline-flex overflow-hidden">
                             <div className="h-20 px-5  bg-[#15bdd6] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                                <div className="text-center text-white text-[28px] font-bold font-['Roboto'] uppercase leading-[33.60px]">
+                                <div className="text-center text-white text-[28px] font-bold uppercase leading-[33.60px]">
                                     {t('paymentMethod')}
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ function PaymentMethod() {
                                         )}
                                     </div>
                                     <div
-                                        className={`text-[17px] font-semibold font-['Roboto'] ${
+                                        className={`text-[17px] font-semibold ${
                                             paymentMethod === 1 ? 'text-[#009383]' : 'text-[#666666]'
                                         }`}
                                     >
@@ -145,7 +145,7 @@ function PaymentMethod() {
                                         )}
                                     </div>
                                     <div
-                                        className={`text-[17px] font-semibold font-['Roboto'] ${
+                                        className={`text-[17px] font-semibold ${
                                             paymentMethod === 2 ? 'text-[#009383]' : 'text-[#666666]'
                                         }`}
                                     >
@@ -177,7 +177,7 @@ function PaymentMethod() {
                                         )}
                                     </div>
                                     <div
-                                        className={`text-[17px] font-semibold font-['Roboto'] ${
+                                        className={`text-[17px] font-semibold ${
                                             paymentMethod === 3 ? 'text-[#009383]' : 'text-[#666666]'
                                         }`}
                                     >
@@ -209,7 +209,7 @@ function PaymentMethod() {
                                         )}
                                     </div>
                                     <div
-                                        className={`text-[17px] font-semibold font-['Roboto'] ${
+                                        className={`text-[17px] font-semibold ${
                                             paymentMethod === 4 ? 'text-[#009383]' : 'text-[#666666]'
                                         }`}
                                     >
@@ -241,7 +241,7 @@ function PaymentMethod() {
                                         )}
                                     </div>
                                     <div
-                                        className={`text-[17px] font-semibold font-['Roboto'] ${
+                                        className={`text-[17px] font-semibold ${
                                             paymentMethod === 5 ? 'text-[#009383]' : 'text-[#666666]'
                                         }`}
                                     >
@@ -273,7 +273,7 @@ function PaymentMethod() {
                                         )}
                                     </div>
                                     <div
-                                        className={`text-[17px] font-semibold font-['Roboto'] ${
+                                        className={`text-[17px] font-semibold ${
                                             paymentMethod === 6 ? 'text-[#009383]' : 'text-[#666666]'
                                         }`}
                                     >

@@ -41,16 +41,16 @@ function Posts() {
                             <img className="w-[100%] h-[100%] object-cover" src={AvatarWoman1} />
                         </div>
                         <div className="flex-col justify-center items-start gap-2.5 inline-flex">
-                            <div className="text-[#373737] text-[25px] font-semibold font-['Roboto'] leading-[28.80px] tracking-tight">
+                            <div className="text-[#373737] text-[25px] font-semibold leading-[28.80px] tracking-tight">
                                 Tuyết Anh
                             </div>
-                            <div className="text-[#929292] text-[17px] font-normal font-['Roboto'] leading-tight tracking-tight">
+                            <div className="text-[#929292] text-[17px] font-normal leading-tight tracking-tight">
                                 1 ngày
                             </div>
                         </div>
                     </div>
                     {/* //item */}
-                    <div className="text-[#494949] text-[18px] font-normal font-['Roboto'] mt-[10px]">
+                    <div className="text-[#494949] text-[18px] font-normal mt-[10px]">
                         Chương trình tháng 10 tiếp tục vận động xin 55 phần quà thăm các cụ gia đình bệnh tật neo đơn
                         hàng tháng. Cũng là hết thúc chương trình tháng 9 xin cảm ơn cô chú anh chị em quý mạnh thường
                         quân, các thành viên nhóm luôn ủng hộ - đồng hành.
@@ -78,7 +78,7 @@ function Posts() {
                     {/* //item */}
                     <div className="bg-[#B6B6B6] w-[100%] h-[1px] my-[20px]"></div>
                     <div className="cursor-pointer h-3.5 px-5 justify-start items-start gap-2.5 inline-flex m">
-                        <div className="text-[#494949] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
+                        <div className="text-[#494949] text-[20px] font-semibold leading-normal tracking-tight">
                             Xem thêm (56) bình luận
                         </div>
                     </div>
@@ -148,7 +148,7 @@ function Posts() {
                         <div className="grow shrink basis-0 h-[58px] px-[18px] bg-[#f9f9f9] rounded-[100px] justify-between items-center flex">
                             <input
                                 placeholder=" Viết bình luận..."
-                                className="text-black text-[18px] font-normal font-['Roboto'] outline-none bg-transparent w-[100%]"
+                                className="text-black text-[18px] font-normal outline-none bg-transparent w-[100%]"
                             ></input>
 
                             <div

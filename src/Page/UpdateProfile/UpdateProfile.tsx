@@ -208,7 +208,7 @@ function Profile() {
                         </div>
                         <div className="cursor-pointer mt-[70px] text-center">
                             <div className="h-12 px-[31px] py-[26px] bg-[#009383] rounded-lg mx-auto justify-center items-center gap-2.5 inline-flex">
-                                <div className="text-center text-white text-[20px] font-semibold font-['Roboto'] leading-normal">
+                                <div className="text-center text-white text-[20px] font-semibold leading-normal">
                                     Xác nhận thay đổi
                                 </div>
                             </div>

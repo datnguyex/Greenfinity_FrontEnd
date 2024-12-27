@@ -155,7 +155,7 @@ function ProductDetail() {
                                     <div className="flex-col justify-start items-start gap-6 flex">
                                         <div className="flex-col justify-start items-start gap-4 flex">
                                             <div className="h-[27.53px] px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                                <div className="text-[#9644ff] text-[18px] font-medium font-['Roboto'] flex justify-center items-center gap-[3px] px-2 py-2">
+                                                <div className="text-[#9644ff] text-[18px] font-medium flex justify-center items-center gap-[3px] px-2 py-2">
                                                     <LeafPupple />
                                                     Household
                                                 </div>
@@ -177,7 +177,7 @@ function ProductDetail() {
                                                     <Minus />
                                                 </div>
                                                 <input
-                                                    className="text-[#494949] text-[17px] font-semibold font-['Roboto'] outline-none w-[50%] flex justify-center items-center text-center"
+                                                    className="text-[#494949] text-[17px] font-semibold outline-none w-[50%] flex justify-center items-center text-center"
                                                     placeholder="1"
                                                 />
                                                 <div className="cursor-pointer w-7 h-10 p-1 rounded-lg justify-center items-center gap-2.5 flex">
@@ -203,42 +203,42 @@ function ProductDetail() {
                                         </div>
                                         <div className="h-[135px] px-[13px] w-[80%] py-3.5 bg-white rounded-[10px] border border-[#66beb5] flex-col justify-center items-center gap-2 flex">
                                             <div className="self-stretch">
-                                                <span className="text-[#494949] text-[16px] font-semibold font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-semibold leading-normal">
                                                     Kích thước:
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-normal font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
                                                     100mmL x 100mmW x 30mmH
                                                     <br />
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-semibold font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-semibold leading-normal">
                                                     Khối lượng nhựa in:
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-normal font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
                                                     59g
                                                     <br />
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-semibold font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-semibold leading-normal">
                                                     Lượng nhựa tái chế sử dụng:
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-normal font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
                                                     Khoảng 30%
                                                     <br />
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-semibold font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-semibold leading-normal">
                                                     Số lượng tổng:
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-normal font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
                                                     1000 (Bộ)
                                                     <br />
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-semibold font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-semibold leading-normal">
                                                     Loại nhựa:
                                                 </span>
-                                                <span className="text-[#494949] text-[16px] font-normal font-['Roboto'] leading-normal">
+                                                <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
                                                     RePETG
                                                 </span>
@@ -246,7 +246,7 @@ function ProductDetail() {
                                         </div>
                                         <div className=" w-[634px] h-12 rounded-lg justify-start items-center gap-2 inline-flex overflow-hidden">
                                             <div className="w-6 h-6 relative overflow-hidden" />
-                                            <div className="text-[#009383] text-[20px] font-medium font-['Roboto'] cursor-pointer">
+                                            <div className="text-[#009383] text-[20px] font-medium cursor-pointer">
                                                 Xem câu chuyện của sản phẩm
                                             </div>
                                         </div>

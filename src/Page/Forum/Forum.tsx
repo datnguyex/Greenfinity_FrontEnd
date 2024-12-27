@@ -50,7 +50,7 @@ function Forum() {
                 <div className="my-[140px]">
                     {/* //item */}
                     <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%]">
-                        <div className="text-center text-[#009383] text-[64px] font-bold font-['Roboto'] uppercase leading-[76.80px]">
+                        <div className="text-center text-[#009383] text-[64px] font-bold uppercase leading-[76.80px]">
                             Diễn đàn
                         </div>
                         {/* //item */}
@@ -59,7 +59,7 @@ function Forum() {
                                 <div className="px-[18px] justify-start items-center gap-2.5 flex w-[100%]">
                                     <MagnifyingGlass />
                                     <input
-                                        className="text-black text-[19px] font-normal font-['Roboto'] outline-none w-[100%]"
+                                        className="text-black text-[19px] font-normal outline-none w-[100%]"
                                         placeholder=" Tìm kiếm trên diễn đàn"
                                     ></input>
                                 </div>
@@ -85,7 +85,7 @@ function Forum() {
                                 />
                                 <div className="grow shrink basis-0 w-[100%] h-[58px] px-[18px] bg-[#f9f9f9] rounded-[100px] justify-between items-center flex">
                                     <input
-                                        className="text-[19px] font-normal font-['Roboto'] outline-none bg-transparent w-[100%] text-black"
+                                        className="text-[19px] font-normal outline-none bg-transparent w-[100%] text-black"
                                         placeholder="Anh ơi, bạn đang nghĩ gì thế?"
                                     ></input>
                                     <div className="cursor-pointer">

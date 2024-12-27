@@ -54,7 +54,7 @@ function Profile() {
                                     <div className="w-7 h-7 relative" />
                                     <Link
                                         to="/sua-trang-ca-nhan"
-                                        className="text-[#009383] text-[20px] font-medium font-['Roboto'] flex items-center justify-center"
+                                        className="text-[#009383] text-[20px] font-medium flex items-center justify-center"
                                     >
                                         <span>
                                             <EditSign />
@@ -64,7 +64,7 @@ function Profile() {
                                 </div>
                                 {/* // */}
                                 <div className="h-[53px] flex-col justify-center items-start inline-flex">
-                                    <div className="text-[#373737] text-[18px] font-normal font-['Roboto'] leading-tight">
+                                    <div className="text-[#373737] text-[18px] font-normal leading-tight">
                                         Tôi là người ham đọc sách, thích học hỏi và hướng ngoại. Tôi thích làm việc
                                         trong môi trường nghiêm túc và có thể phát triển sự nghiệp.
                                     </div>
@@ -72,23 +72,23 @@ function Profile() {
                                 {/* // */}
                                 <div className="h-[104px] flex-col justify-center items-start gap-4 inline-flex">
                                     <div>
-                                        <span className="text-[#006e62] text-[20px] font-normal font-['Roboto'] leading-normal tracking-tight">
+                                        <span className="text-[#006e62] text-[20px] font-normal leading-normal tracking-tight">
                                             {t('currentRank')}
                                         </span>
-                                        <span className="text-[#006e62] text-xl font-semibold font-['Roboto'] leading-normal tracking-tight">
+                                        <span className="text-[#006e62] text-xl font-semibold leading-normal tracking-tight">
                                             {' '}
                                         </span>
-                                        <span className="text-[#ff0000] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
+                                        <span className="text-[#ff0000] text-[20px] font-semibold leading-normal tracking-tight">
                                             26
                                         </span>
                                     </div>
                                     <div className="justify-start items-center gap-0.5 inline-flex">
                                         <div className="flex items-center justify-center gap-[5px]">
-                                            <span className="text-[#006e62] text-[20px] font-normal font-['Roboto'] leading-normal tracking-tight">
+                                            <span className="text-[#006e62] text-[20px] font-normal leading-normal tracking-tight">
                                                 {t('currentCoin')}
                                             </span>
 
-                                            <span className="text-[#ff0000] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
+                                            <span className="text-[#ff0000] text-[20px] font-semibold leading-normal tracking-tight">
                                                 5000
                                             </span>
                                             <span>
@@ -97,13 +97,13 @@ function Profile() {
                                         </div>
                                     </div>
                                     <div>
-                                        <span className="text-[#006e62] text-[20px] font-normal font-['Roboto'] leading-normal tracking-tight">
+                                        <span className="text-[#006e62] text-[20px] font-normal leading-normal tracking-tight">
                                             {t('pointsSpent')}
                                         </span>
-                                        <span className="text-[#006e62] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
+                                        <span className="text-[#006e62] text-[20px] font-semibold leading-normal tracking-tight">
                                             {' '}
                                         </span>
-                                        <span className="text-[#ff0000] text-[20px] font-semibold font-['Roboto'] leading-normal tracking-tight">
+                                        <span className="text-[#ff0000] text-[20px] font-semibold leading-normal tracking-tight">
                                             0
                                         </span>
                                     </div>
@@ -116,7 +116,7 @@ function Profile() {
                                             to="/lich-su-quyen-gop"
                                             className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
                                         >
-                                            <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
+                                            <div className="text-white text-[16px] font-medium flex justify-center items-center gap-[5px]">
                                                 <HandSaveMoney />
                                                 {t('donateHistory')}
                                             </div>
@@ -126,7 +126,7 @@ function Profile() {
                                             to="/lich-su-greecoin"
                                             className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
                                         >
-                                            <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
+                                            <div className="text-white text-[16px] font-medium flex justify-center items-center gap-[5px]">
                                                 <Clockclockwise />
                                                 {t('pointCollectHistoty')}
                                             </div>
@@ -137,14 +137,14 @@ function Profile() {
                                         to="/vat-pham"
                                         className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
                                     >
-                                        <div className="text-white text-[16px] font-medium font-['Roboto'] flex justify-center items-center gap-[5px]">
+                                        <div className="text-white text-[16px] font-medium flex justify-center items-center gap-[5px]">
                                             <Tote />
                                             {t('myProduct')}
                                         </div>
                                     </Link>
                                     {/* // */}
                                     <div className="cursor-pointer flex-1 mt-[20px] h-12 px-6 py-[24px] bg-[#fff] border border-[#009383] rounded-md justify-center items-center gap-1 flex">
-                                        <div className="text-[#009383] text-[16px] font-bold font-['Roboto'] flex justify-center items-center gap-[5px]">
+                                        <div className="text-[#009383] text-[16px] font-bold flex justify-center items-center gap-[5px]">
                                             <ArrowIntoHaftSquare />
                                             {t('logout')}
                                         </div>
@@ -157,7 +157,7 @@ function Profile() {
                             <Link
                                 to="/the-le"
                                 className="cursor-pointer italic text-center text-[#15bdd6] text-[24px] font-normal
-                                 font-['Roboto'] underline leading-[28.80px] tracking-tight flex justify-center items-center
+                                 underline leading-[28.80px] tracking-tight flex justify-center items-center
                                 
                                  "
                             >
@@ -169,10 +169,10 @@ function Profile() {
                                     <FrameIntroduceGift />
                                     <div className="absolute top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]">
                                         <div className="w-[350px] h-[66px]">
-                                            <div className="text-center text-white text-[30px] font-black font-['Roboto'] uppercase leading-[40.80px]">
+                                            <div className="text-center text-white text-[30px] font-black uppercase leading-[40.80px]">
                                                 {t('dragonClub')}
                                             </div>
-                                            <div className="text-center text-white text-2xl font-semibold font-['Roboto'] leading-[28.80px]">
+                                            <div className="text-center text-white text-2xl font-semibold leading-[28.80px]">
                                                 {t('getAttactGift')}
                                             </div>
                                         </div>
@@ -183,10 +183,10 @@ function Profile() {
                                     <FrameIntroduceGift />
                                     <div className="absolute top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]">
                                         <div className="w-[350px] h-[66px]">
-                                            <div className="text-center text-white text-[30px] font-black font-['Roboto'] uppercase leading-[40.80px]">
+                                            <div className="text-center text-white text-[30px] font-black uppercase leading-[40.80px]">
                                                 {t('voucherGift')}
                                             </div>
-                                            <div className="text-center text-white text-2xl font-semibold font-['Roboto'] leading-[28.80px]">
+                                            <div className="text-center text-white text-2xl font-semibold leading-[28.80px]">
                                                 {t('changeNow')}
                                             </div>
                                         </div>
@@ -214,33 +214,33 @@ function Profile() {
                                                 </div>
                                                 <div className="px-4 py-5 w-[90%] left-[50%] translate-x-[-50%] top-[337px] absolute bg-white rounded-xl border border-[#66beb5] flex-col justify-center items-start gap-2.5 inline-flex">
                                                     <div className=" flex-col over justify-start items-start gap-3 flex">
-                                                        <div className="self-stretch text-[#006e62] text-[21px] font-semibold font-['Roboto'] leading-relaxed">
+                                                        <div className="self-stretch text-[#006e62] text-[21px] font-semibold leading-relaxed">
                                                             {t('rank')}
                                                         </div>
                                                         <div className="self-stretch">
-                                                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
+                                                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-snug">
                                                                 {t('numberPerWeek')}
                                                             </span>
-                                                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
+                                                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-snug">
                                                                 {voucher.quantity}
                                                                 <br />
                                                             </span>
-                                                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
+                                                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-snug">
                                                                 {t('howRedeemGift')}
                                                             </span>
-                                                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
+                                                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-snug">
                                                                 {t('contentHowRedeem')}
                                                                 <br />
                                                             </span>
-                                                            <span className="text-[#3f3f3f] text-[15px] font-semibold font-['Roboto'] leading-snug">
+                                                            <span className="text-[#3f3f3f] text-[15px] font-semibold leading-snug">
                                                                 {t('giftValue')}
                                                             </span>
-                                                            <span className="text-[#3f3f3f] text-[15px] font-normal font-['Roboto'] leading-snug">
+                                                            <span className="text-[#3f3f3f] text-[15px] font-normal leading-snug">
                                                                 {voucher.giftValue} <span className="op"></span>{' '}
                                                                 {t('vndVoucher')}
                                                             </span>
                                                             <div className="self-stretch w-[100%] h-10 px-8 py-6 bg-[#009383] rounded-lg justify-center items-center gap-2.5 inline-flex mt-[5px]">
-                                                                <div className="text-center text-white text-[18px] font-semibold font-['Roboto'] leading-snug">
+                                                                <div className="text-center text-white text-[18px] font-semibold leading-snug">
                                                                     {t('changeGift')}
                                                                 </div>
                                                             </div>
@@ -255,7 +255,7 @@ function Profile() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className=" text-white text-[15px] font-semibold font-['Roboto'] leading-[18px] text-nowrap">
+                                                    <div className=" text-white text-[15px] font-semibold leading-[18px] text-nowrap">
                                                         {voucher.points} {t('poin')}
                                                     </div>
                                                 </div>

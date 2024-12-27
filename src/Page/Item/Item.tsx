@@ -48,7 +48,7 @@ function Item() {
                     <div className="my-[140px]">
                         <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%] ">
                             {/* //item */}
-                            <div className="text-center text-[#009383] text-[64px] font-bold font-['Roboto'] uppercase leading-[76.80px]">
+                            <div className="text-center text-[#009383] text-[64px] font-bold uppercase leading-[76.80px]">
                                 {t('title')}
                             </div>
                             {/* //item */}

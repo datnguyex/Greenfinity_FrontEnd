@@ -63,7 +63,7 @@ function TransactionResult() {
                         {/* //item */}
                         <div className="min-h-[200px] px-[100px] w-[67%] mx-auto py-[50px] mt-[50px] bg-white rounded-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] flex-col justify-center items-center gap-7 inline-flex overflow-hidden">
                             <div className="h-20 px-5 bg-[#15bdd6] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                                <div className="text-center  text-white text-[28px] font-bold font-['Roboto'] uppercase leading-[33.60px]">
+                                <div className="text-center  text-white text-[28px] font-bold uppercase leading-[33.60px]">
                                     {t('resultTransact')}
                                 </div>
                             </div>

@@ -12,13 +12,13 @@ const StoreFlowerBanner: React.FC<StoreBannerProps> = ({ image, title, subTitle 
         <div className="flex justify-center items-center">
             <div className="flex justify-between items-center pt-[50px] gap-[100px]">
                 <div className="pl-[200px]">
-                    <div className="text-[#006e62] text-[50px] font-semibold font-['Roboto'] capitalize leading-[65px]">
+                    <div className="text-[#006e62] text-[50px] font-semibold capitalize leading-[65px]">
                         {title} {/* Use the title prop */}
                     </div>
-                    <div className="text-[#006e62] text-[120px] font-extrabold font-['Roboto'] uppercase leading-[156px]">
+                    <div className="text-[#006e62] text-[120px] font-extrabold uppercase leading-[156px]">
                         {subTitle} {/* Use the subTitle prop */}
                     </div>
-                    <div className="w-[707px] h-[180px] text-[#494949] text-[16px] font-normal font-['Roboto'] leading-tight">
+                    <div className="w-[707px] h-[180px] text-[#494949] text-[16px] font-normal leading-tight">
                         Lorem ipsum dolor sit amet consectetur. Tempor viverra lacus proin orci risus turpis malesuada
                         egestas ut. Ut ut tempus faucibus sed ut sem. Etiam leo volutpat arcu massa. Scelerisque
                         vestibulum tellus rhoncus arcu blandit sem auctor donec. Vulputate quis dis mauris a id. Blandit

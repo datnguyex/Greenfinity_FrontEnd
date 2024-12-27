@@ -35,7 +35,7 @@ function CommentProduct() {
     ];
     return (
         <>
-            <div className="text-[#009383] text-[36px] font-bold font-['Roboto'] uppercase leading-[43.20px] text-center mt-[150px] mb-[40px]">
+            <div className="text-[#009383] text-[36px] font-bold uppercase leading-[43.20px] text-center mt-[150px] mb-[40px]">
                 ĐÁNH GIÁ SẢN PHẨM
             </div>
             <div className="w-[1440px] h-[1173px] px-[124px] pt-[47px] pb-9 bg-white rounded-2xl shadow-[0px_0px_20px_0px_rgba(113,113,113,0.15)] flex-col justify-start items-start gap-11 flex overflow-hidden">
@@ -68,9 +68,7 @@ function CommentProduct() {
                     <div className="flex items-start justify-center flex-col gap-[10px]">
                         <div className=" justify-start items-start gap-[18px] flex">
                             <div className="px-6 cursor-pointer py-2.5 bg-[#006e62] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-white text-[17px] font-bold font-['Roboto'] cursor-pointer">
-                                    Tất cả
-                                </div>
+                                <div className="text-white text-[17px] font-bold cursor-pointer">Tất cả</div>
                             </div>
 
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
@@ -109,12 +107,12 @@ function CommentProduct() {
                     <div className="h-[263px] relative border-b border-[#b6b6b6] w-[1124px]">
                         <div key={index} className="relative mb-4 ">
                             <div className="left-[68px] top-[228px] absolute justify-start items-center gap-2 inline-flex">
-                                <div className="text-[#006e62] text-[17px] font-medium font-['Roboto'] flex items-center justify-center gap-2 cursor-pointer">
+                                <div className="text-[#006e62] text-[17px] font-medium flex items-center justify-center gap-2 cursor-pointer">
                                     <ThumpUp />
                                     Thích
                                 </div>
                             </div>
-                            <div className="w-[1070px] left-[68px] top-[98px] absolute text-[#121212] text-[17px] font-normal font-['Roboto'] leading-none">
+                            <div className="w-[1070px] left-[68px] top-[98px] absolute text-[#121212] text-[17px] font-normal leading-none">
                                 {review.content}
                             </div>
                             <div className="w-[50px] h-[50px] rounded-[100px] border bg-[#006e62]">
@@ -146,11 +144,9 @@ function CommentProduct() {
                                 </div>
                             </div>
                             <div className="left-[68px] top-[56px] w-[450px] absolute justify-start items-center gap-2 inline-flex">
-                                <div className="text-[#494949] text-[17px] font-normal font-['Roboto'] leading-none">
-                                    {review.time}
-                                </div>
+                                <div className="text-[#494949] text-[17px] font-normal leading-none">{review.time}</div>
                                 <div className="justify-start items-center gap-2 flex">
-                                    <div className="text-[#494949] text-[17px] font-normal font-['Roboto'] leading-none">
+                                    <div className="text-[#494949] text-[17px] font-normal leading-none">
                                         Phân loại hàng:
                                     </div>
                                     <div className="px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] flex">

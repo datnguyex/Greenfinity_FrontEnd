@@ -125,7 +125,7 @@ function RelatedProducts() {
 
     return (
         <>
-            <div className="text-[#009383] text-[36px] font-bold font-['Roboto'] uppercase leading-[43.20px] text-center mt-[150px] mb-[40px]">
+            <div className="text-[#009383] text-[36px] font-bold uppercase leading-[43.20px] text-center mt-[150px] mb-[40px]">
                 SẢN PHẨM LIÊN QUAN
             </div>
             <div className="max-w-[145rem] mx-auto">

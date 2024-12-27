@@ -166,7 +166,7 @@ function AllProductStore() {
                             <div className="self-stretch h-12 pl-3 pr-4 py-2.5 bg-white rounded-md border border-[#c2c2c2] justify-between items-center inline-flex overflow-hidden">
                                 <input
                                     placeholder="Tìm kiếm"
-                                    className="text-[#666666] text-[16px] font-normal font-['Roboto'] outline-none w-[100%] h-[100%]"
+                                    className="text-[#666666] text-[16px] font-normal outline-none w-[100%] h-[100%]"
                                 />
                                 {/* Giả sử bạn đã tạo hoặc sử dụng một component <SearchGreen /> */}
                                 <div className="w-5 h-5 relative"></div>
