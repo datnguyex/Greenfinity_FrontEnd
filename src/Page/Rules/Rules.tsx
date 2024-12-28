@@ -42,7 +42,7 @@ function Rules() {
                                 {t('rebirthWith')}
                             </div>
                         </div>
-                        <div className="text-[#494949] text- font-semibold font-['Roboto']">
+                        <div className="text-[#494949] text- font-semibold ">
                             ( {t('freeFromdDate')} 30/07/2023 {t('untilTheDate')} 30/12/2023)
                         </div>
                         {/* //item */}

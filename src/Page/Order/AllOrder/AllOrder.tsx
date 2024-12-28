@@ -275,9 +275,7 @@ const AllOrder = () => {
                                 {/* Search bar */}
                                 <div className="h-[48px] px-4 mt-[16px] w-[100%] bg-white rounded-lg border border-[#b6b6b6] justify-start items-center gap-2.5 inline-flex overflow-hidden">
                                     <MagnifyingGlassBlack />
-                                    <div className="text-[#505050] text-[17px] font-normal font-['Roboto']">
-                                        Tìm kiếm đơn hàng
-                                    </div>
+                                    <div className="text-[#505050] text-[17px] font-normal ">Tìm kiếm đơn hàng</div>
                                 </div>
 
                                 {/* Product List */}
@@ -303,7 +301,7 @@ const AllOrder = () => {
                                                         </div>
                                                         <div className="h-[27.53px] px-2 py-1 bg-[#dde6ff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
                                                             <LeafBlue />
-                                                            <div className="text-[#0084ff] text-[15px] font-medium font-['Roboto']">
+                                                            <div className="text-[#0084ff] text-[15px] font-medium ">
                                                                 {product.category}
                                                             </div>
                                                         </div>
@@ -333,17 +331,17 @@ const AllOrder = () => {
                                                             to={'/chi-tiet-don-hang'}
                                                             className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#66beb5] justify-center items-center gap-2 flex"
                                                         >
-                                                            <div className="text-[#505050] text-[19px] font-semibold font-['Roboto']">
+                                                            <div className="text-[#505050] text-[19px] font-semibold ">
                                                                 Xem chi tiết
                                                             </div>
                                                         </Link>
                                                         <div className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#66beb5] justify-center items-center gap-2 flex">
-                                                            <div className="text-[#505050] text-[19px] font-semibold font-['Roboto']">
+                                                            <div className="text-[#505050] text-[19px] font-semibold ">
                                                                 Đánh giá
                                                             </div>
                                                         </div>
                                                         <div className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
-                                                            <div className="text-white text-[19px] font-semibold font-['Roboto']">
+                                                            <div className="text-white text-[19px] font-semibold ">
                                                                 Mua lại
                                                             </div>
                                                         </div>
@@ -363,7 +361,7 @@ const AllOrder = () => {
                                 ) : (
                                     <div className="flex flex-col justify-center items-center mx-auto gap-5 mt-[100px]">
                                         <CartSad />
-                                        <div className="text-center text-[#66beb5] text-[18px] font-medium font-['Roboto']">
+                                        <div className="text-center text-[#66beb5] text-[18px] font-medium ">
                                             Chưa có đơn hàng
                                         </div>
                                     </div>

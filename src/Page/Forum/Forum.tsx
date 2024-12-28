@@ -71,9 +71,7 @@ function Forum() {
                                 <div>
                                     <ListCircleAndDash />
                                 </div>
-                                <div className="text-center text-[#494949] text-[19px] font-bold font-['Roboto']">
-                                    Danh sách quỹ
-                                </div>
+                                <div className="text-center text-[#494949] text-[19px] font-bold ">Danh sách quỹ</div>
                             </div>
                         </div>
                         {/* //item */}
@@ -116,7 +114,7 @@ function Forum() {
                                 </div>
                             )}
                             <div className="self-stretch h-11 px-6 py-8 cursor-pointer bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden">
-                                <div className="text-white text-[20px] font-medium font-['Roboto']">Đăng</div>
+                                <div className="text-white text-[20px] font-medium ">Đăng</div>
                             </div>
                         </div>
                         {/* //item */}

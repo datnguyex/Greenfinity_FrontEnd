@@ -34,101 +34,93 @@ function DonationHistory() {
                         {items.map((item, index) => (
                             <div className="mt-[30px] w-[1071px] h-[459px] mx-auto  bg-white rounded-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] flex-col justify-start items-center gap-6 inline-flex overflow-hidden">
                                 <div className="self-stretch px-8 py-[19px] bg-[#009383] rounded-tl-3xl rounded-tr-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] border border-[#009383] justify-between items-center inline-flex">
-                                    <div className="text-white text-[24px] font-bold font-['Roboto']">
-                                        {t('month')} 11/2023
-                                    </div>
+                                    <div className="text-white text-[24px] font-bold ">{t('month')} 11/2023</div>
                                     <div className="justify-start items-center gap-2 flex">
-                                        <div className="text-white text-[20px] font-medium font-['Roboto']">+5000</div>
+                                        <div className="text-white text-[20px] font-medium ">+5000</div>
                                         <GoldCoin />
                                     </div>
                                 </div>
                                 <div className="w-[1023px] rounded-lg justify-start items-start inline-flex overflow-hidden">
                                     <div className="w-[170px] flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] rounded-bl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('time')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('time')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg rounded-bl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 20:00 - 21/12/2023
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 20:00 - 21/12/2023
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 20:00 - 21/12/2023
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 20:00 - 21/12/2023
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 20:00 - 21/12/2023
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 20:00 - 21/12/2023
                                             </div>
                                         </div>
                                     </div>
                                     <div className="w-[441px] flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('content')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('content')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 Giải cứu thanh long ruột đỏ
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 Quyên góp đầm sen
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 Quyên góp đầm sen
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 Quyên góp đầm sen
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 Quyên góp đầm sen
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
+                                            <div className="text-[#666666] text-[15px] font-normal ">
                                                 Quyên góp đầm sen
                                             </div>
                                         </div>
                                     </div>
                                     <div className="w-[185px] flex-col justify-start items-center gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] justify-center items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('status')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('status')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 bg-[#f6f6f6]/50 justify-center items-center gap-2 inline-flex overflow-hidden">
                                             <div className="px-2  bg-[#e3ffe0] rounded-3xl border border-[#33cd26] justify-center items-center gap-2.5 flex">
                                                 <div className="justify-center items-center gap-1 flex overflow-hidden">
                                                     <div className="w-[5px] h-[5px] bg-[#33cd26] rounded-full" />
                                                     <div className="flex-col justify-center items-start inline-flex">
-                                                        <div className="text-[#33cd26] text-[15px] font-medium font-['Roboto']">
+                                                        <div className="text-[#33cd26] text-[15px] font-medium ">
                                                             {t('success')}
                                                         </div>
                                                     </div>
@@ -140,7 +132,7 @@ function DonationHistory() {
                                                 <div className="justify-center items-center gap-1 flex overflow-hidden">
                                                     <div className="w-[5px] h-[5px] bg-[#fdb600] rounded-full" />
                                                     <div className="flex-col justify-center items-start inline-flex">
-                                                        <div className="text-[#fdb600] text-[15px] font-medium font-['Roboto']">
+                                                        <div className="text-[#fdb600] text-[15px] font-medium ">
                                                             {t('fail')}
                                                         </div>
                                                     </div>
@@ -152,7 +144,7 @@ function DonationHistory() {
                                                 <div className="justify-center items-center gap-1 flex overflow-hidden">
                                                     <div className="w-[5px] h-[5px] bg-[#33cd26] rounded-full" />
                                                     <div className="flex-col justify-center items-start inline-flex">
-                                                        <div className="text-[#33cd26] text-[15px] font-medium font-['Roboto']">
+                                                        <div className="text-[#33cd26] text-[15px] font-medium ">
                                                             {t('success')}
                                                         </div>
                                                     </div>
@@ -164,7 +156,7 @@ function DonationHistory() {
                                                 <div className="justify-center items-center gap-1 flex overflow-hidden">
                                                     <div className="w-[5px] h-[5px] bg-[#33cd26] rounded-full" />
                                                     <div className="flex-col justify-center items-start inline-flex">
-                                                        <div className="text-[#33cd26] text-[15px] font-medium font-['Roboto']">
+                                                        <div className="text-[#33cd26] text-[15px] font-medium ">
                                                             {t('success')}
                                                         </div>
                                                     </div>
@@ -176,7 +168,7 @@ function DonationHistory() {
                                                 <div className="justify-center items-center gap-1 flex overflow-hidden">
                                                     <div className="w-[5px] h-[5px] bg-[#33cd26] rounded-full" />
                                                     <div className="flex-col justify-center items-start inline-flex">
-                                                        <div className="text-[#33cd26] text-[15px] font-medium font-['Roboto']">
+                                                        <div className="text-[#33cd26] text-[15px] font-medium ">
                                                             {t('success')}
                                                         </div>
                                                     </div>
@@ -188,7 +180,7 @@ function DonationHistory() {
                                                 <div className="justify-center items-center gap-1 flex overflow-hidden">
                                                     <div className="w-[5px] h-[5px] bg-[#fdb600] rounded-full" />
                                                     <div className="flex-col justify-center items-start inline-flex">
-                                                        <div className="text-[#fdb600] text-[15px] font-medium font-['Roboto']">
+                                                        <div className="text-[#fdb600] text-[15px] font-medium ">
                                                             {t('fail')}
                                                         </div>
                                                     </div>
@@ -198,39 +190,25 @@ function DonationHistory() {
                                     </div>
                                     <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] rounded-br-lg justify-end items-center gap-2 inline-flex">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('donated')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('donated')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tr-lg rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
-                                                50
-                                            </div>
+                                            <div className="text-[#666666] text-[15px] font-normal ">50</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tr-lg rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
-                                                500
-                                            </div>
+                                            <div className="text-[#666666] text-[15px] font-normal ">500</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tr-lg rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
-                                                500
-                                            </div>
+                                            <div className="text-[#666666] text-[15px] font-normal ">500</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tr-lg rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
-                                                500
-                                            </div>
+                                            <div className="text-[#666666] text-[15px] font-normal ">500</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tr-lg rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
-                                                500
-                                            </div>
+                                            <div className="text-[#666666] text-[15px] font-normal ">500</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tr-lg rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666] text-[15px] font-normal font-['Roboto']">
-                                                500
-                                            </div>
+                                            <div className="text-[#666666] text-[15px] font-normal ">500</div>
                                         </div>
                                     </div>
                                 </div>

@@ -41,12 +41,10 @@ function CommentProduct() {
             <div className="w-[1440px] h-[1173px] px-[124px] pt-[47px] pb-9 bg-white rounded-2xl shadow-[0px_0px_20px_0px_rgba(113,113,113,0.15)] flex-col justify-start items-start gap-11 flex overflow-hidden">
                 <div className="h-[117px] justify-start items-center gap-[76px] inline-flex">
                     <div className="w-[346px] h-[117px] relative">
-                        <div className="left-[160px] t top-[72px] absolute text-[#009383] text-[17px] font-medium font-['Roboto']">
+                        <div className="left-[160px] t top-[72px] absolute text-[#009383] text-[17px] font-medium ">
                             Trên 500 lượt đánh giá
                         </div>
-                        <div className="left-0 top-0 absolute text-[#009383] text-[100px] font-bold font-['Roboto']">
-                            4.5
-                        </div>
+                        <div className="left-0 top-0 absolute text-[#009383] text-[100px] font-bold ">4.5</div>
                         <div className="w-[186px] h-8 left-[128px] top-[38px] absolute justify-center items-start gap-[7px] inline-flex">
                             <div className="w-8 h-8 relative flex-col justify-start items-start flex">
                                 <YellowStar />
@@ -72,32 +70,28 @@ function CommentProduct() {
                             </div>
 
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">5 Sao (83)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">5 Sao (83)</div>
                             </div>
 
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">4 Sao (4)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">4 Sao (4)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">3 Sao (0)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">3 Sao (0)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">2 Sao (10)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">2 Sao (10)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">1 Sao (0)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">1 Sao (0)</div>
                             </div>
                         </div>
                         <div className=" justify-start items-start gap-[18px] flex">
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                    Có bình luận (44)
-                                </div>
+                                <div className="text-[#009383] text-[17px] font-bold ">Có bình luận (44)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                    Có hình ảnh/video (30)
-                                </div>
+                                <div className="text-[#009383] text-[17px] font-bold ">Có hình ảnh/video (30)</div>
                             </div>
                         </div>
                     </div>
@@ -119,9 +113,7 @@ function CommentProduct() {
                                 <img src={review.avatar} alt="" />
                             </div>
                             <div className="left-[68px] top-[7px] absolute flex-col justify-start items-start gap-3 inline-flex">
-                                <div className="text-[#006e62] text-[19px] font-bold font-['Roboto']">
-                                    {review.name}
-                                </div>
+                                <div className="text-[#006e62] text-[19px] font-bold ">{review.name}</div>
                                 <div className="w-[100px] h-[17px] justify-center items-start gap-[3.76px] inline-flex">
                                     {/* Star Rating */}
                                     <div className="w-[186px] h-8 ml-[12px] justify-center items-start gap-[7px] inline-flex">
@@ -150,9 +142,7 @@ function CommentProduct() {
                                         Phân loại hàng:
                                     </div>
                                     <div className="px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] flex">
-                                        <div className="text-[#9644ff] text-[15px] font-medium font-['Roboto']">
-                                            {review.category}
-                                        </div>
+                                        <div className="text-[#9644ff] text-[15px] font-medium ">{review.category}</div>
                                     </div>
                                 </div>
                             </div>

@@ -59,18 +59,16 @@ function FunList({ disPlayFundList }: FunListProps) {
                                             alt="fund"
                                         />
                                         <div className="flex-col justify-start items-start gap-3 inline-flex">
-                                            <div className="text-[#009383] text-[24px] font-semibold font-['Roboto']">
+                                            <div className="text-[#009383] text-[24px] font-semibold ">
                                                 {donation.name}
                                             </div>
-                                            <div className="text-[#929292] text-[16px] font-bold font-['Roboto']">
+                                            <div className="text-[#929292] text-[16px] font-bold ">
                                                 {donation.phone}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="w-[110px] cursor-pointer self-stretch px-6 py-2.5 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
-                                        <div className="text-white text-[16px] font-semibold font-['Roboto']">
-                                            Quyên góp
-                                        </div>
+                                        <div className="text-white text-[16px] font-semibold ">Quyên góp</div>
                                     </div>
                                 </div>
                             ))}
@@ -81,7 +79,7 @@ function FunList({ disPlayFundList }: FunListProps) {
                                 onClick={() => disPlayFundList(false)}
                                 className="grow shrink basis-0 h-11 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden"
                             >
-                                <div className="text-white text-[20px] font-medium font-['Roboto']">Đóng</div>
+                                <div className="text-white text-[20px] font-medium ">Đóng</div>
                             </button>
                         </div>
                     </div>

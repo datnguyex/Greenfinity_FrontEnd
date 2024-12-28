@@ -34,122 +34,98 @@ function CoinHistory() {
                         {items.map((item, index) => (
                             <div className="w-[1071px] mt-[30px] mx-auto h-[459px] bg-white rounded-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] flex-col justify-start items-center gap-6 inline-flex overflow-hidden">
                                 <div className="self-stretch h-[55px] px-8 py-[19px] bg-[#009383] rounded-tl-3xl rounded-tr-3xl shadow-[0px_0px_26.100000381469727px_6px_rgba(0,0,0,0.03)] border border-[#009383] justify-between items-center inline-flex">
-                                    <div className="text-white text-[24px] font-bold font-['Roboto']">
-                                        {t('month')} 11/2023
-                                    </div>
+                                    <div className="text-white text-[24px] font-bold ">{t('month')} 11/2023</div>
                                     <div className="justify-start items-center gap-3 flex">
-                                        <div className="text-white text-[20px] font-medium font-['Roboto']">+5000 </div>
-                                        <div className="text-white text-[20px] font-medium font-['Roboto']">-300</div>
+                                        <div className="text-white text-[20px] font-medium ">+5000 </div>
+                                        <div className="text-white text-[20px] font-medium ">-300</div>
                                         <GoldCoin />
                                     </div>
                                 </div>
                                 <div className="w-[1023px] rounded-lg justify-start items-start inline-flex overflow-hidden">
                                     <div className="w-[237px] flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] rounded-bl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('time')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('time')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg rounded-bl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                20:00 - 21/12/2023
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">20:00 - 21/12/2023</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                20:00 - 21/12/2023
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">20:00 - 21/12/2023</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                20:00 - 21/12/2023
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">20:00 - 21/12/2023</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                20:00 - 21/12/2023
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">20:00 - 21/12/2023</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                20:00 - 21/12/2023
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">20:00 - 21/12/2023</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 rounded-tl-lg justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                20:00 - 21/12/2023
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">20:00 - 21/12/2023</div>
                                         </div>
                                     </div>
                                     <div className="w-[377px] flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
+                                            <div className="text-[#009383] text-[17px] font-bold ">
                                                 {t('transaction')}
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">Nạp tiền</div>
+                                            <div className="text-[#666666]  text-[15px] ">Nạp tiền</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">Quyên góp</div>
+                                            <div className="text-[#666666]  text-[15px] ">Quyên góp</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                Nhận quyên góp
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">Nhận quyên góp</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                Bán sản phẩm
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">Bán sản phẩm</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">
-                                                Quyên góp đầm sen
-                                            </div>
+                                            <div className="text-[#666666]  text-[15px] ">Quyên góp đầm sen</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-start items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#666666]  text-[15px] font-['Roboto']">Đấu giá</div>
+                                            <div className="text-[#666666]  text-[15px] ">Đấu giá</div>
                                         </div>
                                     </div>
                                     <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('work')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('work')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 +500
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 +500
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 +500
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 -100
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 -100
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 -100
                                                 <GoldCoin />
                                             </div>
@@ -157,42 +133,40 @@ function CoinHistory() {
                                     </div>
                                     <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex overflow-hidden">
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#e6f5f3] rounded-br-lg justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                                {t('balance')}
-                                            </div>
+                                            <div className="text-[#009383] text-[17px] font-bold ">{t('balance')}</div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 500
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 500
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 500
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 100
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 100
                                                 <GoldCoin />
                                             </div>
                                         </div>
                                         <div className="self-stretch h-11 px-2 pt-3 pb-[11px] bg-[#f6f6f6]/50 justify-end items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] font-['Roboto']">
+                                            <div className="text-right text-[#666666] flex justify-center items-center gap-[5px] text-[15px] ">
                                                 100
                                                 <GoldCoin />
                                             </div>

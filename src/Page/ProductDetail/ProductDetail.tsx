@@ -142,9 +142,7 @@ function ProductDetail() {
                                         />
                                     </div>
                                     <div className="absolute right-[5%] top-[5%] w-[132px] h-10 px-5 py-7 bg-[#ededed] rounded-[34px] justify-center items-center gap-2 inline-flex">
-                                        <div className=" text-[#6d6d6d] text-[18px] font-medium font-['Roboto']">
-                                            Hết hàng
-                                        </div>
+                                        <div className=" text-[#6d6d6d] text-[18px] font-medium ">Hết hàng</div>
                                     </div>
                                 </div>
                             </div>
@@ -160,14 +158,12 @@ function ProductDetail() {
                                                     Household
                                                 </div>
                                             </div>
-                                            <div className="text-[#373737] text-[32px] font-semibold font-['Roboto']">
+                                            <div className="text-[#373737] text-[32px] font-semibold ">
                                                 COOKIE COASTER SET
                                             </div>
                                         </div>
                                         <div className="flex-col justify-start items-start gap-5 flex">
-                                            <div className="text-[#009383] text-[32px] font-bold font-['Roboto']">
-                                                800.000đ
-                                            </div>
+                                            <div className="text-[#009383] text-[32px] font-bold ">800.000đ</div>
                                         </div>
                                     </div>
                                     <div className="flex-col justify-start items-start gap-3 flex w-[100%]">
@@ -185,22 +181,18 @@ function ProductDetail() {
                                                 </div>
                                             </div>
                                             <div className="flex-1 h-12 px-6 py-7 cursor-pointer bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-neutral-400 justify-center items-center gap-2 flex overflow-hidden">
-                                                <div className="text-neutral-400 text-[18px] font-bold font-['Roboto']">
+                                                <div className="text-neutral-400 text-[18px] font-bold ">
                                                     Thêm vào giỏ hàng
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="self-stretch h-12 px-6 py-7 bg-neutral-400 rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] cursor-pointer justify-center items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-white text-[18px] font-bold font-['Roboto']">
-                                                Mua ngay
-                                            </div>
+                                            <div className="text-white text-[18px] font-bold ">Mua ngay</div>
                                         </div>
                                     </div>
 
                                     <div className="flex-col justify-start items-start gap-[18px] flex">
-                                        <div className="text-[#009383] text-[20px] font-bold font-['Roboto']">
-                                            Chi tiết sản phẩm
-                                        </div>
+                                        <div className="text-[#009383] text-[20px] font-bold ">Chi tiết sản phẩm</div>
                                         <div className="h-[135px] px-[13px] w-[80%] py-3.5 bg-white rounded-[10px] border border-[#66beb5] flex-col justify-center items-center gap-2 flex">
                                             <div className="self-stretch">
                                                 <span className="text-[#494949] text-[16px] font-semibold leading-normal">

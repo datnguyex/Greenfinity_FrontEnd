@@ -211,9 +211,7 @@ function ShippingInfomation() {
                                     </div>
                                 </div>
                                 {/* //item */}
-                                <div className="text-[#373737] text-[32px] font-semibold font-['Roboto']">
-                                    {t('title')}
-                                </div>
+                                <div className="text-[#373737] text-[32px] font-semibold ">{t('title')}</div>
                                 {/* //item */}
                                 <div className="flex-col justify-start items-start gap-7 inline-flex w-[100%]">
                                     <div className="justify-start items-start gap-[18px] inline-flex">
@@ -228,7 +226,7 @@ function ShippingInfomation() {
                                             ) : (
                                                 <div className="w-[28.80px] h-[28.80px] relative bg-white rounded-[28.80px] border border-[#929292]" />
                                             )}
-                                            <div className="text-[#505050] text-[17px] font-medium font-['Roboto']">
+                                            <div className="text-[#505050] text-[17px] font-medium ">
                                                 {t('default')}
                                             </div>
                                         </div>
@@ -243,9 +241,7 @@ function ShippingInfomation() {
                                             ) : (
                                                 <div className="w-[28.80px] h-[28.80px] relative bg-white rounded-[28.80px] border border-[#929292]" />
                                             )}
-                                            <div className="text-[#505050] text-[17px] font-medium font-['Roboto']">
-                                                {t('other')}
-                                            </div>
+                                            <div className="text-[#505050] text-[17px] font-medium ">{t('other')}</div>
                                         </div>
                                     </div>
 
@@ -272,7 +268,7 @@ function ShippingInfomation() {
                                     <div className="self-stretch justify-start items-start gap-6 inline-flex">
                                         {/* //thanh pho */}
                                         <div className="w-[30%]">
-                                            <div className="w-[100%] h-14 bg-white flex-col justify-start items-start gap-2 inline-flex relative">
+                                            <div className="w-[100%] h-16 bg-white flex-col justify-start items-start gap-2 inline-flex relative">
                                                 <div className="self-stretch grow shrink basis-0 pl-4 pr-3 bg-white rounded-md border border-[#b6b6b6] justify-between items-center inline-flex overflow-hidden group">
                                                     <div className="text-[#666666] text-[17px] font-medium cursor-pointer group-hover:text-[#000]">
                                                         <div>
@@ -280,7 +276,7 @@ function ShippingInfomation() {
                                                         </div>
                                                     </div>
                                                     <div className="absolute max-h-[200px] overflow-hidden overflow-y-auto top-[100%] left-0 w-full mt-2 bg-white border border-[#b6b6b6] rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
-                                                        <ul className="py-2">
+                                                        <ul className="py-3">
                                                             {arrProvines.map((provine, index) => (
                                                                 <li
                                                                     className="px-4 py-2 text-[#666666] hover:bg-[#f0f0f0] cursor-pointer"
@@ -298,7 +294,7 @@ function ShippingInfomation() {
                                         </div>
                                         {/* // quan huyen */}
                                         <div className="w-[30%]">
-                                            <div className="w-[100%] h-14 bg-white flex-col justify-start items-start gap-2 inline-flex relative">
+                                            <div className="w-[100%] h-16 bg-white flex-col justify-start items-start gap-2 inline-flex relative">
                                                 <div className="self-stretch grow shrink basis-0 pl-4 pr-3 bg-white rounded-md border border-[#b6b6b6] justify-between items-center inline-flex overflow-hidden group">
                                                     <div className="text-[#666666] text-[17px] font-medium cursor-pointer group-hover:text-[#000]">
                                                         {district.name !== null ? district.name : t('district')}
@@ -325,7 +321,7 @@ function ShippingInfomation() {
                                         </div>
                                         {/* //phuong xa */}
                                         <div className="w-[30%]">
-                                            <div className="w-[100%] h-14 bg-white flex-col justify-start items-start gap-2 inline-flex relative">
+                                            <div className="w-[100%] h-16 bg-white flex-col justify-start items-start gap-2 inline-flex relative">
                                                 <div className="self-stretch grow shrink basis-0 pl-4 pr-3 bg-white rounded-md border border-[#b6b6b6] justify-between items-center inline-flex overflow-hidden group">
                                                     <div className="text-[#666666] text-[17px] font-medium cursor-pointer group-hover:text-[#000]">
                                                         {ward.name !== null ? ward.name : t('ward')}
@@ -379,7 +375,7 @@ function ShippingInfomation() {
                                         <div className="w-auto h-[100%] justify-center items-center flex">
                                             <img className="w-auto h-[100%]" src={MoMoLogo} />
                                         </div>
-                                        <div className="grow shrink basis-0 text-[#384252] text-[17px] font-medium font-['Roboto']">
+                                        <div className="grow shrink basis-0 text-[#384252] text-[17px] font-medium ">
                                             {t('wallet')} MOMO
                                         </div>
                                     </div>
@@ -389,14 +385,14 @@ function ShippingInfomation() {
                                         <div className="w-auto h-[100%] justify-center items-center flex">
                                             <img className="w-auto h-[100%]" src={VNPayLogo} />
                                         </div>
-                                        <div className="grow shrink basis-0 text-[#384252] text-[17px] font-medium font-['Roboto']">
+                                        <div className="grow shrink basis-0 text-[#384252] text-[17px] font-medium ">
                                             {t('wallet')} VNPAY
                                         </div>
                                     </div>
                                 </div>
                                 {/* //item */}
                                 <div className="cursor-pointer h-18 px-6 py-[15px] bg-[#009383] rounded-lg text-center overflow-hidden  mt-[12px]">
-                                    <div className="text-white text-[17px] font-bold font-['Roboto']">
+                                    <div className="text-white text-[17px] font-bold ">
                                         {t('payment')} 1.800.00đ (MoMo)
                                     </div>
                                 </div>
@@ -406,9 +402,7 @@ function ShippingInfomation() {
                                 {/* item */}
                                 <div>
                                     <div className="h-[30px] justify-between items-center inline-flex">
-                                        <div className="text-[#373737] text-[32px] font-semibold font-['Roboto]'">
-                                            {t('cart')}
-                                        </div>
+                                        <div className="text-[#373737] text-[32px] font-semibold '">{t('cart')}</div>
                                         <div className="w-[30px] h-[30px] p-[1.25px] justify-center items-center flex">
                                             <div className="w-[27.50px] h-[27.50px] relative flex-col justify-start items-start flex overflow-hidden" />
                                         </div>
@@ -428,7 +422,7 @@ function ShippingInfomation() {
                                                     </div>
                                                     <div className="h-7 px-2 py-4 bg-[#dde6ff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
                                                         <LeafCateProduct />
-                                                        <div className="text-[#0084ff] text-[14px] font-medium font-['Roboto']">
+                                                        <div className="text-[#0084ff] text-[14px] font-medium ">
                                                             Art toy
                                                         </div>
                                                     </div>
@@ -442,12 +436,10 @@ function ShippingInfomation() {
                                                     </div>
                                                 </div>
                                                 <div className="justify-start items-center gap-2.5 flex">
-                                                    <span className="text-[#494949] text-[15px] font-normal font-['Roboto']">
+                                                    <span className="text-[#494949] text-[15px] font-normal ">
                                                         {t('quantitu')}:{' '}
                                                     </span>
-                                                    <span className="text-[#006e62] text-[15px] font-semibold font-['Roboto']">
-                                                        1
-                                                    </span>
+                                                    <span className="text-[#006e62] text-[15px] font-semibold ">1</span>
                                                     <div className="w-6 h-6 relative flex items-center justify-center cursor-pointer">
                                                         {<Bin />}
                                                     </div>
@@ -466,35 +458,35 @@ function ShippingInfomation() {
                                             ></input>
                                         </div>
                                         <div className="px-6 py-2.5 bg-[#d9d9d9] rounded-lg justify-center items-center gap-2 flex overflow-hidden cursor-pointer">
-                                            <div className="text-[#929292] text-[16px] font-semibold font-['Roboto']">
+                                            <div className="text-[#929292] text-[16px] font-semibold ">
                                                 {t('apply')}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="w-[600px] h-[212px] relative bg-white rounded-xl border border-[#b6b6b6]">
-                                        <div className="left-[25px] top-[24px] absolute text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="left-[25px] top-[24px] absolute text-[#494949] text-[16px] font-normal ">
                                             {t('provisional')}
                                         </div>
-                                        <div className="left-[25px] top-[61px] absolute text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="left-[25px] top-[61px] absolute text-[#494949] text-[16px] font-normal ">
                                             {t('discount')}
                                         </div>
-                                        <div className="left-[25px] top-[98px] absolute text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="left-[25px] top-[98px] absolute text-[#494949] text-[16px] font-normal ">
                                             {t('shippingFee')}
                                         </div>
-                                        <div className="left-[494px] top-[24px] absolute text-right text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="left-[494px] top-[24px] absolute text-right text-[#494949] text-[16px] font-normal ">
                                             1.800.000đ
                                         </div>
-                                        <div className="left-[556px] top-[61px] absolute text-right text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="left-[556px] top-[61px] absolute text-right text-[#494949] text-[16px] font-normal ">
                                             0đ
                                         </div>
-                                        <div className="left-[556px] top-[98px] absolute text-right text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="left-[556px] top-[98px] absolute text-right text-[#494949] text-[16px] font-normal ">
                                             0đ
                                         </div>
                                         <div className="w-[550px] h-[0px] left-[25px] top-[147px] absolute border border-[#b6b6b6]"></div>
-                                        <div className="left-[25px] top-[165px] absolute text-right text-[#494949] text-[16px] font-semibold font-['Roboto']">
+                                        <div className="left-[25px] top-[165px] absolute text-right text-[#494949] text-[16px] font-semibold ">
                                             {t('totalPrice')}
                                         </div>
-                                        <div className="left-[481px] top-[165px] absolute text-right text-[#009383] text-[19px] font-bold font-['Roboto']">
+                                        <div className="left-[481px] top-[165px] absolute text-right text-[#009383] text-[19px] font-bold ">
                                             1.800.00đ
                                         </div>
                                     </div>

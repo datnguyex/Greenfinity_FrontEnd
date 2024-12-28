@@ -73,4 +73,5 @@ export {
     DeleteUser,
     AZArrange,
     ThreeDrawCabinetWhite,
+    CloseXBlack,
 } from './Icon';

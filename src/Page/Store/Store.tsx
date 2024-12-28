@@ -178,24 +178,22 @@ function Store() {
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <div className="flex-col justify-start items-start gap-3.5 flex">
                                     <div className="h-[27.53px] px-2 py-1 bg-[#dde6ff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                        <div className="text-[#0084ff] flex justify-center items-center text-[15px] font-medium font-['Roboto']">
+                                        <div className="text-[#0084ff] flex justify-center items-center text-[15px] font-medium ">
                                             <LeafBlue />
                                             Art toy
                                         </div>
                                     </div>
-                                    <div className="text-[#494949] text-[16px] font-semibold font-['Roboto']">
+                                    <div className="text-[#494949] text-[16px] font-semibold ">
                                         SUNFLOWER COASTER SET
                                     </div>
                                 </div>
-                                <div className="text-[#009383] text-[20px] font-extrabold font-['Roboto']">
-                                    800.000đ
-                                </div>
+                                <div className="text-[#009383] text-[20px] font-extrabold ">800.000đ</div>
                             </div>
                             <Link
                                 to={'/chi-tiet-san-pham'}
                                 className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                             >
-                                <div className="text-white text-[18px] font-bold font-['Roboto']">Mua ngay</div>
+                                <div className="text-white text-[18px] font-bold ">Mua ngay</div>
                             </Link>
                         </div>
                         <div className="w-[42px] h-[42px] left-[406px] top-[16px] absolute justify-center items-center inline-flex overflow-hidden">
@@ -222,24 +220,22 @@ function Store() {
                                     <div className="self-stretch h-[82.53px] flex-col justify-start items-start gap-4 flex">
                                         <div className="self-stretch h-[52.53px] flex-col justify-start items-start gap-3.5 flex">
                                             <div className="h-[27.53px] px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                                <div className="flex items-center justify-center gap-[3px] text-[#9644ff] text-[16px] font-medium font-['Roboto']">
+                                                <div className="flex items-center justify-center gap-[3px] text-[#9644ff] text-[16px] font-medium ">
                                                     <LeafPupple />
                                                     {product.category}
                                                 </div>
                                             </div>
-                                            <div className="self-stretch text-[#494949] text-[16px] font-semibold font-['Roboto']">
+                                            <div className="self-stretch text-[#494949] text-[16px] font-semibold ">
                                                 {product.title}
                                             </div>
                                         </div>
-                                        <div className="text-[#009383] text-[20px] font-bold font-['Roboto']">
-                                            {product.price}
-                                        </div>
+                                        <div className="text-[#009383] text-[20px] font-bold ">{product.price}</div>
                                     </div>
                                     <Link
                                         to={'/chi-tiet-san-pham'}
                                         className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                                     >
-                                        <div className="text-white text-[17px] font-bold font-['Roboto']">Mua ngay</div>
+                                        <div className="text-white text-[17px] font-bold ">Mua ngay</div>
                                     </Link>
                                 </div>
                             </div>

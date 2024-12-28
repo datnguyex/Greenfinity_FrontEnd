@@ -73,7 +73,7 @@ function Posts() {
                         onClick={() => disPlayDonation(true)}
                         className="h-11 px-6 py-8 cursor-pointer text-center mt-[20px] bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden"
                     >
-                        <div className="text-white text-[20px] font-medium font-['Roboto']">Quyên góp ngay</div>
+                        <div className="text-white text-[20px] font-medium ">Quyên góp ngay</div>
                     </div>
                     {/* //item */}
                     <div className="bg-[#B6B6B6] w-[100%] h-[1px] my-[20px]"></div>
@@ -93,24 +93,16 @@ function Posts() {
                         <div className="flex-col justify-start items-start gap-4 inline-flex">
                             <div className="flex-col justify-start items-start gap-2 flex">
                                 <div className="h-[87px] px-[18px] py-4 bg-[#f9f9f9] rounded-2xl flex-col justify-center items-start gap-3 flex">
-                                    <div className="text-[#373737] text-[18px] font-semibold font-['Roboto']">
-                                        Tuyết Anh
-                                    </div>
-                                    <div className="self-stretch text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                    <div className="text-[#373737] text-[18px] font-semibold ">Tuyết Anh</div>
+                                    <div className="self-stretch text-[#494949] text-[16px] font-normal ">
                                         Tôi đồng ý với tất cả điều khoản và thể lệ tham gia. Nền tảng và thương hiệu
                                         được phép sử dụng thông tin cá nhân tôi đã cung cấp.
                                     </div>
                                 </div>
                                 <div className="px-[18px] justify-start items-end gap-3 inline-flex">
-                                    <div className="text-[#929292] text-[14px] font-normal font-['Roboto']">
-                                        12 giờ trước
-                                    </div>
-                                    <div className="text-[#6d6d6d] text-[14px] font-semibold font-['Roboto']">
-                                        Thích
-                                    </div>
-                                    <div className="text-[#6d6d6d] text-[14px] font-semibold font-['Roboto']">
-                                        Phản hồi
-                                    </div>
+                                    <div className="text-[#929292] text-[14px] font-normal ">12 giờ trước</div>
+                                    <div className="text-[#6d6d6d] text-[14px] font-semibold ">Thích</div>
+                                    <div className="text-[#6d6d6d] text-[14px] font-semibold ">Phản hồi</div>
                                 </div>
                             </div>
                             <div className="justify-start items-start gap-2.5 inline-flex">
@@ -120,23 +112,15 @@ function Posts() {
                                 />
                                 <div className="flex-col justify-start items-start gap-2 inline-flex">
                                     <div className="h-[68px] px-[18px] py-4 bg-[#f9f9f9] rounded-2xl flex-col justify-center items-start gap-3 flex">
-                                        <div className="text-[#373737] text-[18px] font-semibold font-['Roboto']">
-                                            Tuyết Anh
-                                        </div>
-                                        <div className="self-stretch text-[#494949] text-[16px] font-normal font-['Roboto']">
+                                        <div className="text-[#373737] text-[18px] font-semibold ">Tuyết Anh</div>
+                                        <div className="self-stretch text-[#494949] text-[16px] font-normal ">
                                             Tôi đồng ý với tất cả điều khoản và thể lệ tham gia
                                         </div>
                                     </div>
                                     <div className="px-[18px] justify-start items-end gap-3 inline-flex">
-                                        <div className="text-[#929292] text-[14px] font-normal font-['Roboto']">
-                                            12 giờ trước
-                                        </div>
-                                        <div className="text-[#6d6d6d] text-[14px] font-semibold font-['Roboto']">
-                                            Thích
-                                        </div>
-                                        <div className="text-[#6d6d6d] text-[14px] font-semibold font-['Roboto']">
-                                            Phản hồi
-                                        </div>
+                                        <div className="text-[#929292] text-[14px] font-normal ">12 giờ trước</div>
+                                        <div className="text-[#6d6d6d] text-[14px] font-semibold ">Thích</div>
+                                        <div className="text-[#6d6d6d] text-[14px] font-semibold ">Phản hồi</div>
                                     </div>
                                 </div>
                             </div>

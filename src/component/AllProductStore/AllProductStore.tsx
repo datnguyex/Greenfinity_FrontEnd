@@ -159,7 +159,7 @@ function AllProductStore() {
                 {/* //left */}
                 <div className="w-[342px]  flex-col justify-start items-center inline-flex">
                     <div className="self-stretch min-h-[400px] px-[25px] py-10 bg-white rounded-2xl shadow-lg border border-[#009383] flex-col justify-start items-start gap-8 inline-flex overflow-hidden">
-                        <div className="text-[#494949] text-[24px] font-bold font-['Roboto']">Lọc sản phẩm</div>
+                        <div className="text-[#494949] text-[24px] font-bold ">Lọc sản phẩm</div>
 
                         <div className="flex-col justify-start gap-4 flex">
                             {/* Input Tìm kiếm */}
@@ -178,9 +178,7 @@ function AllProductStore() {
                                     onClick={() => toggleDropdown('sort')}
                                     className="w-[292px] px-4 py-3 bg-[#f6f6f6] rounded-xl border justify-between items-center inline-flex"
                                 >
-                                    <div className="text-[#494949] text-[18px] font-semibold font-['Roboto']">
-                                        Sắp xếp
-                                    </div>
+                                    <div className="text-[#494949] text-[18px] font-semibold ">Sắp xếp</div>
                                     <div className="w-6 h-6 relative mr-[10px] flex items-center">
                                         {/* Giả sử bạn đã tạo hoặc sử dụng một component <PlustGreen /> */}
                                         <div className="w-5 h-5"></div>
@@ -210,9 +208,7 @@ function AllProductStore() {
                                     onClick={() => toggleDropdown('collection')}
                                     className="w-[292px] px-4 py-3 bg-[#f6f6f6] rounded-xl border justify-between items-center inline-flex"
                                 >
-                                    <div className="text-[#494949] text-[18px] font-semibold font-['Roboto']">
-                                        Bộ sưu tập
-                                    </div>
+                                    <div className="text-[#494949] text-[18px] font-semibold ">Bộ sưu tập</div>
                                     <div className="w-6 h-6 relative mr-[10px] flex items-center">
                                         {/* Giả sử bạn đã tạo hoặc sử dụng một component <PlustGreen /> */}
                                         <div className="w-5 h-5"></div>
@@ -242,9 +238,7 @@ function AllProductStore() {
                                     onClick={() => toggleDropdown('category')}
                                     className="w-[292px] px-4 py-3 bg-[#f6f6f6] rounded-xl border justify-between items-center inline-flex"
                                 >
-                                    <div className="text-[#494949] text-[18px] font-semibold font-['Roboto']">
-                                        Phân loại
-                                    </div>
+                                    <div className="text-[#494949] text-[18px] font-semibold ">Phân loại</div>
                                     <div className="w-6 h-6 relative mr-[10px] flex items-center">
                                         {/* Giả sử bạn đã tạo hoặc sử dụng một component <PlustGreen /> */}
                                         <div className="w-5 h-5"></div>
@@ -274,7 +268,7 @@ function AllProductStore() {
                                     onClick={() => toggleDropdown('price')}
                                     className="w-[292px] px-4 py-3 bg-[#f6f6f6] rounded-xl border justify-between items-center inline-flex"
                                 >
-                                    <div className="text-[#494949] text-[18px] font-semibold font-['Roboto']">Giá</div>
+                                    <div className="text-[#494949] text-[18px] font-semibold ">Giá</div>
                                     <div className="w-6 h-6 relative mr-[10px] flex items-center">
                                         {/* Giả sử bạn đã tạo hoặc sử dụng một component <PlustGreen /> */}
                                         <div className="w-5 h-5"></div>
@@ -304,9 +298,7 @@ function AllProductStore() {
                                     onClick={() => toggleDropdown('color')}
                                     className="w-[292px] px-4 py-3 bg-[#f6f6f6] rounded-xl border justify-between items-center inline-flex"
                                 >
-                                    <div className="text-[#494949] text-[18px] font-semibold font-['Roboto']">
-                                        Màu sắc
-                                    </div>
+                                    <div className="text-[#494949] text-[18px] font-semibold ">Màu sắc</div>
                                     <div className="w-6 h-6 relative mr-[10px] flex items-center">
                                         {/* Giả sử bạn đã tạo hoặc sử dụng một component <PlustGreen /> */}
                                         <div className="w-5 h-5"></div>
@@ -351,24 +343,22 @@ function AllProductStore() {
                                 <div className="self-stretch h-[82.53px] flex-col justify-start items-start gap-4 flex">
                                     <div className="self-stretch h-[52.53px] flex-col justify-start items-start gap-3.5 flex">
                                         <div className="h-[27.53px] px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                            <div className="flex items-center justify-center gap-[3px] text-[#9644ff] text-[16px] font-medium font-['Roboto']">
+                                            <div className="flex items-center justify-center gap-[3px] text-[#9644ff] text-[16px] font-medium ">
                                                 <LeafPupple />
                                                 {product.category}
                                             </div>
                                         </div>
-                                        <div className="self-stretch text-[#494949] text-[16px] font-semibold font-['Roboto']">
+                                        <div className="self-stretch text-[#494949] text-[16px] font-semibold ">
                                             {product.title}
                                         </div>
                                     </div>
-                                    <div className="text-[#009383] text-[20px] font-bold font-['Roboto']">
-                                        {product.price}
-                                    </div>
+                                    <div className="text-[#009383] text-[20px] font-bold ">{product.price}</div>
                                 </div>
                                 <Link
                                     to={'/chi-tiet-san-pham'}
                                     className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                                 >
-                                    <div className="text-white text-[17px] font-bold font-['Roboto']">Mua ngay</div>
+                                    <div className="text-white text-[17px] font-bold ">Mua ngay</div>
                                 </Link>
                             </div>
                         </div>

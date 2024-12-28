@@ -88,10 +88,10 @@ function Donation({ disPlayDonation }: DonationProps) {
                                 onClick={() => disPlayDonation(false)}
                                 className="grow shrink basis-0 h-11 px-6 py-7 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden"
                             >
-                                <div className="text-[#009383] text-[20px] font-medium font-['Roboto']">Hủy</div>
+                                <div className="text-[#009383] text-[20px] font-medium ">Hủy</div>
                             </div>
                             <div className="grow shrink basis-0 h-11 px-6 py-7 cursor-pointer bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-white text-[20px] font-medium font-['Roboto']">Xác nhận</div>
+                                <div className="text-white text-[20px] font-medium ">Xác nhận</div>
                             </div>
                         </div>
                     </div>

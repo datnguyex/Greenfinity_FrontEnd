@@ -99,20 +99,20 @@ function OrderDetail() {
                                 {/* //item */}
                                 <div className="w-[100%] min-h-[630px] relative bg-white rounded-xl  overflow-hidden mt-[50px]">
                                     <div className="h-[60px] w-[100%] pl-6 pr-[58px] left-0 top-0 absolute bg-[#009383] rounded-xl justify-start items-center gap-[416px] inline-flex overflow-hidden">
-                                        <div className="text-white text-[19px]  font-semibold font-['Roboto'] leading-normal">
+                                        <div className="text-white text-[19px]  font-semibold leading-normal">
                                             Tên sản phẩm
                                         </div>
                                         <div className="self-stretch justify-end items-center gap-[43px] inline-flex">
-                                            <div className="text-center text-white text-[19px] font-semibold font-['Roboto'] leading-normal">
+                                            <div className="text-center text-white text-[19px] font-semibold leading-normal">
                                                 Số lượng
                                             </div>
-                                            <div className="text-center text-white text-[19px] font-semibold font-['Roboto'] leading-normal">
+                                            <div className="text-center text-white text-[19px] font-semibold leading-normal">
                                                 Giá
                                             </div>
-                                            <div className="text-center text-white text-[19px] font-semibold font-['Roboto'] leading-normal">
+                                            <div className="text-center text-white text-[19px] font-semibold leading-normal">
                                                 Giảm giá
                                             </div>
-                                            <div className="text-center text-white text-[19px] font-semibold font-['Roboto'] leading-normal">
+                                            <div className="text-center text-white text-[19px] font-semibold leading-normal">
                                                 Thành tiền
                                             </div>
                                         </div>
@@ -121,11 +121,11 @@ function OrderDetail() {
                                         <img className="w-[122px] h-[107px] object-cover" src={SharkProduct} />
                                         <div className="flex-col justify-start items-start gap-3 inline-flex">
                                             <div className="flex-col justify-start items-start gap-4 flex">
-                                                <div className="w-[299px] text-[#373737] text-[18px] font-semibold font-['Roboto'] leading-normal">
+                                                <div className="w-[299px] text-[#373737] text-[18px] font-semibold leading-normal">
                                                     Multipurpose container Shark
                                                 </div>
                                             </div>
-                                            <div className="w-[180px] text-[#505050] text-[16px] font-normal font-['Roboto'] leading-7">
+                                            <div className="w-[180px] text-[#505050] text-[16px] font-normal leading-7">
                                                 Phân loại: Trắng | S
                                             </div>
                                         </div>
@@ -149,11 +149,11 @@ function OrderDetail() {
                                         <img className="w-[122px] h-[107px] object-cover" src={SharkProduct} />
                                         <div className="flex-col justify-start items-start gap-3 inline-flex">
                                             <div className="flex-col justify-start items-start gap-4 flex">
-                                                <div className="w-[299px] text-[#373737] text-[18px] font-semibold font-['Roboto'] leading-normal">
+                                                <div className="w-[299px] text-[#373737] text-[18px] font-semibold leading-normal">
                                                     Multipurpose container Shark
                                                 </div>
                                             </div>
-                                            <div className="w-[180px] text-[#505050] text-[16px] font-normal font-['Roboto'] leading-7">
+                                            <div className="w-[180px] text-[#505050] text-[16px] font-normal leading-7">
                                                 Phân loại: Trắng | S
                                             </div>
                                         </div>
@@ -175,42 +175,42 @@ function OrderDetail() {
 
                                     <div className="h-[130p] w-[300px] left-[650px] top-[402px] absolute flex-col justify-start items-start gap-6 inline-flex">
                                         <div className="self-stretch justify-between items-start inline-flex">
-                                            <div className="text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-[#494949] text-[18px] font-normal leading-normal">
                                                 Tạm tính
                                             </div>
-                                            <div className="text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-[#494949] text-[18px] font-normal leading-normal">
                                                 1.600.000đ
                                             </div>
                                         </div>
                                         <div className="self-stretch justify-between items-start inline-flex">
-                                            <div className="text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-[#494949] text-[18px] font-normal leading-normal">
                                                 Phí giao hàng
                                             </div>
-                                            <div className="text-right text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-right text-[#494949] text-[18px] font-normal leading-normal">
                                                 0đ
                                             </div>
                                         </div>
                                         <div className="self-stretch justify-between items-start inline-flex">
-                                            <div className="text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-[#494949] text-[18px] font-normal leading-normal">
                                                 Khuyến mãi vận chuyển
                                             </div>
-                                            <div className="text-right text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-right text-[#494949] text-[18px] font-normal leading-normal">
                                                 0đ
                                             </div>
                                         </div>
                                         <div className="self-stretch justify-between items-start inline-flex">
-                                            <div className="text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-[#494949] text-[18px] font-normal leading-normal">
                                                 Giảm giá
                                             </div>
-                                            <div className="text-right text-[#494949] text-[18px] font-normal font-['Roboto'] leading-normal">
+                                            <div className="text-right text-[#494949] text-[18px] font-normal leading-normal">
                                                 0đ
                                             </div>
                                         </div>
                                         <div className="self-stretch justify-between items-start inline-flex">
-                                            <div className="text-[#009383] text-[18px] font-bold font-['Roboto'] leading-normal">
+                                            <div className="text-[#009383] text-[18px] font-bold leading-normal">
                                                 Tổng thanh toán
                                             </div>
-                                            <div className="text-right text-[#009383] text-[18px] font-bold font-['Roboto'] leading-normal">
+                                            <div className="text-right text-[#009383] text-[18px] font-bold leading-normal">
                                                 1.600.000đ
                                             </div>
                                         </div>

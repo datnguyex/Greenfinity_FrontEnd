@@ -123,7 +123,7 @@ function Cart() {
                                                 {product.name}
                                             </div>
                                             <div className="h-7 px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                                <div className="text-[#9644ff] text-[15px] font-medium font-['Roboto']">
+                                                <div className="text-[#9644ff] text-[15px] font-medium ">
                                                     {product.category}
                                                 </div>
                                             </div>
@@ -164,7 +164,7 @@ function Cart() {
                                 {/* {/* //item */}
                                 {/* <div className="flex justify-center items-center flex-col gap-[15px] pt-[30px]">
                                     <CartSad />
-                                    <div className="text-center text-[#66beb5] text-[18px] font-medium font-['Roboto']">
+                                    <div className="text-center text-[#66beb5] text-[18px] font-medium ">
                                         Chưa có đơn hàng
                                     </div>
                                 </div> */}
@@ -174,17 +174,17 @@ function Cart() {
                                 <div className="w-[342px] h-[210px] flex-col justify-start items-start gap-6 inline-flex">
                                     <div className="h-[138px] bg-white rounded-xl shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] flex-col justify-start items-start gap-6 flex">
                                         <div className="w-[342px] h-[138px] relative rounded-xl">
-                                            <div className="left-[16px] top-[24px] absolute text-[#494949] text-[16px] font-['Roboto']">
+                                            <div className="left-[16px] top-[24px] absolute text-[#494949] text-[16px] ">
                                                 {t('provisional')}
                                             </div>
-                                            <div className="left-[307px] top-[24px] absolute text-right text-[#494949] text-[16px] font-[16px] font-['Roboto']">
+                                            <div className="left-[307px] top-[24px] absolute text-right text-[#494949] text-[16px] font-[16px] ">
                                                 0đ
                                             </div>
                                             <div className="w-[309px] h-[0px] left-[16px] top-[73px] absolute border border-[#b6b6b6]"></div>
-                                            <div className="left-[16px] top-[91px] absolute text-right text-[#494949] text-[16px] font-semibold font-['Roboto']">
+                                            <div className="left-[16px] top-[91px] absolute text-right text-[#494949] text-[16px] font-semibold ">
                                                 {t('totalPricePre')}
                                             </div>
-                                            <div className="left-[301px] top-[91px] absolute text-right text-[#009383] text-[16px] font-bold font-['Roboto']">
+                                            <div className="left-[301px] top-[91px] absolute text-right text-[#009383] text-[16px] font-bold ">
                                                 0đ
                                             </div>
                                         </div>
@@ -193,7 +193,7 @@ function Cart() {
                                         to="/thong-tin-van-chuyen"
                                         className="w-[342px] h-12 px-6 py-9 bg-[#009383] rounded-lg cursor-pointer justify-center items-center gap-2 inline-flex overflow-hidden"
                                     >
-                                        <div className="text-white text-[16px] font-bold font-['Roboto']">Mua ngay</div>
+                                        <div className="text-white text-[16px] font-bold ">Mua ngay</div>
                                     </Link>
                                 </div>
                             </div>

@@ -29,7 +29,7 @@ const StoreBanner: React.FC<StoreBannerProps> = ({ image, title, subTitle }) => 
                         sagittis tellus ut scelerisque dolor auctor. Libero justo pellentesque pulvinar dolor...{' '}
                     </div>
                     <div className="w-[219px] h-[54px] px-6 py-2.5 bg-[#009383] rounded-lg justify-center items-center gap-2 inline-flex overflow-hidden">
-                        <div className="text-white text-[26px] font-bold font-['Roboto']">Mua ngay</div>
+                        <div className="text-white text-[26px] font-bold ">Mua ngay</div>
                     </div>
                 </div>
                 <div className="flex justify-end items-end">

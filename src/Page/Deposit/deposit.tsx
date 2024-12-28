@@ -46,27 +46,21 @@ function Deposit() {
                                 <div className="w-9 h-9 py-4 bg-[#009383] rounded-[58px] flex-col justify-center items-center gap-2.5 inline-flex overflow-hidden">
                                     <div className="text-white text-xl font-bold font-['Inter']">1</div>
                                 </div>
-                                <div className="text-[#009383] text-[17px] font-bold font-['Roboto']">
-                                    {' '}
-                                    {t('deposit')}
-                                </div>
+                                <div className="text-[#009383] text-[17px] font-bold "> {t('deposit')}</div>
                             </div>
                             <DepositLineStep />
                             <div className="pl-1 py-[7px] pr-4 bg-white rounded-[68px] shadow-[0px_0px_20px_2px_rgba(0,0,0,0.10)] justify-center items-center gap-2 flex overflow-hidden">
                                 <div className="w-9 h-9 py-4 bg-[#cce9e6] rounded-[58px] flex-col justify-center items-center gap-2.5 inline-flex overflow-hidden">
                                     <div className="text-[#009383] text-xl font-bold font-['Inter']">2</div>
                                 </div>
-                                <div className="text-[#666666] text-[17px] font-bold font-['Roboto']"> {t('pay')}</div>
+                                <div className="text-[#666666] text-[17px] font-bold "> {t('pay')}</div>
                             </div>
                             <DepositLineStep />
                             <div className="pl-1 py-[7px] pr-4 bg-white rounded-[68px] shadow-[0px_0px_20px_2px_rgba(0,0,0,0.10)] justify-center items-center gap-2 flex overflow-hidden">
                                 <div className="w-9 h-9 py-4 bg-[#cce9e6] rounded-[58px] flex-col justify-center items-center gap-2.5 inline-flex overflow-hidden">
                                     <div className="text-[#009383] text-xl font-bold font-['Inter']">3</div>
                                 </div>
-                                <div className="text-[#666666] text-[17px] font-bold font-['Roboto']">
-                                    {' '}
-                                    {t('finish')}
-                                </div>
+                                <div className="text-[#666666] text-[17px] font-bold "> {t('finish')}</div>
                             </div>
                         </div>
                         {/* //item */}
@@ -78,7 +72,7 @@ function Deposit() {
                             </div>
                             <div className="flex-col justify-start items-end gap-7 flex">
                                 <div className="self-stretch h-[58px] px-3.5 py-2.5 bg-[#f2fffd] rounded-xl border border-[#009383] justify-between items-center inline-flex overflow-hidden">
-                                    <div className="text-[#494949] text-[20px] font-semibold font-['Roboto']">
+                                    <div className="text-[#494949] text-[20px] font-semibold ">
                                         {t('GreeezCoinCurrenly')}
                                     </div>
                                     <div className="justify-start items-center gap-1 flex">
@@ -186,10 +180,7 @@ function Deposit() {
                                     to={'/phuong-thuc-thanh-toan'}
                                     className="self-stretch cursor-pointer h-16 px-6 py-[5px]  bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                                 >
-                                    <div className="text-white text-[20px]  font-medium font-['Roboto']">
-                                        {' '}
-                                        {t('continue')}
-                                    </div>
+                                    <div className="text-white text-[20px]  font-medium "> {t('continue')}</div>
                                 </Link>
                             </div>
                         </div>

@@ -23,7 +23,7 @@ function Menu(pathName: any) {
                         {pathName.pathName == 'trang-ca-nhan' ? <UserWhite /> : <UserGreen />}
                     </div>
                     <div
-                        className={`text-[18px] font-semibold font-['Roboto'] ${
+                        className={`text-[18px] font-semibold ${
                             pathName.pathName == 'trang-ca-nhan' ? 'text-white ' : 'text-[#505050]'
                         }`}
                     >
@@ -40,7 +40,7 @@ function Menu(pathName: any) {
                 <div className="justify-start items-center gap-2 flex">
                     <div className="w-[35px]">{pathName.pathName == 'don-hang' ? <CartWhite /> : <CartGreen />}</div>
                     <div
-                        className={`text-[18px] font-semibold font-['Roboto'] ${
+                        className={`text-[18px] font-semibold ${
                             pathName.pathName == 'don-hang' ? 'text-white ' : 'text-[#505050]'
                         }`}
                     >
@@ -59,7 +59,7 @@ function Menu(pathName: any) {
                         {pathName.pathName == 'san-pham-cua-ban' ? <UserWhite /> : <UserGreen />}
                     </div>
                     <div
-                        className={`text-[18px] font-semibold font-['Roboto'] ${
+                        className={`text-[18px] font-semibold ${
                             pathName.pathName == 'san-pham-cua-ban' ? 'text-white ' : 'text-[#505050]'
                         }`}
                     >
@@ -74,7 +74,7 @@ function Menu(pathName: any) {
                         <LogoutRed />
                     </div>
 
-                    <div className="text-[#ff4343] text-[18px] font-semibold font-['Roboto']">Đăng xuất</div>
+                    <div className="text-[#ff4343] text-[18px] font-semibold ">Đăng xuất</div>
                 </div>
                 <ArrowLeftRed />
             </div>

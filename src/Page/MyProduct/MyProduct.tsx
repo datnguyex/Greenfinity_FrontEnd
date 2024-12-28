@@ -43,7 +43,7 @@ function MyProduct() {
                                 <div className="h-[52px] cursor-pointer w-[220px] mb-[30px] px-4 py-[5px] bg-[#009383] rounded-[10px] flex-col justify-center items-center inline-flex">
                                     <div className="justify-start items-center gap-2 inline-flex">
                                         <BarCode />
-                                        <div className="text-white text-[17px] font-semibold font-['Roboto'] leading-tight">
+                                        <div className="text-white text-[17px] font-semibold leading-tight">
                                             Hướng dẫn định danh
                                         </div>
                                     </div>
@@ -64,17 +64,17 @@ function MyProduct() {
                                             <div className="self-stretch h-[132.53px] flex-col justify-start items-center gap-4 flex">
                                                 <div className="self-stretch h-[76.53px] flex-col justify-start items-start gap-3 flex">
                                                     <div className="h-[27.53px] px-3 py-2 bg-[#dde6ff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                                        <div className="text-[#0084ff] text-[15px] font-medium font-['Roboto'] flex justify-center items-center gap-2">
+                                                        <div className="text-[#0084ff] text-[15px] font-medium flex justify-center items-center gap-2">
                                                             <LeafBlue />
                                                             {product.category}
                                                         </div>
                                                     </div>
-                                                    <div className="w-[230px] text-[#494949] text-[20px] font-semibold font-['Roboto'] uppercase">
+                                                    <div className="w-[230px] text-[#494949] text-[20px] font-semibold uppercase">
                                                         {product.name}
                                                     </div>
                                                 </div>
                                                 <div className="self-stretch h-11 px-6 py-7 cursor-pointer bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 inline-flex overflow-hidden">
-                                                    <div className="text-[#009383] text-[18px] font-bold font-['Roboto']">
+                                                    <div className="text-[#009383] text-[18px] font-bold ">
                                                         Xem chi tiết
                                                     </div>
                                                 </div>
