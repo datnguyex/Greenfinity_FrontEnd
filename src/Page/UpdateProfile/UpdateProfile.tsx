@@ -8,6 +8,8 @@ import { RoundedMan1, RoundedMan2, RoundedWoman1, RoundedWoman2, RoundedWoman3, 
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import { info } from 'console';
+import { Link } from 'react-router-dom';
 function Profile() {
     const { t } = useTranslation(['updateProfile']);
 
@@ -16,18 +18,21 @@ function Profile() {
 
     const [infoUser, setInfoUser] = useState({
         name: 'Nguyễn Thành Đạt',
-        gender: 'male',
+        gender: 'Nam',
         avatarID: 1,
         bigAvatar: ManRankAvatar,
     });
+    const [openBirth, setOpenBirth] = useState(false);
     const handleInfoUser = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
 
-        // Update the state with the new value
         setInfoUser((prevInfoUser) => ({
             ...prevInfoUser,
-            [name]: value, // This will update either 'name' or 'gender'
+            [name]: value,
         }));
+    };
+    const handleOpenBirth = () => {
+        setOpenBirth(!openBirth);
     };
     const vouchers = Array(6).fill({
         title: 'Giải tư - Voucher Quà tặng thời trang Uniqlo',
@@ -166,6 +171,41 @@ function Profile() {
                                             ></input>
                                         </div>
                                     </div>
+                                    <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex relative">
+                                        <div className="justify-start items-start gap-0.5 inline-flex">
+                                            <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
+                                                {infoUser.gender == '' ? 'Giới tính' : infoUser.gender}
+                                            </div>
+                                        </div>
+                                        <div
+                                            onClick={() => handleOpenBirth()}
+                                            className="w-[524px] h-12 px-4 py-2.5 bg-white rounded-lg border border-[#b6b6b6] justify-start items-center gap-2.5 inline-flex"
+                                        >
+                                            <div className="text-[#929292] outline-none w-[100%] text-[16px]">Nam</div>
+                                        </div>
+                                        {openBirth && (
+                                            <div className="mt-2 w-[100%] absolute top-[50px] bg-white shadow-lg z-[10] rounded-xl border p-3 transition duration-300 ease-in-out transform">
+                                                <div
+                                                    className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all"
+                                                    onClick={() => console.log('Sắp xếp tăng dần')}
+                                                >
+                                                    Nam
+                                                </div>
+                                                <div
+                                                    className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all"
+                                                    onClick={() => console.log('Sắp xếp giảm dần')}
+                                                >
+                                                    Nữ
+                                                </div>
+                                                <div
+                                                    className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all"
+                                                    onClick={() => console.log('Sắp xếp giảm dần')}
+                                                >
+                                                    Khác
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                     <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex">
                                         <div className="justify-start items-start gap-0.5 inline-flex">
                                             <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
@@ -207,11 +247,14 @@ function Profile() {
                             </div>
                         </div>
                         <div className="cursor-pointer mt-[70px] text-center">
-                            <div className="h-12 px-[31px] py-[26px] bg-[#009383] rounded-lg mx-auto justify-center items-center gap-2.5 inline-flex">
+                            <Link
+                                to={'/trang-ca-nhan'}
+                                className="h-12 px-[31px] py-[26px] bg-[#009383] rounded-lg mx-auto justify-center items-center gap-2.5 inline-flex"
+                            >
                                 <div className="text-center text-white text-[20px] font-semibold leading-normal">
                                     Xác nhận thay đổi
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

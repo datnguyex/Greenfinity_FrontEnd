@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '~/component/Layout/Header/Header';
-import { MagnifyingGlassBlack, LeafBlue } from '~/component/Icon';
+import { MagnifyingGlassBlack, LeafBlue, CartSad } from '~/component/Icon';
 import Menu from '~/component/Menu/Menu';
 import { Link } from 'react-router-dom';
 import { SharkProduct, leafHomeLeft, leafHomeRight } from '~/Images';
@@ -155,7 +155,9 @@ const AllOrder = () => {
     ];
 
     const location = useLocation();
-
+    const path = location.pathname;
+    const pathName = path.split('/')[1];
+    // console.log('pathName', pathName);
     const queryParams = new URLSearchParams(location.search);
     const type = queryParams.get('type');
     const [productState, setProductState] = useState(products);
@@ -189,7 +191,7 @@ const AllOrder = () => {
                     <div className="px-[30px] mx-auto max-w-[142.7rem] w-[100%]">
                         <div className="flex justify-start gap-[20px]">
                             {/* Left Menu */}
-                            <Menu />
+                            <Menu pathName={pathName} />
                             {/* Right content */}
                             <div className="flex flex-col items-start w-[1000px]">
                                 {/* Header */}
@@ -198,7 +200,7 @@ const AllOrder = () => {
                                 </div>
 
                                 {/* Navigation links */}
-                                <div className="w-[100%] h-[52px] p-0.5 bg-white rounded-lg border border-[#006e62] justify-between items-center gap-1.5 inline-flex">
+                                <div className="w-[100%] h-[52px] mt-[16px] p-0.5 bg-white rounded-lg border border-[#006e62] justify-between items-center gap-1.5 inline-flex">
                                     <Link
                                         to={'/don-hang?type=1'}
                                         className={`h-[100%] w-[180px] cursor-pointer px-8 py-[13.50px] rounded-md justify-center items-center gap-1.5 flex overflow-hidden
@@ -279,84 +281,93 @@ const AllOrder = () => {
                                 </div>
 
                                 {/* Product List */}
-                                {/* {productState.map((product) => (
-                                    <div
-                                        key={product.id}
-                                        className="w-[1000px] mt-[16px] h-[222px] p-3 bg-white rounded-xl shadow-[0px_0px_20px_0px_rgba(113,113,113,0.15)] border flex-col justify-start items-end gap-3 inline-flex overflow-hidden"
-                                    >
-                                        <div className="self-stretch justify-between items-start inline-flex">
-                                            <div className="w-[441px] h-[130px] relative">
-                                                <div className="w-[130px] h-[130px] left-0 top-0 absolute">
-                                                    <div className="w-[130px] h-[130px] left-0 top-0 absolute bg-[#eceef0] rounded-lg" />
-                                                    <img
-                                                        className="w-[100%] object-cover h-[100%] left-0 top-0 absolute"
-                                                        src={product.imgSrc}
-                                                        alt={product.name}
-                                                    />
-                                                </div>
-                                                <div className="left-[142px] top-[12px] absolute flex-col justify-start items-start gap-4 inline-flex">
-                                                    <div className="w-[299px] text-[#373737] text-[18px] font-semibold leading-normal">
-                                                        {product.name}
+                                {productState.length > 0 ? (
+                                    productState.map((product) => (
+                                        <div
+                                            key={product.id}
+                                            className="w-[1000px] mt-[16px] h-[222px] p-3 bg-white rounded-xl shadow-[0px_0px_20px_0px_rgba(113,113,113,0.15)] border flex-col justify-start items-end gap-3 inline-flex overflow-hidden"
+                                        >
+                                            <div className="self-stretch justify-between items-start inline-flex">
+                                                <div className="w-[441px] h-[130px] relative">
+                                                    <div className="w-[130px] h-[130px] left-0 top-0 absolute">
+                                                        <div className="w-[130px] h-[130px] left-0 top-0 absolute bg-[#eceef0] rounded-lg" />
+                                                        <img
+                                                            className="w-[100%] object-cover h-[100%] left-0 top-0 absolute"
+                                                            src={product.imgSrc}
+                                                            alt={product.name}
+                                                        />
                                                     </div>
-                                                    <div className="h-[27.53px] px-2 py-1 bg-[#dde6ff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
-                                                        <LeafBlue />
-                                                        <div className="text-[#0084ff] text-[15px] font-medium font-['Roboto']">
-                                                            {product.category}
+                                                    <div className="left-[142px] top-[12px] absolute flex-col justify-start items-start gap-4 inline-flex">
+                                                        <div className="w-[299px] text-[#373737] text-[18px] font-semibold leading-normal">
+                                                            {product.name}
+                                                        </div>
+                                                        <div className="h-[27.53px] px-2 py-1 bg-[#dde6ff] rounded-[20px] justify-start items-center gap-[3px] inline-flex">
+                                                            <LeafBlue />
+                                                            <div className="text-[#0084ff] text-[15px] font-medium font-['Roboto']">
+                                                                {product.category}
+                                                            </div>
+                                                        </div>
+                                                        <div className="w-[180px]">
+                                                            <span className="text-[#494949] text-[17px] font-normal leading-7">
+                                                                Số lượng:{' '}
+                                                            </span>
+                                                            <span className="text-[#006e62] text-[17px] font-semibold leading-7">
+                                                                {product.quantity}
+                                                            </span>
                                                         </div>
                                                     </div>
-                                                    <div className="w-[180px]">
-                                                        <span className="text-[#494949] text-[17px] font-normal leading-7">
-                                                            Số lượng:{' '}
-                                                        </span>
-                                                        <span className="text-[#006e62] text-[17px] font-semibold leading-7">
-                                                            {product.quantity}
-                                                        </span>
+                                                </div>
+                                                <div className="justify-start items-center gap-1.5 flex">
+                                                    <div className="w-6 h-6 relative overflow-hidden" />
+                                                    <div className="text-[#009383] text-[17px] font-semibold leading-tight">
+                                                        {product.status}
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="justify-start items-center gap-1.5 flex">
-                                                <div className="w-6 h-6 relative overflow-hidden" />
-                                                <div className="text-[#009383] text-[17px] font-semibold leading-tight">
-                                                    {product.status}
+
+                                            <div className="self-stretch h-14 flex-col justify-start items-end gap-3 flex ">
+                                                <div className="w-[1000px] h-[0px] border border-[#dbdbdb]"></div>
+                                                <div className="w-[1000px] justify-between items-center inline-flex">
+                                                    <div className="justify-center items-center gap-4 flex ml-[20px]">
+                                                        <Link
+                                                            to={'/chi-tiet-don-hang'}
+                                                            className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#66beb5] justify-center items-center gap-2 flex"
+                                                        >
+                                                            <div className="text-[#505050] text-[19px] font-semibold font-['Roboto']">
+                                                                Xem chi tiết
+                                                            </div>
+                                                        </Link>
+                                                        <div className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#66beb5] justify-center items-center gap-2 flex">
+                                                            <div className="text-[#505050] text-[19px] font-semibold font-['Roboto']">
+                                                                Đánh giá
+                                                            </div>
+                                                        </div>
+                                                        <div className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
+                                                            <div className="text-white text-[19px] font-semibold font-['Roboto']">
+                                                                Mua lại
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span className="text-[#494949] text-[20px] font-medium leading-relaxed">
+                                                            Tổng tiền:
+                                                        </span>
+                                                        <span className="text-[#009383] text-[20px] font-bold leading-relaxed">
+                                                            {product.price.toLocaleString()}đ
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div className="self-stretch h-14 flex-col justify-start items-end gap-3 flex ">
-                                            <div className="w-[1000px] h-[0px] border border-[#dbdbdb]"></div>
-                                            <div className="w-[1000px] justify-between items-center inline-flex">
-                                                <div className="justify-center items-center gap-4 flex ml-[20px]">
-                                                    <Link
-                                                        to={'/chi-tiet-don-hang'}
-                                                        className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#66beb5] justify-center items-center gap-2 flex"
-                                                    >
-                                                        <div className="text-[#505050] text-[19px] font-semibold font-['Roboto']">
-                                                            Xem chi tiết
-                                                        </div>
-                                                    </Link>
-                                                    <div className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#66beb5] justify-center items-center gap-2 flex">
-                                                        <div className="text-[#505050] text-[19px] font-semibold font-['Roboto']">
-                                                            Đánh giá
-                                                        </div>
-                                                    </div>
-                                                    <div className="w-[140px] h-[40px] px-6 py-2.5 cursor-pointer bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
-                                                        <div className="text-white text-[19px] font-semibold font-['Roboto']">
-                                                            Mua lại
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <span className="text-[#494949] text-[20px] font-medium leading-relaxed">
-                                                        Tổng tiền:
-                                                    </span>
-                                                    <span className="text-[#009383] text-[20px] font-bold leading-relaxed">
-                                                        {product.price.toLocaleString()}đ
-                                                    </span>
-                                                </div>
-                                            </div>
+                                    ))
+                                ) : (
+                                    <div className="flex flex-col justify-center items-center mx-auto gap-5 mt-[100px]">
+                                        <CartSad />
+                                        <div className="text-center text-[#66beb5] text-[18px] font-medium font-['Roboto']">
+                                            Chưa có đơn hàng
                                         </div>
                                     </div>
-                                ))} */}
+                                )}
                             </div>
                         </div>
                     </div>

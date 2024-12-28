@@ -68,4 +68,9 @@ export {
     ArrowLeftBlack,
     MagnifyingGlassBlack,
     BarCode,
+    SignEditWhite,
+    BlockCircle,
+    DeleteUser,
+    AZArrange,
+    ThreeDrawCabinetWhite,
 } from './Icon';
