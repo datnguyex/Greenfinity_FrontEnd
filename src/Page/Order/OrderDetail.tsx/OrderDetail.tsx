@@ -1,6 +1,6 @@
 import { ArrowLeftBlack } from '~/component/Icon';
 import Header from '~/component/Layout/Header/Header';
-import Menu from '~/component/Menu/Menu';
+import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 import { leafHomeLeft, leafHomeRight, SharkProduct } from '~/Images';
 
 function OrderDetail() {
@@ -19,7 +19,7 @@ function OrderDetail() {
                     <div className="px-[30px] mx-auto max-w-[142.7rem] w-[100%]">
                         <div className="flex justify-start gap-[20px]">
                             {/* left */}
-                            <Menu />
+                            <UserMenu />
                             {/* right */}
                             <div className="flex flex-col items-start w-[1000px]">
                                 {/* //item */}

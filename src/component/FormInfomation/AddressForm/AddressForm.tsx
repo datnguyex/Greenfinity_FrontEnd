@@ -2,7 +2,12 @@ import { useEffect, useState } from 'react';
 import { CloseXBlack } from '~/component/Icon';
 import axios from 'axios';
 
-function AddressForm(type: any) {
+type AddressFormProps = {
+    type: string;
+    handlelTypeDisplay: (value: string) => void;
+};
+function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
+    console.log('type', type);
     type Provinces = {
         name: string;
         code: number;
@@ -159,11 +164,14 @@ function AddressForm(type: any) {
         <>
             <div className="fixed inset-0 bg-black bg-opacity-50 z-[100]"></div>
             <div className="fixed w-[586px] h-[722px]  bg-white rounded-xl mx-auto left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
-                <div className="w-6 h-6 left-[546px] top-[16px] absolute cursor-pointer">
+                <div
+                    onClick={() => handlelTypeDisplay('new-value')}
+                    className="w-6 h-6 left-[546px] top-[16px] absolute cursor-pointer"
+                >
                     <CloseXBlack />
                 </div>
                 <div className="left-[31px] top-[40px] absolute text-[#009383] text-[32px] font-semibold leading-[38.40px]">
-                    {type.type == 'thay-doi-dia-chi' ? 'Thay đổi địa chỉ' : 'Thêm địa chỉ'}
+                    {type == 'thay-doi-dia-chi' ? 'Thay đổi địa chỉ' : 'Thêm địa chỉ'}
                 </div>
                 <div className="left-[31px] top-[455px] absolute flex-col justify-start items-start gap-5 inline-flex">
                     <div className="h-[67px] flex-col justify-start items-start gap-3 flex">
@@ -210,7 +218,7 @@ function AddressForm(type: any) {
                         <input
                             placeholder="Nhập địa chỉ cụ thể"
                             value={
-                                type.type === 'thay-doi-dia-chi'
+                                type === 'thay-doi-dia-chi'
                                     ? currrentAddress.addresSpecific == ''
                                         ? addressSpecific
                                         : currrentAddress.addresSpecific
@@ -229,7 +237,7 @@ function AddressForm(type: any) {
                     <div className="w-[524px] h-12 flex-col justify-start items-start gap-2 flex cursor-pointer relative group">
                         <div className="self-stretch py-7 grow shrink basis-0 pl-4 pr-3 bg-[#f9f8f8] rounded-md border justify-between items-center inline-flex overflow-hidden">
                             <div className="text-[#494949] text-[16px] font-normal font-['Roboto']">
-                                {type.type === 'thay-doi-dia-chi'
+                                {type === 'thay-doi-dia-chi'
                                     ? ward.name !== null
                                         ? ward.name
                                         : currrentAddress.ward
@@ -265,7 +273,7 @@ function AddressForm(type: any) {
                     <div className="w-[524px] h-12 flex-col justify-start items-start gap-2 flex cursor-pointer relative group">
                         <div className="self-stretch py-7 grow shrink basis-0 pl-4 pr-3 bg-[#f9f8f8] rounded-md border justify-between items-center inline-flex overflow-hidden">
                             <div className="text-[#494949] text-[16px] font-normal font-['Roboto']">
-                                {type.type === 'thay-doi-dia-chi'
+                                {type === 'thay-doi-dia-chi'
                                     ? district.name !== null
                                         ? district.name
                                         : currrentAddress.district
@@ -305,7 +313,7 @@ function AddressForm(type: any) {
                     <div className="w-[524px] h-12 flex-col justify-start items-start gap-2 flex cursor-pointer relative group">
                         <div className="self-stretch py-7 grow shrink basis-0 pl-4 pr-3 bg-[#f9f8f8] rounded-md border justify-between items-center inline-flex overflow-hidden">
                             <div className="text-[#494949] text-[16px] font-normal font-['Roboto']">
-                                {type.type === 'thay-doi-dia-chi'
+                                {type === 'thay-doi-dia-chi'
                                     ? provine.name !== null
                                         ? provine.name
                                         : currrentAddress.provine
@@ -332,7 +340,7 @@ function AddressForm(type: any) {
                         </div>
                     </div>
                 </div>
-                {type.type == 'thay-doi-dia-chi' ? (
+                {type == 'thay-doi-dia-chi' ? (
                     <div className="left-[31px] top-[582px] absolute text-[#ff4343] text-[16px] font-normal underline cursor-pointer">
                         Xóa địa chỉ
                     </div>

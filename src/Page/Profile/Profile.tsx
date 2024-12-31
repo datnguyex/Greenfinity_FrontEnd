@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import AccountInfomation from '~/component/AccountInfomation/AccountInfomation';
-import Menu from '~/component/Menu/Menu';
+import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 
 function Profile() {
     const { t } = useTranslation(['profile']);
@@ -55,7 +55,7 @@ function Profile() {
                         {/* //item */}
                         <div className="w-[100%] h-[100%] flex justify-around items-start">
                             <div className="ml-[-30px]">
-                                <Menu pathName={pathName} />
+                                <UserMenu pathName={pathName} />
                             </div>
                             <div className="items-center flex justify-start gap-[3rem] mx-auto max-w-[104.8rem] w-[65%] pr-[20px]">
                                 {/* //child-item */}

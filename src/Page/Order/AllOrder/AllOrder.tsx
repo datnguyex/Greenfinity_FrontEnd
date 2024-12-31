@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '~/component/Layout/Header/Header';
 import { MagnifyingGlassBlack, LeafBlue, CartSad } from '~/component/Icon';
-import Menu from '~/component/Menu/Menu';
+import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 import { Link } from 'react-router-dom';
 import { SharkProduct, leafHomeLeft, leafHomeRight } from '~/Images';
 import Footer from '~/component/Layout/Footer/Footer';
@@ -191,7 +191,7 @@ const AllOrder = () => {
                     <div className="px-[30px] mx-auto max-w-[142.7rem] w-[100%]">
                         <div className="flex justify-start gap-[20px]">
                             {/* Left Menu */}
-                            <Menu pathName={pathName} />
+                            <UserMenu pathName={pathName} />
                             {/* Right content */}
                             <div className="flex flex-col items-start w-[1000px]">
                                 {/* Header */}

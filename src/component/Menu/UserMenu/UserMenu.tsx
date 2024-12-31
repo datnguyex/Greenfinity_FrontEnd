@@ -1,16 +1,9 @@
 import { Link } from 'react-router-dom';
-import {
-    ArrowLeftBlack,
-    ArrowLeftRed,
-    ArrowLeftWhite,
-    CartWhite,
-    LogoutRed,
-    ThreeDrawCabinet,
-    UserGreen,
-} from '../Icon';
-import { CartGreen, UserWhite } from '../Icon/Icon';
+import { UserGreen, ArrowLeftBlack, ArrowLeftRed, ArrowLeftWhite, CartWhite, LogoutRed } from '~/component/Icon/Icon';
 
-function Menu(pathName: any) {
+import { CartGreen, UserWhite } from '~/component/Icon/Icon';
+
+function UserMenu(pathName: any) {
     return (
         <div className="w-[342px] h-[230px] p-4 bg-white rounded-xl shadow-[0px_2px_19.700000762939453px_0px_rgba(0,0,0,0.07)] border border-[#009383] flex-col justify-center items-start gap-3 inline-flex overflow-hidden">
             <Link
@@ -82,4 +75,4 @@ function Menu(pathName: any) {
     );
 }
 
-export default Menu;
+export default UserMenu;

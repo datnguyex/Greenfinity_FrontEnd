@@ -74,4 +74,5 @@ export {
     AZArrange,
     ThreeDrawCabinetWhite,
     CloseXBlack,
+    BackgroundRipple,
 } from './Icon';

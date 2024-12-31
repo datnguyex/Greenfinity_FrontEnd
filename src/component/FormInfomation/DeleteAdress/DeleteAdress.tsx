@@ -1,4 +1,7 @@
-function DeleteAdress() {
+type AddressFormProps = {
+    handlelTypeDisplay: (value: string) => void;
+};
+function DeleteAdress({ handlelTypeDisplay }: AddressFormProps) {
     return (
         <>
             <div className="fixed inset-0 bg-black bg-opacity-50 z-[100] "></div>
@@ -14,7 +17,10 @@ function DeleteAdress() {
                     </div>
                     <div className="justify-center items-center gap-4 inline-flex">
                         <div className="w-[100px] h-11 px-6 py-7 bg-[#f0f0f0] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex">
-                            <div className="text-[#494949] text-[18px] cursor-pointer font-medium font-['Roboto']">
+                            <div
+                                onClick={() => handlelTypeDisplay('')}
+                                className="text-[#494949] text-[18px] cursor-pointer font-medium font-['Roboto']"
+                            >
                                 Hủy
                             </div>
                         </div>

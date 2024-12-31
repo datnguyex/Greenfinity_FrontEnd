@@ -3,8 +3,8 @@ import { DeleteUser, EditSign } from '../Icon';
 import { BlockCircle, PlusWhite, SignEditWhite } from '../Icon/Icon';
 import AddressForm from '../FormInfomation/AddressForm/AddressForm';
 import { useState } from 'react';
-import Logout from '../FormInfomation/Logout/Logout';
 import ChangePassword from '../FormInfomation/ChangePassword/ChangePassword';
+import DeleteAdress from '../FormInfomation/DeleteAdress/DeleteAdress';
 
 function AccountInfomation() {
     const [typeDisplay, setTypeDisplay] = useState();
@@ -13,9 +13,12 @@ function AccountInfomation() {
     };
     return (
         <>
-            {typeDisplay === 'them-dia-chi' && <AddressForm type={'123'} />}
-            {typeDisplay === 'chinh-sua-dia-chi' && <AddressForm type={'chinh-sua-dia-chi'} />}
-            {typeDisplay === 'doi-mat-khau' && <ChangePassword />}
+            {typeDisplay === 'them-dia-chi' && <AddressForm type={'123'} handlelTypeDisplay={handlelTypeDisplay} />}
+            {typeDisplay === 'thay-doi-dia-chi' && (
+                <AddressForm type={'thay-doi-dia-chi'} handlelTypeDisplay={handlelTypeDisplay} />
+            )}
+            {typeDisplay === 'doi-mat-khau' && <ChangePassword handlelTypeDisplay={handlelTypeDisplay} />}
+            {typeDisplay === 'xoa-tai-khoan' && <DeleteAdress handlelTypeDisplay={handlelTypeDisplay} />}
             <div className="mx-auto flex justify-center w-[100%] mt-[30px]">
                 <div className="w-[100%] h-[668px] px-[29px] py-5 bg-white rounded-xl border border-[#66beb5] flex-col justify-start items-center gap-[21px] inline-flex">
                     <div className="self-stretch h-40 flex-col justify-start items-start gap-3 flex">
@@ -115,10 +118,10 @@ function AccountInfomation() {
                                                 Mặc định
                                             </div>
                                         </div>
-                                        <div onClick={() => handlelTypeDisplay('chinh-sua-dia-chi')}>
+                                        <div onClick={() => handlelTypeDisplay('thay-doi-dia-chi')}>
                                             <div
                                                 className="cursor-pointer"
-                                                onClick={() => handlelTypeDisplay('chinh-sua-dia-chi')}
+                                                onClick={() => handlelTypeDisplay('thay-doi-dia-chi')}
                                             >
                                                 <EditSign />
                                             </div>
@@ -144,7 +147,7 @@ function AccountInfomation() {
                                         </div>
                                         <div
                                             className="cursor-pointer"
-                                            onClick={() => handlelTypeDisplay('chinh-sua-dia-chi')}
+                                            onClick={() => handlelTypeDisplay('thay-doi-dia-chi')}
                                         >
                                             <EditSign />
                                         </div>
@@ -169,7 +172,7 @@ function AccountInfomation() {
                                         </div>
                                         <div
                                             className="cursor-pointer"
-                                            onClick={() => handlelTypeDisplay('chinh-sua-dia-chi')}
+                                            onClick={() => handlelTypeDisplay('thay-doi-dia-chi')}
                                         >
                                             <EditSign />
                                         </div>
@@ -189,7 +192,12 @@ function AccountInfomation() {
                     </div>
                     <div className="h-11 px-6 py-7 bg-[#ffeaea] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-4 inline-flex overflow-hidden">
                         <DeleteUser />
-                        <div className="text-[#ff4343] text-[18px] font-medium cursor-pointer">Xóa tài khoản</div>
+                        <div
+                            onClick={() => handlelTypeDisplay('xoa-tai-khoan')}
+                            className="text-[#ff4343] text-[18px] font-medium cursor-pointer"
+                        >
+                            Xóa tài khoản
+                        </div>
                     </div>
                 </div>
             </div>

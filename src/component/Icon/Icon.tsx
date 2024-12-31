@@ -1687,3 +1687,32 @@ export const CrossHatchedEyes: React.FC<{ width?: string; height?: string }> = (
         </svg>
     );
 };
+export const BackgroundRipple: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1206 508.501C1380 -89.4991 1880 -9.96671 2081.76 23.1025C2113.71 533.823 2226 1080 2226 1080H-213V610C309.5 733.5 973.946 790.937 1206 508.501Z"
+                fill="#009383"
+            />
+        </svg>
+    );
+};
+export const ArrowTopWhite: React.FC<{ width?: string; height?: string }> = ({
+    width = '1.5rem',
+    height = '1.5rem',
+}) => {
+    return (
+        <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.75 13L13 1.75L24.25 13"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};

@@ -1,11 +1,17 @@
 import { CloseXBlack, CrossHatchedEyes } from '~/component/Icon/Icon';
 
-function ChangePassword() {
+type AddressFormProps = {
+    handlelTypeDisplay: (value: string) => void;
+};
+function ChangePassword({ handlelTypeDisplay }: AddressFormProps) {
     return (
         <>
             <div className="fixed inset-0 bg-black bg-opacity-50 z-[100]"></div>
             <div className="w-[586px] h-[491px] fixed bg-white rounded-xl  mx-auto left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
-                <div className="w-6 h-6 left-[546px] top-[16px] absolute cursor-pointer">
+                <div
+                    onClick={() => handlelTypeDisplay('')}
+                    className="w-6 h-6 left-[546px] top-[16px] absolute cursor-pointer"
+                >
                     <CloseXBlack />
                 </div>
                 <div className="left-[31px] top-[40px] absolute text-[#009383] text-[32px] font-semibold  leading-[38.40px]">

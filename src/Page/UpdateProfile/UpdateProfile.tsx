@@ -55,7 +55,7 @@ function Profile() {
         {
             id: 3,
             smallAvatar: RoundedWoman1,
-            bigAvatar: AvatarWoman2,
+            bigAvatar: AvatarWoman1,
         },
         {
             id: 4,

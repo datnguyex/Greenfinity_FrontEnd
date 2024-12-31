@@ -1,0 +1,13 @@
+.leaflet-popup-content-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+.leaflet-popup-tip {
+    display: none;
+}
+.leaflet-popup-close-button {
+    display: none;
+}

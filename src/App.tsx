@@ -5,7 +5,7 @@ import Login from './Page/Auth/Login/Login';
 import Signup from './Page/Auth/Signup/Signup';
 import HomePage from './Page/Home/Home';
 import GreezStation from './Page/GreezStation/GreezStation';
-import Map from './Page/Map/Map';
+
 import WorldRebirth from './Page/WorldRebirth/WorldRebirth';
 import ContributeRanking from './Page/ContributeRanking/ContributeRanking';
 import Profile from './Page/Profile/Profile';
@@ -27,6 +27,10 @@ import ForumProfile from './Page/ForumProfile/ForumProfile';
 import AllOrder from './Page/Order/AllOrder/AllOrder';
 import OrderDetail from './Page/Order/OrderDetail.tsx/OrderDetail';
 import MyProduct from './Page/MyProduct/MyProduct';
+import Story from './Page/Story/Story/Story';
+import SingleProduct from './Page/Story/SingleProduct/SingleProduct';
+import Collection from './Page/Story/Collection/Collection';
+import LocationMap from './Page/LocationMap/LocationMap';
 
 export default function App() {
     return (
@@ -38,7 +42,7 @@ export default function App() {
                 <Route path="/opt" element={<OPTSending />} />
                 {/* // */}
                 <Route path="/tram-greez" element={<GreezStation />} />
-                <Route path="/ban-do" element={<Map />} />
+                <Route path="/ban-do" element={<LocationMap />} />
                 <Route path="/the-gioi-tai-sinh" element={<WorldRebirth />} />
                 <Route path="/thang-dong-gop" element={<ContributeRanking />} />
                 <Route path="/trang-ca-nhan" element={<Profile />} />
@@ -63,6 +67,9 @@ export default function App() {
                 <Route path="don-hang" element={<AllOrder />} />
                 <Route path="chi-tiet-don-hang" element={<OrderDetail />} />
                 <Route path="san-pham-cua-ban" element={<MyProduct />} />
+                <Route path="cau-chuyen" element={<Story />} />
+                <Route path="san-pham-don" element={<SingleProduct />} />
+                <Route path="bo-suu-tap" element={<Collection />} />
             </Routes>
         </Router>
     );

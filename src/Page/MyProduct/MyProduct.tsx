@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { BarCode, LeafBlue } from '~/component/Icon';
 import Footer from '~/component/Layout/Footer/Footer';
 import Header from '~/component/Layout/Header/Header';
-import Menu from '~/component/Menu/Menu';
+import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 import { leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct } from '~/Images';
 
 function MyProduct() {
@@ -37,7 +37,7 @@ function MyProduct() {
                     <div className="px-[30px] mx-auto max-w-[142.7rem] w-[100%]">
                         <div className="flex justify-start gap-[20px]">
                             {/* Left Menu */}
-                            <Menu pathName={pathName} />
+                            <UserMenu pathName={pathName} />
                             {/* Right content */}
                             <div className="flex flex-col">
                                 <div className="h-[52px] cursor-pointer w-[220px] mb-[30px] px-4 py-[5px] bg-[#009383] rounded-[10px] flex-col justify-center items-center inline-flex">
