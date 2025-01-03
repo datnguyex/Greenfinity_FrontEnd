@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, Cart, LeafPupple } from '../Icon';
 import { CatChair, dumplingsProduct, OreonProduct } from '~/Images';
 import { useRef } from 'react';
 
-function RelatedProducts() {
+function RelatedProducts({ t }: { t: (key: string) => string }) {
     const sliderRef = useRef<Slider | null>(null);
 
     // Xử lý sự kiện khi nhấn Prev
@@ -126,7 +126,7 @@ function RelatedProducts() {
     return (
         <>
             <div className="text-[#009383] text-[36px] font-bold uppercase leading-[43.20px] text-center mt-[150px] mb-[40px]">
-                SẢN PHẨM LIÊN QUAN
+                {t('relatedProduct')}
             </div>
             <div className="max-w-[145rem] mx-auto">
                 <Slider ref={sliderRef} {...settings}>
@@ -160,7 +160,7 @@ function RelatedProducts() {
                                         <div className="text-[#009383] text-[20px] font-bold ">{product.price}</div>
                                     </div>
                                     <div className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden">
-                                        <div className="text-white text-[17px] font-bold ">Mua ngay</div>
+                                        <div className="text-white text-[17px] font-bold ">{t('buyNow')}</div>
                                     </div>
                                 </div>
                             </div>

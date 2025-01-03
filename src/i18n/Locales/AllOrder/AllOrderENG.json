@@ -1,0 +1,17 @@
+{
+    "myorder": "My Order",
+    "allOrder": "All Orders",
+    "processing": "Processing",
+    "delivering": "Delivering",
+    "deliverd": "Delivered",
+    "canceled": "Canceled",
+    "findOrder": "Find Order",
+    "OrderIsBeingDelivered": "The order is being delivered",
+    "waitingForConfirmation": "Waiting for confirmation",
+    "deliverySuccessful": "Delivery successful",
+    "seeDEtails": "See details",
+    "Evaluate": "Evaluate",
+    "buyBack": "Buy back",
+    "totalAmount": "Total amount",
+    "quantity": "Quantity"
+}

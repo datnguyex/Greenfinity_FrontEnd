@@ -1,11 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { ArrowTopWhite } from '~/component/Icon/Icon';
 import Footer from '~/component/Layout/Footer/Footer';
 import Header from '~/component/Layout/Header/Header';
 import ProductMenu from '~/component/Menu/ProductMenu/ProductMenu';
+import TitleBar from '~/component/TittleBar/TittleBar';
 import { Dragon1, Dragon2, Dragon3, Dragon4, Dragon5, Headerleft, leafHomeLeft, leafHomeRight } from '~/Images';
 
 function Collection() {
+    const images = [Dragon1, Dragon2, Dragon3, Dragon4, Dragon5];
+    const groups = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const [visibleProducts, setVisibleProducts] = useState(3);
     const loadMore = () => {
         setVisibleProducts((prevVisibleProducts) => prevVisibleProducts + 3);
@@ -19,9 +24,13 @@ function Collection() {
             behavior: 'smooth',
         });
     };
-    const images = [Dragon1, Dragon2, Dragon3, Dragon4, Dragon5];
-    const groups = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const { t } = useTranslation(['Collection']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
 
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />
@@ -36,26 +45,7 @@ function Collection() {
                 <div className="my-[140px]">
                     <div className="px-[30px] mx-auto max-w-[150.7rem] w-[100%] relative">
                         <div className="flex flex-col">
-                            <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                                <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                                <div
-                                    className="bg-[#fff] flex items-center flex-1
-                                                        border-b-solid border-b-[5px] 
-                                                         border-[#e0e0e0] justify-center relative
-                                                         h-[100%]
-                                                         w-[100%]
-                                                         "
-                                >
-                                    <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                        Sản phẩm mới
-                                    </h2>
-                                </div>
-                                <img
-                                    className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]"
-                                    src={Headerleft}
-                                    alt=""
-                                />
-                            </div>
+                            <TitleBar title={t('newProduct')} />
                         </div>
                         <div className="flex justify-center items-start gap-[40px]">
                             {/* left menu */}
@@ -90,7 +80,7 @@ function Collection() {
                     shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] text-[#009383] text-[16px] font-bold
                     my-[50px]"
                                     >
-                                        Xem thêm
+                                        {t('SeeMore')}
                                     </button>
                                 ) : (
                                     <button
@@ -99,7 +89,7 @@ function Collection() {
                     shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] text-[#009383] text-[16px] font-bold
                     my-[50px]"
                                     >
-                                        Thu gọn
+                                        {t('Collapse')}
                                     </button>
                                 )}
                             </div>

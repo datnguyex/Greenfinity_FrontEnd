@@ -1,12 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AvatarMan2, leafHomeLeft, leafHomeRight } from '~/Images';
 import { ImageChoosen, ListCircleAndDash, MagnifyingGlass } from '~/component/Icon';
 import Footer from '~/component/Layout/Footer/Footer';
 import Header from '~/component/Layout/Header/Header';
 import FunList from '~/component/Donation/FundList/FundList';
 import Posts from '~/component/Posts/Posts';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 function Forum() {
     const [images, setImages] = useState<string[]>([]);
+    const { t } = useTranslation(['Forum']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    const [useFundList, setUseFundList] = useState(false);
 
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const files = e.target.files; // Get the selected files
@@ -28,16 +35,17 @@ function Forum() {
         }
     };
 
-    const [useFundList, setUseFundList] = useState(false);
-
     const disPlayFundList = (value: any) => {
         setUseFundList(value);
     };
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
 
     return (
         <>
             <Header />
-            {useFundList ? <FunList disPlayFundList={disPlayFundList} /> : ''}
+            {useFundList && <FunList disPlayFundList={disPlayFundList} t={t} />}
 
             <div
                 className="bg-[#f2fffd] py-[56px] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto]"
@@ -51,7 +59,7 @@ function Forum() {
                     {/* //item */}
                     <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%]">
                         <div className="text-center text-[#009383] text-[64px] font-bold uppercase leading-[76.80px]">
-                            Diễn đàn
+                            {t('forum')}
                         </div>
                         {/* //item */}
                         <div className="h-[58px] w-[100%] justify-center items-start gap-10 inline-flex mt-[50px] mb-[30px] ">
@@ -60,7 +68,7 @@ function Forum() {
                                     <MagnifyingGlass />
                                     <input
                                         className="text-black text-[19px] font-normal outline-none w-[100%]"
-                                        placeholder=" Tìm kiếm trên diễn đàn"
+                                        placeholder={t('searchOnforum')}
                                     ></input>
                                 </div>
                             </div>
@@ -71,21 +79,27 @@ function Forum() {
                                 <div>
                                     <ListCircleAndDash />
                                 </div>
-                                <div className="text-center text-[#494949] text-[19px] font-bold ">Danh sách quỹ</div>
+                                <div className="text-center text-[#494949] text-[19px] font-bold ">
+                                    {' '}
+                                    {t('fundList')}
+                                </div>
                             </div>
                         </div>
                         {/* //item */}
                         <div className="min-h-[160px] w-[100%] p-5 bg-white rounded-3xl shadow-[0px_2px_20px_0px_rgba(0,0,0,0.05)] flex-col justify-start items-start gap-5 inline-flex">
                             <div className="self-stretch justify-start items-start gap-3 inline-flex w-[100%]">
-                                <img
-                                    className="w-[58px] h-[58px] rounded-full border border-[#dbdbdb]"
-                                    src={AvatarMan2}
-                                />
+                                <Link to="/ho-so-dien-dan">
+                                    <img
+                                        className="w-[58px] h-[58px] rounded-full border border-[#dbdbdb]"
+                                        src={AvatarMan2}
+                                    />
+                                </Link>
                                 <div className="grow shrink basis-0 w-[100%] h-[58px] px-[18px] bg-[#f9f9f9] rounded-[100px] justify-between items-center flex">
                                     <input
                                         className="text-[19px] font-normal outline-none bg-transparent w-[100%] text-black"
-                                        placeholder="Anh ơi, bạn đang nghĩ gì thế?"
-                                    ></input>
+                                        placeholder={`Anh ${t('thinking')}`} // Thêm chữ "Anh" trước giá trị từ i18n
+                                    />
+
                                     <div className="cursor-pointer">
                                         <input
                                             type="file"
@@ -114,12 +128,12 @@ function Forum() {
                                 </div>
                             )}
                             <div className="self-stretch h-11 px-6 py-8 cursor-pointer bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden">
-                                <div className="text-white text-[20px] font-medium ">Đăng</div>
+                                <div className="text-white text-[20px] font-medium "> {t('post')}</div>
                             </div>
                         </div>
                         {/* //item */}
-                        <Posts />
-                        <Posts />
+                        <Posts t={t} />
+                        <Posts t={t} />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,17 @@
+{
+    "myorder": "Đơn hàng của tôi",
+    "allOrder": "Tất cả đơn",
+    "processing": "đang xử lý",
+    "delivering": "Đang vận chuyển",
+    "deliverd": "Đã giao",
+    "canceled": "Đã hủy",
+    "findOrder": "Tìm kiếm đơn hàng",
+    "OrderIsBeingDelivered": "Đơn hàng đang được giao",
+    "waitingForConfirmation": "chờ xác nhận",
+    "deliverySuccessful": "Giao hàng thành công",
+    "seeDEtails": "Xem chi tiết",
+    "Evaluate": "Đánh giá",
+    "buyBack": "Mua lại",
+    "totalAmount": "Tổng tiền",
+    "quantity": "Số lượng"
+}

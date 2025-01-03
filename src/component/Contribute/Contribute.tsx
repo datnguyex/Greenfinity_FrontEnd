@@ -97,7 +97,7 @@ function Contribute({ t }: { t: (key: string) => string }) {
 
         nextArrow: <CustomArrowNext />,
         prevArrow: <CustomArrowPrev />,
-        initialSlide: weeks.length - 2,
+        initialSlide: weeks.length - 3,
     };
     const [timeActive, setTimeActive] = useState(weeks.length);
     const handleTimeActive = (index: any) => {

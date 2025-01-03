@@ -1,0 +1,28 @@
+{
+    "forum": "Forum",
+    "searchOnforum": "Search on forum",
+    "thinking": ",what are you thinking?",
+    "post": "Post",
+    "fundList": "Fund List",
+    "donateNow": "Donate Now",
+    "donate": "Donate",
+    "close": "Close",
+
+    "loadMore": "Load more",
+    "comments": "Comments",
+    "hourAgo": "Hour ago",
+    "like": "Like",
+    "feedback": "Feedback",
+    "day": "day",
+    "typeComment": "Type comment...",
+
+    "CurrentGreecoinAmount": "Current Greecoin Amount",
+    "receivingAccount": "Recieving Account",
+    "phoneNumber": "Phone number",
+    "enterGreecoin": "Enter number of Greecoin",
+    "greeCoinNumber": "Number of Greecoin",
+    "content": "Content",
+    "enterContent": "Enter content",
+    "Cancle": "Cancle",
+    "confirm": "Confirm"
+}

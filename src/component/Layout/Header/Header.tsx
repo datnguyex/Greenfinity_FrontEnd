@@ -217,9 +217,12 @@ function Header() {
                         >
                             {t('store')}
                         </Link>
-                        <p className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold text-[16px] leading-[18.75px] text-[#494949]">
+                        <Link
+                            to={'/cau-chuyen'}
+                            className="hover:text-[#009383] cursor-pointer px-[4px] py-[14px] font-bold text-[16px] leading-[18.75px] text-[#494949]"
+                        >
                             {t('story')}
-                        </p>
+                        </Link>
                     </div>
                 </div>
             </div>

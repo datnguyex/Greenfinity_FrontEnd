@@ -3,7 +3,7 @@ import { HalfAYelloStar, YellowStar } from '../Icon';
 import { ThumpUp } from '../Icon/Icon';
 import { Pagination } from 'antd';
 
-function CommentProduct() {
+function CommentProduct({ t }: { t: (key: string) => string }) {
     const reviews = [
         {
             avatar: AvatarWoman1,
@@ -36,13 +36,13 @@ function CommentProduct() {
     return (
         <>
             <div className="text-[#009383] text-[36px] font-bold uppercase leading-[43.20px] text-center mt-[150px] mb-[40px]">
-                ĐÁNH GIÁ SẢN PHẨM
+                {t('productReviews')};
             </div>
             <div className="w-[1440px] h-[1173px] px-[124px] pt-[47px] pb-9 bg-white rounded-2xl shadow-[0px_0px_20px_0px_rgba(113,113,113,0.15)] flex-col justify-start items-start gap-11 flex overflow-hidden">
                 <div className="h-[117px] justify-start items-center gap-[76px] inline-flex">
                     <div className="w-[346px] h-[117px] relative">
                         <div className="left-[160px] t top-[72px] absolute text-[#009383] text-[17px] font-medium ">
-                            Trên 500 lượt đánh giá
+                            {t('over')} 500 {t('reviews')}
                         </div>
                         <div className="left-0 top-0 absolute text-[#009383] text-[100px] font-bold ">4.5</div>
                         <div className="w-[186px] h-8 left-[128px] top-[38px] absolute justify-center items-start gap-[7px] inline-flex">
@@ -66,32 +66,34 @@ function CommentProduct() {
                     <div className="flex items-start justify-center flex-col gap-[10px]">
                         <div className=" justify-start items-start gap-[18px] flex">
                             <div className="px-6 cursor-pointer py-2.5 bg-[#006e62] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-white text-[17px] font-bold cursor-pointer">Tất cả</div>
+                                <div className="text-white text-[17px] font-bold cursor-pointer">{t('all')}</div>
                             </div>
 
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">5 Sao (83)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">5 {t('star')} (83)</div>
                             </div>
 
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">4 Sao (4)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">4 {t('star')} (4)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">3 Sao (0)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">3 {t('star')} (0)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">2 Sao (10)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">2 {t('star')} (10)</div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">1 Sao (0)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">1 {t('star')} (0)</div>
                             </div>
                         </div>
                         <div className=" justify-start items-start gap-[18px] flex">
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">Có bình luận (44)</div>
+                                <div className="text-[#009383] text-[17px] font-bold ">
+                                    {t('withPicturesVideos')} (44)
+                                </div>
                             </div>
                             <div className="px-6 cursor-pointer py-2.5 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 flex overflow-hidden">
-                                <div className="text-[#009383] text-[17px] font-bold ">Có hình ảnh/video (30)</div>
+                                <div className="text-[#009383] text-[17px] font-bold "> {t('withComments')} (30)</div>
                             </div>
                         </div>
                     </div>
@@ -103,7 +105,7 @@ function CommentProduct() {
                             <div className="left-[68px] top-[228px] absolute justify-start items-center gap-2 inline-flex">
                                 <div className="text-[#006e62] text-[17px] font-medium flex items-center justify-center gap-2 cursor-pointer">
                                     <ThumpUp />
-                                    Thích
+                                    {t('like')}
                                 </div>
                             </div>
                             <div className="w-[1070px] left-[68px] top-[98px] absolute text-[#121212] text-[17px] font-normal leading-none">
@@ -139,7 +141,7 @@ function CommentProduct() {
                                 <div className="text-[#494949] text-[17px] font-normal leading-none">{review.time}</div>
                                 <div className="justify-start items-center gap-2 flex">
                                     <div className="text-[#494949] text-[17px] font-normal leading-none">
-                                        Phân loại hàng:
+                                        {t('productClassification')}:
                                     </div>
                                     <div className="px-2 py-1 bg-[#f4ddff] rounded-[20px] justify-start items-center gap-[3px] flex">
                                         <div className="text-[#9644ff] text-[15px] font-medium ">{review.category}</div>

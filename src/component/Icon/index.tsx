@@ -75,4 +75,5 @@ export {
     ThreeDrawCabinetWhite,
     CloseXBlack,
     BackgroundRipple,
+    RectangularWarm,
 } from './Icon';

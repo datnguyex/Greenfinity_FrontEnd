@@ -4,11 +4,30 @@ import { leafHomeLeft, leafHomeRight, ManRankAvatar } from '~/Images';
 import { Link } from 'react-router-dom';
 import { EditSign, HorizonTwoCircle, ListCircleAndDash } from '~/component/Icon';
 import Posts from '~/component/Posts/Posts';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import FunList from '~/component/Donation/FundList/FundList';
 
 function ForumProfile() {
+    const { t } = useTranslation(['ForumProfile']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    const [useFundList, setUseFundList] = useState<boolean>(false); // Specify the type here
+
+    const disPlayFundList = (value: boolean) => {
+        setUseFundList(value);
+    };
+
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
+
     return (
         <>
             <Header />
+            {/* Ensure FunList is conditionally rendered properly */}
+            {useFundList && <FunList disPlayFundList={disPlayFundList} t={t} />}
             <div
                 className="bg-[#f2fffd] py-[56px] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto]"
                 style={{
@@ -40,26 +59,26 @@ function ForumProfile() {
                                     </div>
                                 </div>
                                 {/* Edit Profile Button */}
-                                <Link
-                                    to={'/trang-ca-nhan'}
-                                    className="w-[200px] h-[48px] py-[23px] rounded-[30px] border border-[#15BDD7] flex items-center justify-center gap-2"
-                                >
-                                    <div className="text-[#494949] text-[20px] font-bold flex items-center gap-2 justify-center h-[48px]">
+                                <div className="w-[200px] cursor-pointer h-[48px] py-[23px] rounded-[30px] border border-[#15BDD7] flex items-center justify-center gap-2">
+                                    <div
+                                        onClick={() => disPlayFundList(true)}
+                                        className="text-[#494949] text-[20px] font-bold flex items-center gap-2 justify-center h-[48px]"
+                                    >
                                         <ListCircleAndDash />
-                                        Danh sách quỹ
+                                        {t('fundList')}
                                     </div>
-                                </Link>
+                                </div>
                             </div>
                         </div>
                         <div className="min-h-[70px] w-[100%] p-5 bg-white rounded-3xl shadow-[0px_2px_20px_0px_rgba(0,0,0,0.05)] flex justify-between items-center gap-5">
-                            <h1 className="text-[#009383] font-bold text-[28px]">Bài viết</h1>
+                            <h1 className="text-[#009383] font-bold text-[28px]">{t('postsProfile')}</h1>
                             <button className="bg-[#009383] rounded-[14px] flex items-center justify-center w-[140px] h-[54px] text-[#fff] font-semibold text-[20px]">
                                 <HorizonTwoCircle />
-                                Bộ lọc
+                                {t('filterPofile')}
                             </button>
                         </div>
-                        <Posts />
-                        <Posts />
+                        <Posts t={t} />
+                        <Posts t={t} />
                     </div>
                 </div>
             </div>

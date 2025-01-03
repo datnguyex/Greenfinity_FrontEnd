@@ -3,5 +3,10 @@
     "fullname": "Full name",
     "phoneNumber": "Phone number",
     "email": "Email",
-    "dob": "Date of birth"
+    "dob": "Date of birth",
+
+    "gender": "Gender",
+    "man": "Man",
+    "woman": "Women",
+    "others": "Other"
 }

@@ -2,11 +2,13 @@ import './ProductDetail.css';
 import { leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct, CatChair } from '~/Images';
 import Slider from 'react-slick';
 import { ArrowLeft, ArrowRight, LeafPupple, Minus, Plus } from '~/component/Icon';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Header from '~/component/Layout/Header/Header';
 import CommentProduct from '~/component/CommentProduct/CommentProduct';
 import RelatedProducts from '~/component/RelatedProducts/RelatedProducts';
 import Footer from '~/component/Layout/Footer/Footer';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 
 function ProductDetail() {
     const slides = [
@@ -16,10 +18,6 @@ function ProductDetail() {
         { image1: OreonProduct },
         { image1: SharkProduct },
     ];
-
-    const sliderRef = useRef<Slider | null>(null);
-    const [currentImage, setCurrentImage] = useState(slides[0].image1); // Cập nhật ảnh ban đầu
-
     const CustomArrowNext = () => (
         <div
             style={{
@@ -67,6 +65,12 @@ function ProductDetail() {
         </div>
     );
 
+    const sliderRef = useRef<Slider | null>(null);
+    const [currentImage, setCurrentImage] = useState(slides[0].image1);
+    const { t } = useTranslation(['productDetail']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
     // Xử lý sự kiện khi nhấn Next
     const handleNextClick = () => {
         if (sliderRef.current) {
@@ -100,6 +104,9 @@ function ProductDetail() {
         initialSlide: 2,
         afterChange: handleSliderChange, // Lắng nghe sự kiện thay đổi slide
     };
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
 
     return (
         <>
@@ -142,7 +149,7 @@ function ProductDetail() {
                                         />
                                     </div>
                                     <div className="absolute right-[5%] top-[5%] w-[132px] h-10 px-5 py-7 bg-[#ededed] rounded-[34px] justify-center items-center gap-2 inline-flex">
-                                        <div className=" text-[#6d6d6d] text-[18px] font-medium ">Hết hàng</div>
+                                        <div className=" text-[#6d6d6d] text-[18px] font-medium "> {t('soldOut')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -182,21 +189,23 @@ function ProductDetail() {
                                             </div>
                                             <div className="flex-1 h-12 px-6 py-7 cursor-pointer bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-neutral-400 justify-center items-center gap-2 flex overflow-hidden">
                                                 <div className="text-neutral-400 text-[18px] font-bold ">
-                                                    Thêm vào giỏ hàng
+                                                    {t('addToCart')}
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="self-stretch h-12 px-6 py-7 bg-neutral-400 rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] cursor-pointer justify-center items-center gap-2 inline-flex overflow-hidden">
-                                            <div className="text-white text-[18px] font-bold ">Mua ngay</div>
+                                            <div className="text-white text-[18px] font-bold ">{t('buyNow')}</div>
                                         </div>
                                     </div>
 
                                     <div className="flex-col justify-start items-start gap-[18px] flex">
-                                        <div className="text-[#009383] text-[20px] font-bold ">Chi tiết sản phẩm</div>
+                                        <div className="text-[#009383] text-[20px] font-bold ">
+                                            {t('productDetail')}
+                                        </div>
                                         <div className="h-[135px] px-[13px] w-[80%] py-3.5 bg-white rounded-[10px] border border-[#66beb5] flex-col justify-center items-center gap-2 flex">
                                             <div className="self-stretch">
                                                 <span className="text-[#494949] text-[16px] font-semibold leading-normal">
-                                                    Kích thước:
+                                                    {t('size')}:
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
@@ -204,7 +213,7 @@ function ProductDetail() {
                                                     <br />
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-semibold leading-normal">
-                                                    Khối lượng nhựa in:
+                                                    {t('printedPlasticMass')}:
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
@@ -212,7 +221,7 @@ function ProductDetail() {
                                                     <br />
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-semibold leading-normal">
-                                                    Lượng nhựa tái chế sử dụng:
+                                                    {t('amountRecycledPlastic')}:
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
@@ -220,15 +229,15 @@ function ProductDetail() {
                                                     <br />
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-semibold leading-normal">
-                                                    Số lượng tổng:
+                                                    {t('totalQuantity')}:
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
-                                                    1000 (Bộ)
+                                                    1000 ({t('about')})
                                                     <br />
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-semibold leading-normal">
-                                                    Loại nhựa:
+                                                    {t('typeOfPlactic')}:
                                                 </span>
                                                 <span className="text-[#494949] text-[16px] font-normal leading-normal">
                                                     {' '}
@@ -239,7 +248,7 @@ function ProductDetail() {
                                         <div className=" w-[634px] h-12 rounded-lg justify-start items-center gap-2 inline-flex overflow-hidden">
                                             <div className="w-6 h-6 relative overflow-hidden" />
                                             <div className="text-[#009383] text-[20px] font-medium cursor-pointer">
-                                                Xem câu chuyện của sản phẩm
+                                                {t('productStory')}
                                             </div>
                                         </div>
                                     </div>
@@ -247,10 +256,10 @@ function ProductDetail() {
                             </div>
                         </div>
                         {/* comment */}
-                        <CommentProduct />
+                        <CommentProduct t={t} />
                     </div>
                     {/* related Product */}
-                    <RelatedProducts />
+                    <RelatedProducts t={t} />
                 </div>
             </div>
             <Footer />

@@ -1,4 +1,7 @@
 import { Pagination } from 'antd';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { BarCode, LeafBlue } from '~/component/Icon';
 import Footer from '~/component/Layout/Footer/Footer';
@@ -22,6 +25,14 @@ function MyProduct() {
     const path = location.pathname;
     const pathName = path.split('/')[1];
 
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    const { t } = useTranslation(['MyOrder']);
+
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
+
     return (
         <>
             <Header />
@@ -44,7 +55,7 @@ function MyProduct() {
                                     <div className="justify-start items-center gap-2 inline-flex">
                                         <BarCode />
                                         <div className="text-white text-[17px] font-semibold leading-tight">
-                                            Hướng dẫn định danh
+                                            {t('IdentificationGuide')}
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +86,7 @@ function MyProduct() {
                                                 </div>
                                                 <div className="self-stretch h-11 px-6 py-7 cursor-pointer bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 inline-flex overflow-hidden">
                                                     <div className="text-[#009383] text-[18px] font-bold ">
-                                                        Xem chi tiết
+                                                        {t('seeDetails')}
                                                     </div>
                                                 </div>
                                             </div>

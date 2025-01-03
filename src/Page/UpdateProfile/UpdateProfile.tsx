@@ -174,34 +174,28 @@ function Profile() {
                                     <div className="self-stretch h-[71px] flex-col justify-start items-start gap-3 inline-flex relative">
                                         <div className="justify-start items-start gap-0.5 inline-flex">
                                             <div className="text-center text-[#333] text-[16px] font-semibold font-['Montserrat']">
-                                                {infoUser.gender == '' ? 'Giới tính' : infoUser.gender}
+                                                {t('gender')}
                                             </div>
                                         </div>
                                         <div
                                             onClick={() => handleOpenBirth()}
                                             className="w-[524px] h-12 px-4 py-2.5 bg-white rounded-lg border border-[#b6b6b6] justify-start items-center gap-2.5 inline-flex"
                                         >
-                                            <div className="text-[#929292] outline-none w-[100%] text-[16px]">Nam</div>
+                                            <div className="text-[#929292] outline-none w-[100%] text-[16px]">
+                                                {' '}
+                                                {t('man')}
+                                            </div>
                                         </div>
                                         {openBirth && (
                                             <div className="mt-2 w-[100%] absolute top-[50px] bg-white shadow-lg z-[10] rounded-xl border p-3 transition duration-300 ease-in-out transform">
-                                                <div
-                                                    className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all"
-                                                    onClick={() => console.log('Sắp xếp tăng dần')}
-                                                >
-                                                    Nam
+                                                <div className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all">
+                                                    {t('man')}
                                                 </div>
-                                                <div
-                                                    className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all"
-                                                    onClick={() => console.log('Sắp xếp giảm dần')}
-                                                >
-                                                    Nữ
+                                                <div className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all">
+                                                    {t('woman')}
                                                 </div>
-                                                <div
-                                                    className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all"
-                                                    onClick={() => console.log('Sắp xếp giảm dần')}
-                                                >
-                                                    Khác
+                                                <div className="text-[#494949] text-[16px] font-medium p-2 cursor-pointer hover:bg-[#e6e6e6] rounded-xl transition-all">
+                                                    {t('others')}
                                                 </div>
                                             </div>
                                         )}

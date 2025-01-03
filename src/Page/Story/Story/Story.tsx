@@ -1,10 +1,14 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import StoreBanner from '~/component/Banner/StoreBanner/StoreBanner';
 import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner';
 import { ArrowLeft, ArrowRight, BackgroundRipple } from '~/component/Icon';
 import Footer from '~/component/Layout/Footer/Footer';
 import Header from '~/component/Layout/Header/Header';
+import TitleBar from '~/component/TittleBar/TittleBar';
 import {
     BeNgai,
     CatChair,
@@ -108,6 +112,7 @@ function Story() {
             </div>
         );
     };
+
     const settings = {
         dots: true,
         infinite: true,
@@ -118,6 +123,13 @@ function Story() {
         nextArrow: <CustomArrowNext />,
         prevArrow: <CustomArrowPrev />,
     };
+    const { t } = useTranslation(['Story']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
+
     return (
         <>
             <Header />
@@ -125,32 +137,22 @@ function Story() {
                 {/* //slider */}
                 <div className="store-banner-slider">
                     <Slider ref={sliderRef} {...settings}>
-                        <StoreFlowerBanner image={SunflowerProduct} title={'Coaster Set'} subTitle={'SUNFLOWER'} />
-                        <StoreBanner image={SharkProduct} title={'Multipurpose container'} subTitle={'Shark'} />
-                        <StoreBanner image={OreonProduct} title={'COOKIE COASTER'} subTitle={'Set'} />
-                        <StoreBanner image={CatChair} title={'Multipurpose container'} subTitle={'Cat'} />
+                        <StoreFlowerBanner
+                            t={t}
+                            image={SunflowerProduct}
+                            title={'Coaster Set'}
+                            subTitle={'SUNFLOWER'}
+                        />
+                        <StoreBanner t={t} image={SharkProduct} title={'Multipurpose container'} subTitle={'Shark'} />
+                        <StoreBanner t={t} image={OreonProduct} title={'COOKIE COASTER'} subTitle={'Set'} />
+                        <StoreBanner t={t} image={CatChair} title={'Multipurpose container'} subTitle={'Cat'} />
                     </Slider>
                 </div>
 
                 {/* //item */}
                 <div className="max-w-[134rem] mx-auto px-[30px] mt-[100px] flex flex-col items-center">
                     {/* //item */}
-                    <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title mt-[50px]">
-                        <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                        <div
-                            className="bg-[#fff] flex items-center flex-1
-                                            border-b-solid border-b-[5px] 
-                                             border-[#e0e0e0] justify-center relative
-                                             h-[100%]
-                                             w-[100%]
-                                             "
-                        >
-                            <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                Sản phẩm Đơn
-                            </h2>
-                        </div>
-                        <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                    </div>
+                    <TitleBar title={t('buyNow')} />
                     <div className="flex flex-wrap gap-6  mt-[100px]">
                         {products.map((product, index) => (
                             <div
@@ -168,7 +170,7 @@ function Story() {
                                     </div>
                                     <div className="w-[50%] h-11 px-6 py-7 cursor-pointer bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 inline-flex overflow-hidden">
                                         <div className="text-[#009383] text-[20px] font-bold font-['Roboto']">
-                                            Xem chi tiết
+                                            {t('seeDetails')}
                                         </div>
                                     </div>
                                 </div>
@@ -182,26 +184,14 @@ function Story() {
                             </div>
                         ))}
                     </div>
-                    <div className="w-[400px] mt-[50px] cursor-pointer h-12 px-6 py-7 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 inline-flex overflow-hidden">
-                        <div className="text-[#494949] text-[20px] font-medium font-['Roboto']">Xem tất cả</div>
-                    </div>
+                    <Link
+                        to={'/san-pham-don'}
+                        className="w-[400px] mb-[120px] mt-[50px] cursor-pointer h-12 px-6 py-7 bg-white rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] justify-center items-center gap-2 inline-flex overflow-hidden"
+                    >
+                        <div className="text-[#494949] text-[20px] font-medium font-['Roboto']">{t('SeeAll')}</div>
+                    </Link>
                     {/* //item */}
-                    <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title mt-[100px]">
-                        <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                        <div
-                            className="bg-[#fff] flex items-center flex-1
-                                            border-b-solid border-b-[5px] 
-                                             border-[#e0e0e0] justify-center relative
-                                             h-[100%]
-                                             w-[100%]
-                                             "
-                        >
-                            <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                BỘ SƯU TẬP
-                            </h2>
-                        </div>
-                        <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                    </div>
+                    <TitleBar title={t('Collection')} />
                 </div>
 
                 <div className="w-[100%] overflow-hidden relative">
@@ -225,9 +215,14 @@ function Story() {
                                 Adipiscing pharetra mollis ornare sit nibh. Amet sagittis tellus ut scelerisque dolor
                                 auctor. Libero justo pellentesque pulvinar dolor...{' '}
                             </div>
-                            <div className="w-[219px] cursor-pointer h-[54px] px-6 py-2.5 bg-[#009383] rounded-lg justify-center items-center gap-2 inline-flex overflow-hidden">
-                                <div className="text-white text-[26px] font-bold font-['Roboto']">Xem chi tiết</div>
-                            </div>
+                            <Link
+                                to={'/bo-suu-tap'}
+                                className="w-[219px] cursor-pointer h-[54px] px-6 py-2.5 bg-[#009383] rounded-lg justify-center items-center gap-2 inline-flex overflow-hidden"
+                            >
+                                <div className="text-white text-[26px] font-bold font-['Roboto']">
+                                    {t('seeDetails')}
+                                </div>
+                            </Link>
                         </div>
                         <div className="w-[251px] h-[335px]  left-[273px] top-[495px] absolute bg-white rounded-[20px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] border-2 border-[#006e62]  overflow-hidden">
                             <div className="left-[80px] top-[295px] absolute text-[#006e62] text-2xl font-extrabold font-['Roboto'] capitalize leading-[31.20px]">

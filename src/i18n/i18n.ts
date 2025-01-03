@@ -43,6 +43,29 @@ import transactionResulttENG from './Locales/TransactionResult/TransactionResult
 import transactionResultVIE from './Locales/TransactionResult/TransactionResultVIE.json';
 import RuleENG from './Locales/Rules/RulesENG.json';
 import RuleVIE from './Locales/Rules/RulesVIE.json';
+import StoreENG from './Locales/Store/StoreENG.json';
+import StoreVIE from './Locales/Store/StoreVIE.json';
+import ProductDetailENG from './Locales/ProductDetail/ProductDetailENG.json';
+import ProducDetaiVIE from './Locales/ProductDetail/ProductDetailVIE.json';
+import ForumENG from './Locales/Forum/ForumENG.json';
+import ForumViE from './Locales/Forum/ForumVIE.json';
+import ForumProfileENG from './Locales/ForumProfile/ForumProfileENG.json';
+import ForumProfileVIE from './Locales/ForumProfile/ForumProfileVIE.json';
+import AllOrderVIE from './Locales/AllOrder/AllOrderVIE.json';
+import AllOrderENG from './Locales/AllOrder/AllOrderENG.json';
+import MyOrderVIE from './Locales/MyOrder/MyOrderVIE.json';
+import MyOrderENG from './Locales/MyOrder/MyOrderENG.json';
+import StoryVIE from './Locales/Story/StoryVIE.json';
+import StoryENG from './Locales/Story/StoryENG.json';
+import SingleProductVIE from './Locales/SingleProduct/SingleProductVIE.json';
+import SingleProductENG from './Locales/SingleProduct/SingleProductENG.json';
+import CollectionVIE from './Locales/Collection/CollectionVIE.json';
+import CollectionENG from './Locales/Collection/CollectionENG.json';
+import ProductMenuVIE from './Locales/ProductMenu/ProductMenuVIE.json';
+import ProductMenuENG from './Locales/ProductMenu/ProductMenuENG.json';
+import UserMenuENG from './Locales/UserMenu/UserMenuENG.json';
+import UserMenuVIE from './Locales/UserMenu/UserMenuVIE.json';
+import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 export const locales = {
     ENG: EnglandIfomation,
     VIE: VietnameseInfomation,
@@ -71,6 +94,17 @@ const resources = {
         paymentMethod: paymentMethodENG,
         transactionResult: transactionResulttENG,
         Rule: RuleENG,
+        Store: StoreENG,
+        productDetail: ProductDetailENG,
+        Forum: ForumENG,
+        ForumProfile: ForumProfileENG,
+        AllOrder: AllOrderENG,
+        MyOrder: MyOrderENG,
+        Story: StoryENG,
+        SingleProduct: SingleProductENG,
+        Collection: CollectionENG,
+        ProductMenu: ProductMenuENG,
+        UserMenu: UserMenuENG,
     },
     VIE: {
         header: HeaderVIE,
@@ -94,6 +128,17 @@ const resources = {
         paymentMethod: paymentMethodVIE,
         transactionResult: transactionResultVIE,
         Rule: RuleVIE,
+        Store: StoreVIE,
+        productDetail: ProducDetaiVIE,
+        Forum: ForumViE,
+        ForumProfile: ForumProfileVIE,
+        AllOrder: AllOrderVIE,
+        MyOrder: MyOrderVIE,
+        Story: StoryVIE,
+        SingleProduct: SingleProductVIE,
+        Collection: CollectionVIE,
+        ProductMenu: ProductMenuVIE,
+        UserMenu: UserMenuVIE,
     },
 };
 
@@ -122,6 +167,17 @@ i18n.use(initReactI18next).init({
         'paymentMethod',
         'transactionResult',
         'Rule',
+        'Store',
+        'productDetail',
+        'Forum',
+        'ForumProfile',
+        'AllOrder',
+        'MyOrder',
+        'Story',
+        'SingleProduct',
+        'Collection',
+        'ProductMenu',
+        'UserMenu',
     ],
     interpolation: {
         escapeValue: false,

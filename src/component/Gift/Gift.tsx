@@ -1,24 +1,11 @@
+import Title from 'antd/es/skeleton/Title';
 import { Headerleft, HomeVoucer } from '~/Images';
+import TitleBar from '../TittleBar/TittleBar';
 
 function Gift({ t }: { t: (key: string) => string }) {
     return (
         <>
-            <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                <div
-                    className="bg-[#fff] flex items-center flex-1
-                                                    border-b-solid border-b-[5px] 
-                                                     border-[#e0e0e0] justify-center relative
-                                                     h-[100%]
-                                                     w-[100%]
-                                                     "
-                >
-                    <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                        {t('title')}
-                    </h2>
-                </div>
-                <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-            </div>
+            <TitleBar title={t('title')} />
             <div className="mb-[120px] h-[50rem] mx-auto] max-w-[145.5rem relative]">
                 <div className="flex items-center w-[100%] p-[100px] gap-[4.5rem] height-[50rem]">
                     <div className="w-[50%]">

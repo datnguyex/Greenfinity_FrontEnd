@@ -6,9 +6,12 @@ import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner'
 import Slider from 'react-slick';
 import StoreBanner from '~/component/Banner/StoreBanner/StoreBanner';
 import { ArrowLeft, ArrowRight, Cart, LeafBlue, LeafPupple } from '~/component/Icon';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import AllProductStore from '~/component/AllProductStore/AllProductStore';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import TitleBar from '~/component/TittleBar/TittleBar';
 
 function Store() {
     const products = [
@@ -51,6 +54,9 @@ function Store() {
     ];
 
     const sliderRef = useRef<Slider | null>(null);
+    const { t } = useTranslation(['Store']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
 
     // Custom Next Arrow
     const CustomArrowNext = (props: any) => {
@@ -135,36 +141,29 @@ function Store() {
         prevArrow: <CustomArrowPrev />,
     };
 
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />
             <div className="max-w-[120vw] bg-[#f2fffd] pb-[120px]">
                 <div className="store-banner-slider">
                     <Slider ref={sliderRef} {...settings}>
-                        <StoreFlowerBanner image={SunflowerProduct} title={'Coaster Set'} subTitle={'SUNFLOWER'} />
-                        <StoreBanner image={SharkProduct} title={'Multipurpose container'} subTitle={'Shark'} />
-                        <StoreBanner image={OreonProduct} title={'COOKIE COASTER'} subTitle={'Set'} />
-                        <StoreBanner image={CatChair} title={'Multipurpose container'} subTitle={'Cat'} />
+                        <StoreFlowerBanner
+                            t={t}
+                            image={SunflowerProduct}
+                            title={'Coaster Set'}
+                            subTitle={'SUNFLOWER'}
+                        />
+                        <StoreBanner t={t} image={SharkProduct} title={'Multipurpose container'} subTitle={'Shark'} />
+                        <StoreBanner t={t} image={OreonProduct} title={'COOKIE COASTER'} subTitle={'Set'} />
+                        <StoreBanner t={t} image={CatChair} title={'Multipurpose container'} subTitle={'Cat'} />
                     </Slider>
                 </div>
                 {/* //item */}
                 <div className="max-w-[134rem] mx-auto px-[30px] mt-[100px]">
-                    <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                        <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                        <div
-                            className="bg-[#fff] flex items-center flex-1
-                            border-b-solid border-b-[5px] 
-                             border-[#e0e0e0] justify-center relative
-                             h-[100%]
-                             w-[100%]
-                             "
-                        >
-                            <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                Sản phẩm mới
-                            </h2>
-                        </div>
-                        <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                    </div>
+                    <TitleBar title={t('newProduct')} />
                 </div>
                 <div className="flex justify-end items-center gap-[15px]">
                     {/* itemLeft */}
@@ -193,7 +192,7 @@ function Store() {
                                 to={'/chi-tiet-san-pham'}
                                 className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                             >
-                                <div className="text-white text-[18px] font-bold ">Mua ngay</div>
+                                <div className="text-white text-[18px] font-bold ">{t('buy')}</div>
                             </Link>
                         </div>
                         <div className="w-[42px] h-[42px] left-[406px] top-[16px] absolute justify-center items-center inline-flex overflow-hidden">
@@ -235,7 +234,7 @@ function Store() {
                                         to={'/chi-tiet-san-pham'}
                                         className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                                     >
-                                        <div className="text-white text-[17px] font-bold ">Mua ngay</div>
+                                        <div className="text-white text-[17px] font-bold ">{t('buy')}</div>
                                     </Link>
                                 </div>
                             </div>
@@ -243,7 +242,7 @@ function Store() {
                     </div>
                 </div>
 
-                <AllProductStore />
+                <AllProductStore t={t} />
             </div>
 
             <Footer />

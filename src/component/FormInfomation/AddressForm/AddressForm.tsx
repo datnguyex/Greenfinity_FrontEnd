@@ -5,8 +5,9 @@ import axios from 'axios';
 type AddressFormProps = {
     type: string;
     handlelTypeDisplay: (value: string) => void;
+    t: (key: string) => string;
 };
-function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
+function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
     console.log('type', type);
     type Provinces = {
         name: string;
@@ -171,24 +172,25 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                     <CloseXBlack />
                 </div>
                 <div className="left-[31px] top-[40px] absolute text-[#009383] text-[32px] font-semibold leading-[38.40px]">
-                    {type == 'thay-doi-dia-chi' ? 'Thay đổi địa chỉ' : 'Thêm địa chỉ'}
+                    {type === 'thay-doi-dia-chi' ? 'Thay đổi địa chỉ' : t('AddAddress')}
                 </div>
+
                 <div className="left-[31px] top-[455px] absolute flex-col justify-start items-start gap-5 inline-flex">
                     <div className="h-[67px] flex-col justify-start items-start gap-3 flex">
                         <div className="justify-start items-start gap-0.5 inline-flex">
                             <div className="text-center text-[#4d4d4d] text-[16px] font-semibold font-['Roboto']">
-                                Loại địa chỉ
+                                {t('AddressType')}
                             </div>
                         </div>
                         <div className="justify-start items-start gap-3.5 inline-flex">
                             <div className="cursor-pointer w-[109px] h-11 py-7 px-5 bg-[#33a99c] rounded-lg justify-center items-center gap-2.5 flex">
                                 <div className="text-center text-white text-[16px] font-medium leading-tight">
-                                    Công ty
+                                    {t('company')}
                                 </div>
                             </div>
                             <div className="px-5 h-11 py-7 cursor-pointer bg-[#f0f0f0] rounded-lg justify-center items-center gap-2.5 flex">
                                 <div className="text-center text-[#494949] text-[16px] font-medium leading-tight">
-                                    Nhà riêng
+                                    {t('home')}
                                 </div>
                             </div>
                         </div>
@@ -197,18 +199,18 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                         <div className="justify-start items-center gap-2 flex">
                             <div className="w-5 h-5 relative bg-white rounded border border-[#009383]" />
                             <div className="text-[#4d4d4d] text-[16px] font-normal font-['Roboto']">
-                                Đặt làm địa chỉ mặt định
+                                {t('SetAsDefaultAddress')}
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="w-[118px] h-12 px-5 py-7 left-[234px] top-[638px] absolute cursor-pointer bg-[#009383] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                    <div className="text-center text-white text-[16px] font-semibold leading-normal">Lưu</div>
+                    <div className="text-center text-white text-[16px] font-semibold leading-normal">{t('Save')}</div>
                 </div>
                 <div className="h-[71px] left-[31px] top-[364px] absolute flex-col justify-start items-start gap-3 inline-flex">
                     <div className="justify-start items-start gap-0.5 inline-flex">
                         <div className="text-center text-[#4d4d4d] text-[16px] font-semibold font-['Roboto']">
-                            Địa chỉ cụ thể
+                            {t('SpecificAddress')}
                         </div>
                     </div>
                     <div
@@ -216,7 +218,7 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                         className="w-[524px] h-12 px-4 py-2.5 bg-[#f9f8f8] rounded-lg justify-start items-center gap-2.5 inline-flex overflow-hidden"
                     >
                         <input
-                            placeholder="Nhập địa chỉ cụ thể"
+                            placeholder={t('EnterSpecificAddress')}
                             value={
                                 type === 'thay-doi-dia-chi'
                                     ? currrentAddress.addresSpecific == ''
@@ -231,7 +233,7 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                 <div className="h-[71px] left-[31px] top-[273px] absolute flex-col justify-start items-start gap-3 inline-flex">
                     <div className="justify-start items-start gap-0.5 inline-flex">
                         <div className="text-center text-[#4d4d4d] text-[16px] font-semibold font-['Roboto']">
-                            Chọn Phường/xã
+                            {t('SelectWard/Commune')}
                         </div>
                     </div>
                     <div className="w-[524px] h-12 flex-col justify-start items-start gap-2 flex cursor-pointer relative group">
@@ -242,8 +244,8 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                                         ? ward.name
                                         : currrentAddress.ward
                                     : ward.name !== null
-                                    ? ward.name
-                                    : 'Chọn Tỉnh/Thành phố'}
+                                      ? ward.name
+                                      : t('SelectWard/Commune')}
                             </div>
                             <div className="w-6 h-6 relative overflow-hidden" />
                         </div>
@@ -267,7 +269,7 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                 <div className="h-[71px] left-[31px] top-[182px] absolute flex-col justify-start items-start gap-3 inline-flex">
                     <div className="justify-start items-start gap-0.5 inline-flex">
                         <div className="text-center text-[#4d4d4d] text-[16px] font-semibold font-['Roboto']">
-                            Chọn Quận/huyện
+                            {t('SelectDistrict')}
                         </div>
                     </div>
                     <div className="w-[524px] h-12 flex-col justify-start items-start gap-2 flex cursor-pointer relative group">
@@ -278,8 +280,8 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                                         ? district.name
                                         : currrentAddress.district
                                     : district.name !== null
-                                    ? district.name
-                                    : 'Chọn Tỉnh/Thành phố'}
+                                      ? district.name
+                                      : t('SelectDistrict')}
                             </div>
                             <div className="w-6 h-6 relative overflow-hidden" />
                         </div>
@@ -307,19 +309,19 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                 <div className="h-[71px] left-[31px] top-[91px] absolute flex-col justify-start items-start gap-3 inline-flex">
                     <div className="justify-start items-start gap-0.5 inline-flex">
                         <div className="text-center text-[#4d4d4d] text-[16px] font-semibold font-['Roboto']">
-                            Chọn Tỉnh/Thành phố
+                            {t('SelectProvince/City')}
                         </div>
                     </div>
                     <div className="w-[524px] h-12 flex-col justify-start items-start gap-2 flex cursor-pointer relative group">
                         <div className="self-stretch py-7 grow shrink basis-0 pl-4 pr-3 bg-[#f9f8f8] rounded-md border justify-between items-center inline-flex overflow-hidden">
                             <div className="text-[#494949] text-[16px] font-normal font-['Roboto']">
                                 {type === 'thay-doi-dia-chi'
-                                    ? provine.name !== null
-                                        ? provine.name
-                                        : currrentAddress.provine
-                                    : provine.name !== null
-                                    ? provine.name
-                                    : 'Chọn Tỉnh/Thành phố'}
+                                    ? ward.name !== null
+                                        ? ward.name
+                                        : currrentAddress.ward
+                                    : ward.name !== null
+                                      ? ward.name
+                                      : t('SelectProvince/City')}
                             </div>
                             <div className="w-6 h-6 relative overflow-hidden" />
                         </div>
@@ -342,7 +344,7 @@ function AddressForm({ type, handlelTypeDisplay }: AddressFormProps) {
                 </div>
                 {type == 'thay-doi-dia-chi' ? (
                     <div className="left-[31px] top-[582px] absolute text-[#ff4343] text-[16px] font-normal underline cursor-pointer">
-                        Xóa địa chỉ
+                        {t('deleteAddress')}
                     </div>
                 ) : (
                     ''

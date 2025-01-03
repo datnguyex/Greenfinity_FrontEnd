@@ -31,6 +31,9 @@ import Story from './Page/Story/Story/Story';
 import SingleProduct from './Page/Story/SingleProduct/SingleProduct';
 import Collection from './Page/Story/Collection/Collection';
 import LocationMap from './Page/LocationMap/LocationMap';
+import DeleteAccount from './Page/DeleteAccount/DeleteAccount';
+import PasswordReEnter from './component/FormInfomation/PasswordReEnter/PasswordReEnter';
+import AccountDeleteInfo from './component/FormInfomation/AccountDeleteInfo/AccountDeleteInfo';
 
 export default function App() {
     return (
@@ -59,6 +62,7 @@ export default function App() {
                 {/* // */}
                 <Route path="phuong-thuc-thanh-toan" element={<PaymentMethod />} />
                 <Route path="ket-qua-nap-tien" element={<TransactionResult />} />
+                {/* chua co tieng anh */}
                 <Route path="cua-hang" element={<Store />} />
                 <Route path="chi-tiet-san-pham" element={<ProductDetail />} />
                 {/* // */}

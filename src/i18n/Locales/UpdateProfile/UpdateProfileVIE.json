@@ -3,5 +3,10 @@
     "fullname": "Họ và tên",
     "phoneNumber": "Số điện thoại",
     "email": "Email",
-    "dob": "Ngày Sinh"
+    "dob": "Ngày Sinh",
+
+    "gender": "Giới tính",
+    "man": "Nam",
+    "woman": "Nữ",
+    "others": "Khác"
 }

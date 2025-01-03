@@ -3,7 +3,7 @@ import { ImageChoosen, LineComment } from '../Icon';
 import { useState } from 'react';
 import Donation from '../Donation/Donation/Donation';
 
-function Posts() {
+function Posts({ t }: { t: (key: string) => string }) {
     const [useDonation, setUseDonation] = useState(false);
     const [imagesAnswer, setImagesAnswer] = useState<string[]>([]);
     const disPlayDonation = (value: any) => {
@@ -31,7 +31,7 @@ function Posts() {
 
     return (
         <>
-            {useDonation ? <Donation disPlayDonation={disPlayDonation} /> : ''}
+            {useDonation ? <Donation t={t} disPlayDonation={disPlayDonation} /> : ''}
             <div className="min-h-[1328px] p-5 bg-white rounded-3xl shadow-[0px_2px_20px_0px_rgba(0,0,0,0.05)] flex-col justify-start items-center gap-5 inline-flex w-full mt-[30px]">
                 {/* //bai viet */}
                 <div className="self-stretch justify-start items-center gap-2 flex-col">
@@ -45,7 +45,7 @@ function Posts() {
                                 Tuyết Anh
                             </div>
                             <div className="text-[#929292] text-[17px] font-normal leading-tight tracking-tight">
-                                1 ngày
+                                1 {t('day')}
                             </div>
                         </div>
                     </div>
@@ -73,13 +73,13 @@ function Posts() {
                         onClick={() => disPlayDonation(true)}
                         className="h-11 px-6 py-8 cursor-pointer text-center mt-[20px] bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden"
                     >
-                        <div className="text-white text-[20px] font-medium ">Quyên góp ngay</div>
+                        <div className="text-white text-[20px] font-medium ">{t('donateNow')}</div>
                     </div>
                     {/* //item */}
                     <div className="bg-[#B6B6B6] w-[100%] h-[1px] my-[20px]"></div>
                     <div className="cursor-pointer h-3.5 px-5 justify-start items-start gap-2.5 inline-flex m">
                         <div className="text-[#494949] text-[20px] font-semibold leading-normal tracking-tight">
-                            Xem thêm (56) bình luận
+                            {t('loadMore')} (56) {t('comments')}
                         </div>
                     </div>
                     {/* //item */}
@@ -100,9 +100,9 @@ function Posts() {
                                     </div>
                                 </div>
                                 <div className="px-[18px] justify-start items-end gap-3 inline-flex">
-                                    <div className="text-[#929292] text-[14px] font-normal ">12 giờ trước</div>
-                                    <div className="text-[#6d6d6d] text-[14px] font-semibold ">Thích</div>
-                                    <div className="text-[#6d6d6d] text-[14px] font-semibold ">Phản hồi</div>
+                                    <div className="text-[#929292] text-[14px] font-normal ">12 {t('hourAgo')}</div>
+                                    <div className="text-[#6d6d6d] text-[14px] font-semibold ">{t('like')}</div>
+                                    <div className="text-[#6d6d6d] text-[14px] font-semibold ">{t('feedback')}</div>
                                 </div>
                             </div>
                             <div className="justify-start items-start gap-2.5 inline-flex">
@@ -118,9 +118,9 @@ function Posts() {
                                         </div>
                                     </div>
                                     <div className="px-[18px] justify-start items-end gap-3 inline-flex">
-                                        <div className="text-[#929292] text-[14px] font-normal ">12 giờ trước</div>
-                                        <div className="text-[#6d6d6d] text-[14px] font-semibold ">Thích</div>
-                                        <div className="text-[#6d6d6d] text-[14px] font-semibold ">Phản hồi</div>
+                                        <div className="text-[#929292] text-[14px] font-normal ">12 {t('hourAgo')}</div>
+                                        <div className="text-[#6d6d6d] text-[14px] font-semibold ">{t('like')}</div>
+                                        <div className="text-[#6d6d6d] text-[14px] font-semibold ">{t('feedback')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ function Posts() {
                         <img className="w-[58px] h-[58px] rounded-full border border-[#dbdbdb]" src={AvatarMan2} />
                         <div className="grow shrink basis-0 h-[58px] px-[18px] bg-[#f9f9f9] rounded-[100px] justify-between items-center flex">
                             <input
-                                placeholder=" Viết bình luận..."
+                                placeholder={t('typeComment')}
                                 className="text-black text-[18px] font-normal outline-none bg-transparent w-[100%]"
                             ></input>
 

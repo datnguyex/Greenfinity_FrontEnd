@@ -150,7 +150,7 @@ function LocationMap() {
                         </div>
                         <div className="h-[56rem] min-h-[56rem] mb-[12rem] mx-auto">
                             <div className="bg-[#fff] border-[2px] border-[#009383] rounded-[2.4rem] flex justify-between pt-[24px] pb-[24px] pl-[24px] showdown-map">
-                                <div className="rounded-[1.2rem] flex-[1] overflow-hidden relative min-h-[56rem] z-[100] bg-gradient-to-t from-[#e8edf2] via-[rgba(0, 0, 0, .2)] to-[rgba(0, 0, 0, .2)]">
+                                <div className="rounded-[1.2rem]  flex-[1] overflow-hidden relative min-h-[56rem] z-[10] bg-gradient-to-t from-[#e8edf2] via-[rgba(0, 0, 0, .2)] to-[rgba(0, 0, 0, .2)]">
                                     <MapContainer
                                         ref={mapRef}
                                         center={centerLocation}

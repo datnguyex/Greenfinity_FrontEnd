@@ -8,10 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 function Cart() {
-    const { t } = useTranslation(['Cart']);
-    const languageState = useSelector((state: any) => state.language.language);
-    const { i18n } = useTranslation();
-
     const products = [
         {
             id: 1,
@@ -42,6 +38,10 @@ function Cart() {
             totalPrice: '1.500.000đ',
         },
     ];
+
+    const { t } = useTranslation(['Cart']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
 
     const [count, setCount] = useState(1);
     const handleCount = (e: any) => {

@@ -153,7 +153,7 @@ function Profile() {
                                         </div>
                                         {/* // */}
                                         <Link
-                                            to="/vat-pham"
+                                            to="/san-pham-cua-ban"
                                             className="cursor-pointer flex-1 h-12 px-6 py-[24px] bg-[#009383] rounded-md justify-center items-center gap-1 flex"
                                         >
                                             <div className="text-white text-[16px] font-medium flex justify-center items-center gap-[5px]">
@@ -173,7 +173,7 @@ function Profile() {
                             </div>
                         </div>
                         {/* //item */}
-                        <AccountInfomation />
+                        <AccountInfomation t={t} />
                         <div className="mt-[15rem]">
                             <Link
                                 to="/the-le"

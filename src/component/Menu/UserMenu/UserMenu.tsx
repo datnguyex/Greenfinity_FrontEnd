@@ -1,9 +1,19 @@
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { UserGreen, ArrowLeftBlack, ArrowLeftRed, ArrowLeftWhite, CartWhite, LogoutRed } from '~/component/Icon/Icon';
 
 import { CartGreen, UserWhite } from '~/component/Icon/Icon';
 
 function UserMenu(pathName: any) {
+    const { t } = useTranslation(['UserMenu']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
+
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <div className="w-[342px] h-[230px] p-4 bg-white rounded-xl shadow-[0px_2px_19.700000762939453px_0px_rgba(0,0,0,0.07)] border border-[#009383] flex-col justify-center items-start gap-3 inline-flex overflow-hidden">
             <Link
@@ -20,7 +30,7 @@ function UserMenu(pathName: any) {
                             pathName.pathName == 'trang-ca-nhan' ? 'text-white ' : 'text-[#505050]'
                         }`}
                     >
-                        Thông tin cá nhân
+                        {t('personalInformation')}
                     </div>
                 </div>
                 {pathName.pathName == 'trang-ca-nhan' ? <ArrowLeftWhite /> : <ArrowLeftBlack />}
@@ -37,7 +47,7 @@ function UserMenu(pathName: any) {
                             pathName.pathName == 'don-hang' ? 'text-white ' : 'text-[#505050]'
                         }`}
                     >
-                        Đơn hàng của tôi
+                        {t('MyOrder')}
                     </div>
                 </div>
                 {pathName.pathName == 'don-hang' ? <ArrowLeftWhite /> : <ArrowLeftBlack />}
@@ -56,7 +66,7 @@ function UserMenu(pathName: any) {
                             pathName.pathName == 'san-pham-cua-ban' ? 'text-white ' : 'text-[#505050]'
                         }`}
                     >
-                        Sản phẩm của tôi
+                        {t('MyProduct')}
                     </div>
                 </div>
                 {pathName.pathName == 'san-pham-cua-ban' ? <ArrowLeftWhite /> : <ArrowLeftBlack />}
@@ -67,7 +77,7 @@ function UserMenu(pathName: any) {
                         <LogoutRed />
                     </div>
 
-                    <div className="text-[#ff4343] text-[18px] font-semibold ">Đăng xuất</div>
+                    <div className="text-[#ff4343] text-[18px] font-semibold ">{t('Signout')}</div>
                 </div>
                 <ArrowLeftRed />
             </div>

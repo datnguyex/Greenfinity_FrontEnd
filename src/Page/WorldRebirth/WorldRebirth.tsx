@@ -17,6 +17,7 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import TitleBar from '~/component/TittleBar/TittleBar';
 
 function WorldRebirth() {
     const { t } = useTranslation(['WorldRebirth']);
@@ -43,22 +44,7 @@ function WorldRebirth() {
                         {/* //item */}
                         <Gift t={t} />
                         {/* //item */}
-                        <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                            <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                            <div
-                                className="bg-[#fff] flex items-center flex-1
-                                                    border-b-solid border-b-[5px] 
-                                                     border-[#e0e0e0] justify-center relative
-                                                     h-[100%]
-                                                     w-[100%]
-                                                     "
-                            >
-                                <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    {t('titleRule')}
-                                </h2>
-                            </div>
-                            <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                        </div>
+                        <TitleBar title={t('titleRule')} />
                         <div className="mb-[120px] h-[50rem] mx-auto] max-w-[145.5rem relative]">
                             <div className="flex items-center  w-[100%] p-[100px] gap-[4.5rem] height-[50rem]">
                                 <div className="w-[50%]">
@@ -83,22 +69,7 @@ function WorldRebirth() {
                             </div>
                         </div>
                         {/* //item */}
-                        <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                            <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                            <div
-                                className="bg-[#fff] flex items-center flex-1
-                                                    border-b-solid border-b-[5px] 
-                                                     border-[#e0e0e0] justify-center relative
-                                                     h-[100%]
-                                                     w-[100%]
-                                                     "
-                            >
-                                <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    {t('titleColab')}
-                                </h2>
-                            </div>
-                            <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                        </div>
+                        <TitleBar title={t('titleColab')} />
                         <div className="max-w-[86.5rem] mx-auto">
                             <img className="w-[75%] mx-auto" src={AquafinaLogo} alt="" />
                         </div>

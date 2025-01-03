@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Cart, LeafPupple } from '../Icon';
 import { Link } from 'react-router-dom';
 import ProductMenu from '../Menu/ProductMenu/ProductMenu';
-function AllProductStore() {
+function AllProductStore({ t }: { t: (key: string) => string }) {
     const products2 = [
         {
             category: 'Household',
@@ -137,7 +137,7 @@ function AllProductStore() {
                              "
                     >
                         <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                            TẤT CẢ SẢN PHẨM
+                            {t('allProduct')}
                         </h2>
                     </div>
                     <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
@@ -180,7 +180,7 @@ function AllProductStore() {
                                     to={'/chi-tiet-san-pham'}
                                     className="cursor-pointer self-stretch h-12 px-6 py-7 bg-[#009383] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 inline-flex overflow-hidden"
                                 >
-                                    <div className="text-white text-[17px] font-bold ">Mua ngay</div>
+                                    <div className="text-white text-[17px] font-bold "> {t('buy')}</div>
                                 </Link>
                             </div>
                         </div>
@@ -195,7 +195,7 @@ function AllProductStore() {
                     shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] text-[#009383] text-[16px] font-bold
                     my-[50px]"
                 >
-                    Xem thêm
+                    {t('loadMore')}
                 </button>
             ) : (
                 <button
@@ -204,7 +204,7 @@ function AllProductStore() {
                     shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] text-[#009383] text-[16px] font-bold
                     my-[50px]"
                 >
-                    Thu gọn
+                    {t('collapse')}
                 </button>
             )}
         </>

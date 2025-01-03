@@ -5,9 +5,10 @@ interface StoreBannerProps {
     image: string; // The image prop will be a string (URL of the image)
     title: string; // The title will be a string
     subTitle: string; // The subTitle will also be a string
+    t: (key: string) => string;
 }
 
-const StoreFlowerBanner: React.FC<StoreBannerProps> = ({ image, title, subTitle }) => {
+const StoreFlowerBanner: React.FC<StoreBannerProps> = ({ image, title, subTitle, t }) => {
     return (
         <div className="flex justify-center items-center">
             <div className="flex justify-between items-center pt-[50px] gap-[100px]">
@@ -29,7 +30,7 @@ const StoreFlowerBanner: React.FC<StoreBannerProps> = ({ image, title, subTitle 
                         sagittis tellus ut scelerisque dolor auctor. Libero justo pellentesque pulvinar dolor...{' '}
                     </div>
                     <div className="w-[219px] h-[54px] px-6 py-2.5 bg-[#009383] rounded-lg justify-center items-center gap-2 inline-flex overflow-hidden">
-                        <div className="text-white text-[26px] font-bold ">Mua ngay</div>
+                        <div className="text-white text-[26px] font-bold ">{t('buyNow')}</div>
                     </div>
                 </div>
                 <div className="flex justify-end items-end">

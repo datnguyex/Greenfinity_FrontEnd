@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import AllProductStore from '~/component/AllProductStore/AllProductStore';
 import { ArrowTopWhite, LeafPupple } from '~/component/Icon/Icon';
 import Footer from '~/component/Layout/Footer/Footer';
@@ -123,6 +125,9 @@ function SingleProduct() {
             behavior: 'smooth',
         });
     };
+    const { t } = useTranslation(['SingleProduct']);
+    const languageState = useSelector((state: any) => state.language.language);
+    const { i18n } = useTranslation();
 
     const [visibleProducts, setVisibleProducts] = useState(6);
     const loadMore = () => {
@@ -132,6 +137,9 @@ function SingleProduct() {
         setVisibleProducts(6);
     };
 
+    useEffect(() => {
+        i18n.changeLanguage(languageState);
+    }, [languageState]);
     return (
         <>
             <Header />
@@ -181,7 +189,7 @@ function SingleProduct() {
                     shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] text-[#009383] text-[16px] font-bold
                     my-[50px]"
                                     >
-                                        Xem thêm
+                                        {t('LoadMore')}
                                     </button>
                                 ) : (
                                     <button
@@ -190,7 +198,7 @@ function SingleProduct() {
                     shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] border border-[#009383] text-[#009383] text-[16px] font-bold
                     my-[50px]"
                                     >
-                                        Thu gọn
+                                        {t('Collapse')}
                                     </button>
                                 )}
                             </div>

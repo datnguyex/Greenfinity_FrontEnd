@@ -13,6 +13,7 @@ import Banner3 from '~/component/Banner/HomeBanner/Banner3';
 import Contribute from '~/component/Contribute/Contribute';
 import { useTranslation } from 'react-i18next';
 import Gift from '~/component/Gift/Gift';
+import TitleBar from '~/component/TittleBar/TittleBar';
 
 const cx = classNames.bind(style);
 
@@ -126,22 +127,7 @@ function HomePage() {
                     <div className="max-w-[134rem] mx-auto px-[30px]">
                         {/* //cac thanh phan */}
                         {/* thanh phan */}
-                        <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                            <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                            <div
-                                className="bg-[#fff] flex items-center flex-1
-                            border-b-solid border-b-[5px] 
-                             border-[#e0e0e0] justify-center relative
-                             h-[100%]
-                             w-[100%]
-                             "
-                            >
-                                <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    {t('titleTotalCollect')}
-                                </h2>
-                            </div>
-                            <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                        </div>
+                        <TitleBar title={t('titleTotalCollect')} />
                         {/* chai nhua ,lon nhom */}
                         {/* item1 */}
                         <div className="flex items-center justify-center gap-[80px] w-[100%] mb-[120px]">
@@ -200,22 +186,7 @@ function HomePage() {
                             </div>
                         </div>
                         {/* thanh phan */}
-                        <div className="flex relative mx-auto mb-[40px] w-[65%] h-[74px] filter-home-title ">
-                            <img className="w-[33.7396px] ml-[-1px] h-[100%]" src={Headerleft} alt="" />
-                            <div
-                                className="bg-[#fff] flex items-center flex-1
-                            border-b-solid border-b-[5px] 
-                             border-[#e0e0e0] justify-center relative
-                             h-[100%]
-                             w-[100%]
-                             "
-                            >
-                                <h2 className="text-[3rem] text-[#009383] leading-[43.20px] font-extrabold pt-[3px] overflow-hidden uppercase text-center">
-                                    {t('titleContribute')}
-                                </h2>
-                            </div>
-                            <img className="mr-[-1px] h-[100%] w-[33.7396px] scale-x-[-1]" src={Headerleft} alt="" />
-                        </div>
+                        <TitleBar title={t('titleContribute')} />
                         {/* thanh phan */}
 
                         <div className="mb-[120px]">
