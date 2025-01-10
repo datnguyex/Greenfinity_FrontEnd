@@ -1,10 +1,12 @@
 {
     "Login": "Sign in",
     "SignUp": "Sign up",
-    "fullName": "Ful lname",
+    "fullName": "Full name",
     "inputFullname": "Enter your full name",
-    "PhoneNumber": "Phone numberr",
+    "PhoneNumber": "Phone number",
     "inputPhoneNumber": "Enter your phone number",
+    "password": "Password",
+    "enterPass": "Enter your password",
     "clause1": "I agree to all",
     "clause2": "terms and conditions of participation.",
     "clause3": "The platform and brand are allowed to use the personal information I have provided."

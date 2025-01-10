@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import axios from 'axios';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import OPTSending from './Page/Auth/OPTSending/OPTSending';
 import Login from './Page/Auth/Login/Login';
 import Signup from './Page/Auth/Signup/Signup';
 import HomePage from './Page/Home/Home';
 import GreezStation from './Page/GreezStation/GreezStation';
-
 import WorldRebirth from './Page/WorldRebirth/WorldRebirth';
 import ContributeRanking from './Page/ContributeRanking/ContributeRanking';
 import Profile from './Page/Profile/Profile';
@@ -31,19 +31,51 @@ import Story from './Page/Story/Story/Story';
 import SingleProduct from './Page/Story/SingleProduct/SingleProduct';
 import Collection from './Page/Story/Collection/Collection';
 import LocationMap from './Page/LocationMap/LocationMap';
-import DeleteAccount from './Page/DeleteAccount/DeleteAccount';
-import PasswordReEnter from './component/FormInfomation/PasswordReEnter/PasswordReEnter';
-import AccountDeleteInfo from './component/FormInfomation/AccountDeleteInfo/AccountDeleteInfo';
+import Cookies from 'js-cookie';
+import { useDispatch } from 'react-redux';
+import { clearUserInfomation } from './Redux/UserInfomationSlice';
+import { DeleteAuthCode } from './services';
+
+function CurrentPageDisplay() {
+    const location = useLocation();
+    const dispatch = useDispatch();
+    //delete infoSignUp session storage and authj_code that have a keyChecked correspond
+
+    useEffect(() => {
+        const infoSignUp = sessionStorage.getItem('infoSignUp');
+
+        if (infoSignUp && location.pathname !== '/opt') {
+            const parsedInfoSignUp = JSON.parse(infoSignUp);
+            // const { keyChecked } = parsedInfoSignUp;
+
+            const deleteAuthCode = async () => {
+                DeleteAuthCode(infoSignUp);
+            };
+
+            deleteAuthCode();
+        }
+
+        //delete infomation user if accesstoken inspired
+
+        const accessToken = Cookies.get('accessToken');
+        if (!accessToken) {
+            dispatch(clearUserInfomation());
+            Cookies.remove('accessToken');
+        }
+    }, [location.pathname]);
+
+    return null;
+}
 
 export default function App() {
     return (
         <Router>
+            <CurrentPageDisplay />
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/opt" element={<OPTSending />} />
-                {/* // */}
                 <Route path="/tram-greez" element={<GreezStation />} />
                 <Route path="/ban-do" element={<LocationMap />} />
                 <Route path="/the-gioi-tai-sinh" element={<WorldRebirth />} />
@@ -55,17 +87,13 @@ export default function App() {
                 <Route path="/lich-su-greecoin" element={<CoinHistory />} />
                 <Route path="/the-le" element={<Rules />} />
                 <Route path="*" element={<NotFound />} />
-                {/* // */}
                 <Route path="gio-hang" element={<Cart />} />
                 <Route path="thong-tin-van-chuyen" element={<ShippingInfomation />} />
                 <Route path="nap-tien" element={<Deposit />} />
-                {/* // */}
                 <Route path="phuong-thuc-thanh-toan" element={<PaymentMethod />} />
                 <Route path="ket-qua-nap-tien" element={<TransactionResult />} />
-                {/* chua co tieng anh */}
                 <Route path="cua-hang" element={<Store />} />
                 <Route path="chi-tiet-san-pham" element={<ProductDetail />} />
-                {/* // */}
                 <Route path="dien-dan" element={<Forum />} />
                 <Route path="ho-so-dien-dan" element={<ForumProfile />} />
                 <Route path="don-hang" element={<AllOrder />} />

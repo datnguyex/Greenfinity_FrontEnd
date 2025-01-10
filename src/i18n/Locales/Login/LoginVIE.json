@@ -2,5 +2,7 @@
     "Login": "Đăng nhập",
     "SignUp": "Đăng ký",
     "phoneNumber": "Số điện thoại",
-    "inputPhoneNumber": "Nhập số điện thoại của bạn"
+    "inputPhoneNumber": "Nhập số điện thoại của bạn",
+    "password": "Mật khẩu",
+    "enterPass": "Nhập mật khẩu của bạn"
 }

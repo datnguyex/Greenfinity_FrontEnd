@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import { persistStore, persistReducer } from 'redux-persist';
 import { languageSlice } from './LanguageSlice'; // Đảm bảo import đúng
+import { UserInfomationSlice } from './UserInfomationSlice';
 
 // Cấu hình persist
 const persistConfig = {
@@ -14,6 +15,7 @@ const persistConfig = {
 // Tạo rootReducer với đúng cách
 const rootReducer = combineReducers({
     language: languageSlice.reducer, // Đảm bảo sử dụng languageSlice.reducer
+    UserInfomation: UserInfomationSlice.reducer,
 });
 
 // Bọc rootReducer với persistReducer

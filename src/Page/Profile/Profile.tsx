@@ -19,8 +19,12 @@ import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import AccountInfomation from '~/component/AccountInfomation/AccountInfomation';
 import UserMenu from '~/component/Menu/UserMenu/UserMenu';
+import Cookies from 'js-cookie';
+import { useDispatch } from 'react-redux';
+import { clearUserInfomation } from '~/Redux/UserInfomationSlice';
 
 function Profile() {
+    const dispatch = useDispatch();
     const { t } = useTranslation(['profile']);
     const languageState = useSelector((state: any) => state.language.language);
     const { i18n } = useTranslation();
@@ -39,6 +43,12 @@ function Profile() {
     useEffect(() => {
         i18n.changeLanguage(languageState);
     }, [languageState]);
+
+    const Signout = () => {
+        dispatch(clearUserInfomation());
+        Cookies.remove('accessToken');
+        window.location.href = 'http://localhost:3000/';
+    };
     return (
         <>
             <Header />
@@ -162,7 +172,10 @@ function Profile() {
                                             </div>
                                         </Link>
                                         {/* // */}
-                                        <div className="cursor-pointer flex-1 mt-[20px] h-12 px-6 py-[24px] bg-[#fff] border border-[#009383] rounded-md justify-center items-center gap-1 flex">
+                                        <div
+                                            onClick={() => Signout()}
+                                            className="cursor-pointer flex-1 mt-[20px] h-12 px-6 py-[24px] bg-[#fff] border border-[#009383] rounded-md justify-center items-center gap-1 flex"
+                                        >
                                             <div className="text-[#009383] text-[16px] font-bold flex justify-center items-center gap-[5px]">
                                                 <ArrowIntoHaftSquare />
                                                 {t('logout')}

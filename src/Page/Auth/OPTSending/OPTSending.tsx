@@ -6,14 +6,69 @@ import { useState } from 'react';
 // const cx = classNames.bind(style);
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import { CreateAccount, DeleteAuthCode, ResendAuthCode } from '~/services';
+
 function OPTSending() {
+    //language
     const { t } = useTranslation(['optSending']);
-    const [optValid, setOptValid] = useState(false);
-    const languageState = useSelector((state: any) => state.language.language);
     const { i18n } = useTranslation();
+    const languageState = useSelector((state: any) => state.language.language);
+
     useEffect(() => {
         i18n.changeLanguage(languageState);
     }, [languageState]);
+
+    //limit input to 1 character and update opt state
+    const [otp, setOtp] = useState<string>('');
+    const [optValid, setOptValid] = useState(true);
+    const handleOtpChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+        const value = e.target.value;
+        if (value.length <= 1) {
+            setOtp((prevOtp) => {
+                const otpArray = prevOtp.split('');
+                otpArray[index] = value;
+                return otpArray.join('');
+            });
+        }
+    };
+    //resendAuth code
+    const resendAuthCode = async () => {
+        ResendAuthCode({ setMinutes, setSeconds });
+    };
+
+    //delete auth code
+    const deleteAuthCode = async () => {
+        const infoSignUp = sessionStorage.getItem('infoSignUp');
+        DeleteAuthCode(infoSignUp);
+    };
+    //count down time
+    const [minutes, setMinutes] = useState(5);
+    const [seconds, setSeconds] = useState(0);
+    useEffect(() => {
+        const timer = setInterval(() => {
+            if (seconds === 0) {
+                if (minutes === 0) {
+                    clearInterval(timer);
+                    deleteAuthCode();
+                } else {
+                    setMinutes((prevMinutes) => prevMinutes - 1);
+                    setSeconds(59);
+                }
+            } else {
+                setSeconds((prevSeconds) => prevSeconds - 1);
+            }
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [seconds, minutes]);
+
+    //create account
+    const handleCreateAccount = async () => {
+        CreateAccount(otp);
+    };
+
     return (
         <>
             <div className="w-[100vw] h-[100vh] bg-[#CCE9E6] flex justify-center items-center">
@@ -34,50 +89,25 @@ function OPTSending() {
                     </p>
                     <div className="mt-6 flex justify-center items-center">
                         <div className="flex flex-row gap-4">
-                            <div
-                                className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
-                                    optValid ? 'border-[#009383]' : 'border-[#FF0000]'
-                                }`}
-                            >
-                                <p className="font-normal text-[18px] leading-[27px] text-[#494949]">5</p>
-                            </div>
-                            <div
-                                className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
-                                    optValid ? 'border-[#009383]' : 'border-[#FF0000]'
-                                }`}
-                            >
-                                <p className="font-normal text-[18px] leading-[27px] text-[#494949]">5</p>
-                            </div>
-                            <div
-                                className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
-                                    optValid ? 'border-[#009383]' : 'border-[#FF0000]'
-                                }`}
-                            >
-                                <p className="font-normal text-[18px] leading-[27px] text-[#494949]">5</p>
-                            </div>
-                            <div
-                                className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
-                                    optValid ? 'border-[#009383]' : 'border-[#FF0000]'
-                                }`}
-                            >
-                                <p className="font-normal text-[18px] leading-[27px] text-[#494949]">5</p>
-                            </div>
-                            <div
-                                className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
-                                    optValid ? 'border-[#009383]' : 'border-[#FF0000]'
-                                }`}
-                            >
-                                <p className="font-normal text-[18px] leading-[27px] text-[#494949]">5</p>
-                            </div>
-                            <div
-                                className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
-                                    optValid ? 'border-[#009383]' : 'border-[#FF0000]'
-                                }`}
-                            >
-                                <p className="font-normal text-[18px] leading-[27px] text-[#494949]">5</p>
-                            </div>
+                            {[...Array(6)].map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`w-[45px] h-[47px] border rounded-s flex justify-center items-center ${
+                                        optValid ? 'border-[#009383]' : 'border-[#FF0000]'
+                                    }`}
+                                >
+                                    <input
+                                        type="text"
+                                        maxLength={1} // chỉ cho phép nhập 1 ký tự
+                                        value={otp[index] || ''}
+                                        onChange={(e) => handleOtpChange(e, index)}
+                                        className="outline-none w-[100%] h-[100%] text-center px-[5px] font-normal text-[18px] leading-[27px] text-[#494949]"
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
+
                     {optValid ? (
                         <></>
                     ) : (
@@ -92,7 +122,7 @@ function OPTSending() {
                         <span className="text-gray-700">{t('timeRemain')}:</span>
                         <span className="opacity-0 pointer-events-none">a</span>
                         <span className="text-[#009383]">
-                            5 {t('minute')} 00 {t('second')}
+                            {minutes} {t('minute')} {seconds < 10 ? `0${seconds}` : seconds} {t('second')}
                         </span>
                     </div>
                     <img src={flowerUp} alt="" className="absolute w-[110.6px] h-[186.43px] right-0 bottom-[60px]" />
@@ -103,6 +133,7 @@ function OPTSending() {
                     >
                         <span className="text-[#494949]">{t('notReciveOPT')}</span>
                         <span
+                            onClick={() => resendAuthCode()}
                             className={
                                 'text-underline-offset-4 cursor-pointer text-[#009383] underline decoration-solid decoration-[2px] decoration-[#009383'
                             }
@@ -112,7 +143,10 @@ function OPTSending() {
                     </div>
 
                     <div className="mt-12 flex items-center justify-center ">
-                        <button className="size-[18px] font-semibold leading-[21.78px] text-white w-[505px] h-[48px] bg-[#009383] rounded-lg">
+                        <button
+                            onClick={() => handleCreateAccount()}
+                            className="size-[18px] font-semibold leading-[21.78px] text-white w-[505px] h-[48px] bg-[#009383] rounded-lg"
+                        >
                             {t('confirm')}
                         </button>
                     </div>

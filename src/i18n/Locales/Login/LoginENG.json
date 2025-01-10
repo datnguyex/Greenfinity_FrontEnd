@@ -2,5 +2,7 @@
     "Login": "Sign in",
     "SignUp": "Sign up",
     "phoneNumber": "Phone number",
-    "inputPhoneNumber": "Enter your phone number"
+    "inputPhoneNumber": "Enter your phone number",
+    "password": "Password",
+    "enterPass": "Enter your password"
 }
