@@ -30,7 +30,7 @@ export const createTemporaryAccount = async (
             return { success: false, error: errorData };
         }
     } catch (error: any) {
-        console.error('Lỗi khi gửi yêu cầu đăng ký:', error);
+        console.error('error', error);
 
         if (error.response) {
             const { phoneNumber } = error.response.data;
@@ -38,7 +38,7 @@ export const createTemporaryAccount = async (
                 setErrorInfom({ phoneNumber });
             }
         } else {
-            setErrorInfom({ general: 'Có lỗi xảy ra, vui lòng thử lại!' });
+            setErrorInfom({ general: 'error while submitting, try again !!!' });
         }
 
         return { success: false, error };

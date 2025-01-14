@@ -1,10 +1,55 @@
 import { CloseXBlack, RectangularWarm } from '~/component/Icon';
+import Cookies from 'js-cookie';
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { clearUserInfomation } from '~/Redux/UserInfomationSlice';
+import Swal from 'sweetalert2';
 
 type AddressFormProps = {
     handlelTypeDisplay: (value: string) => void;
     t: (key: string) => string;
 };
+
 function AccountDeleteInfo({ handlelTypeDisplay, t }: AddressFormProps) {
+    const dispatch = useDispatch();
+    const handleDeleteAccount = async () => {
+        const token = Cookies.get('accessToken');
+
+        if (!token) {
+            console.error('Access token is missing');
+            return;
+        }
+
+        try {
+            // Sử dụng headers đúng cách trong config
+            const authResponse = await axios.post(
+                'http://localhost:3001/account/DeleteAccount',
+                {},
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                },
+            );
+
+            if (authResponse.status >= 200 && authResponse.status < 300) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'You have logged in successfully.',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                    timer: 2000,
+                    timerProgressBar: true,
+                }).then(() => {
+                    dispatch(clearUserInfomation());
+                    Cookies.remove('accessToken');
+                    window.location.href = 'http://localhost:3000/';
+                });
+            }
+        } catch (error) {
+            console.error('Error fetching user information:', error);
+        }
+    };
     return (
         <>
             <div className="fixed inset-0 bg-black bg-opacity-50 z-[100] "></div>
@@ -79,7 +124,10 @@ function AccountDeleteInfo({ handlelTypeDisplay, t }: AddressFormProps) {
                                     {t('cancle')}.
                                 </div>
                             </div>
-                            <div className="grow shrink basis-0 h-11 px-6 py-7 cursor-pointer mt-[10px] bg-[#ff4343] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden">
+                            <div
+                                onClick={() => handleDeleteAccount()}
+                                className="grow shrink basis-0 h-11 px-6 py-7 cursor-pointer mt-[10px] bg-[#ff4343] rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden"
+                            >
                                 <div className="text-white text-[18px] font-bold font-['Roboto']"> {t('confirm')}.</div>
                             </div>
                         </div>

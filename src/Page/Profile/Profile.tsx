@@ -16,15 +16,18 @@ import { Pagination } from 'antd';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AccountInfomation from '~/component/AccountInfomation/AccountInfomation';
 import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 import Cookies from 'js-cookie';
 import { useDispatch } from 'react-redux';
 import { clearUserInfomation } from '~/Redux/UserInfomationSlice';
+import axios from 'axios';
 
 function Profile() {
     const dispatch = useDispatch();
+
+    //language
     const { t } = useTranslation(['profile']);
     const languageState = useSelector((state: any) => state.language.language);
     const { i18n } = useTranslation();
@@ -44,11 +47,53 @@ function Profile() {
         i18n.changeLanguage(languageState);
     }, [languageState]);
 
+    //sign out
     const Signout = () => {
         dispatch(clearUserInfomation());
         Cookies.remove('accessToken');
         window.location.href = 'http://localhost:3000/';
     };
+
+    //get user infomation
+    interface UserInformation {
+        full_name?: string;
+        phone_number?: string;
+        email?: string;
+        image?: string;
+        gender?: string;
+        description?: string;
+        date_of_birth?: string;
+        rank?: string;
+        current_greecoin?: string;
+        poin_spent?: string;
+    }
+
+    const [userInfomation, setUserInfomation] = useState<UserInformation | undefined>(undefined);
+    const fetchUserInformation = async () => {
+        const token = Cookies.get('accessToken');
+
+        // Kiểm tra nếu token tồn tại
+        if (!token) {
+            console.error('Access token is missing');
+            return;
+        }
+
+        try {
+            const authResponse = await axios.get('http://localhost:3001/authentications/UserAuthenticate', {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+
+            setUserInfomation(authResponse.data.data);
+        } catch (error) {
+            console.error('Error fetching user information:', error);
+        }
+    };
+    useEffect(() => {
+        fetchUserInformation();
+    }, []);
+
     return (
         <>
             <Header />
@@ -76,7 +121,7 @@ function Profile() {
                                 <div className="w-[55%] gap-[20px] flex flex-col">
                                     {/* // */}
                                     <span className="inline-block max-w-[100%] text-[7.2rem] font-bold leading-[8.5rem] text-[#009383]">
-                                        Tuyết Anh
+                                        {userInfomation?.full_name}
                                     </span>
                                     {/* // */}
                                     <div className="w-[280px] h-12 px-6 py-[23px] rounded-lg border border-[#009383] justify-center items-center gap-2 inline-flex">
@@ -94,8 +139,7 @@ function Profile() {
                                     {/* // */}
                                     <div className="h-[53px] flex-col justify-center items-start inline-flex">
                                         <div className="text-[#373737] text-[18px] font-normal leading-tight">
-                                            Tôi là người ham đọc sách, thích học hỏi và hướng ngoại. Tôi thích làm việc
-                                            trong môi trường nghiêm túc và có thể phát triển sự nghiệp.
+                                            {userInfomation?.description}
                                         </div>
                                     </div>
                                     {/* // */}
@@ -108,7 +152,7 @@ function Profile() {
                                                 {' '}
                                             </span>
                                             <span className="text-[#ff0000] text-[20px] font-semibold leading-normal tracking-tight">
-                                                26
+                                                {userInfomation?.rank}
                                             </span>
                                         </div>
                                         <div className="justify-start items-center gap-0.5 inline-flex">
@@ -118,7 +162,7 @@ function Profile() {
                                                 </span>
 
                                                 <span className="text-[#ff0000] text-[20px] font-semibold leading-normal tracking-tight">
-                                                    5000
+                                                    {userInfomation?.current_greecoin}
                                                 </span>
                                                 <span>
                                                     <GoldCoin />
@@ -133,7 +177,7 @@ function Profile() {
                                                 {' '}
                                             </span>
                                             <span className="text-[#ff0000] text-[20px] font-semibold leading-normal tracking-tight">
-                                                0
+                                                {userInfomation?.poin_spent}
                                             </span>
                                         </div>
                                     </div>
@@ -186,7 +230,7 @@ function Profile() {
                             </div>
                         </div>
                         {/* //item */}
-                        <AccountInfomation t={t} />
+                        <AccountInfomation t={t} userInfomation={userInfomation} />
                         <div className="mt-[15rem]">
                             <Link
                                 to="/the-le"

@@ -9,7 +9,23 @@ import DeleteAccount from '~/Page/DeleteAccount/DeleteAccount';
 import PasswordReEnter from '../FormInfomation/PasswordReEnter/PasswordReEnter';
 import AccountDeleteInfo from '../FormInfomation/AccountDeleteInfo/AccountDeleteInfo';
 
-function AccountInfomation({ t }: { t: (key: string) => string }) {
+interface UserInformation {
+    full_name?: string;
+    phone_number?: string;
+    email?: string;
+    image?: string;
+    gender?: string;
+    description?: string;
+    date_of_birth?: string;
+    rank?: string;
+    current_greecoin?: string;
+    poin_spent?: string;
+}
+interface AccountInfomationProps {
+    t: (key: string) => string;
+    userInfomation: UserInformation | undefined;
+}
+const AccountInfomation: React.FC<AccountInfomationProps> = ({ t, userInfomation }) => {
     const [typeDisplay, setTypeDisplay] = useState();
     const handlelTypeDisplay = (value: any) => {
         setTypeDisplay(value);
@@ -49,21 +65,27 @@ function AccountInfomation({ t }: { t: (key: string) => string }) {
                                 <div className="text-[#505050] text-[16px] font-normal leading-normal">
                                     {t('Fullname')}
                                 </div>
-                                <div className="text-[#494949] text-[16px] font-medium leading-normal">Huy Nguyen</div>
+                                <div className="text-[#494949] text-[16px] font-medium leading-normal">
+                                    {' '}
+                                    {userInfomation?.full_name}
+                                </div>
                             </div>
                             <div className="pr-[66px] justify-start items-start gap-[88px] inline-flex">
                                 <div className="text-[#505050] text-[16px] font-normal leading-normal">
                                     {' '}
                                     {t('Gender')}
                                 </div>
-                                <div className="text-[#494949] text-[16px] font-medium leading-normal">Nam</div>
+                                <div className="text-[#494949] text-[16px] font-medium leading-normal">
+                                    {' '}
+                                    {userInfomation?.gender}
+                                </div>
                             </div>
                             <div className="h-6 pr-0.5 justify-center items-start gap-[74px] inline-flex">
                                 <div className="text-[#505050] text-[16px] font-normal leading-normal">
                                     {t('Dateofbirth')}
                                 </div>
                                 <div className="w-[107px] h-6 text-[#494949] text-[16px] font-medium leading-normal">
-                                    10/12/2212
+                                    {userInfomation?.date_of_birth}
                                 </div>
                             </div>
                         </div>
@@ -86,7 +108,7 @@ function AccountInfomation({ t }: { t: (key: string) => string }) {
                             <div className="w-[316px] justify-start items-center gap-[76px] inline-flex">
                                 <div className="text-[#505050] text-[20px] font-normal leading-normal">Email</div>
                                 <div className="text-[#494949] text-[20px] font-medium leading-normal">
-                                    tuyetanh@gmail.com
+                                    {userInfomation?.email}
                                 </div>
                             </div>
                             <div className="justify-start items-start gap-[42px] inline-flex">
@@ -222,6 +244,6 @@ function AccountInfomation({ t }: { t: (key: string) => string }) {
             {/* item */}
         </>
     );
-}
+};
 
 export default AccountInfomation;

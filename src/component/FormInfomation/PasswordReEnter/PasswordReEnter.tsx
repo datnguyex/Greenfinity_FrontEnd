@@ -1,3 +1,6 @@
+import axios from 'axios';
+import Cookies from 'js-cookie';
+import { useEffect, useState } from 'react';
 import { CloseXBlack } from '~/component/Icon';
 
 type AddressFormProps = {
@@ -5,6 +8,58 @@ type AddressFormProps = {
     t: (key: string) => string;
 };
 function PasswordReEnter({ handlelTypeDisplay, t }: AddressFormProps) {
+    const [password, setPassword] = useState('');
+    const [reEnterPassword, setReEnterPassword] = useState('');
+    const [errorPassword, setErrorPassword] = useState('');
+    const passwordInput = (e: any) => {
+        setPassword(e);
+    };
+    const passReEnterInput = (e: any) => {
+        setReEnterPassword(e);
+    };
+    const checkPassword = () => {
+        if (password != reEnterPassword) {
+            return setErrorPassword('the password is not same');
+        } else if (password == '' || reEnterPassword == '') {
+            return setErrorPassword('the password can not be emty');
+        }
+        return true;
+    };
+    const handleSubmitPassword = async () => {
+        const accessToken = Cookies.get('accessToken');
+        if (!checkPassword()) {
+            return;
+        }
+        try {
+            const response = await axios.post(
+                'http://localhost:3001/account/checkPassword',
+                {
+                    currentPassword: password,
+                },
+                {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                },
+            );
+
+            if (response.status === 200) {
+                console.log(response.data.message);
+                handlelTypeDisplay('thong-tin-xoa-tai-khoan');
+            }
+        } catch (error: any) {
+            if (error.response) {
+                setErrorPassword(error.response.data.message || 'Error occurred while handling request');
+            } else {
+                // Nếu có lỗi mạng hoặc các lỗi khác
+                setErrorPassword('An unexpected error occurred');
+            }
+        }
+    };
+    useEffect(() => {
+        setErrorPassword('');
+    }, [reEnterPassword, password]);
+
     return (
         <>
             <div className="fixed inset-0 bg-black bg-opacity-50 z-[100] "></div>
@@ -21,6 +76,8 @@ function PasswordReEnter({ handlelTypeDisplay, t }: AddressFormProps) {
                                 </div>
                                 <div className="w-[524px] h-12 px-4 py-7 bg-[#f9f8f8] rounded-lg border justify-between items-center inline-flex overflow-hidden">
                                     <input
+                                        type="password"
+                                        onChange={(e) => passwordInput(e.target.value)}
                                         placeholder={t('CurrentPasword')}
                                         className="text-[17px] font-normal  outline-none w-[100%] bg-transparent text-black"
                                     ></input>
@@ -35,10 +92,15 @@ function PasswordReEnter({ handlelTypeDisplay, t }: AddressFormProps) {
                                 </div>
                                 <div className="w-[524px] h-12 px-4 py-7 bg-[#f9f8f8] rounded-lg border justify-between items-center inline-flex overflow-hidden">
                                     <input
+                                        type="password"
+                                        onChange={(e) => passReEnterInput(e.target.value)}
                                         placeholder={t('ReEnterPassowrd')}
                                         className="text-black text-[17px] font-normal  outline-none w-[100%] bg-transparent"
                                     ></input>
                                     <div className="w-6 h-6 relative  overflow-hidden" />
+                                </div>
+                                <div className="text-center text-red-600 text-[17px] font-semibold ">
+                                    {errorPassword}
                                 </div>
                             </div>
                         </div>
@@ -51,7 +113,7 @@ function PasswordReEnter({ handlelTypeDisplay, t }: AddressFormProps) {
                             <div className="text-[#494949] text-[18px] font-medium "> {t('cancle')}</div>
                         </div>
                         <div
-                            onClick={() => handlelTypeDisplay('thong-tin-xoa-tai-khoan')}
+                            onClick={() => handleSubmitPassword()}
                             className="px-6 py-7 h-11 bg-[#ff4343] cursor-pointer rounded-lg shadow-[0px_0px_6px_0px_rgba(231,233,242,1.00)] justify-center items-center gap-2 flex overflow-hidden"
                         >
                             <div className="text-white text-[18px] font-bold "> {t('confirm')}</div>
