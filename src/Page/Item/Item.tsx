@@ -1,8 +1,8 @@
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import { Pagination } from 'antd';
 import './Item.css';
-import { leafHomeLeft, leafHomeRight, MyItem } from '~/Images';
+import { leafHomeLeft, leafHomeRight, MyItem } from '~/assets/Images/';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';

@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { UserGreen, ArrowLeftBlack, ArrowLeftRed, ArrowLeftWhite, CartWhite, LogoutRed } from '~/component/Icon/Icon';
+import { UserGreen, ArrowLeftBlack, ArrowLeftRed, ArrowLeftWhite, CartWhite, LogoutRed } from '~/assets/Icons/Icon';
 
-import { CartGreen, UserWhite } from '~/component/Icon/Icon';
+import { CartGreen, UserWhite } from '~/assets/Icons/Icon';
 
 function UserMenu(pathName: any) {
     const { t } = useTranslation(['UserMenu']);

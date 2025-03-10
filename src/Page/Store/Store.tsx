@@ -1,11 +1,11 @@
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import './Store.css';
-import { SunflowerProduct, SharkProduct, OreonProduct, CatChair, Headerleft, dumplingsProduct } from '~/Images';
+import { SunflowerProduct, SharkProduct, OreonProduct, CatChair, Headerleft, dumplingsProduct } from '~/assets/Images/';
 import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner';
 import Slider from 'react-slick';
 import StoreBanner from '~/component/Banner/StoreBanner/StoreBanner';
-import { ArrowLeft, ArrowRight, Cart, LeafBlue, LeafPupple } from '~/component/Icon';
+import { ArrowLeft, ArrowRight, Cart, LeafBlue, LeafPupple } from '~/assets/Icons';
 import { useEffect, useRef, useState } from 'react';
 import AllProductStore from '~/component/AllProductStore/AllProductStore';
 import { Link } from 'react-router-dom';

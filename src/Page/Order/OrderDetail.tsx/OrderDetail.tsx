@@ -1,7 +1,7 @@
-import { ArrowLeftBlack } from '~/component/Icon';
-import Header from '~/component/Layout/Header/Header';
+import { ArrowLeftBlack } from '~/assets/Icons';
+import Header from '~/Layouts/Header/Header';
 import UserMenu from '~/component/Menu/UserMenu/UserMenu';
-import { leafHomeLeft, leafHomeRight, SharkProduct } from '~/Images';
+import { leafHomeLeft, leafHomeRight, SharkProduct } from '~/assets/Images/';
 
 function OrderDetail() {
     return (

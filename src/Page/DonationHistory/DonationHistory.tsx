@@ -1,7 +1,7 @@
-import { leafHomeLeft, leafHomeRight } from '~/Images';
-import { GoldCoin } from '~/component/Icon';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import { GoldCoin } from '~/assets/Icons';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';

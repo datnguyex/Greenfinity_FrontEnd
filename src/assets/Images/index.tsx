@@ -100,3 +100,5 @@ export const Dragon4 = 'https://res.cloudinary.com/doav62tr3/image/upload/v17355
 export const Dragon5 = 'https://res.cloudinary.com/doav62tr3/image/upload/v1735525793/zcwf5qqph5ej2vvemdg8.png';
 export const MakerGreenMap = 'https://res.cloudinary.com/doav62tr3/image/upload/v1735525793/PopupGreenMap_skofgr.png';
 export const PopupFrameMap = 'https://res.cloudinary.com/doav62tr3/image/upload/v1735525793/PopupFrameMap_pangha.png';
+
+export const UnknowUSer = 'https://res.cloudinary.com/doav62tr3/image/upload/v1737002932/userImg_oolzfv.png';

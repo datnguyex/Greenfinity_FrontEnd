@@ -1,6 +1,6 @@
-import { AvatarWoman1, AvatarWoman2, AvatarWoman3, ManRankAvatar, OreonProduct } from '~/Images';
-import { HalfAYelloStar, YellowStar } from '../Icon';
-import { ThumpUp } from '../Icon/Icon';
+import { AvatarWoman1, AvatarWoman2, AvatarWoman3, ManRankAvatar, OreonProduct } from '~/assets/Images/';
+import { HalfAYelloStar, YellowStar } from '~/assets/Icons';
+import { ThumpUp } from '~/assets/Icons/Icon';
 import { Pagination } from 'antd';
 
 function CommentProduct({ t }: { t: (key: string) => string }) {

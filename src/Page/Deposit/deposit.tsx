@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { leafHomeLeft, leafHomeRight } from '~/Images';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
 import {
     DepositLineStep,
     OneCoinAndStarts,
@@ -8,9 +8,9 @@ import {
     APilOfCoinAndStart,
     GoldCoin,
     CheckDeposit,
-} from '~/component/Icon';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+} from '~/assets/Icons';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';

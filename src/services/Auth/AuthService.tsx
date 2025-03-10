@@ -23,7 +23,7 @@ export const createTemporaryAccount = async (
             return { success: true, data };
         } else {
             const errorData = await response.json();
-            // If there are specific errors like 'phoneNumber', update the state
+
             if (errorData.phoneNumber) {
                 setErrorInfom({ phoneNumber: errorData.phoneNumber });
             }
@@ -60,6 +60,7 @@ export const CreateAccount = async (otp: string) => {
                 keyChecked: parsedInfoSignUp.keyChecked,
                 auth_code: parsedInfoSignUp.otp,
                 password: parsedInfoSignUp.password,
+                image: parsedInfoSignUp.image,
             });
 
             if (response.status === 201) {
@@ -162,8 +163,10 @@ export const Signin = async (
 
             if (authResponse.status === 200) {
                 console.log('User authenticated successfully!', authResponse);
-                const { full_name, phone_number } = authResponse.data.data;
-                StoreReducer.dispatch(authenticationAction({ phoneNumber: phone_number, fullName: full_name }));
+                const { full_name, phone_number, image } = authResponse.data.data;
+                StoreReducer.dispatch(
+                    authenticationAction({ phoneNumber: phone_number, fullName: full_name, image: image }),
+                );
                 Swal.fire({
                     title: 'Success!',
                     text: 'You have logged in successfully.',

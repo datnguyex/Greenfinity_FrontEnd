@@ -1,5 +1,5 @@
 import Title from 'antd/es/skeleton/Title';
-import { Headerleft, HomeVoucer } from '~/Images';
+import { Headerleft, HomeVoucer } from '~/assets/Images/';
 import TitleBar from '../TittleBar/TittleBar';
 
 function Gift({ t }: { t: (key: string) => string }) {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { DeleteUser, EditSign } from '../Icon';
-import { BlockCircle, PlusWhite, SignEditWhite } from '../Icon/Icon';
+import { DeleteUser, EditSign } from '~/assets/Icons';
+import { BlockCircle, PlusWhite, SignEditWhite } from '~/assets/Icons/Icon';
 import AddressForm from '../FormInfomation/AddressForm/AddressForm';
 import { useState } from 'react';
 import ChangePassword from '../FormInfomation/ChangePassword/ChangePassword';
@@ -29,6 +29,16 @@ const AccountInfomation: React.FC<AccountInfomationProps> = ({ t, userInfomation
     const [typeDisplay, setTypeDisplay] = useState();
     const handlelTypeDisplay = (value: any) => {
         setTypeDisplay(value);
+    };
+    const formatDate = (dateString: any) => {
+        const date = new Date(dateString);
+
+        const day = date.getDate();
+        const month = date.getMonth() + 1; // Tháng bắt đầu từ 0
+        const year = date.getFullYear();
+
+        // Định dạng ngày theo yêu cầu
+        return `${day < 10 ? '0' + day : day} Th ${month < 10 ? '0' + month : month} ${year}`;
     };
     return (
         <>
@@ -77,7 +87,8 @@ const AccountInfomation: React.FC<AccountInfomationProps> = ({ t, userInfomation
                                 </div>
                                 <div className="text-[#494949] text-[16px] font-medium leading-normal">
                                     {' '}
-                                    {userInfomation?.gender}
+                                    {/* {userInfomation?.gender} */}
+                                    Nam
                                 </div>
                             </div>
                             <div className="h-6 pr-0.5 justify-center items-start gap-[74px] inline-flex">
@@ -85,7 +96,7 @@ const AccountInfomation: React.FC<AccountInfomationProps> = ({ t, userInfomation
                                     {t('Dateofbirth')}
                                 </div>
                                 <div className="w-[107px] h-6 text-[#494949] text-[16px] font-medium leading-normal">
-                                    {userInfomation?.date_of_birth}
+                                    {formatDate(userInfomation?.date_of_birth)}
                                 </div>
                             </div>
                         </div>
@@ -107,11 +118,11 @@ const AccountInfomation: React.FC<AccountInfomationProps> = ({ t, userInfomation
                         <div className="flex-col justify-start items-start gap-4 flex">
                             <div className="w-[316px] justify-start items-center gap-[76px] inline-flex">
                                 <div className="text-[#505050] text-[20px] font-normal leading-normal">Email</div>
-                                <div className="text-[#494949] text-[20px] font-medium leading-normal">
+                                <div className="text-[#494949] text-[20px] ml-[15px] font-medium leading-normal">
                                     {userInfomation?.email}
                                 </div>
                             </div>
-                            <div className="justify-start items-start gap-[42px] inline-flex">
+                            <div className="justify-start items-center gap-[42px] inline-flex">
                                 <div className="text-[#505050] text-[20px] font-normal leading-normal">
                                     {t('password')}
                                 </div>

@@ -5,6 +5,7 @@ import { authenticationAction } from './Action';
 interface UserInfomation {
     fullName: string;
     phoneNumber: string;
+    image: string;
     accessToken?: string;
     loading: boolean;
     isAuthenticated: boolean;
@@ -14,6 +15,7 @@ interface UserInfomation {
 const initialState: UserInfomation = {
     fullName: '',
     phoneNumber: '',
+    image: '',
     accessToken: undefined,
     loading: false,
     isAuthenticated: false,
@@ -33,10 +35,14 @@ export const UserInfomationSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(
             authenticationAction.fulfilled,
-            (state, action: PayloadAction<{ phoneNumber: string; fullName: string; accessToken?: string }>) => {
+            (
+                state,
+                action: PayloadAction<{ phoneNumber: string; fullName: string; image: string; accessToken?: string }>,
+            ) => {
                 console.log('payload', action.payload);
                 state.fullName = action.payload.fullName;
                 state.phoneNumber = action.payload.phoneNumber;
+                state.image = action.payload.image;
                 state.loading = false;
                 state.isAuthenticated = true;
             },

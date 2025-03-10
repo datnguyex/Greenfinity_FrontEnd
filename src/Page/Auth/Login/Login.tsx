@@ -1,4 +1,4 @@
-import { flowerDown, flowerUp, imgTitleWeb } from '~/Images';
+import { flowerDown, flowerUp, imgTitleWeb } from '~/assets/Images/';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';

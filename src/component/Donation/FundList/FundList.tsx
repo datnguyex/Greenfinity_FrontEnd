@@ -1,5 +1,5 @@
-import { FundList } from '~/Images';
-import { TitleFundList } from '~/component/Icon/Icon';
+import { FundList } from '~/assets/Images/';
+import { TitleFundList } from '~/assets/Icons/Icon';
 
 type FunListProps = {
     disPlayFundList: (value: boolean) => void;

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { AvatarMan2, leafHomeLeft, leafHomeRight } from '~/Images';
-import { ImageChoosen, ListCircleAndDash, MagnifyingGlass } from '~/component/Icon';
-import Footer from '~/component/Layout/Footer/Footer';
-import Header from '~/component/Layout/Header/Header';
+import { AvatarMan2, leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import { ImageChoosen, ListCircleAndDash, MagnifyingGlass } from '~/assets/Icons';
+import Footer from '~/Layouts/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
 import FunList from '~/component/Donation/FundList/FundList';
 import Posts from '~/component/Posts/Posts';
 import { useTranslation } from 'react-i18next';

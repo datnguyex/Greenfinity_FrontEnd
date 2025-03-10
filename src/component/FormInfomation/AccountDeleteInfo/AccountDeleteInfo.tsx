@@ -1,4 +1,4 @@
-import { CloseXBlack, RectangularWarm } from '~/component/Icon';
+import { CloseXBlack, RectangularWarm } from '~/assets/Icons';
 import Cookies from 'js-cookie';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';

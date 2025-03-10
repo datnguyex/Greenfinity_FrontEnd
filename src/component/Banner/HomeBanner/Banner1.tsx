@@ -1,4 +1,4 @@
-import { banner1 } from '~/Images';
+import { banner1 } from '~/assets/Images/';
 function Banner1({ t }: { t: (key: string) => string }) {
     return (
         <>

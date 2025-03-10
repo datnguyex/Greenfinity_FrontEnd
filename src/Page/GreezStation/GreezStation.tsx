@@ -7,9 +7,9 @@ import {
     startRecycleMachine,
     qrRecycleApp,
     finishRecycleApp,
-} from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+} from '~/assets/Images/';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';

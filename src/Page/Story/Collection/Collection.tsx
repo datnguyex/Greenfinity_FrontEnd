@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { ArrowTopWhite } from '~/component/Icon/Icon';
-import Footer from '~/component/Layout/Footer/Footer';
-import Header from '~/component/Layout/Header/Header';
+import { ArrowTopWhite } from '~/assets/Icons/Icon';
+import Footer from '~/Layouts/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
 import ProductMenu from '~/component/Menu/ProductMenu/ProductMenu';
 import TitleBar from '~/component/TittleBar/TittleBar';
-import { Dragon1, Dragon2, Dragon3, Dragon4, Dragon5, Headerleft, leafHomeLeft, leafHomeRight } from '~/Images';
+import { Dragon1, Dragon2, Dragon3, Dragon4, Dragon5, Headerleft, leafHomeLeft, leafHomeRight } from '~/assets/Images/';
 
 function Collection() {
     const images = [Dragon1, Dragon2, Dragon3, Dragon4, Dragon5];

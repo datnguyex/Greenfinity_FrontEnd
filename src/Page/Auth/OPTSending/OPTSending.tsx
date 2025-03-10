@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 // import style from './Login.module.scss';
-import { flowerDown, flowerUp, imgTitleWeb } from '~/Images';
+import { flowerDown, flowerUp, imgTitleWeb } from '~/assets/Images/';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 // const cx = classNames.bind(style);

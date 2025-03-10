@@ -1,4 +1,4 @@
-import { GoldCoin, TitleDonation, TitleFundList } from '~/component/Icon/Icon';
+import { GoldCoin, TitleDonation, TitleFundList } from '~/assets/Icons/Icon';
 
 type DonationProps = {
     disPlayDonation: (value: boolean) => void;

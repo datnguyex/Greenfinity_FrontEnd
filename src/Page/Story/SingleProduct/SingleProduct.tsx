@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import AllProductStore from '~/component/AllProductStore/AllProductStore';
-import { ArrowTopWhite, LeafPupple } from '~/component/Icon/Icon';
-import Footer from '~/component/Layout/Footer/Footer';
-import Header from '~/component/Layout/Header/Header';
+import { ArrowTopWhite, LeafPupple } from '~/assets/Icons/Icon';
+import Footer from '~/Layouts/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
 import ProductMenu from '~/component/Menu/ProductMenu/ProductMenu';
-import { CatChair, dumplingsProduct, leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct } from '~/Images';
+import { CatChair, dumplingsProduct, leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct } from '~/assets/Images/';
 
 function SingleProduct() {
     const products = [

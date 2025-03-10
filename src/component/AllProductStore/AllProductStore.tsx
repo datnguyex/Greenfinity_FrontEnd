@@ -1,6 +1,6 @@
-import { OreonProduct, CatChair, dumplingsProduct, Headerleft } from '~/Images';
+import { OreonProduct, CatChair, dumplingsProduct, Headerleft } from '~/assets/Images/';
 import { useState } from 'react';
-import { Cart, LeafPupple } from '../Icon';
+import { Cart, LeafPupple } from '~/assets/Icons';
 import { Link } from 'react-router-dom';
 import ProductMenu from '../Menu/ProductMenu/ProductMenu';
 function AllProductStore({ t }: { t: (key: string) => string }) {

@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Header from '~/component/Layout/Header/Header';
-import { MagnifyingGlassBlack, LeafBlue, CartSad } from '~/component/Icon';
+import Header from '~/Layouts/Header/Header';
+import { MagnifyingGlassBlack, LeafBlue, CartSad } from '~/assets/Icons';
 import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 import { Link } from 'react-router-dom';
-import { SharkProduct, leafHomeLeft, leafHomeRight } from '~/Images';
-import Footer from '~/component/Layout/Footer/Footer';
+import { SharkProduct, leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 

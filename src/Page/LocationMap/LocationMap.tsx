@@ -1,6 +1,6 @@
-import { leafHomeLeft, leafHomeRight, IconLocationMap } from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import { leafHomeLeft, leafHomeRight, IconLocationMap } from '~/assets/Images/';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
@@ -10,7 +10,7 @@ import 'leaflet/dist/leaflet.css';
 import './LocationMap.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { LatLngExpression, Icon, LatLngTuple, Map } from 'leaflet';
-import { MakerGreenMap, PopupFrameMap } from '~/Images';
+import { MakerGreenMap, PopupFrameMap } from '~/assets/Images/';
 import { useRef } from 'react';
 
 function LocationMap() {

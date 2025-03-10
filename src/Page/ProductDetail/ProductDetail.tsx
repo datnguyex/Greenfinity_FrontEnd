@@ -1,12 +1,12 @@
 import './ProductDetail.css';
-import { leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct, CatChair } from '~/Images';
+import { leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct, CatChair } from '~/assets/Images/';
 import Slider from 'react-slick';
-import { ArrowLeft, ArrowRight, LeafPupple, Minus, Plus } from '~/component/Icon';
+import { ArrowLeft, ArrowRight, LeafPupple, Minus, Plus } from '~/assets/Icons';
 import { useEffect, useRef, useState } from 'react';
-import Header from '~/component/Layout/Header/Header';
+import Header from '~/Layouts/Header/Header';
 import CommentProduct from '~/component/CommentProduct/CommentProduct';
 import RelatedProducts from '~/component/RelatedProducts/RelatedProducts';
-import Footer from '~/component/Layout/Footer/Footer';
+import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 

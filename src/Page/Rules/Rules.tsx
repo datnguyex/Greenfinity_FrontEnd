@@ -1,7 +1,7 @@
-import { RimVoucher, GoldCoin } from '~/component/Icon';
-import { leafHomeLeft, leafHomeRight } from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import { RimVoucher, GoldCoin } from '~/assets/Icons';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
