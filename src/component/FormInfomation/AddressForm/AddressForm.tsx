@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react';
-import { CloseXBlack } from '~/component/Icon';
+import { CloseXBlack } from '~/assets/Icons';
 import axios from 'axios';
+import Cookies from 'js-cookie';
+import Swal from 'sweetalert2';
 
+//add address
 type AddressFormProps = {
     type: string;
     handlelTypeDisplay: (value: string) => void;
     t: (key: string) => string;
 };
 function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
-    console.log('type', type);
+    // console.log('type', type);
     type Provinces = {
         name: string;
         code: number;
@@ -64,6 +67,23 @@ function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
         division_type: null,
         name: null,
     });
+    const [typeAdress, setTypeAddress] = useState('home');
+    const [defaultAddress, setDefaultAddress] = useState(false);
+    const [errorAddress, setErrorAddress] = useState({
+        province: '',
+        district: '',
+        ward: '',
+        addressSpecific: '',
+        typeAddress: '',
+        defaultAddress: '',
+    });
+
+    const handleTypeAddress = (e: string) => {
+        setTypeAddress(e);
+    };
+    const handleDefaultAddress = () => {
+        setDefaultAddress(!defaultAddress);
+    };
 
     const handleProvine = (name: string, code: number) => {
         setProvine({
@@ -160,7 +180,60 @@ function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
     useEffect(() => {
         fetchDistrict();
     }, [provine]);
+    useEffect(() => {
+        setErrorAddress((prevState) => ({
+            ...prevState,
+            defaultAddress: '',
+        }));
+    }, [defaultAddress]);
+    console.log('errorAddress', errorAddress);
 
+    const CreateNewAddress = async () => {
+        const accessToken = Cookies.get('accessToken');
+        try {
+            const response = await axios.post(
+                'http://localhost:3001/address/addNewAddress',
+                {
+                    provine: provine.name,
+                    district: district.name,
+                    ward: ward.name,
+                    specificAddress: addressSpecific,
+                    typeAdress: typeAdress,
+                    defaultAddress: defaultAddress,
+                },
+                {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                    },
+                },
+            );
+            if (response.status === 200) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Create new address succesfully',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                    timer: 2000,
+                    timerProgressBar: true,
+                }).then(() => {
+                    window.location.href = 'http://localhost:3000/trang-ca-nhan';
+                });
+            }
+        } catch (error: any) {
+            if (error.response && error.response.data.status === 400) {
+                setErrorAddress((prevState) => ({
+                    ...prevState,
+                    defaultAddress: error.response.data.message,
+                }));
+                console.log(error.response.data.message);
+            } else {
+                console.error('Unexpected error:', error);
+            }
+        }
+    };
+
+    console.log('typeAdress', typeAdress);
+    console.log('defaultAddress', defaultAddress);
     return (
         <>
             <div className="fixed inset-0 bg-black bg-opacity-50 z-[100]"></div>
@@ -183,13 +256,23 @@ function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
                             </div>
                         </div>
                         <div className="justify-start items-start gap-3.5 inline-flex">
-                            <div className="cursor-pointer w-[109px] h-11 py-7 px-5 bg-[#33a99c] rounded-lg justify-center items-center gap-2.5 flex">
-                                <div className="text-center text-white text-[16px] font-medium leading-tight">
+                            <div
+                                onClick={(e) => handleTypeAddress('company')}
+                                className={`cursor-pointer w-[109px] h-11 py-7 px-5  rounded-lg justify-center items-center gap-2.5 flex ${typeAdress == 'company' ? 'bg-[#33a99c]' : 'bg-[#f0f0f0] '}`}
+                            >
+                                <div
+                                    className={`text-center  text-[16px] font-medium leading-tight ${typeAdress == 'company' ? 'text-white' : 'text-[#494949]'}`}
+                                >
                                     {t('company')}
                                 </div>
                             </div>
-                            <div className="px-5 h-11 py-7 cursor-pointer bg-[#f0f0f0] rounded-lg justify-center items-center gap-2.5 flex">
-                                <div className="text-center text-[#494949] text-[16px] font-medium leading-tight">
+                            <div
+                                onClick={(e) => handleTypeAddress('home')}
+                                className={`cursor-pointer w-[109px] h-11 py-7 px-5  rounded-lg justify-center items-center gap-2.5 flex ${typeAdress == 'home' ? 'bg-[#33a99c]' : 'bg-[#f0f0f0] '}`}
+                            >
+                                <div
+                                    className={`text-center  text-[16px] font-medium leading-tight ${typeAdress == 'home' ? 'text-white' : 'text-[#494949]'}`}
+                                >
                                     {t('home')}
                                 </div>
                             </div>
@@ -197,14 +280,27 @@ function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
                     </div>
                     <div className="justify-start items-center gap-[255px] inline-flex">
                         <div className="justify-start items-center gap-2 flex">
-                            <div className="w-5 h-5 relative bg-white rounded border border-[#009383]" />
+                            <div
+                                onClick={() => handleDefaultAddress()}
+                                className="w-5 h-5 relative bg-white rounded border border-[#009383]"
+                            />
                             <div className="text-[#4d4d4d] text-[16px] font-normal font-['Roboto']">
                                 {t('SetAsDefaultAddress')}
                             </div>
                         </div>
                     </div>
+                    {errorAddress.defaultAddress != '' ? (
+                        <div className="text-red-600 text-[16px] font-normal font-['Roboto']">
+                            {errorAddress.defaultAddress}
+                        </div>
+                    ) : (
+                        ''
+                    )}
                 </div>
-                <div className="w-[118px] h-12 px-5 py-7 left-[234px] top-[638px] absolute cursor-pointer bg-[#009383] rounded-lg justify-center items-center gap-2.5 inline-flex">
+                <div
+                    onClick={() => CreateNewAddress()}
+                    className="w-[118px] h-12 px-5 py-7 left-[234px] top-[638px] absolute cursor-pointer bg-[#009383] rounded-lg justify-center items-center gap-2.5 inline-flex"
+                >
                     <div className="text-center text-white text-[16px] font-semibold leading-normal">{t('Save')}</div>
                 </div>
                 <div className="h-[71px] left-[31px] top-[364px] absolute flex-col justify-start items-start gap-3 inline-flex">
@@ -316,11 +412,11 @@ function AddressForm({ t, type, handlelTypeDisplay }: AddressFormProps) {
                         <div className="self-stretch py-7 grow shrink basis-0 pl-4 pr-3 bg-[#f9f8f8] rounded-md border justify-between items-center inline-flex overflow-hidden">
                             <div className="text-[#494949] text-[16px] font-normal font-['Roboto']">
                                 {type === 'thay-doi-dia-chi'
-                                    ? ward.name !== null
-                                        ? ward.name
-                                        : currrentAddress.ward
-                                    : ward.name !== null
-                                      ? ward.name
+                                    ? provine.name !== null
+                                        ? provine.name
+                                        : currrentAddress.provine
+                                    : provine.name !== null
+                                      ? provine.name
                                       : t('SelectProvince/City')}
                             </div>
                             <div className="w-6 h-6 relative overflow-hidden" />

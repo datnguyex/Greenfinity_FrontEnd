@@ -1,4 +1,4 @@
-import { leafHomeLeft, leafHomeRight, Error404 } from '~/Images';
+import { leafHomeLeft, leafHomeRight, Error404 } from '~/assets/Images/';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';

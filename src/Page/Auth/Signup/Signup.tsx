@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import style from './Signup.module.scss';
-import { imgTitleWeb, flowerDown } from '~/Images';
+import { imgTitleWeb, flowerDown, UnknowUSer } from '~/assets/Images/';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
@@ -24,6 +24,7 @@ function Signup() {
         fullName: '',
         phoneNumber: '',
         password: '',
+        image: UnknowUSer,
         checkedClause: false,
     });
     const [errorInfom, setErrorInfom] = useState({

@@ -35,6 +35,7 @@ import Cookies from 'js-cookie';
 import { useDispatch } from 'react-redux';
 import { clearUserInfomation } from './Redux/UserInfomationSlice';
 import { DeleteAuthCode } from './services';
+import Testing from './Page/Testing/Testing';
 
 function CurrentPageDisplay() {
     const location = useLocation();
@@ -102,6 +103,7 @@ export default function App() {
                 <Route path="cau-chuyen" element={<Story />} />
                 <Route path="san-pham-don" element={<SingleProduct />} />
                 <Route path="bo-suu-tap" element={<Collection />} />
+                <Route path="testing" element={<Testing />} />
             </Routes>
         </Router>
     );

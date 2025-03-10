@@ -1,4 +1,4 @@
-import { EnglandLanguage, VietnameseLanguage } from '~/Images';
+import { EnglandLanguage, VietnameseLanguage } from '~/assets/Images/';
 
 export const EnglandIfomation = {
     name: 'ENG',

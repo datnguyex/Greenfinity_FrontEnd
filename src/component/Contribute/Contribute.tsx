@@ -3,10 +3,10 @@ import classNames from 'classnames/bind';
 import style from './Contribute.module.scss';
 import './Contribute.css';
 import Slider from 'react-slick';
-import { ArrowLeft, ArrowRight, FrameAvatarRank, ScoreRankHome } from '~/component/Icon';
+import { ArrowLeft, ArrowRight, FrameAvatarRank, ScoreRankHome } from '~/assets/Icons';
 import moment from 'moment';
 import { addWeeks, format, differenceInCalendarWeeks } from 'date-fns';
-import { RankNo1, RankNo2, RankNo3, ManRankAvatar, WomenRankAvatar, Headerleft, cornerTitle } from '~/Images';
+import { RankNo1, RankNo2, RankNo3, ManRankAvatar, WomenRankAvatar, Headerleft, cornerTitle } from '~/assets/Images/';
 import { Pagination } from 'antd';
 const cx = classNames.bind(style);
 

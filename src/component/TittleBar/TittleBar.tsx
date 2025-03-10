@@ -1,4 +1,4 @@
-import { Headerleft } from '~/Images';
+import { Headerleft } from '~/assets/Images/';
 
 // Định nghĩa kiểu cho props
 interface TitleBarProps {

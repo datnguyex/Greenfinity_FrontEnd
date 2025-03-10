@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
-import { CloseXBlack } from '~/component/Icon';
+import { CloseXBlack } from '~/assets/Icons';
 
 type AddressFormProps = {
     handlelTypeDisplay: (value: string) => void;

@@ -1,8 +1,8 @@
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
-import { leafHomeLeft, leafHomeRight, ManRankAvatar } from '~/Images';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
+import { leafHomeLeft, leafHomeRight, ManRankAvatar } from '~/assets/Images/';
 import { Link } from 'react-router-dom';
-import { EditSign, HorizonTwoCircle, ListCircleAndDash } from '~/component/Icon';
+import { EditSign, HorizonTwoCircle, ListCircleAndDash } from '~/assets/Icons';
 import Posts from '~/component/Posts/Posts';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';

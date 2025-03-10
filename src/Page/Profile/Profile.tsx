@@ -1,7 +1,7 @@
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
-import { leafHomeLeft, leafHomeRight } from '~/Images';
-import { ManRankAvatar } from '~/Images';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import { ManRankAvatar } from '~/assets/Images/';
 import {
     EditSign,
     GoldCoin,
@@ -10,8 +10,8 @@ import {
     Tote,
     ArrowIntoHaftSquare,
     AZArrange,
-} from '~/component/Icon';
-import { FrameIntroduceGift, RimVoucher } from '~/component/Icon/index';
+} from '~/assets/Icons';
+import { FrameIntroduceGift, RimVoucher } from '~/assets/Icons/index';
 import { Pagination } from 'antd';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -72,12 +72,6 @@ function Profile() {
     const fetchUserInformation = async () => {
         const token = Cookies.get('accessToken');
 
-        // Kiểm tra nếu token tồn tại
-        if (!token) {
-            console.error('Access token is missing');
-            return;
-        }
-
         try {
             const authResponse = await axios.get('http://localhost:3001/authentications/UserAuthenticate', {
                 headers: {
@@ -85,7 +79,13 @@ function Profile() {
                 },
             });
 
-            setUserInfomation(authResponse.data.data);
+            const userData = authResponse.data.data;
+            const newDate = authResponse.data.newDate;
+
+            setUserInfomation({
+                ...userData,
+                date_of_birth: newDate,
+            });
         } catch (error) {
             console.error('Error fetching user information:', error);
         }
@@ -115,7 +115,7 @@ function Profile() {
                             <div className="items-center flex justify-start gap-[3rem] mx-auto max-w-[104.8rem] w-[65%] pr-[20px]">
                                 {/* //child-item */}
                                 <div className="items-end flex w-[50.7%]">
-                                    <img className="h-auto w-[100%]" src={ManRankAvatar} alt="" />
+                                    <img className="h-auto w-[100%]" src={userInfomation?.image} alt="" />
                                 </div>
                                 {/* child-item */}
                                 <div className="w-[55%] gap-[20px] flex flex-col">

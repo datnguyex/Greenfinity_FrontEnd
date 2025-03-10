@@ -1,4 +1,4 @@
-import { CloseXBlack } from '~/component/Icon';
+import { CloseXBlack } from '~/assets/Icons';
 
 function Logout() {
     return (

@@ -1,6 +1,6 @@
 .customBefore::before {
     content: '';
-    background: url('../../Images/Items/leaft-product-left.png') no-repeat 50%;
+    background: url('../../assets/Images/Items/leaft-product-left.png') no-repeat 50%;
     background-size: contain;
     border-bottom-left-radius: 2.6rem;
     bottom: -3%;
@@ -13,7 +13,7 @@
     z-index: 1;
 }
 .customAfter::after {
-    background: url('../../Images/Items/leaft-product-right.png') no-repeat 50%;
+    background: url('../../assets/Images/Items/leaft-product-right.png') no-repeat 50%;
     background-size: contain;
     border-bottom-right-radius: 2.6rem;
     bottom: 0;

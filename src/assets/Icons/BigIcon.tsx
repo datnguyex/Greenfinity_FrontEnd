@@ -7,548 +7,548 @@ export const FrameIntroduceGift: React.FC<IconType> = ({ width = '6.7rem', heigh
     return (
         <svg width="468" height="165" viewBox="0 0 468 165" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M451.01 87.4C449.34 97.84 446.54 108.43 442.97 118.21L442.77 118.74L442.27 118.76C436.64 118.95 431.31 121.14 426.75 124.98C422.48 128.57 419.16 133.34 417.19 139.02L416.99 139.59H51.0005L50.8005 139.02C48.8305 133.34 45.5005 128.57 41.2405 124.98C36.6805 121.15 31.3505 118.95 25.7205 118.76L25.2205 118.74L25.0205 118.21C21.4505 108.43 18.6505 97.84 16.9805 87.4C18.6505 76.63 21.4505 66.04 25.0205 56.26L25.2205 55.73L25.7205 55.71C31.3505 55.52 36.6805 53.33 41.2405 49.49C45.5105 45.9 48.8305 41.13 50.8005 35.45L51.0005 34.88H416.99L417.19 35.45C419.16 41.13 422.49 45.9 426.75 49.49C431.31 53.32 436.64 55.52 442.27 55.71L442.77 55.73L442.97 56.26C446.54 66.04 449.34 76.63 451.01 87.07V87.4Z"
                 fill="#512310"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M443.11 87.23C441.78 79.43 439.82 71.66 437.35 64.21C431.89 63.16 426.73 60.62 422.19 56.81C418.07 53.34 414.63 48.98 412.11 43.92H55.8799C53.3599 48.98 49.9299 53.34 45.7999 56.81C41.2699 60.62 36.1099 63.16 30.6399 64.21C28.1699 71.66 26.2099 79.43 24.8799 87.23C26.2099 95.03 28.1699 102.8 30.6399 110.25C36.0999 111.3 41.2599 113.84 45.7999 117.65C49.9199 121.12 53.3599 125.48 55.8799 130.54H412.11C414.63 125.48 418.06 121.12 422.19 117.65C426.72 113.83 431.89 111.3 437.35 110.25C439.82 102.8 441.78 95.03 443.11 87.23Z"
                 fill="url(#paint0_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M443.11 87.23C441.78 79.43 439.82 71.66 437.35 64.21C431.89 63.16 426.73 60.62 422.19 56.81C418.07 53.34 414.63 48.98 412.11 43.92H55.8799C53.3599 48.98 49.9299 53.34 45.7999 56.81C41.2699 60.62 36.1099 63.16 30.6399 64.21C28.1699 71.66 26.2099 79.43 24.8799 87.23C26.2099 95.03 28.1699 102.8 30.6399 110.25C36.0999 111.3 41.2599 113.84 45.7999 117.65C49.9199 121.12 53.3599 125.48 55.8799 130.54H412.11C414.63 125.48 418.06 121.12 422.19 117.65C426.72 113.83 431.89 111.3 437.35 110.25C439.82 102.8 441.78 95.03 443.11 87.23Z"
                 fill="url(#paint1_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M24.8898 87.23C26.2198 79.43 28.1798 71.66 30.6498 64.21L25.7498 56.61C22.1898 66.37 19.3698 77.15 17.7598 87.23H24.8898Z"
                 fill="url(#paint2_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M24.8898 87.23C26.2198 79.43 28.1798 71.66 30.6498 64.21L25.7498 56.61C22.1898 66.37 19.3698 77.15 17.7598 87.23H24.8898Z"
                 fill="url(#paint3_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M30.65 64.21C36.11 63.16 41.27 60.62 45.81 56.81C49.93 53.34 53.37 48.98 55.89 43.92L51.53 35.78C49.55 41.46 46.21 46.42 41.7 50.22C36.9 54.25 31.4 56.42 25.75 56.61L30.65 64.21Z"
                 fill="url(#paint4_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M30.65 64.21C36.11 63.16 41.27 60.62 45.81 56.81C49.93 53.34 53.37 48.98 55.89 43.92L51.53 35.78C49.55 41.46 46.21 46.42 41.7 50.22C36.9 54.25 31.4 56.42 25.75 56.61L30.65 64.21Z"
                 fill="url(#paint5_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M55.8803 43.92H412.12L416.47 35.78H51.5303L55.8803 43.92Z"
                 fill="url(#paint6_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M55.8803 43.92H412.12L416.47 35.78H51.5303L55.8803 43.92Z"
                 fill="url(#paint7_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M422.19 56.81C426.72 60.62 431.89 63.16 437.35 64.21L442.25 56.61C436.6 56.42 431.09 54.26 426.3 50.22C421.79 46.42 418.45 41.47 416.47 35.78L412.11 43.92C414.63 48.98 418.06 53.34 422.19 56.81Z"
                 fill="url(#paint8_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M422.19 56.81C426.72 60.62 431.89 63.16 437.35 64.21L442.25 56.61C436.6 56.42 431.09 54.26 426.3 50.22C421.79 46.42 418.45 41.47 416.47 35.78L412.11 43.92C414.63 48.98 418.06 53.34 422.19 56.81Z"
                 fill="url(#paint9_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M437.35 64.21C439.82 71.66 441.78 79.43 443.11 87.23H450.24C448.63 77.15 445.81 66.36 442.25 56.61L437.35 64.21Z"
                 fill="url(#paint10_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M437.35 64.21C439.82 71.66 441.78 79.43 443.11 87.23H450.24C448.63 77.15 445.81 66.36 442.25 56.61L437.35 64.21Z"
                 fill="url(#paint11_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M24.8898 87.23C26.2198 95.03 28.1798 102.8 30.6498 110.25L25.7498 117.85C22.1898 108.09 19.3698 97.31 17.7598 87.23H24.8898Z"
                 fill="url(#paint12_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M24.8898 87.23C26.2198 95.03 28.1798 102.8 30.6498 110.25L25.7498 117.85C22.1898 108.09 19.3698 97.31 17.7598 87.23H24.8898Z"
                 fill="url(#paint13_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M30.65 110.25C36.11 111.3 41.27 113.84 45.81 117.65C49.93 121.12 53.37 125.48 55.89 130.54L51.53 138.68C49.55 133 46.21 128.04 41.7 124.24C36.9 120.21 31.4 118.04 25.75 117.85L30.65 110.25Z"
                 fill="url(#paint14_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M30.65 110.25C36.11 111.3 41.27 113.84 45.81 117.65C49.93 121.12 53.37 125.48 55.89 130.54L51.53 138.68C49.55 133 46.21 128.04 41.7 124.24C36.9 120.21 31.4 118.04 25.75 117.85L30.65 110.25Z"
                 fill="url(#paint15_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M55.8803 130.54H412.12L416.47 138.68H51.5303L55.8803 130.54Z"
                 fill="url(#paint16_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M55.8803 130.54H412.12L416.47 138.68H51.5303L55.8803 130.54Z"
                 fill="url(#paint17_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M422.19 117.65C426.72 113.83 431.89 111.3 437.35 110.25L442.25 117.85C436.6 118.04 431.09 120.2 426.3 124.24C421.79 128.04 418.45 132.99 416.47 138.68L412.11 130.54C414.63 125.48 418.06 121.12 422.19 117.65Z"
                 fill="url(#paint18_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M422.19 117.65C426.72 113.83 431.89 111.3 437.35 110.25L442.25 117.85C436.6 118.04 431.09 120.2 426.3 124.24C421.79 128.04 418.45 132.99 416.47 138.68L412.11 130.54C414.63 125.48 418.06 121.12 422.19 117.65Z"
                 fill="url(#paint19_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M437.35 110.25C439.82 102.8 441.78 95.03 443.11 87.23H450.24C448.63 97.31 445.81 108.1 442.25 117.85L437.35 110.25Z"
                 fill="url(#paint20_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M437.35 110.25C439.82 102.8 441.78 95.03 443.11 87.23H450.24C448.63 97.31 445.81 108.1 442.25 117.85L437.35 110.25Z"
                 fill="url(#paint21_linear_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M32.7698 63.73C44.3598 58.61 48.7998 55.33 55.1398 43.85L51.8998 36.48L56.2198 43.19L208.53 43.92L56.0898 44.42C49.7598 55.49 44.4298 60.07 32.7598 63.73H32.7698Z"
                 fill="url(#paint22_linear_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M435.23 63.73C423.64 58.61 419.2 55.33 412.86 43.85L416.1 36.48L411.78 43.19L259.47 43.92L411.91 44.42C418.24 55.49 423.57 60.07 435.24 63.73H435.23Z"
                 fill="url(#paint23_linear_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
                 opacity="0.4"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M228.85 119.96C254.23 109.39 279.81 99.41 305.68 90.56C309.61 89.22 313.59 88.06 317.58 86.96C321.85 85.77 326.14 84.64 330.41 83.46C335.73 81.98 341.04 80.43 346.26 78.54C351.01 76.82 355.81 74.8 360.24 72.15C363.59 70.14 368.62 66.54 368.45 61.46C368.35 58.33 366.3 55.72 364.33 53.82C361.59 51.18 358.13 49.02 354.94 47.21C346.88 42.64 338.57 38.75 330.26 34.88H279.97C285.64 37.72 291.32 40.68 297.09 44.23C300.66 46.43 305.86 50.35 305.71 55.75C305.66 57.49 305.08 59.14 304.3 60.61C297.94 72.58 269.03 85.6 257.35 90.79C245.97 95.84 234.69 101.19 223.38 106.44C214.41 110.61 205.56 115.06 196.52 118.99C191.14 121.32 185.69 123.49 180.15 125.25C175 126.89 169.69 128.2 164.37 128.78C154.7 129.83 144.62 128.97 134.99 127.69C126.56 126.57 118.17 125.03 109.77 123.67C96.6497 121.55 83.5297 119.43 70.3597 117.74C54.8297 115.75 39.2697 114.4 23.6797 114.32C24.1197 115.63 24.5797 116.93 25.0497 118.22L25.2497 118.75L25.7497 118.77C31.3797 118.96 36.7097 121.15 41.2697 124.99C41.4197 125.12 41.5697 125.24 41.7097 125.37C45.3997 125.63 49.0797 125.91 52.7597 126.17C62.2897 126.85 71.7097 128.5 81.0797 130.55C90.3097 132.57 99.4697 134.96 108.69 137.09C112.57 137.99 116.46 138.84 120.36 139.59H177.44C182.95 138.25 188.37 136.57 193.76 134.61C199.38 132.56 204.92 130.24 210.44 127.87C216.58 125.23 222.71 122.54 228.87 119.97L228.85 119.96Z"
                 fill="url(#paint24_radial_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
                 opacity="0.4"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M205.4 95.13C211.96 92.13 218.44 88.88 224.87 85.52C229.58 83.06 234.15 80.13 238.43 76.77C241.68 74.22 244.95 71.3 247.72 68.06C251.83 63.25 252.44 56.4 248.33 51.31C247.4 50.15 246.38 49.05 245.37 47.99C244.04 46.59 242.67 45.22 241.3 43.88C238.13 40.79 234.88 37.8 231.6 34.87H204.54C206.51 37.35 208.47 39.91 210.42 42.53C213.99 47.33 217.46 53.42 216.63 60.08C215.71 67.36 205.71 74.88 200.71 78.28C195.86 81.58 190.61 84.56 185.38 86.96C177.6 90.55 169.57 93.72 161.38 95.78C154.6 97.48 147.82 98.36 140.88 98.24C133.87 98.12 126.96 97.01 120.1 95.4C111.92 93.48 103.8 90.9 95.7698 88.28C87.6998 85.65 79.6098 83.11 71.4598 80.86C63.7898 78.74 56.0398 76.85 48.2398 75.48C38.9998 73.86 29.2898 72.88 19.7698 73.54C18.6598 78.02 17.7298 82.54 17.0098 87.04C17.2598 88.9 17.5298 90.44 17.8198 91.98C22.9998 91.86 28.1798 91.92 33.3598 92.18C41.1898 92.56 48.9798 93.37 56.7498 94.52C63.8598 95.57 70.9198 96.9 77.9798 98.33C84.6398 99.68 91.2798 101.11 97.9398 102.41C109.19 104.59 120.54 106.77 131.88 108.09C141.04 109.16 150.18 109.62 159.38 108.79C169.41 107.89 179.04 105.48 188.64 102.03C194.31 100 199.9 97.64 205.42 95.12L205.4 95.13Z"
                 fill="url(#paint25_radial_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
                 opacity="0.65"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M333.72 112.99C325.74 113.7 317.86 115.07 310.04 117.1C301.25 119.38 292.64 122.45 284.17 126C278.63 128.33 273.05 130.56 267.38 132.44C261.87 134.28 256.32 135.76 250.67 136.92C246.81 137.71 242.97 138.61 239.14 139.57H309.89C318.3 137.76 326.72 135.99 335.18 134.52C346.78 132.5 358.53 131.01 370.27 130.9C381.44 130.79 392.73 131.93 403.54 135.35C408.02 136.77 412.55 138.17 417.13 139.23C419.18 133.33 422.5 128.55 426.77 124.96C429.26 122.87 431.98 121.26 434.85 120.21H434.49C429.22 120.15 423.94 119.7 418.69 119.1C407.46 117.81 396.31 115.85 385.06 114.69C368.04 112.93 350.79 111.46 333.72 112.98V112.99Z"
                 fill="url(#paint26_radial_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M144.69 94.13C132.53 94.63 121.48 92.78 109.75 90.71C120.06 93.28 130.39 95.3 141.08 95.23C161.09 95.11 179.98 88.63 196.74 76.12C179.36 86.97 165.84 93.25 144.69 94.13Z"
                 fill="url(#paint27_radial_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M169.81 115.24C157.39 118.09 148.01 118.34 135.48 116.44C119.7 114.05 103.58 110.83 87.5898 107.89C91.9698 108.85 96.5798 109.88 101.54 110.95C121.04 115.15 143.06 121 162.92 118.36C181.92 115.84 201.07 106.05 218.7 97.84C225.79 94.55 240.73 87.67 253.94 80.34C227.99 92.55 193.93 109.71 169.82 115.23L169.81 115.24Z"
                 fill="url(#paint28_radial_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M276.61 113.86C272.69 115.58 268.75 117.24 264.81 118.89C265.61 118.6 266.4 118.32 267.17 118.05C288.16 110.57 307.66 100.58 329.47 95.98C346.72 92.35 364.13 91.18 381.34 87.96C368.3 89.74 355.42 90.73 342.38 92.57C332.55 93.95 322.06 96.1 312.53 99.15C299.73 103.25 288.87 108.47 276.6 113.86H276.61Z"
                 fill="url(#paint29_radial_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M175.44 151.34C177.77 153.61 183.29 156.87 186.1 157.77C192.26 157.77 213.42 157.7 234 164.85C254.58 157.71 275.74 157.77 281.9 157.77C284.71 156.87 290.23 153.6 292.56 151.34H175.44Z"
                 fill="#666666"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M51.5304 138.68H416.47C418.45 133 421.79 128.04 426.3 124.24C431.1 120.21 436.6 118.04 442.25 117.85C445.81 108.09 448.63 97.31 450.24 87.23C448.63 77.15 445.81 66.36 442.25 56.61C436.6 56.42 431.09 54.26 426.3 50.22C421.79 46.42 418.45 41.47 416.47 35.78H51.5304C49.5504 41.46 46.2104 46.42 41.7004 50.22C36.9004 54.26 31.4004 56.42 25.7504 56.61C22.1904 66.37 19.3704 77.15 17.7604 87.23C19.3704 97.31 22.1904 108.1 25.7504 117.85C31.4004 118.04 36.9104 120.2 41.7004 124.24C46.2104 128.04 49.5504 132.99 51.5304 138.68ZM42.7104 23.13H425.29C425.29 30.01 427.89 35.93 432.69 39.97C437.49 44.01 443.14 45.03 448.77 42.88C454.68 56.39 459.26 73.08 461.3 87.23C459.25 101.37 454.67 118.07 448.77 131.58C443.14 129.43 437.49 130.46 432.69 134.49C427.89 138.53 425.29 144.45 425.29 151.33H42.7104C42.7104 144.45 40.1104 138.53 35.3104 134.49C30.5104 130.45 24.8604 129.43 19.2304 131.58C13.3204 118.07 8.74043 101.38 6.69043 87.23C8.74043 73.09 13.3204 56.39 19.2304 42.88C24.8604 45.03 30.5104 44 35.3104 39.97C40.1104 35.93 42.7104 30.01 42.7104 23.13Z"
                 fill="url(#paint30_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M38.5105 45.09C43.2005 41.14 46.3105 35.71 47.5505 29.45L42.7105 23.12C42.7105 30 40.1105 35.92 35.3105 39.96C30.5105 44 24.8605 45.02 19.2305 42.87L22.2705 50.1C27.9905 50.88 33.6505 49.16 38.5105 45.08V45.09Z"
                 fill="url(#paint31_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M47.5495 29.46C46.3095 35.72 43.1995 41.15 38.5095 45.1C33.6495 49.19 27.9895 50.91 22.2695 50.12L25.7495 56.61C31.3995 56.42 36.9095 54.26 41.6995 50.22C46.2095 46.42 49.5495 41.47 51.5295 35.78L47.5495 29.45V29.46Z"
                 fill="url(#paint32_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M47.55 29.46H420.45L425.29 23.13H42.71L47.55 29.46Z"
                 fill="url(#paint33_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M420.45 29.46H47.5498L51.5298 35.78H416.47L420.45 29.46Z"
                 fill="url(#paint34_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.2197 87.23C14.0897 74.97 17.6697 61.66 22.2597 50.12L19.2197 42.89C13.3097 56.4 8.72969 73.09 6.67969 87.24H12.2097L12.2197 87.23Z"
                 fill="url(#paint35_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M22.2705 50.12C17.6805 61.67 14.0905 74.97 12.2305 87.23H17.7705C19.3805 77.15 22.2005 66.36 25.7605 56.61L22.2805 50.12H22.2705Z"
                 fill="url(#paint36_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M22.2702 124.35C17.6802 112.8 14.0902 99.5 12.2302 87.24H6.7002C8.7502 101.38 13.3302 118.08 19.2402 131.59L22.2802 124.36L22.2702 124.35Z"
                 fill="url(#paint37_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.22 87.23C14.09 99.49 17.67 112.8 22.26 124.34L25.74 117.85C22.18 108.09 19.36 97.31 17.75 87.23H12.21H12.22Z"
                 fill="url(#paint38_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M41.6995 124.24C36.8995 120.21 31.3995 118.04 25.7495 117.85L22.2695 124.34C27.9895 123.56 33.6495 125.28 38.5095 129.36C43.1995 133.31 46.3095 138.74 47.5495 145L51.5295 138.67C49.5495 132.99 46.2095 128.03 41.6995 124.23V124.24Z"
                 fill="url(#paint39_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M38.5105 129.37C33.6505 125.28 27.9905 123.56 22.2705 124.35L19.2305 131.58C24.8605 129.43 30.5105 130.46 35.3105 134.49C40.1105 138.53 42.7105 144.45 42.7105 151.33L47.5505 145C46.3105 138.74 43.2005 133.31 38.5105 129.36V129.37Z"
                 fill="url(#paint40_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M429.49 45.09C424.8 41.14 421.69 35.71 420.45 29.45L425.29 23.12C425.29 30 427.89 35.92 432.69 39.96C437.49 44 443.14 45.02 448.77 42.87L445.73 50.1C440.01 50.88 434.35 49.16 429.49 45.08V45.09Z"
                 fill="url(#paint41_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M420.45 29.46C421.69 35.72 424.8 41.15 429.49 45.1C434.35 49.19 440.01 50.91 445.73 50.12L442.25 56.61C436.6 56.42 431.09 54.26 426.3 50.22C421.79 46.42 418.45 41.47 416.47 35.78L420.45 29.45V29.46Z"
                 fill="url(#paint42_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M455.78 87.23C453.91 74.97 450.33 61.66 445.74 50.12L448.78 42.89C454.69 56.4 459.27 73.09 461.31 87.24H455.78V87.23Z"
                 fill="url(#paint43_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M445.73 50.12C450.32 61.67 453.91 74.97 455.77 87.23H450.23C448.62 77.15 445.8 66.36 442.24 56.61L445.72 50.12H445.73Z"
                 fill="url(#paint44_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M445.73 124.35C450.32 112.8 453.91 99.5 455.77 87.24H461.3C459.25 101.38 454.67 118.08 448.77 131.59L445.73 124.36V124.35Z"
                 fill="url(#paint45_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M455.78 87.23C453.91 99.49 450.33 112.8 445.74 124.34L442.26 117.85C445.82 108.09 448.64 97.31 450.25 87.23H455.79H455.78Z"
                 fill="url(#paint46_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M426.3 124.24C431.1 120.21 436.6 118.04 442.25 117.85L445.73 124.34C440.01 123.56 434.35 125.28 429.49 129.36C424.8 133.31 421.69 138.74 420.45 145L416.47 138.67C418.45 132.99 421.79 128.03 426.3 124.23V124.24Z"
                 fill="url(#paint47_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M429.49 129.37C434.35 125.28 440.01 123.56 445.73 124.35L448.77 131.58C443.14 129.43 437.49 130.46 432.69 134.49C427.89 138.53 425.29 144.45 425.29 151.33L420.45 145C421.69 138.74 424.8 133.31 429.49 129.36V129.37Z"
                 fill="url(#paint48_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M47.55 145.01H420.45L425.29 151.34H42.71L47.55 145.01Z"
                 fill="url(#paint49_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M420.45 145.01H47.5498L51.5298 138.68H416.47L420.45 145.01Z"
                 fill="url(#paint50_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M468 87.23L451.88 68.77L431.63 87.11L451.88 105.69L468 87.23Z"
                 fill="#999999"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M459.13 87.23L451.42 96.06L441.72 87.15L451.4 78.38L459.13 87.23Z"
                 fill="#4D4D4D"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M455.8 87.23L451.25 92.44L445.5 87.16L451.22 81.98L455.8 87.23Z"
                 fill="url(#paint51_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M460.81 84.08L453.62 75.85L451.64 73.58L451.88 68.77L459.61 77.62L468 87.23H463.57L460.81 84.08Z"
                 fill="url(#paint52_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M448.18 76.71L436.68 87.13L431.63 87.11L447.27 72.94L451.88 68.77L451.64 73.58L448.18 76.71Z"
                 fill="url(#paint53_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M453.62 98.62L460.81 90.39L463.56 87.24H467.99L459.6 96.85L451.89 105.67C451.89 105.62 451.65 100.87 451.65 100.87L453.61 98.63L453.62 98.62Z"
                 fill="url(#paint54_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M436.68 87.13L448.2 97.7L451.65 100.87L451.9 105.6C451.88 105.68 447.29 101.47 447.29 101.47L431.64 87.11L436.68 87.13Z"
                 fill="url(#paint55_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M451.42 96.06L454.98 91.99L459.13 87.23H461.31H463.57L460.81 90.38L453.62 98.62L451.66 100.86L451.42 96.06Z"
                 fill="url(#paint56_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M449.03 93.86L451.42 96.06L451.66 100.86L448.19 97.7L436.67 87.13L441.71 87.15L449.02 93.86H449.03Z"
                 fill="url(#paint57_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M459.13 87.23L454.98 82.48L451.4 78.38L451.64 73.58L453.62 75.85L460.81 84.08L463.57 87.23H461.31H459.13Z"
                 fill="url(#paint58_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M449.02 80.54L441.72 87.15L436.68 87.13L448.18 76.71L451.64 73.58L451.4 78.38L449.02 80.54Z"
                 fill="url(#paint59_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M451.4 78.38L451.22 81.98L455.78 87.23H459.13L451.4 78.38Z"
                 fill="url(#paint60_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M451.42 96.06L451.25 92.44L445.5 87.16L441.72 87.15L451.42 96.06Z"
                 fill="url(#paint61_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M449.59 83.46L445.5 87.16L441.72 87.15L449.02 80.54L451.4 78.38L451.22 81.98L449.59 83.46Z"
                 fill="url(#paint62_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M451.25 92.44L455.77 87.27L459.13 87.23L454.98 91.98L451.42 96.05L451.25 92.44Z"
                 fill="url(#paint63_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M150.88 23.13H317.12C313.53 18.8 308.21 13.98 302.71 10.53C285.88 16.91 244.26 14.03 234 0C223.74 14.03 182.12 16.92 165.29 10.53C159.79 13.98 154.47 18.8 150.88 23.13Z"
                 fill="#CCCCCC"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M150.88 23.13H234V0C223.74 14.03 182.12 16.92 165.29 10.53C159.79 13.98 154.47 18.8 150.88 23.13Z"
                 fill="url(#paint64_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M317.12 23.13H234V0C244.26 14.03 285.88 16.92 302.71 10.53C308.21 13.98 313.53 18.8 317.12 23.13Z"
                 fill="url(#paint65_linear_4741_107900)"
             />
             <path
                 style={{ mixBlendMode: 'screen' }}
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M226.29 15.9C209.31 22.8 177.69 22.48 159.89 23.12H234V5.62C234 10.71 232.65 13.32 226.29 15.91V15.9Z"
                 fill="url(#paint66_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M175.44 151.34C177.77 153.61 183.29 156.87 186.1 157.77C192.26 157.77 213.42 157.7 234 164.85V151.34H175.44Z"
                 fill="url(#paint67_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M292.56 151.34C290.23 153.61 284.71 156.87 281.9 157.77C275.74 157.77 254.58 157.7 234 164.85V151.34H292.56Z"
                 fill="url(#paint68_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M0 87.23L16.12 68.77L36.37 87.11L16.12 105.69L0 87.23Z"
                 fill="#999999"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.87012 87.23L16.5801 96.06L26.2801 87.15L16.6001 78.38L8.87012 87.23Z"
                 fill="#4D4D4D"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.2002 87.23L16.7502 92.44L22.5002 87.16L16.7802 81.98L12.2002 87.23Z"
                 fill="url(#paint69_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M7.19 84.08L14.38 75.85L16.36 73.58L16.12 68.77L8.39 77.62L0 87.23H4.44L7.19 84.08Z"
                 fill="url(#paint70_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M19.8201 76.71L31.3301 87.13L36.3701 87.11L20.7301 72.94L16.1201 68.77L16.3601 73.58L19.8201 76.71Z"
                 fill="url(#paint71_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M14.38 98.62L7.19 90.39L4.44 87.24H0L8.39 96.85L16.1 105.67C16.1 105.62 16.34 100.87 16.34 100.87L14.38 98.63V98.62Z"
                 fill="url(#paint72_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M31.3304 87.13L19.8104 97.7L16.3604 100.87L16.1104 105.6C16.1304 105.68 20.7204 101.47 20.7204 101.47L36.3703 87.11L31.3304 87.13Z"
                 fill="url(#paint73_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M16.5804 96.06L13.0204 91.99L8.87043 87.23H6.70043H4.44043L7.19043 90.38L14.3804 98.62L16.3404 100.86L16.5804 96.06Z"
                 fill="url(#paint74_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M18.9698 93.86L16.5798 96.06L16.3398 100.86L19.8098 97.7L31.3298 87.13L26.2898 87.15L18.9798 93.86H18.9698Z"
                 fill="url(#paint75_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.87043 87.23L13.0204 82.48L16.6004 78.38L16.3604 73.58L14.3804 75.85L7.19043 84.08L4.44043 87.23H6.70043H8.87043Z"
                 fill="url(#paint76_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M18.9904 80.54L26.2804 87.15L31.3304 87.13L19.8204 76.71L16.3604 73.58L16.6004 78.38L18.9904 80.54Z"
                 fill="url(#paint77_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M16.6001 78.38L16.7801 81.98L12.2201 87.23H8.87012L16.6001 78.38Z"
                 fill="url(#paint78_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M16.5801 96.06L16.7501 92.44L22.5001 87.16L26.2801 87.15L16.5801 96.06Z"
                 fill="url(#paint79_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M18.4096 83.46L22.4996 87.16L26.2796 87.15L18.9896 80.54L16.5996 78.38L16.7796 81.98L18.4096 83.46Z"
                 fill="url(#paint80_linear_4741_107900)"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M16.7501 92.44L12.2301 87.27L8.87012 87.23L13.0201 91.98L16.5801 96.05L16.7501 92.44Z"
                 fill="url(#paint81_linear_4741_107900)"
             />
@@ -1499,104 +1499,104 @@ export const RimVoucher: React.FC<IconType> = ({ width = '6.7rem', height = '6re
                     <path
                         d="M-89.5117 177.5C-89.5117 206.064 -31.2286 225.087 -22.8426 250.863C-14.1449 277.581 -49.783 327.082 -33.5564 349.322C-17.174 371.784 41.1481 353.188 63.6666 369.53C75.6563 378.235 81.2567 399.95 88.0356 419.507C89.9739 425.094 91.9997 430.506 94.3081 435.383C96.5093 440.056 98.9637 444.243 101.827 447.634C104.545 450.87 107.642 453.396 111.246 454.911C111.791 455.154 112.366 455.368 112.94 455.553C116.866 456.825 121.034 456.767 125.378 455.766C130.608 454.542 136.092 451.938 141.722 448.606C146.075 446.021 150.517 443.01 154.997 439.871C158.221 437.598 161.464 435.257 164.708 432.973C167.98 430.661 171.243 428.397 174.496 426.299C178.47 423.714 182.415 421.383 186.301 419.507C192.223 416.641 197.998 414.824 203.501 414.824C209.004 414.824 214.78 416.641 220.702 419.507C224.588 421.383 228.533 423.714 232.507 426.299C235.76 428.397 239.022 430.661 242.295 432.973C245.538 435.257 248.782 437.598 252.006 439.871C256.486 443.01 260.927 446.021 265.281 448.606C270.911 451.938 276.394 454.542 281.624 455.757C285.968 456.767 290.137 456.825 294.062 455.553C294.637 455.368 295.212 455.154 295.757 454.911C299.361 453.396 302.458 450.87 305.175 447.634C308.039 444.243 310.493 440.056 312.695 435.383C315.003 430.506 317.029 425.094 318.967 419.507C325.746 399.95 331.346 378.235 343.336 369.53C365.855 353.188 424.177 371.784 440.559 349.322C456.786 327.082 421.148 277.581 429.845 250.863C438.231 225.087 496.514 206.064 496.514 177.5C496.514 148.936 438.231 129.903 429.845 104.128C421.148 77.4094 456.786 27.9082 440.559 5.66904C424.177 -16.7936 365.855 1.8022 343.336 -14.5395C321.042 -30.7258 320.847 -91.8859 294.062 -100.552C268.223 -108.927 232.136 -59.8339 203.501 -59.8339C174.866 -59.8339 138.78 -108.927 112.94 -100.552C86.1559 -91.8859 85.9611 -30.7258 63.6666 -14.5395C41.1481 1.8022 -17.174 -16.7936 -33.5564 5.66904C-49.783 27.9082 -14.1449 77.4094 -22.8426 104.128C-31.2286 129.903 -89.5117 148.926 -89.5117 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M143.259 405.216C147.058 403.797 150.983 401.66 154.996 399.143M-72.2051 177.5C-72.2051 204.373 -17.3698 222.279 -9.47083 246.53C-1.28938 271.664 -34.8236 318.251 -19.5613 339.178C-4.14315 360.31 50.7408 342.812 71.9249 358.192C92.8948 373.416 93.0896 430.962 118.287 439.123C129.127 442.64 141.896 435.392 155.103 426.289C158.278 424.093 161.492 421.79 164.697 419.507C167.969 417.185 171.242 414.883 174.495 412.716C184.527 406.061 194.413 400.814 203.5 400.814C212.588 400.814 222.464 406.061 232.496 412.716H232.505C235.759 414.883 239.031 417.185 242.304 419.507C245.508 421.79 248.722 424.093 251.897 426.289C255.901 429.048 259.865 431.632 263.741 433.799C272.137 438.501 280.153 441.241 287.37 439.502C287.818 439.395 288.266 439.269 288.714 439.123C292.629 437.86 295.931 435.392 298.814 432.089C301.785 428.679 304.298 424.355 306.548 419.507C308.807 414.62 310.794 409.199 312.694 403.632C318.839 385.648 324.118 366.149 335.076 358.192C356.26 342.812 411.144 360.31 426.562 339.178C441.824 318.251 408.29 271.664 416.471 246.53C424.37 222.279 479.206 204.373 479.206 177.5C479.206 150.626 424.37 132.721 416.471 108.461C408.29 83.3261 441.824 36.7395 426.562 15.812C411.144 -5.31955 356.26 12.1784 335.076 -3.20153C314.106 -18.426 313.911 -75.9718 288.714 -84.133C264.403 -92.0124 230.45 -45.8144 203.5 -45.8144C176.55 -45.8144 142.597 -92.0124 118.287 -84.133C93.0896 -75.9718 92.8948 -18.426 71.9249 -3.20153C50.7408 12.1784 -4.14315 -5.31955 -19.5613 15.812C-34.8236 36.7395 -1.28938 83.3261 -9.47083 108.461C-17.3698 132.721 -72.2051 150.617 -72.2051 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M155.102 412.726C151.216 415.32 147.378 417.671 143.638 419.507C136.518 423.015 129.749 424.686 123.633 422.704C121.47 422.004 119.503 420.916 117.701 419.507C113.903 416.534 110.834 412.133 108.185 406.925C98.3383 387.582 94.2475 357.055 80.1832 346.844C60.3237 332.436 8.88768 348.836 -5.55649 329.025C-19.8643 309.419 11.5564 265.757 3.89115 242.196C-3.51112 219.462 -54.9082 202.693 -54.9082 177.5C-54.9082 152.307 -3.51112 135.528 3.89115 112.794C11.5564 89.2332 -19.8643 45.571 -5.55649 25.9648C8.88768 6.15463 60.3237 22.5547 80.1832 8.14633C99.8382 -6.12597 100.014 -60.0673 123.633 -67.7135C146.424 -75.0974 178.244 -31.8045 203.499 -31.8045C228.755 -31.8045 260.575 -75.0974 283.366 -67.7135C306.985 -60.0673 307.16 -6.12597 326.815 8.14633C346.675 22.5547 398.111 6.15463 412.555 25.9648C426.863 45.571 395.442 89.2332 403.107 112.794C410.51 135.528 461.907 152.307 461.907 177.5C461.907 202.693 410.51 219.462 403.107 242.196C395.442 265.757 426.863 309.419 412.555 329.025C398.111 348.836 346.675 332.436 326.815 346.844C316.15 354.587 311.222 374.009 305.173 391.38C303.235 396.918 301.199 402.252 298.813 406.925C296.164 412.133 293.096 416.534 289.297 419.507C287.495 420.916 285.528 422.004 283.366 422.704C277.249 424.686 270.48 423.015 263.36 419.507C259.62 417.671 255.783 415.32 251.896 412.726C248.721 410.617 245.507 408.344 242.293 406.041C228.988 396.578 215.499 386.795 203.499 386.795C191.5 386.795 178.01 396.578 164.705 406.041L155.102 412.726Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M17.2648 117.127C24.4139 95.1501 -4.903 54.4124 8.44056 36.1081C21.9302 17.6289 69.9184 32.931 88.4435 19.4846C106.784 6.17412 106.949 -44.153 128.981 -51.294C150.243 -58.1824 179.939 -17.7847 203.5 -17.7847C227.061 -17.7847 256.758 -58.1727 278.02 -51.294C300.051 -44.153 300.217 6.17412 318.557 19.4846C337.082 32.931 385.07 17.6289 398.56 36.1081C411.903 54.4124 382.586 95.1501 389.735 117.127C396.641 138.336 444.6 153.988 444.6 177.5C444.6 201.012 396.641 216.654 389.735 237.863C382.586 259.85 411.903 300.578 398.56 318.882C385.07 337.361 337.082 322.059 318.557 335.506C307.132 343.803 302.759 366.47 295.756 384.103C293.389 390.059 290.72 395.451 287.37 399.512C284.74 402.719 281.682 405.099 278.02 406.284C273.588 407.722 268.786 407.1 263.751 405.216H263.741C259.942 403.797 256.017 401.66 252.005 399.143C235.846 389.02 218.441 372.775 203.5 372.775C188.559 372.775 171.154 389.02 154.996 399.143C150.983 401.66 147.058 403.797 143.259 405.216H143.25C138.214 407.1 133.412 407.722 128.981 406.284C125.319 405.099 122.26 402.719 119.63 399.512C106.394 383.433 103.735 346.611 88.4435 335.506C69.9184 322.059 21.9302 337.361 8.44056 318.882C-4.903 300.578 24.4139 259.85 17.2648 237.863C10.3593 216.654 -37.5996 201.002 -37.5996 177.5C-37.5996 153.998 10.3593 138.336 17.2648 117.127Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M-20.293 177.5C-20.293 199.321 24.218 213.846 30.6269 233.53C37.2694 253.933 10.0466 291.746 22.4454 308.729C34.9611 325.887 79.5013 311.683 96.7018 324.168C113.727 336.526 113.883 383.239 134.337 389.865C154.069 396.258 181.633 358.765 203.509 358.765C225.384 358.765 252.938 396.258 272.681 389.865C293.135 383.239 293.291 336.526 310.316 324.168C327.516 311.683 372.057 325.887 384.572 308.729C396.961 291.746 369.748 253.933 376.391 233.53C382.8 213.846 427.311 199.312 427.311 177.5C427.311 155.688 382.8 141.154 376.391 121.47C369.748 101.067 396.971 63.2536 384.572 46.2707C372.057 29.1128 327.516 43.3171 310.316 30.8325C293.291 18.4742 293.135 -28.2387 272.681 -34.8648C252.948 -41.2577 225.384 -3.76498 203.509 -3.76498C181.633 -3.76498 154.079 -41.2577 134.337 -34.8648C113.883 -28.2387 113.727 18.4742 96.7018 30.8325C79.5013 43.3171 34.9611 29.1128 22.4454 46.2707C10.0563 63.2536 37.2694 101.067 30.6269 121.47C24.218 141.154 -20.293 155.688 -20.293 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M-2.98438 177.5C-2.98438 197.631 38.0885 211.038 44.0006 229.197C50.1269 248.026 25.0176 282.915 36.4522 298.586C48.0036 314.413 89.096 301.307 104.962 312.829C120.672 324.236 120.809 367.334 139.685 373.445C157.898 379.343 183.329 344.745 203.51 344.745C223.691 344.745 249.121 379.343 267.325 373.445C286.201 367.334 286.337 324.236 302.048 312.829C317.914 301.307 359.016 314.413 370.558 298.586C381.992 282.915 356.873 248.026 363.009 229.197C368.921 211.029 409.994 197.631 409.994 177.5C409.994 157.369 368.921 143.962 363.009 125.803C356.883 106.974 381.992 72.0851 370.558 56.4138C359.006 40.587 317.914 53.6934 302.048 42.1706C286.337 30.7645 286.201 -12.3342 267.325 -18.4453C249.112 -24.3428 223.681 10.2547 203.5 10.2547C183.319 10.2547 157.888 -24.3428 139.685 -18.4453C120.809 -12.3342 120.672 30.7645 104.962 42.1706C89.096 53.6934 47.9939 40.587 36.4522 56.4138C25.0176 72.0851 50.1367 106.974 44.0006 125.803C38.0885 143.971 -2.98438 157.369 -2.98438 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M14.3145 177.5C14.3145 195.94 51.9394 208.231 57.3645 224.864C62.9746 242.109 39.9692 274.074 50.4492 288.433C61.0267 302.929 98.6808 290.93 113.222 301.482C127.618 311.926 127.744 351.42 145.033 357.016C161.717 362.418 185.015 330.726 203.501 330.726C221.987 330.726 245.285 362.418 261.969 357.016C279.257 351.42 279.384 311.926 293.779 301.482C308.311 290.93 345.975 302.939 356.553 288.433C367.023 274.074 344.017 242.109 349.637 224.864C355.053 208.221 392.687 195.94 392.687 177.5C392.687 159.06 355.062 146.769 349.637 130.136C344.027 112.891 367.033 80.9265 356.553 66.5667C345.975 52.071 308.321 64.0698 293.779 53.5186C279.384 43.0743 279.257 3.58014 261.969 -2.01607C245.285 -7.41798 221.987 24.2745 203.501 24.2745C185.015 24.2745 161.717 -7.41798 145.033 -2.01607C127.744 3.58014 127.618 43.0743 113.222 53.5186C98.6906 64.0698 61.0267 52.0613 50.4492 66.5667C39.9789 80.9265 62.9844 112.891 57.3645 130.136C51.9492 146.779 14.3145 159.06 14.3145 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M31.6211 177.5C31.6211 194.26 65.8079 205.413 70.7265 220.531C75.8302 236.202 54.9285 265.242 64.4443 278.29C74.0575 291.465 108.264 280.554 121.471 290.143C134.552 299.636 134.659 335.515 150.369 340.597C165.524 345.503 186.689 316.706 203.49 316.706C220.291 316.706 241.456 345.503 256.611 340.597C272.321 335.506 272.438 299.636 285.509 290.143C298.716 280.554 332.923 291.465 342.536 278.29C352.052 265.242 331.15 236.202 336.254 220.531C341.172 205.413 375.359 194.25 375.359 177.5C375.359 160.75 341.172 149.587 336.254 134.469C331.15 118.798 352.052 89.7579 342.536 76.7098C332.923 63.5354 298.716 74.446 285.509 64.8567C272.429 55.3645 272.321 19.4846 256.611 14.4033C241.456 9.49688 220.291 38.2941 203.49 38.2941C186.689 38.2941 165.524 9.49688 150.369 14.4033C134.659 19.4943 134.542 55.3645 121.471 64.8567C108.264 74.446 74.0575 63.5354 64.4443 76.7098C54.9285 89.7579 75.8302 118.798 70.7265 134.469C65.8079 149.587 31.6211 160.75 31.6211 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M48.9297 177.5C48.9297 192.569 79.6783 202.605 84.1002 216.197C88.6877 230.295 69.8898 256.41 78.4511 268.137C87.0903 279.981 117.858 270.178 129.741 278.795C141.497 287.335 141.604 319.591 155.737 324.167C169.372 328.578 188.404 302.686 203.511 302.686C218.617 302.686 237.649 328.578 251.284 324.167C265.417 319.591 265.514 287.326 277.28 278.795C289.153 270.178 319.921 279.981 328.57 268.137C337.131 256.41 318.333 230.295 322.921 216.197C327.343 202.595 358.091 192.569 358.091 177.49C358.091 162.412 327.343 152.385 322.921 138.793C318.333 124.695 337.131 98.5796 328.57 86.8528C319.931 75.0094 289.163 84.8125 277.28 76.1948C265.524 67.6547 265.417 35.3987 251.284 30.8226C237.649 26.4117 218.617 52.304 203.511 52.304C188.404 52.304 169.372 26.4117 155.737 30.8226C141.604 35.3987 141.507 67.6644 129.741 76.1948C117.868 84.8125 87.1001 75.0094 78.4511 86.8528C69.8898 98.5796 88.6877 124.695 84.1002 138.793C79.6783 152.395 48.9297 162.421 48.9297 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M66.2363 177.5C66.2363 190.878 93.5371 199.797 97.472 211.874C101.543 224.388 84.8491 247.579 92.4559 257.994C100.131 268.516 127.451 259.801 137.999 267.457C148.44 275.035 148.538 303.687 161.083 307.748C173.189 311.673 190.088 288.676 203.509 288.676C216.931 288.676 233.83 311.673 245.936 307.748C258.481 303.687 258.578 275.035 269.02 267.457C279.568 259.801 306.888 268.516 314.563 257.994C322.16 247.579 305.466 224.388 309.547 211.874C313.482 199.797 340.783 190.888 340.783 177.5C340.783 164.112 313.482 155.203 309.547 143.126C305.476 130.612 322.17 107.421 314.563 97.0057C306.888 86.4837 279.568 95.1986 269.02 87.5427C258.578 79.9645 258.481 51.313 245.936 47.2518C233.83 43.3267 216.931 66.3237 203.509 66.3237C190.088 66.3237 173.189 43.3267 161.083 47.2518C148.538 51.313 148.44 79.9645 137.999 87.5427C127.451 95.1986 100.131 86.4837 92.4559 97.0057C84.8589 107.421 101.553 130.612 97.472 143.126C93.5371 155.203 66.2363 164.112 66.2363 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M83.5449 177.5C83.5449 189.198 107.408 196.98 110.836 207.541C114.401 218.481 99.8104 238.747 106.453 247.851C113.164 257.042 137.036 249.435 146.26 256.119C155.386 262.745 155.464 287.782 166.431 291.338C177.008 294.768 191.784 274.666 203.51 274.666C215.237 274.666 230.012 294.768 240.59 291.338C251.557 287.782 251.635 262.745 260.761 256.119C269.975 249.425 293.857 257.042 300.568 247.851C307.21 238.747 292.62 218.481 296.185 207.541C299.623 196.99 323.476 189.198 323.476 177.5C323.476 165.802 299.613 158.02 296.185 147.459C292.62 136.519 307.21 116.252 300.568 107.149C293.857 97.9579 269.985 105.565 260.761 98.8808C251.635 92.2548 251.557 67.2175 240.59 63.6616C230.012 60.232 215.237 80.3337 203.51 80.3337C191.784 80.3337 177.008 60.232 166.431 63.6616C155.464 67.2175 155.386 92.2548 146.26 98.8808C137.046 105.575 113.164 97.9579 106.453 107.149C99.8104 116.252 114.401 136.519 110.836 147.459C107.398 158.01 83.5449 165.802 83.5449 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M100.842 177.5C100.842 187.507 121.256 194.172 124.198 203.208C127.246 212.564 114.76 229.916 120.448 237.698C126.185 245.568 146.619 239.049 154.508 244.781C162.32 250.455 162.388 271.878 171.767 274.919C180.816 277.853 193.458 260.656 203.5 260.656C213.541 260.656 226.174 277.853 235.232 274.919C244.611 271.878 244.68 250.455 252.491 244.781C260.38 239.058 280.814 245.568 286.551 237.698C292.239 229.906 279.753 212.564 282.801 203.208C285.743 194.182 306.157 187.517 306.157 177.5C306.157 167.483 285.743 160.828 282.801 151.792C279.753 142.436 292.239 125.084 286.551 117.302C280.814 109.432 260.38 115.951 252.491 110.219C244.68 104.545 244.611 83.122 235.232 80.081C226.184 77.1469 213.541 94.3436 203.5 94.3436C193.458 94.3436 180.825 77.1469 171.767 80.081C162.388 83.122 162.32 104.545 154.508 110.219C146.619 115.942 126.185 109.432 120.448 117.302C114.76 125.094 127.246 142.436 124.198 151.792C121.256 160.818 100.842 167.483 100.842 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M118.15 177.5C118.15 185.817 135.127 191.364 137.572 198.874C140.104 206.657 129.721 221.075 134.455 227.555C139.227 234.094 156.214 228.682 162.778 233.443C169.275 238.155 169.333 255.973 177.125 258.499C184.654 260.938 195.163 246.637 203.501 246.637C211.838 246.637 222.357 260.938 229.876 258.499C237.678 255.973 237.736 238.155 244.223 233.443C250.778 228.682 267.764 234.103 272.546 227.555C277.27 221.075 266.887 206.657 269.429 198.874C271.874 191.364 288.851 185.826 288.851 177.5C288.851 169.174 271.874 163.636 269.429 156.126C266.897 148.343 277.28 133.925 272.546 127.445C267.774 120.906 250.787 126.318 244.223 121.557C237.726 116.845 237.668 99.0266 229.876 96.5005C222.347 94.0619 211.838 108.363 203.501 108.363C195.163 108.363 184.644 94.0619 177.125 96.5005C169.323 99.0266 169.265 116.845 162.778 121.557C156.223 126.318 139.237 120.897 134.455 127.445C129.731 133.925 140.114 148.343 137.572 156.126C135.127 163.636 118.15 169.174 118.15 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M135.457 177.5C135.457 184.136 148.995 188.547 150.943 194.541C152.96 200.75 144.69 212.243 148.46 217.402C152.268 222.62 165.806 218.296 171.037 222.095C176.208 225.855 176.257 240.059 182.481 242.07C188.481 244.013 196.857 232.617 203.509 232.617C210.162 232.617 218.538 244.013 224.538 242.07C230.761 240.059 230.8 225.855 235.982 222.095C241.212 218.296 254.75 222.62 258.559 217.402C262.328 212.243 254.049 200.74 256.065 194.541C258.013 188.556 271.552 184.136 271.552 177.5C271.552 170.864 258.013 166.453 256.065 160.459C254.049 154.25 262.318 142.757 258.549 137.598C254.741 132.38 241.202 136.704 235.972 132.905C230.8 129.145 230.752 114.941 224.528 112.93C218.528 110.987 210.152 122.383 203.499 122.383C196.847 122.383 188.471 110.987 182.471 112.93C176.247 114.941 176.208 129.145 171.027 132.905C165.797 136.704 152.258 132.38 148.45 137.598C144.681 142.757 152.96 154.26 150.943 160.459C148.995 166.444 135.457 170.864 135.457 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M152.766 177.5C152.766 182.445 162.856 185.739 164.307 190.208C165.817 194.833 159.642 203.402 162.447 207.259C165.281 211.145 175.382 207.93 179.277 210.757C183.134 213.555 183.173 224.145 187.81 225.651C192.28 227.098 198.533 218.597 203.491 218.597C208.448 218.597 214.701 227.098 219.172 225.651C223.808 224.145 223.847 213.555 227.704 210.757C231.6 207.93 241.7 211.145 244.534 207.259C247.339 203.412 241.174 194.833 242.674 190.208C244.125 185.749 254.216 182.455 254.216 177.5C254.216 172.545 244.125 169.261 242.674 164.792C241.164 160.167 247.339 151.598 244.534 147.741C241.7 143.855 231.6 147.071 227.704 144.243C223.847 141.445 223.808 130.855 219.172 129.349C214.701 127.902 208.448 136.403 203.491 136.403C198.533 136.403 192.28 127.902 187.81 129.349C183.173 130.855 183.134 141.445 179.277 144.243C175.382 147.071 165.281 143.855 162.447 147.741C159.642 151.588 165.807 160.167 164.307 164.792C162.856 169.251 152.766 172.545 152.766 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M170.072 177.5C170.072 180.755 176.725 182.931 177.679 185.875C178.673 188.926 174.601 194.57 176.452 197.106C178.322 199.671 184.974 197.544 187.546 199.409C190.088 201.255 190.107 208.231 193.165 209.222C196.117 210.174 200.227 204.578 203.499 204.578C206.772 204.578 210.882 210.174 213.833 209.222C216.892 208.231 216.911 201.255 219.453 199.409C222.025 197.544 228.677 199.661 230.547 197.106C232.397 194.57 228.336 188.916 229.32 185.875C230.274 182.931 236.926 180.765 236.926 177.5C236.926 174.236 230.274 172.069 229.32 169.125C228.326 166.074 232.397 160.43 230.547 157.894C228.677 155.329 222.025 157.457 219.453 155.591C216.911 153.745 216.892 146.769 213.833 145.778C210.882 144.826 206.772 150.423 203.499 150.423C200.227 150.423 196.117 144.826 193.165 145.778C190.107 146.769 190.088 153.745 187.546 155.591C184.974 157.457 178.322 155.339 176.452 157.894C174.601 160.43 178.663 166.084 177.679 169.125C176.725 172.069 170.072 174.236 170.072 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                     <path
                         d="M187.371 177.5C187.371 179.074 190.575 180.123 191.043 181.542C191.52 183.009 189.563 185.739 190.449 186.963C191.355 188.197 194.559 187.177 195.796 188.071C197.023 188.964 197.033 192.326 198.504 192.802C199.926 193.259 201.913 190.558 203.491 190.558C205.068 190.558 207.055 193.259 208.477 192.802C209.948 192.326 209.958 188.955 211.185 188.071C212.422 187.167 215.636 188.197 216.532 186.963C217.428 185.739 215.461 183.018 215.938 181.542C216.396 180.123 219.61 179.074 219.61 177.5C219.61 175.926 216.406 174.877 215.938 173.458C215.461 171.991 217.418 169.261 216.532 168.037C215.626 166.803 212.422 167.823 211.185 166.929C209.958 166.035 209.948 162.674 208.477 162.198C207.055 161.741 205.068 164.442 203.491 164.442C201.913 164.442 199.926 161.741 198.504 162.198C197.033 162.674 197.023 166.045 195.796 166.929C194.559 167.833 191.345 166.803 190.449 168.037C189.553 169.261 191.52 171.981 191.043 173.458C190.585 174.877 187.371 175.926 187.371 177.5Z"
                         stroke="#99D4CD"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     />
                 </g>
                 <g filter="url(#filter0_d_8054_8954)">
@@ -3759,8 +3759,8 @@ export const RimVoucher: React.FC<IconType> = ({ width = '6.7rem', height = '6re
                 />
                 <g clip-path="url(#clip2_8054_8954)">
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M159.494 77.7118C158.846 77.713 158.185 77.6195 157.539 77.3956C154.512 76.3459 152.904 73.0301 153.953 70.0031C155.003 66.976 158.323 65.3543 161.35 66.404C162.655 66.8565 163.694 67.7291 164.37 68.8225C163.377 69.3825 162.598 70.1522 162.071 70.8889C161.787 70.1424 161.178 69.5091 160.357 69.2246C158.891 68.716 157.278 69.4982 156.77 70.9646C156.261 72.4311 157.043 74.0437 158.51 74.5522C159.223 74.7994 159.967 74.7409 160.61 74.4514L159.481 77.7072L159.494 77.7118ZM159.314 81.1006L162.337 72.3827C162.911 70.7279 165.723 67.9202 169.53 69.2404C173.338 70.5607 173.963 74.3645 173.184 76.6112C172.405 78.858 170.013 81.1484 166.328 80.5186C164.665 80.2284 162.968 80.1674 161.714 80.3504C160.203 80.5799 159.305 81.0825 159.305 81.0825L159.314 81.1006Z"
                         fill="#E6006D"
                     />
@@ -3769,8 +3769,8 @@ export const RimVoucher: React.FC<IconType> = ({ width = '6.7rem', height = '6re
                         fill="#1144C2"
                     />
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M160.094 70.2021C161.036 70.5287 161.537 71.5615 161.21 72.5032C160.884 73.445 159.851 73.9459 158.909 73.6194C157.967 73.2928 157.467 72.26 157.793 71.3183C158.12 70.3765 159.152 69.8756 160.094 70.2021ZM168.605 72.0834C170.072 72.5919 170.854 74.2045 170.345 75.6709C169.837 77.1374 168.224 77.9196 166.758 77.411C165.291 76.9025 164.509 75.2899 165.018 73.8235C165.526 72.3571 167.139 71.5749 168.605 72.0834Z"
                         fill="#A3C614"
                     />
@@ -3785,8 +3785,8 @@ export const RimVoucher: React.FC<IconType> = ({ width = '6.7rem', height = '6re
                 />
                 <g clip-path="url(#clip3_8054_8954)">
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M137.9 214.518C137.549 214.81 137.148 215.056 136.697 215.224C134.583 216.013 132.223 214.935 131.434 212.821C130.645 210.708 131.719 208.338 133.833 207.549C134.744 207.209 135.699 207.216 136.557 207.506C136.269 208.256 136.192 209.023 136.236 209.659C135.748 209.381 135.133 209.311 134.56 209.525C133.536 209.907 133.012 211.055 133.394 212.079C133.776 213.103 134.924 213.627 135.948 213.245C136.446 213.059 136.823 212.694 137.042 212.248L137.891 214.522L137.9 214.518ZM139.323 216.438L137.051 210.351C136.62 209.195 136.886 206.409 139.544 205.417C142.203 204.425 144.249 206.209 144.835 207.777C145.42 209.346 145.15 211.662 142.868 212.974C141.835 213.563 140.887 214.292 140.289 214.954C139.572 215.756 139.31 216.432 139.31 216.432L139.323 216.438Z"
                         fill="#E6006D"
                     />
@@ -3795,8 +3795,8 @@ export const RimVoucher: React.FC<IconType> = ({ width = '6.7rem', height = '6re
                         fill="#1144C2"
                     />
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M134.856 210.175C135.514 209.929 136.249 210.265 136.494 210.922C136.74 211.58 136.404 212.315 135.747 212.561C135.089 212.806 134.354 212.47 134.108 211.813C133.863 211.155 134.198 210.42 134.856 210.175ZM140.319 207.376C141.343 206.994 142.491 207.518 142.873 208.542C143.255 209.566 142.731 210.714 141.707 211.096C140.683 211.478 139.535 210.954 139.153 209.93C138.771 208.906 139.295 207.758 140.319 207.376Z"
                         fill="#A3C614"
                     />
@@ -4365,14 +4365,14 @@ export const OneCoinAndStarts: React.FC<IconType> = ({ colorBorder }) => {
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M106.35 83.6861C106.352 83.6849 106.354 83.6836 106.356 83.6824L106.356 83.6806C106.354 83.6824 106.352 83.6843 106.35 83.6861ZM100.42 98.6335C100.561 97.9915 100.632 97.331 100.628 96.6582C100.623 95.4963 100.387 94.39 99.9776 93.3507C101.124 89.6702 103.337 86.1809 106.35 83.6861C103.244 85.4924 100.656 88.2949 98.9706 91.4204C98.5191 90.7194 97.993 90.0841 97.3991 89.4984C97.1606 89.2671 96.9036 89.0339 96.6413 88.8189C98.8588 84.6744 103.617 81.12 110.719 79.559C110.484 81.2717 110.513 82.9049 110.541 84.5083C110.588 87.1747 110.634 89.7589 109.461 92.4896C107.587 96.8516 103.883 100.1 99.3866 101.347C99.3838 101.351 99.381 101.356 99.3782 101.361C99.3786 101.357 99.379 101.353 99.3793 101.349C99.3705 101.351 99.3616 101.354 99.3528 101.356C99.3631 101.338 99.3734 101.321 99.3836 101.303C99.796 96.6699 96.5162 90.8147 91.9167 88.232C95.9551 91.4673 98.1961 96.8948 97.6331 101.58C94.1481 100.685 91.2551 98.2976 89.7375 94.983C88.7159 92.7328 88.5452 90.6018 88.3682 88.391C88.2829 87.3254 88.196 86.2414 88.0118 85.1166C96.8275 86.9468 101.452 93.1682 100.42 98.6335Z"
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M106.055 82.9571C106.058 82.9559 106.06 82.9548 106.062 82.9536L106.062 82.9518C106.06 82.9536 106.058 82.9553 106.055 82.9571ZM100.52 97.4157C100.637 96.8201 100.695 96.2082 100.687 95.5851C100.675 94.4509 100.443 93.3695 100.047 92.3525C101.117 88.7667 103.202 85.3741 106.055 82.9571C103.109 84.7015 100.662 87.4214 99.0768 90.4621C98.6426 89.7751 98.1379 89.1517 97.5688 88.5764C97.3404 88.3491 97.0942 88.12 96.8432 87.9085C98.9293 83.8763 103.438 80.4356 110.191 78.9551C109.977 80.6255 110.015 82.2199 110.051 83.7852C110.112 86.3883 110.171 88.9111 109.071 91.5696C107.314 95.815 103.808 98.9629 99.5367 100.153C99.5338 100.158 99.531 100.163 99.5282 100.168C99.5286 100.164 99.5289 100.16 99.5293 100.155C99.5199 100.158 99.5105 100.161 99.5011 100.163C99.5119 100.144 99.5227 100.124 99.5334 100.105C99.8946 95.5862 96.7372 89.8548 92.3442 87.3069C96.2088 90.4896 98.3755 95.8013 97.868 100.372C94.5444 99.4766 91.7755 97.1285 90.3104 93.8837C89.3241 91.6809 89.1486 89.5997 88.9666 87.4405C88.8789 86.3999 88.7896 85.3412 88.6073 84.242C96.9614 86.0711 101.399 92.11 100.52 97.4157Z"
                     fill="#EDCA35"
                 />
@@ -4448,14 +4448,14 @@ export const TwoCoinAndStarts: React.FC<IconType> = ({ colorBorder }) => {
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M100.99 75.5391C100.992 75.5382 100.993 75.5372 100.995 75.5362L100.995 75.5348C100.993 75.5362 100.992 75.5377 100.99 75.5391ZM96.3367 87.2579C96.4435 86.7616 96.4978 86.2512 96.4947 85.7315C96.4908 84.8186 96.305 83.9493 95.9833 83.1327C96.8843 80.2409 98.6229 77.4993 100.99 75.5391C98.5494 76.9584 96.5164 79.1603 95.1921 81.6161C94.8373 81.0653 94.424 80.5661 93.9573 80.106C93.77 79.9242 93.568 79.741 93.3619 79.572C95.1043 76.3156 98.8429 73.5229 104.423 72.2964C104.238 73.6421 104.261 74.9253 104.283 76.1852C104.32 78.2802 104.356 80.3106 103.434 82.4562C101.962 85.8832 99.052 88.4354 95.5198 89.4151C95.5176 89.4188 95.5154 89.4226 95.5131 89.4263C95.5135 89.4231 95.5138 89.4199 95.5141 89.4167C95.5068 89.4187 95.4996 89.4207 95.4924 89.4227C95.5008 89.4082 95.5092 89.3937 95.5175 89.3791C95.8407 85.7393 93.2639 81.1399 89.6505 79.1109C92.8235 81.6529 94.5843 85.9173 94.142 89.5989C91.4038 88.8955 89.1307 87.0196 87.9383 84.4153C87.1356 82.6472 87.0015 80.9728 86.8624 79.2358C86.7954 78.3986 86.7272 77.5468 86.5824 76.663C93.4953 78.0982 97.128 82.9699 96.3367 87.2579Z"
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M100.756 74.9664C100.757 74.9655 100.759 74.9646 100.76 74.9636L100.761 74.9622C100.759 74.9636 100.757 74.965 100.756 74.9664ZM96.4178 86.2677C96.5021 85.8184 96.5432 85.3574 96.5376 84.8884C96.5283 83.9973 96.3461 83.1476 96.0349 82.3485C96.8751 79.5311 98.5138 76.8655 100.756 74.9664C98.4405 76.337 96.5182 78.4741 95.2723 80.8632C94.9312 80.3234 94.5346 79.8336 94.0875 79.3816C93.908 79.203 93.7146 79.023 93.5174 78.8568C95.1565 75.6886 98.6991 72.9853 104.005 71.822C103.837 73.1344 103.866 74.3872 103.895 75.6171C103.943 77.6624 103.989 79.6446 103.125 81.7334C101.745 85.0683 98.9911 87.5414 95.6358 88.4771C95.6335 88.4811 95.6312 88.4852 95.6288 88.4892C95.6291 88.4857 95.6294 88.4822 95.6297 88.4788C95.6217 88.481 95.6137 88.4832 95.6057 88.4854C95.6149 88.469 95.6241 88.4525 95.6333 88.436C95.9149 84.886 93.4346 80.3853 89.9843 78.3841C93.0208 80.8848 94.7232 85.0582 94.3244 88.6493C91.713 87.946 89.5374 86.101 88.3863 83.5516C87.6113 81.8208 87.4734 80.1856 87.3304 78.4891C87.2615 77.6715 87.1914 76.8396 87.0482 75.976C93.5812 77.4064 97.0659 82.1133 96.4178 86.2677Z"
                     fill="#EDCA35"
                 />
@@ -4481,14 +4481,14 @@ export const TwoCoinAndStarts: React.FC<IconType> = ({ colorBorder }) => {
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M120.548 89.9868C120.55 89.9856 120.552 89.9845 120.554 89.9833L120.555 89.9815C120.553 89.9833 120.551 89.9851 120.548 89.9868ZM114.906 104.203C115.037 103.598 115.103 102.975 115.1 102.341C115.095 101.235 114.87 100.181 114.48 99.1911C115.572 95.6859 117.679 92.3628 120.548 89.9868C117.59 91.7071 115.126 94.3761 113.521 97.3528C113.091 96.6852 112.59 96.0801 112.024 95.5224C111.797 95.302 111.552 95.08 111.302 94.8752C113.414 90.928 117.946 87.5429 124.71 86.0563C124.486 87.6874 124.513 89.2428 124.54 90.7699C124.585 93.3093 124.628 95.7704 123.511 98.3711C121.727 102.525 118.199 105.619 113.918 106.806C113.915 106.811 113.912 106.815 113.909 106.82C113.91 106.816 113.91 106.812 113.911 106.808C113.902 106.811 113.893 106.813 113.885 106.815C113.895 106.798 113.905 106.781 113.915 106.763C114.307 102.351 111.183 96.7757 106.803 94.3161C110.649 97.3974 112.784 102.566 112.248 107.029C108.928 106.176 106.173 103.902 104.728 100.746C103.755 98.6026 103.592 96.5731 103.424 94.4676C103.343 93.4528 103.26 92.4204 103.084 91.3491C111.47 93.09 115.874 99.0028 114.906 104.203Z"
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M120.267 89.2927C120.269 89.2916 120.271 89.2904 120.273 89.2893L120.273 89.2876C120.271 89.2893 120.269 89.291 120.267 89.2927ZM115 103.038C115.109 102.479 115.161 101.904 115.154 101.319C115.143 100.239 114.922 99.2092 114.545 98.2406C115.564 94.8256 117.55 91.5946 120.267 89.2927C117.461 90.954 115.131 93.5444 113.621 96.4403C113.207 95.786 112.727 95.1923 112.185 94.6444C111.967 94.4279 111.733 94.2097 111.494 94.0083C113.48 90.1681 117.774 86.8913 124.206 85.4812C124.002 87.0721 124.038 88.5906 124.073 90.0814C124.131 92.5605 124.187 94.9632 123.139 97.4951C121.466 101.538 118.127 104.536 114.06 105.67C114.057 105.674 114.054 105.679 114.051 105.684C114.052 105.68 114.052 105.676 114.053 105.672C114.043 105.674 114.034 105.677 114.025 105.679C114.036 105.66 114.046 105.642 114.057 105.623C114.4 101.319 111.393 95.8616 107.21 93.4353C110.89 96.4665 112.954 101.525 112.47 105.878C109.305 105.026 106.668 102.789 105.273 99.699C104.333 97.6011 104.166 95.6189 103.993 93.5626C103.909 92.5715 103.824 91.5632 103.651 90.5164C111.594 92.2556 115.82 97.9913 115 103.038Z"
                 fill="#EDCA35"
             />
@@ -4556,14 +4556,14 @@ export const ThreeCoinAndStarts: React.FC<IconType> = ({ colorBorder }) => {
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M92.9398 77.883C92.9412 77.8821 92.9427 77.8813 92.9441 77.8805L92.9444 77.8792C92.9428 77.8805 92.9413 77.8817 92.9398 77.883ZM88.8381 88.056C88.9326 87.6246 88.9806 87.1809 88.9779 86.7292C88.9744 85.9369 88.8107 85.1824 88.5271 84.4736C89.3212 81.9638 90.8535 79.5843 92.9398 77.883C90.7887 79.1148 88.9969 81.0259 87.8298 83.1573C87.5171 82.6793 87.1528 82.246 86.7415 81.8466C86.5764 81.6889 86.3984 81.5299 86.2168 81.3832C87.7524 78.5569 91.0474 76.1331 95.9658 75.0686C95.8028 76.2365 95.8227 77.3503 95.8423 78.4437C95.8748 80.262 95.9063 82.0243 95.094 83.8865C93.7966 86.8608 91.2317 89.076 88.1186 89.9263C88.1166 89.9295 88.1146 89.9328 88.1127 89.936C88.1129 89.9332 88.1132 89.9305 88.1135 89.9277C88.1071 89.9294 88.1008 89.9311 88.0944 89.9328C88.1018 89.9203 88.1092 89.9078 88.1165 89.8952C88.4014 86.7361 86.1303 82.744 82.9456 80.983C85.7422 83.1893 87.2941 86.8905 86.9042 90.0858C84.4908 89.4753 82.4875 87.8472 81.4365 85.5868C80.7291 84.0523 80.6109 82.599 80.4883 81.0914C80.4292 80.3648 80.3691 79.6255 80.2415 78.8585C86.3353 80.1043 89.5371 84.3339 88.8381 88.056Z"
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M92.7344 77.3859C92.7358 77.3851 92.7372 77.3843 92.7386 77.3835L92.7388 77.3823C92.7373 77.3835 92.7359 77.3847 92.7344 77.3859ZM88.9129 87.1863C88.9861 86.7989 89.0218 86.4016 89.0168 85.9975C89.0086 85.224 88.8481 84.4865 88.5738 83.793C89.3143 81.3477 90.7586 79.0342 92.7344 77.3859C90.694 78.5755 88.9998 80.4303 87.9017 82.5039C87.601 82.0354 87.2515 81.6103 86.8575 81.218C86.6993 81.063 86.5288 80.9067 86.355 80.7625C87.7996 78.0128 90.9219 75.6664 95.5982 74.6568C95.4502 75.7959 95.476 76.8832 95.5014 77.9507C95.5436 79.7258 95.5844 81.4462 94.8226 83.2591C93.6062 86.1535 91.1794 88.2999 88.2224 89.1121C88.2203 89.1156 88.2183 89.1192 88.2162 89.1227C88.2165 89.1197 88.2167 89.1166 88.217 89.1136C88.2098 89.1155 88.2027 89.1175 88.1955 89.1194C88.2038 89.1049 88.212 89.0904 88.2201 89.0759C88.4681 85.9949 86.2821 82.089 83.2413 80.3522C85.9176 82.5226 87.418 86.1449 87.0665 89.2616C84.765 88.6513 82.8475 87.05 81.8329 84.8372C81.1499 83.3351 81.0284 81.9158 80.9023 80.4434C80.8416 79.7337 80.7798 79.0117 80.6536 78.2622C86.407 79.5027 89.478 83.5826 88.9129 87.1863Z"
                     fill="#EDCA35"
                 />
@@ -4590,14 +4590,14 @@ export const ThreeCoinAndStarts: React.FC<IconType> = ({ colorBorder }) => {
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M117.7 75.1941C117.701 75.1934 117.702 75.1928 117.704 75.1921L117.704 75.191C117.702 75.1921 117.701 75.1931 117.7 75.1941ZM114.335 83.558C114.418 83.1923 114.461 82.8157 114.458 82.4319C114.456 81.7837 114.322 81.1664 114.09 80.5865C114.739 78.533 115.993 76.5861 117.7 75.1941C115.94 76.202 114.474 77.7656 113.519 79.5095C113.263 79.1184 112.965 78.7639 112.629 78.4371C112.494 78.308 112.348 78.1779 112.199 78.058C113.456 75.7455 116.152 73.7624 120.176 72.8914C120.042 73.847 120.059 74.7583 120.075 75.6529C120.101 77.1406 120.127 78.5824 119.462 80.1061C118.401 82.5401 116.302 84.3528 113.754 85.0481C113.752 85.0507 113.751 85.0532 113.749 85.0557C113.749 85.0535 113.75 85.0514 113.75 85.0492C113.745 85.0505 113.74 85.0518 113.736 85.0531C113.741 85.0437 113.747 85.0343 113.752 85.0248C113.987 82.4397 112.128 79.1718 109.522 77.7305C111.81 79.5356 113.079 82.5639 112.761 85.1782C110.786 84.6787 109.147 83.3466 108.287 81.4973C107.708 80.2417 107.611 79.0527 107.511 77.8192C107.463 77.2247 107.414 76.6198 107.309 75.9922C112.317 77.0161 114.938 80.5029 114.335 83.558Z"
                     fill="#B26916"
                 />
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M117.53 74.7875C117.532 74.7868 117.533 74.7862 117.534 74.7855L117.534 74.7845C117.533 74.7855 117.532 74.7865 117.53 74.7875ZM114.405 82.8003C114.464 82.4852 114.493 82.162 114.489 81.8333C114.482 81.2005 114.351 80.5971 114.126 80.0296C114.732 78.029 115.914 76.1361 117.53 74.7875C115.861 75.7608 114.475 77.2783 113.576 78.9749C113.33 78.5916 113.044 78.2438 112.722 77.9228C112.593 77.796 112.453 77.6681 112.311 77.5501C113.493 75.3004 116.047 73.3806 119.873 72.5545C119.752 73.4866 119.774 74.3762 119.794 75.2495C119.829 76.7019 119.862 78.1095 119.239 79.5929C118.244 81.9609 116.258 83.717 113.839 84.3815C113.837 84.3845 113.836 84.3874 113.834 84.3903C113.834 84.3878 113.834 84.3853 113.835 84.3828C113.829 84.3844 113.823 84.386 113.817 84.3876C113.824 84.3756 113.83 84.3637 113.837 84.3517C114.04 81.8309 112.251 78.6354 109.763 77.2145C111.953 78.9903 113.181 81.9539 112.893 84.504C111.01 84.0046 109.441 82.6945 108.611 80.8841C108.052 79.655 107.953 78.4938 107.85 77.2891C107.8 76.7084 107.75 76.1177 107.646 75.5045C112.351 76.5188 114.863 79.8533 114.405 82.8003Z"
                     fill="#EDCA35"
                 />
@@ -4623,14 +4623,14 @@ export const ThreeCoinAndStarts: React.FC<IconType> = ({ colorBorder }) => {
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M110.177 90.4225C110.179 90.4215 110.181 90.4205 110.183 90.4195L110.183 90.418C110.181 90.4195 110.179 90.421 110.177 90.4225ZM105.213 102.718C105.323 102.206 105.378 101.68 105.375 101.145C105.371 100.185 105.172 99.2703 104.829 98.4112C105.791 95.3689 107.648 92.4847 110.177 90.4225C107.57 91.9156 105.398 94.2321 103.983 96.8157C103.604 96.2362 103.163 95.7111 102.664 95.227C102.464 95.0357 102.248 94.843 102.028 94.6653C103.889 91.2395 107.883 88.3014 113.845 87.0111C113.648 88.4268 113.672 89.7768 113.695 91.1022C113.735 93.3062 113.773 95.4423 112.788 97.6995C111.216 101.304 108.108 103.989 104.335 105.02C104.332 105.024 104.33 105.028 104.327 105.032C104.328 105.029 104.328 105.025 104.328 105.022C104.32 105.024 104.312 105.026 104.304 105.028C104.314 105.012 104.323 104.997 104.332 104.981C104.676 101.152 101.924 96.3143 98.0642 94.1801C101.454 96.8544 103.335 101.341 102.863 105.214C99.9372 104.474 97.5089 102.5 96.235 99.7605C95.3775 97.9004 95.2343 96.1389 95.0857 94.3115C95.014 93.4308 94.9412 92.5347 94.7865 91.6049C102.154 93.1111 106.034 98.2149 105.213 102.718Z"
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M109.93 89.82C109.932 89.8191 109.934 89.8181 109.935 89.8171L109.936 89.8156C109.934 89.8171 109.932 89.8186 109.93 89.82ZM105.295 101.716C105.386 101.241 105.43 100.754 105.424 100.258C105.414 99.3207 105.22 98.4268 104.887 97.5862C105.785 94.6222 107.535 91.8179 109.93 89.82C107.457 91.2619 105.404 93.5102 104.073 96.0236C103.708 95.4557 103.284 94.9404 102.807 94.4649C102.615 94.277 102.408 94.0876 102.198 93.9128C103.949 90.5798 107.733 87.7358 113.402 86.5119C113.222 87.8927 113.254 89.2106 113.284 90.5045C113.335 92.6562 113.385 94.7416 112.461 96.9391C110.987 100.448 108.045 103.049 104.461 104.034C104.458 104.038 104.456 104.042 104.453 104.046C104.454 104.043 104.454 104.039 104.454 104.035C104.446 104.038 104.437 104.04 104.429 104.042C104.439 104.025 104.448 104.008 104.458 103.991C104.759 100.256 102.109 95.521 98.4231 93.4155C101.667 96.0463 103.486 100.437 103.06 104.215C100.27 103.475 97.9457 101.534 96.7159 98.8519C95.888 97.0311 95.7408 95.3107 95.588 93.526C95.5143 92.6658 95.4394 91.7907 95.2864 90.8822C102.269 92.3877 105.992 97.3437 105.295 101.716Z"
                 fill="#EDCA35"
             />
@@ -4699,14 +4699,14 @@ export const APilOfCoinAndStart: React.FC<IconType> = ({ colorBorder }) => {
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M115.232 92.7908C115.233 92.79 115.235 92.7892 115.236 92.7884L115.236 92.7872C115.235 92.7884 115.233 92.7896 115.232 92.7908ZM111.288 102.714C111.376 102.299 111.42 101.873 111.418 101.439C111.414 100.664 111.257 99.9267 110.984 99.2339C111.748 96.7802 113.223 94.454 115.232 92.7908C113.161 93.9951 111.436 95.8634 110.313 97.947C110.011 97.4797 109.661 97.0562 109.265 96.6657C109.106 96.5115 108.935 96.356 108.76 96.2127C110.238 93.4497 113.41 91.0801 118.145 90.0395C117.988 91.1813 118.007 92.27 118.026 93.339C118.057 95.1166 118.088 96.8394 117.306 98.6599C116.057 101.567 113.588 103.733 110.591 104.564C110.589 104.567 110.587 104.571 110.586 104.574C110.586 104.571 110.586 104.568 110.586 104.566C110.58 104.567 110.574 104.569 110.567 104.571C110.575 104.558 110.582 104.545 110.589 104.533C110.863 101.444 108.677 97.5428 105.611 95.8214C108.303 97.9783 109.797 101.597 109.422 104.72C107.099 104.124 105.17 102.532 104.158 100.322C103.477 98.822 103.364 97.4013 103.246 95.9274C103.189 95.2171 103.131 94.4944 103.008 93.7445C108.863 94.96 111.944 99.0806 111.288 102.714Z"
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M115.037 92.3051C115.038 92.3043 115.04 92.3035 115.041 92.3027L115.041 92.3015C115.04 92.3027 115.038 92.3039 115.037 92.3051ZM111.356 101.897C111.428 101.515 111.463 101.123 111.458 100.724C111.45 99.9676 111.296 99.2467 111.031 98.5687C111.744 96.1782 113.135 93.9164 115.037 92.3051C113.073 93.468 111.442 95.2813 110.384 97.3084C110.095 96.8504 109.758 96.4348 109.379 96.0513C109.227 95.8998 109.063 95.747 108.895 95.606C110.286 92.9179 113.292 90.6241 117.794 89.6371C117.651 90.7507 117.676 91.8136 117.701 92.8572C117.741 94.5926 117.781 96.2744 117.047 98.0468C115.876 100.876 113.54 102.975 110.693 103.769C110.691 103.772 110.689 103.776 110.687 103.779C110.687 103.776 110.687 103.773 110.688 103.77C110.681 103.772 110.674 103.774 110.667 103.776C110.675 103.762 110.683 103.748 110.691 103.734C110.93 100.722 108.825 96.903 105.898 95.2049C108.474 97.3267 109.918 100.868 109.58 103.915C107.364 103.318 105.518 101.753 104.542 99.5895C103.884 98.121 103.767 96.7335 103.646 95.294C103.587 94.6003 103.528 93.8945 103.406 93.1617C108.951 94.3756 111.908 98.3711 111.356 101.897Z"
                 fill="#EDCA35"
             />
@@ -4793,14 +4793,14 @@ export const TwoPilOfCoinAndStart: React.FC<IconType> = ({ colorBorder }) => {
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M119.476 98.0426C119.477 98.0419 119.478 98.0412 119.48 98.0406L119.48 98.0396C119.479 98.0406 119.477 98.0416 119.476 98.0426ZM116.239 106.183C116.309 105.846 116.345 105.499 116.343 105.146C116.34 104.51 116.211 103.904 115.987 103.335C116.615 101.32 117.826 99.4088 119.476 98.0426C117.775 99.0318 116.358 100.566 115.435 102.278C115.188 101.894 114.9 101.546 114.575 101.226C114.444 101.099 114.303 100.971 114.16 100.853C115.374 98.5838 117.98 96.6374 121.869 95.7825C121.74 96.7204 121.756 97.6148 121.771 98.4929C121.797 99.953 121.822 101.368 121.18 102.864C120.154 105.252 118.126 107.03 115.665 107.713C115.663 107.716 115.661 107.719 115.66 107.722C115.66 107.719 115.66 107.717 115.66 107.715C115.655 107.716 115.65 107.718 115.645 107.719C115.651 107.708 115.657 107.698 115.663 107.687C115.887 105.15 114.092 101.946 111.574 100.532C113.785 102.304 115.012 105.276 114.704 107.842C112.796 107.352 111.211 106.044 110.38 104.229C109.821 102.997 109.728 101.83 109.631 100.619C109.584 100.036 109.536 99.4419 109.435 98.8259C114.239 99.8231 116.77 103.201 116.239 106.183Z"
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M119.318 97.6433C119.319 97.6426 119.32 97.642 119.321 97.6413L119.322 97.6404C119.32 97.6413 119.319 97.6423 119.318 97.6433ZM116.282 105.587C116.349 105.253 116.382 104.909 116.378 104.559C116.372 103.937 116.245 103.345 116.028 102.788C116.613 100.825 117.756 98.9669 119.318 97.6433C117.705 98.5985 116.365 100.088 115.496 101.753C115.259 101.377 114.982 101.036 114.671 100.721C114.545 100.596 114.411 100.471 114.273 100.355C115.416 98.1466 117.885 96.2625 121.583 95.4517C121.466 96.3664 121.486 97.2396 121.506 98.0968C121.54 99.5223 121.572 100.904 120.969 102.36C120.007 104.685 118.087 106.409 115.747 107.06C115.746 107.063 115.744 107.066 115.743 107.068C115.743 107.066 115.743 107.064 115.743 107.062C115.738 107.063 115.734 107.064 115.729 107.066C115.734 107.056 115.74 107.046 115.746 107.036C115.944 104.561 114.215 101.421 111.809 100.025C113.925 101.768 115.112 104.677 114.834 107.18C113.014 106.69 111.497 105.404 110.695 103.627C110.155 102.421 110.059 101.281 109.959 100.098C109.911 99.5286 109.862 98.9488 109.762 98.3469C114.351 99.3515 116.782 102.675 116.282 105.587Z"
                 fill="#EDCA35"
             />
@@ -4905,14 +4905,14 @@ export const ThreeilOfCoinAndStart: React.FC<IconType> = ({ colorBorder }) => {
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M127.54 100.02C127.541 100.02 127.542 100.019 127.543 100.019L127.543 100.018C127.542 100.019 127.541 100.019 127.54 100.02ZM124.709 107.148C124.774 106.847 124.807 106.537 124.805 106.221C124.802 105.666 124.689 105.137 124.494 104.64C125.042 102.881 126.1 101.213 127.54 100.02C126.055 100.884 124.818 102.223 124.012 103.717C123.796 103.382 123.545 103.079 123.261 102.799C123.147 102.688 123.024 102.577 122.899 102.474C123.959 100.493 126.233 98.7937 129.628 98.0475C129.516 98.8662 129.53 99.6469 129.543 100.413C129.566 101.688 129.587 102.923 129.027 104.229C128.131 106.314 126.361 107.866 124.212 108.462C124.21 108.465 124.209 108.467 124.208 108.469C124.208 108.467 124.208 108.465 124.208 108.463C124.204 108.464 124.199 108.466 124.195 108.467C124.2 108.458 124.205 108.449 124.21 108.44C124.407 106.226 122.839 103.428 120.641 102.193C122.571 103.74 123.643 106.334 123.373 108.574C121.708 108.146 120.325 107.005 119.599 105.42C119.111 104.345 119.029 103.326 118.945 102.269C118.904 101.76 118.862 101.242 118.774 100.704C122.979 101.577 125.189 104.54 124.709 107.148Z"
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M127.397 99.6719C127.398 99.6713 127.399 99.6708 127.4 99.6702L127.4 99.6693C127.399 99.6702 127.398 99.671 127.397 99.6719ZM124.755 106.566C124.808 106.287 124.835 106 124.831 105.708C124.825 105.166 124.715 104.649 124.525 104.163C125.036 102.449 126.033 100.827 127.397 99.6719C125.989 100.506 124.819 101.806 124.061 103.259C123.854 102.931 123.613 102.633 123.341 102.358C123.231 102.249 123.114 102.14 122.994 102.039C123.991 100.111 126.146 98.4666 129.374 97.7588C129.272 98.5573 129.29 99.3195 129.307 100.068C129.336 101.312 129.365 102.518 128.839 103.789C127.999 105.818 126.323 107.323 124.282 107.892C124.28 107.894 124.279 107.897 124.278 107.899C124.278 107.897 124.278 107.895 124.278 107.893C124.274 107.894 124.269 107.895 124.264 107.897C124.27 107.887 124.275 107.878 124.28 107.868C124.452 105.708 122.943 102.969 120.844 101.751C122.691 103.273 123.727 105.812 123.484 107.996C121.895 107.569 120.572 106.446 119.871 104.895C119.4 103.842 119.316 102.847 119.229 101.815C119.187 101.318 119.144 100.812 119.057 100.286C123.042 101.158 125.162 104.034 124.755 106.566Z"
                 fill="#EDCA35"
             />
@@ -4937,14 +4937,14 @@ export const ThreeilOfCoinAndStart: React.FC<IconType> = ({ colorBorder }) => {
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M112.62 104.164C112.622 104.163 112.623 104.163 112.624 104.162L112.625 104.161C112.623 104.162 112.622 104.163 112.62 104.164ZM108.883 113.589C108.972 113.183 109.018 112.765 109.015 112.339C109.012 111.607 108.863 110.909 108.605 110.254C109.328 107.935 110.722 105.736 112.62 104.164C110.663 105.302 109.033 107.068 107.97 109.038C107.686 108.596 107.354 108.196 106.98 107.827C106.83 107.681 106.668 107.534 106.503 107.399C107.9 104.787 110.898 102.547 115.374 101.564C115.226 102.643 115.244 103.672 115.262 104.682C115.291 106.363 115.32 107.991 114.581 109.712C113.4 112.461 111.066 114.508 108.232 115.293C108.231 115.296 108.229 115.299 108.227 115.302C108.227 115.3 108.228 115.297 108.228 115.295C108.222 115.296 108.217 115.298 108.211 115.299C108.218 115.288 108.224 115.277 108.231 115.266C108.491 112.346 106.424 108.656 103.525 107.029C106.07 109.068 107.482 112.488 107.127 115.44C104.931 114.876 103.108 113.372 102.152 111.283C101.508 109.865 101.401 108.522 101.289 107.129C101.235 106.458 101.181 105.774 101.064 105.066C106.623 106.22 109.537 110.144 108.883 113.589Z"
                 fill="#B26916"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M112.435 103.705C112.436 103.704 112.437 103.703 112.439 103.702L112.439 103.701C112.437 103.702 112.436 103.704 112.435 103.705ZM108.955 112.774C109.023 112.412 109.056 112.04 109.052 111.662C109.044 110.948 108.898 110.266 108.649 109.625C109.323 107.366 110.637 105.228 112.435 103.705C110.578 104.804 109.036 106.518 108.037 108.434C107.764 108.001 107.445 107.608 107.087 107.246C106.943 107.103 106.788 106.958 106.63 106.825C107.944 104.284 110.785 102.116 115.041 101.183C114.906 102.235 114.93 103.24 114.953 104.227C114.991 105.867 115.028 107.457 114.335 109.132C113.228 111.807 111.02 113.79 108.328 114.541C108.327 114.544 108.325 114.547 108.323 114.55C108.323 114.548 108.323 114.545 108.324 114.542C108.317 114.544 108.311 114.546 108.304 114.547C108.312 114.534 108.319 114.521 108.326 114.508C108.552 111.661 106.563 108.051 103.796 106.446C106.231 108.451 107.597 111.799 107.277 114.679C105.182 114.115 103.437 112.635 102.514 110.59C101.893 109.202 101.782 107.891 101.667 106.53C101.612 105.874 101.556 105.207 101.441 104.514C106.683 105.662 109.478 109.44 108.955 112.774Z"
                 fill="#EDCA35"
             />

@@ -1,6 +1,6 @@
-import { leafHomeLeft, leafHomeRight } from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import Contribute from '~/component/Contribute/Contribute';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';

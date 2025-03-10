@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
-import { ArrowLeft, ArrowRight, Cart, LeafPupple } from '../Icon';
-import { CatChair, dumplingsProduct, OreonProduct } from '~/Images';
+import { ArrowLeft, ArrowRight, Cart, LeafPupple } from '~/assets/Icons';
+import { CatChair, dumplingsProduct, OreonProduct } from '~/assets/Images/';
 import { useRef } from 'react';
 
 function RelatedProducts({ t }: { t: (key: string) => string }) {

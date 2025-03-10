@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import StoreBanner from '~/component/Banner/StoreBanner/StoreBanner';
 import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner';
-import { ArrowLeft, ArrowRight, BackgroundRipple } from '~/component/Icon';
-import Footer from '~/component/Layout/Footer/Footer';
-import Header from '~/component/Layout/Header/Header';
+import { ArrowLeft, ArrowRight, BackgroundRipple } from '~/assets/Icons';
+import Footer from '~/Layouts/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
 import TitleBar from '~/component/TittleBar/TittleBar';
 import {
     BeNgai,
@@ -20,7 +20,7 @@ import {
     SharkProduct,
     SunflowerProduct,
     thaoThiet,
-} from '~/Images';
+} from '~/assets/Images/';
 
 function Story() {
     const products = [

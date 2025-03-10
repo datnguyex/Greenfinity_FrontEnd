@@ -1,12 +1,12 @@
 import classNames from 'classnames/bind';
 import style from './Home.module.scss';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
 import React, { useRef } from 'react';
 import './Home.css';
 import Slider from 'react-slick';
-import { ArrowLeft, ArrowRight } from '~/component/Icon';
-import { leafHomeRight, leafHomeLeft, Headerleft, plasticbottle, AluminumCan } from '~/Images';
+import { ArrowLeft, ArrowRight } from '~/assets/Icons';
+import { leafHomeRight, leafHomeLeft, Headerleft, plasticbottle, AluminumCan } from '~/assets/Images/';
 import Banner1 from '~/component/Banner/HomeBanner/Banner1';
 import Banner2 from '~/component/Banner/HomeBanner/Banner2';
 import Banner3 from '~/component/Banner/HomeBanner/Banner3';

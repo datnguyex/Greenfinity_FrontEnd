@@ -1,8 +1,8 @@
-import { leafHomeLeft, leafHomeRight } from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
-import { MoMoLogo, VNPayLogo, SharkProduct } from '~/Images';
-import { Bin, LeafCateProduct } from '~/component/Icon';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
+import { MoMoLogo, VNPayLogo, SharkProduct } from '~/assets/Images/';
+import { Bin, LeafCateProduct } from '~/assets/Icons';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useFetcher } from 'react-router-dom';
@@ -205,7 +205,7 @@ function ShippingInfomation() {
                                                 {' '}
                                             </span>
                                             <span className="text-[#009383] text-[17px] font-semibold leading-tight">
-                                                1.600.00đ
+                                                1.800.00đ
                                             </span>
                                         </div>
                                     </div>

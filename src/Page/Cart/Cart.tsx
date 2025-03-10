@@ -1,7 +1,7 @@
-import { leafHomeLeft, leafHomeRight, SharkProduct } from '~/Images';
-import Header from '~/component/Layout/Header/Header';
-import Footer from '~/component/Layout/Footer/Footer';
-import { Bin, Minus, Plus, CartSad } from '~/component/Icon';
+import { leafHomeLeft, leafHomeRight, SharkProduct } from '~/assets/Images/';
+import Header from '~/Layouts/Header/Header';
+import Footer from '~/Layouts/Footer/Footer';
+import { Bin, Minus, Plus, CartSad } from '~/assets/Icons';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';

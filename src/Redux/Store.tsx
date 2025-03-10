@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
-import { persistStore, persistReducer } from 'redux-persist';
+import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
 import { languageSlice } from './LanguageSlice'; // Đảm bảo import đúng
 import { UserInfomationSlice } from './UserInfomationSlice';
 
@@ -24,6 +24,12 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 // Tạo Store với persistedReducer
 export const StoreReducer = configureStore({
     reducer: persistedReducer, // Sử dụng persistedReducer ở đây
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+            serializableCheck: {
+                ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+            },
+        }),
 });
 
 // Tạo persisted store

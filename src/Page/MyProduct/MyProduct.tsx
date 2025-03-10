@@ -3,11 +3,11 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { BarCode, LeafBlue } from '~/component/Icon';
-import Footer from '~/component/Layout/Footer/Footer';
-import Header from '~/component/Layout/Header/Header';
+import { BarCode, LeafBlue } from '~/assets/Icons';
+import Footer from '~/Layouts/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
 import UserMenu from '~/component/Menu/UserMenu/UserMenu';
-import { leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct } from '~/Images';
+import { leafHomeLeft, leafHomeRight, OreonProduct, SharkProduct } from '~/assets/Images/';
 
 function MyProduct() {
     const products = [

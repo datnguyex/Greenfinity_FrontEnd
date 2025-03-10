@@ -1,8 +1,8 @@
-import { RectangularWarm } from '~/component/Icon';
-import { BottomTornPaper, CoinCircle, DeliveryTruck, RestoreCircle } from '~/component/Icon/Icon';
-import Footer from '~/component/Layout/Footer/Footer';
-import Header from '~/component/Layout/Header/Header';
-import { leafHomeLeft, leafHomeRight } from '~/Images';
+import { RectangularWarm } from '~/assets/Icons';
+import { BottomTornPaper, CoinCircle, DeliveryTruck, RestoreCircle } from '~/assets/Icons/Icon';
+import Footer from '~/Layouts/Footer/Footer';
+import Header from '~/Layouts/Header/Header';
+import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
 
 type AddressFormProps = {
     handlelTypeDisplay: (value: string) => void;

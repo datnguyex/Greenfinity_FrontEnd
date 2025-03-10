@@ -8,10 +8,11 @@ export const changeLanguageAction = createAsyncThunk<string, string>(
 );
 export const authenticationAction = createAsyncThunk(
     'userInfomation',
-    async ({ phoneNumber, fullName }: { phoneNumber: string; fullName: string }) => {
+    async ({ phoneNumber, fullName, image }: { phoneNumber: string; fullName: string; image: string }) => {
         return {
             phoneNumber,
             fullName,
+            image,
         };
     },
 );

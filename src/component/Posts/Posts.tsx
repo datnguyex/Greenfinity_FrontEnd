@@ -1,5 +1,5 @@
-import { AvatarMan2, AvatarWoman1, capybara } from '~/Images';
-import { ImageChoosen, LineComment } from '../Icon';
+import { AvatarMan2, AvatarWoman1, capybara } from '~/assets/Images/';
+import { ImageChoosen, LineComment } from '~/assets/Icons';
 import { useState } from 'react';
 import Donation from '../Donation/Donation/Donation';
 
