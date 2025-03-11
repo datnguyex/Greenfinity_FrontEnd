@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { ArrowIntoHaftSquare, SubNavbar, ArrownDown } from '~/assets/Icons';
 import { EnglandLanguage, Headerleft, logoTitle, VietnameseLanguage } from '~/assets/Images/';
 import { useNavigate, Link } from 'react-router-dom';
@@ -59,16 +60,16 @@ function Header() {
         <>
             <div className="flex flex-col z-[100] fixed translate-x-[-50%] left-[50%] items-center w-[95%]">
                 {/* Header Section */}
-                <div className="mt-10 z-50 rounded-xl w-[100%] h-[10vh] flex bg-transparent">
+                <div className="mt-10 z-50 rounded-xl w-[100%] h-[10vh] flex bg-white bg-transparent">
                     <img src={Headerleft} alt="header-left " />
-                    <div className="flex items-center justify-between w-[100%] bg-white h-full relative border-b-[0.45rem] border-solid border-[#e0e0e0]">
+                    <div className="flex items-center justify-between w-[100%] h-full relative border-b-[0.45rem] border-solid border-[#e0e0e0]">
                         <img
                             onClick={navigateHome}
                             className="h-[115%] w-[20%] cursor-pointer"
                             src={logoTitle}
                             alt="logo"
                         />
-                        <div className="flex items-center justify-center h-full">
+                        <div className="flex items-center justify-center h-full flex-1">
                             <ul className="flex flex-row justify-between list-none m-0 p-0">
                                 {topAddresses.map((address, index) => (
                                     <li key={index}>
@@ -83,10 +84,10 @@ function Header() {
                             </ul>
                         </div>
 
-                        <div className="mr-5 flex gap-[16px] items-center relative flex-1">
-                            <div className="flex justify-end  items-center w-full gap-5">
+                        <div className="mr-5 flex gap-[16px] items-center relative w-[27%] h-full">
+                            <div className="flex justify-center items-center w-full gap-5">
                                 <button
-                                    className="max-w-[20%] w-[25%] justify-around rounded-[0.66rem] flex items-center gap-[0.8rem] bg-[#fff] min-h-[4.6rem] text-[18px] text-[#333333] px-[5px] border-[1px] border-[#009383] overflow-hidden"
+                                    className="max-w-[30%] w-[30%] justify-around rounded-[0.66rem] flex items-center gap-[0.8rem] bg-[#fff] min-h-[4.6rem] text-[18px] text-[#333333] px-[5px] border-[1px] border-[#009383] overflow-hidden"
                                     onClick={handleUseLanguage}
                                 >
                                     <div className="flex items-center gap-[0.8rem] justify-center">
@@ -96,7 +97,13 @@ function Header() {
                                     <ArrownDown />
                                     {/* // This is the language dropdown */}
                                     {useLanguages && (
-                                        <div className="mx-3 absolute top-[100%] z-[10] w-[20%] h-[150%] flex flex-col bg-[#fff] rounded-[8px] shadow-header-language-child overflow-hidden transition-all duration-300">
+                                        <motion.div
+                                            className="mx-3 absolute top-[100%] z-[10] w-[30%] h-[100%] flex flex-col bg-[#fff] rounded-[8px] shadow-header-language-child overflow-hidden transition-all duration-300"
+                                            initial={{ opacity: 0, y: -10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: 10 }}
+                                            transition={{ duration: 0.5 }}
+                                        >
                                             <LanguagesBtn
                                                 language="VIE"
                                                 currentLanguage={currentLanguage}
@@ -109,13 +116,13 @@ function Header() {
                                                 imageSrc={EnglandLanguage}
                                                 onClick={handleLanguage}
                                             />
-                                        </div>
+                                        </motion.div>
                                     )}
                                 </button>
 
                                 {/* //this is btn login */}
-                                {/* {!UserInfoState.isAuthenticated && (
-                                    <Link to={'/login'} className="w-[27%] h-[35%]">
+                                {!UserInfoState.isAuthenticated && (
+                                    <Link to={'/login'} className="w-[35%] h-[35%]">
                                         <FlexibleBtn
                                             width="100%"
                                             height="100%"
@@ -125,9 +132,9 @@ function Header() {
                                             icon={<ArrowIntoHaftSquare />}
                                         />
                                     </Link>
-                                )} */}
+                                )}
                                 {/* // This is the user information */}
-                                <UserInfomation UserInfoState={UserInfoState} />
+                                {UserInfoState.isAuthenticated && <UserInfomation UserInfoState={UserInfoState} />}
                             </div>
                         </div>
                     </div>

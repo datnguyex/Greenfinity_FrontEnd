@@ -9,5 +9,8 @@
     "enterPass": "Enter your password",
     "clause1": "I agree to all",
     "clause2": "terms and conditions of participation.",
-    "clause3": "The platform and brand are allowed to use the personal information I have provided."
+    "clause3": "The platform and brand are allowed to use the personal information I have provided.",
+    "errorTitle": "Error",
+    "errorContent": "Somthing went wrong",
+    "errorClose": "Close"
 }

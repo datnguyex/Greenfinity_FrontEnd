@@ -3,14 +3,15 @@ import Cookies from 'js-cookie';
 import axios from 'axios';
 import { StoreReducer } from '~/Redux/Store';
 import { authenticationAction } from '~/Redux/Action';
-import { SigninType, TimerSetters } from '~/Types';
+import { SigninType, TimerSetters } from '~/Types/AuthType';
+import API_URL from '..';
 
 export const createTemporaryAccount = async (
     infoSignUp: SigninType,
     setErrorInfom: React.Dispatch<React.SetStateAction<any>>,
 ) => {
     try {
-        const response = await fetch('http://localhost:3001/authentications/createTemporaryAccount', {
+        const response = await fetch(`${API_URL}/authentications/createTemporaryAccount`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -54,7 +55,7 @@ export const CreateAccount = async (otp: string) => {
 
             parsedInfoSignUp.otp = otp;
             console.log('Data to send:', parsedInfoSignUp);
-            const response = await axios.post('http://localhost:3001/authentications/signup', {
+            const response = await axios.post(`${API_URL}/authentications/signup`, {
                 fullName: parsedInfoSignUp.fullName,
                 phoneNumber: parsedInfoSignUp.phoneNumber,
                 keyChecked: parsedInfoSignUp.keyChecked,
@@ -95,7 +96,7 @@ export const ResendAuthCode = async ({ setMinutes, setSeconds }: TimerSetters) =
             password: parsedInfoSignUp.password,
         };
         try {
-            const response = await fetch('http://localhost:3001/authentications/resendAuthCode', {
+            const response = await fetch(`${API_URL}/authentications/resendAuthCode`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -122,7 +123,7 @@ export const DeleteAuthCode = async (infoSignUp: any) => {
         const parsedInfoSignUp = JSON.parse(infoSignUp);
         const { keyChecked } = parsedInfoSignUp;
         try {
-            const response = await axios.post('http://localhost:3001/authentications/deleteAuthCode', {
+            const response = await axios.post(`${API_URL}/authentications/deleteAuthCode`, {
                 fullName: parsedInfoSignUp.fullName,
                 phoneNumber: parsedInfoSignUp.phoneNumber,
                 keyChecked: parsedInfoSignUp.keyChecked,
@@ -140,12 +141,13 @@ export const DeleteAuthCode = async (infoSignUp: any) => {
     }
 };
 export const Signin = async (
-    phoneNumber: any,
-    password: any,
+    phoneNumber: string | undefined,
+    password: string | undefined,
     setErrorInfom: React.Dispatch<React.SetStateAction<any>>,
 ) => {
     try {
-        const response = await axios.post('http://localhost:3001/authentications/signin', {
+        console.log('API_URL:', API_URL);
+        const response = await axios.post(`${API_URL}/authentications/signin`, {
             phoneNumber,
             password,
         });
@@ -155,7 +157,7 @@ export const Signin = async (
             // Cookies.set('accessToken', response.data.accessToken, { expires: 30 / (60 * 60 * 24), path: '/' });
 
             const token = response.data.accessToken;
-            const authResponse = await axios.get('http://localhost:3001/authentications/UserAuthenticate', {
+            const authResponse = await axios.get(`${API_URL}/authentications/UserAuthenticate`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -183,7 +185,7 @@ export const Signin = async (
             console.log('Login failed: ', response.data);
         }
     } catch (error: any) {
-        console.log(error.response);
+        // console.log(error.response);
         if (error.response.data.password) {
             return setErrorInfom({ password: error.response.data.password });
         } else if (error.response.data.phoneNumber) {

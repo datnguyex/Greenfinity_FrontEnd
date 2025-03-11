@@ -9,5 +9,8 @@
     "enterPass": "Nhập mật khẩu của bạn",
     "clause": "Tôi đồng ý với tất cả",
     "clause2": "điều khoản và thể lệ tham gia.",
-    "clause3": "Nền tảng và thương hiệu được phép sử dụng thông tin cá nhân tôi đã cung cấp."
+    "clause3": "Nền tảng và thương hiệu được phép sử dụng thông tin cá nhân tôi đã cung cấp.",
+    "errorTitle": "Lỗi",
+    "errorContent": "Đã xảy ra lỗi",
+    "errorClose": "Đóng"
 }
