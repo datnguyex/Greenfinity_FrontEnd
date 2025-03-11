@@ -81,9 +81,9 @@ export const GoldCoin: React.FC<IconType> = ({ width = '1.8rem', height = '1.8re
         </svg>
     );
 };
-export const SubNavbar: React.FC<IconType> = ({ width = '1.8rem', height = '1.8rem' }) => {
+export const SubNavbar: React.FC<IconType> = ({ width = '100%', height = 'auto' }) => {
     return (
-        <svg width="100%" height="auto" viewBox="0 0 1754 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 1754 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H1754L1734.56 64H23.3932L0 0Z" fill="#E9FFFD" />
         </svg>
     );
@@ -248,9 +248,9 @@ export const ScoreRankHome: React.FC<IconType> = ({ width = '6.7rem', height = '
         </svg>
     );
 };
-export const EditSign: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const EditSign: React.FC<IconType> = ({ width = '2.9rem', height = '2.8rem' }) => {
     return (
-        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M13.4001 4.66663H10.8334C8.87321 4.66663 7.89312 4.66663 7.14443 5.0481C6.48586 5.38366 5.95043 5.91909 5.61488 6.57766C5.2334 7.32635 5.2334 8.30644 5.2334 10.2666V17.7333C5.2334 19.6935 5.2334 20.6736 5.61488 21.4223C5.95043 22.0808 6.48586 22.6163 7.14443 22.9518C7.89312 23.3333 8.87321 23.3333 10.8334 23.3333H18.3001C20.2602 23.3333 21.2403 23.3333 21.989 22.9518C22.6476 22.6163 23.183 22.0808 23.5186 21.4223C23.9001 20.6736 23.9001 19.6935 23.9001 17.7333V14.5833M12.8389 16.2103L14.3729 15.9072C15.2006 15.7436 15.6144 15.6618 16.0003 15.5111C16.3429 15.3774 16.6684 15.2037 16.9702 14.9935C17.3101 14.7568 17.6084 14.4585 18.205 13.8619L24.2115 7.85538C25.0133 7.05358 25.0133 5.75361 24.2115 4.95181C23.4097 4.15001 22.1098 4.15001 21.308 4.95181L15.1988 11.061C14.6398 11.62 14.3602 11.8995 14.1345 12.2164C13.9341 12.4977 13.7655 12.8003 13.6319 13.1188C13.4814 13.4776 13.3909 13.8624 13.21 14.632L12.8389 16.2103Z"
                 stroke="#009383"
@@ -261,9 +261,9 @@ export const EditSign: React.FC<IconType> = ({ width = '6.7rem', height = '6rem'
         </svg>
     );
 };
-export const HandSaveMoney: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const HandSaveMoney: React.FC<IconType> = ({ width = '2.5rem', height = '2.5rem' }) => {
     return (
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_4741_107847)">
                 <path
                     d="M19.1914 10.5C20.6412 10.5 21.8164 9.32475 21.8164 7.875C21.8164 6.42525 20.6412 5.25 19.1914 5.25C17.7417 5.25 16.5664 6.42525 16.5664 7.875C16.5664 9.32475 17.7417 10.5 19.1914 10.5Z"
@@ -296,15 +296,15 @@ export const HandSaveMoney: React.FC<IconType> = ({ width = '6.7rem', height = '
             </g>
             <defs>
                 <clipPath id="clip0_4741_107847">
-                    <rect width="24" height="24" fill="white" transform="translate(0.0664062)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.0664062)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const Clockclockwise: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const Clockclockwise: React.FC<IconType> = ({ width = '2.5rem', height = '2.4rem' }) => {
     return (
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="ClockClockwise" clip-path="url(#clip0_4741_107855)">
                 <path
                     id="Vector"
@@ -339,9 +339,9 @@ export const Clockclockwise: React.FC<IconType> = ({ width = '6.7rem', height = 
         </svg>
     );
 };
-export const Tote: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const Tote: React.FC<IconType> = ({ width = '2.5rem', height = '2.4rem' }) => {
     return (
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_4741_107862)">
                 <path
                     d="M20.2225 19.5H4.90938C4.72504 19.5 4.54704 19.4327 4.4089 19.3106C4.27077 19.1885 4.18203 19.0202 4.15938 18.8372L2.82345 7.5872C2.81109 7.48165 2.82131 7.37467 2.85342 7.27336C2.88554 7.17204 2.93882 7.07872 3.00974 6.99956C3.08066 6.9204 3.16759 6.85721 3.26477 6.81419C3.36195 6.77117 3.46717 6.7493 3.57345 6.75002H21.5584C21.6647 6.7493 21.7699 6.77117 21.8671 6.81419C21.9643 6.85721 22.0512 6.9204 22.1222 6.99956C22.1931 7.07872 22.2464 7.17204 22.2785 7.27336C22.3106 7.37467 22.3208 7.48165 22.3084 7.5872L20.9725 18.8372C20.9499 19.0202 20.8611 19.1885 20.723 19.3106C20.5849 19.4327 20.4069 19.5 20.2225 19.5Z"
@@ -360,15 +360,15 @@ export const Tote: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) 
             </g>
             <defs>
                 <clipPath id="clip0_4741_107862">
-                    <rect width="24" height="24" fill="white" transform="translate(0.566406)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.566406)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const Bin: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const Bin: React.FC<IconType> = ({ width = '1.8rem', height = '2rem' }) => {
     return (
-        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1 4H17M13 4L12.7294 3.18807C12.4671 2.40125 12.3359 2.00784 12.0927 1.71698C11.8779 1.46013 11.6021 1.26132 11.2905 1.13878C10.9376 1 10.523 1 9.69357 1H8.30643C7.47705 1 7.06236 1 6.70951 1.13878C6.39792 1.26132 6.12208 1.46013 5.90729 1.71698C5.66405 2.00784 5.53292 2.40125 5.27064 3.18807L5 4M15 4V14.2C15 15.8802 15 16.7202 14.673 17.362C14.3854 17.9265 13.9265 18.3854 13.362 18.673C12.7202 19 11.8802 19 10.2 19H7.8C6.11984 19 5.27976 19 4.63803 18.673C4.07354 18.3854 3.6146 17.9265 3.32698 17.362C3 16.7202 3 15.8802 3 14.2V4M11 8V15M7 8V15"
                 stroke="#FF4444"
@@ -379,9 +379,9 @@ export const Bin: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) =
         </svg>
     );
 };
-export const Plus: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const Plus: React.FC<IconType> = ({ width = '2rem', height = '2rem' }) => {
     return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={width} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8206_19920)">
                 <path
                     d="M3.125 10H16.875"
@@ -400,15 +400,15 @@ export const Plus: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) 
             </g>
             <defs>
                 <clipPath id="clip0_8206_19920">
-                    <rect width="20" height="20" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const Minus: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const Minus: React.FC<IconType> = ({ width = '2rem', height = '2rem' }) => {
     return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8206_19916)">
                 <path
                     d="M3.125 10H16.875"
@@ -420,15 +420,15 @@ export const Minus: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' })
             </g>
             <defs>
                 <clipPath id="clip0_8206_19916">
-                    <rect width="20" height="20" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const CartSad: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const CartSad: React.FC<IconType> = ({ width = '13.2rem', height = '13,6rem' }) => {
     return (
-        <svg width="132" height="136" viewBox="0 0 132 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 132 136" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M74.8274 52.0396C82.319 52.0396 89.6961 55.3079 95.9969 61.3302C96.391 61.6754 96.7112 62.0967 96.9384 62.5688C97.1656 63.0409 97.2951 63.5541 97.319 64.0774C97.343 64.6008 97.2609 65.1236 97.0777 65.6145C96.8946 66.1054 96.6141 66.5542 96.2531 66.9339C95.8918 67.3133 95.4573 67.6154 94.9759 67.8221C94.4945 68.0288 93.9762 68.1358 93.4522 68.1366C92.9283 68.1374 92.4097 68.032 91.9277 67.8268C91.4456 67.6215 91.0102 67.3207 90.6477 66.9425C85.5052 62.017 80.1031 59.7874 74.8274 59.7874C69.5585 59.7874 64.1666 62.0153 59.0242 66.9425C58.6558 67.3045 58.2183 67.5888 57.7379 67.7784C57.2574 67.968 56.7438 68.059 56.2274 68.0461C52.7575 67.9573 51.1379 63.6981 53.6852 61.3285C59.9758 55.3079 67.3443 52.0396 74.8274 52.0396ZM90.9689 36.7506C92.4587 36.7506 93.8875 37.3424 94.941 38.3959C95.9945 39.4494 96.5863 40.8782 96.5863 42.368C96.5863 43.8578 95.9945 45.2867 94.941 46.3401C93.8875 47.3936 92.4587 47.9854 90.9689 47.9854C90.2323 47.985 89.503 47.8395 88.8227 47.5572C88.1424 47.2749 87.5243 46.8614 87.0038 46.3402C86.4833 45.8191 86.0705 45.2005 85.7891 44.5198C85.5076 43.8392 85.363 43.1097 85.3634 42.3731C85.3623 41.6359 85.5064 40.9057 85.7875 40.2241C86.0686 39.5426 86.4812 38.9231 87.0017 38.401C87.5222 37.8789 88.1405 37.4644 88.8212 37.1812C89.5018 36.8981 90.2316 36.7517 90.9689 36.7506ZM58.7047 36.7506C60.1933 36.7538 61.6198 37.3477 62.6709 38.402C63.7219 39.4562 64.3115 40.8845 64.3101 42.3731C64.3101 43.8612 63.719 45.2882 62.6668 46.3404C61.6146 47.3926 60.1876 47.9837 58.6996 47.9837C57.2115 47.9837 55.7845 47.3926 54.7323 46.3404C53.6801 45.2882 53.089 43.8612 53.089 42.3731C53.0885 41.6352 53.2334 40.9045 53.5154 40.2225C53.7974 39.5406 54.2109 38.9209 54.7324 38.3988C55.2538 37.8767 55.873 37.4625 56.5546 37.1797C57.2362 36.8969 57.9668 36.7511 58.7047 36.7506ZM6.78297 0C-0.771825 0.213557 -1.97287 11.609 5.34103 13.5959L14.8776 16.9633L26.0988 75.4694C27.4433 82.4706 29.666 88.8073 32.772 94.259C37.337 102.287 45.266 108.212 55.0452 108.212H103.61C112.376 108.371 112.376 94.3461 103.61 94.5084H55.0469C48.1327 93.6268 45.266 90.1433 42.7306 85.0367H106.835C112.714 85.0367 115.998 79.8157 117.45 73.7763L131.471 26.0762C132.22 18.2344 128.065 16.6865 120.793 16.6865L28.7008 16.7565L26.2252 9.1915C25.5572 6.93975 23.8487 5.20054 21.7063 4.59575L6.78297 0ZM58.3579 115.198C55.5993 115.198 52.9538 116.294 51.0032 118.244C49.0526 120.195 47.9568 122.84 47.9568 125.599C47.9568 128.357 49.0526 131.003 51.0032 132.954C52.9538 134.904 55.5993 136 58.3579 136C64.0966 136 68.7419 131.341 68.7419 125.595C68.7428 124.231 68.4749 122.88 67.9535 121.619C67.4322 120.358 66.6675 119.212 65.7033 118.246C64.739 117.281 63.5941 116.514 62.3337 115.991C61.0734 115.468 59.7224 115.199 58.3579 115.198ZM99.7674 115.198C97.012 115.201 94.3706 116.298 92.4235 118.248C90.4764 120.197 89.383 122.84 89.3834 125.595C89.3834 131.341 94.039 136 99.7674 136C102.526 136 105.172 134.904 107.122 132.954C109.073 131.003 110.169 128.357 110.169 125.599C110.169 122.84 109.073 120.195 107.122 118.244C105.172 116.294 102.526 115.198 99.7674 115.198Z"
                 fill="#CCE9E6"
@@ -436,9 +436,9 @@ export const CartSad: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' 
         </svg>
     );
 };
-export const LeafCateProduct: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const LeafCateProduct: React.FC<IconType> = ({ width = '1.3rem', height = '1.5rem' }) => {
     return (
-        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1.03484 13.0743C0.774838 13.7429 0.719104 14.337 0.71109 14.6624C0.707394 14.8106 0.589986 14.928 0.441429 14.9321C0.285251 14.936 0.152699 14.8128 0.144875 14.6568C0.0893448 13.5534 0.00416262 11.4158 2.39565 8.77635C5.27754 5.59574 8.26126 7.22143 10.4149 3.97562C10.4149 3.97562 9.20438 5.40076 4.8727 6.122C1.44392 6.69261 0.258568 10.1213 0.229993 10.1769C0.219598 10.1288 -0.422023 7.03921 1.97636 4.64083C4.64471 1.97247 9.30747 4.31219 11.9663 0.818152C11.9663 0.818152 13.5855 6.32996 10.1951 9.72034C7.95714 11.9583 5.11627 11.6577 2.94045 11.7296C2.08821 11.7576 1.34204 12.2853 1.03484 13.0743Z"
                 fill="#0085FF"
@@ -446,7 +446,7 @@ export const LeafCateProduct: React.FC<IconType> = ({ width = '6.7rem', height =
         </svg>
     );
 };
-export const ArrownDown: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const ArrownDown: React.FC<IconType> = ({ width = '', height = '' }) => {
     return (
         <svg
             viewBox="64 64 896 896"
@@ -461,16 +461,16 @@ export const ArrownDown: React.FC<IconType> = ({ width = '6.7rem', height = '6re
         </svg>
     );
 };
-export const DepositLineStep: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const DepositLineStep: React.FC<IconType> = ({ width = '14rem', height = '0.2' }) => {
     return (
-        <svg width="140" height="2" viewBox="0 0 140 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 140 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 1H140" stroke="#009383" />
         </svg>
     );
 };
-export const CheckDeposit: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const CheckDeposit: React.FC<IconType> = ({ width = '4.8rem', height = '5.3rem' }) => {
     return (
-        <svg width="48" height="53" viewBox="0 0 48 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 48 53" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="74.3126" height="74.3126" transform="translate(0 -0.453003) rotate(-45)" fill="#009383" />
             <g clip-path="url(#clip0_4741_115674)">
                 <path
@@ -489,9 +489,9 @@ export const CheckDeposit: React.FC<IconType> = ({ width = '6.7rem', height = '6
         </svg>
     );
 };
-export const CheckMethodPayment: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const CheckMethodPayment: React.FC<IconType> = ({ width = '1.7rem', height = '1.2rem' }) => {
     return (
-        <svg width="17" height="12" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M2.75 9.5L8 14.75L20 2.75"
                 stroke="#009383"
@@ -502,9 +502,9 @@ export const CheckMethodPayment: React.FC<IconType> = ({ width = '6.7rem', heigh
         </svg>
     );
 };
-export const ApplePayLogo: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const ApplePayLogo: React.FC<IconType> = ({ width = '6.8rem', height = '6.8rem' }) => {
     return (
-        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_4193)">
                 <path
                     d="M12.513 23.4746C13.2784 22.5051 13.8142 21.2294 13.6611 19.9028C12.5385 19.9538 11.1608 20.6426 10.3699 21.6121C9.65559 22.4285 9.01777 23.7807 9.19636 25.0564C10.4465 25.1584 11.7221 24.4185 12.513 23.4746Z"
@@ -529,15 +529,15 @@ export const ApplePayLogo: React.FC<IconType> = ({ width = '6.7rem', height = '6
             </g>
             <defs>
                 <clipPath id="clip0_8267_4193">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const MomoLogo: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const MomoLogo: React.FC<IconType> = ({ width = '6.8rem', height = '6.8rem' }) => {
     return (
-        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_10547)">
                 <g clip-path="url(#clip1_8267_10547)">
                     <path
@@ -560,18 +560,18 @@ export const MomoLogo: React.FC<IconType> = ({ width = '6.7rem', height = '6rem'
             </g>
             <defs>
                 <clipPath id="clip0_8267_10547">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
                 <clipPath id="clip1_8267_10547">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const VNPaylogo: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const VNPaylogo: React.FC<IconType> = ({ width = '6.8rem', height = '6.8rem' }) => {
     return (
-        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_8776)">
                 <g clip-path="url(#clip1_8267_8776)">
                     <path
@@ -600,18 +600,18 @@ export const VNPaylogo: React.FC<IconType> = ({ width = '6.7rem', height = '6rem
             </g>
             <defs>
                 <clipPath id="clip0_8267_8776">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
                 <clipPath id="clip1_8267_8776">
-                    <rect width="62.3118" height="67.6667" fill="white" transform="translate(2.98633 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(2.98633 0.166687)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const AmazonePay: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const AmazonePay: React.FC<IconType> = ({ width = '6.8rem', height = '6.8rem' }) => {
     return (
-        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_10267)">
                 <path
                     d="M18.9251 17.0834L18.4832 17.1577C17.1003 17.3311 15.7668 17.8485 14.6588 18.6858C14.4114 18.8339 14.1896 19.0322 13.9443 19.231C13.9189 19.1824 13.8947 19.131 13.8947 19.0823C13.844 18.8095 13.8194 18.5167 13.7708 18.2439C13.6968 17.7999 13.4508 17.5749 13.0068 17.5749H11.8462C11.1315 17.5749 11.0078 17.7259 11.0078 18.4174V39.8275C11.0332 40.149 11.2286 40.3184 11.4993 40.3438H13.6469C13.943 40.3438 14.1151 40.149 14.1384 39.8275C14.1638 39.7282 14.1632 39.6296 14.1632 39.5302V32.092C14.2626 32.1913 14.3376 32.2416 14.3862 32.2902C16.1878 33.7958 18.2606 34.2872 20.5317 33.8431C22.604 33.4244 24.0332 32.1663 24.9467 30.316C25.6614 28.9098 25.9539 27.48 25.9792 25.9258C26.0279 24.2236 25.8803 22.585 25.1656 20.9821C24.3261 19.0092 22.8969 17.7009 20.7506 17.2568C20.4292 17.1828 20.0849 17.1568 19.7635 17.1082C19.4675 17.0828 19.1958 17.0834 18.9251 17.0834ZM35.3586 17.0834C35.2592 17.1088 35.1647 17.1329 35.0653 17.1329C34.0778 17.1816 33.1137 17.3048 32.1536 17.5501C31.5362 17.6981 30.945 17.9192 30.3529 18.1159C29.9829 18.2385 29.8078 18.5114 29.8078 18.9047C29.8332 19.2261 29.8078 19.5704 29.8078 19.8918C29.8332 20.3845 30.0322 20.5122 30.5016 20.3874C31.2904 20.1908 32.0794 19.9696 32.8681 19.8216C34.1009 19.5996 35.3601 19.4995 36.6182 19.6729C37.2843 19.7956 37.9011 19.9694 38.3198 20.5361C38.6899 21.0055 38.8396 21.596 38.865 22.1881C38.8904 23.0276 38.8898 23.6925 38.8898 24.5298C38.8898 24.5785 38.8904 24.6264 38.865 24.6496H38.7411C37.6796 24.379 36.5962 24.2322 35.5114 24.1581C34.3758 24.1095 33.2426 24.1592 32.1578 24.5546C30.851 24.9987 29.7871 25.7863 29.1718 27.0698C28.7023 28.0573 28.6272 29.0956 28.7753 30.155C28.9973 31.5865 29.6895 32.6705 30.9477 33.3599C32.1572 34.026 33.4399 34.0976 34.7721 33.9009C36.3009 33.6789 37.656 33.0382 38.8402 32.0507C38.8888 32.002 38.9402 31.9795 38.9889 31.9309C39.0629 32.3263 39.1131 32.6972 39.1871 33.0419C39.2358 33.3633 39.4362 33.5575 39.7323 33.5829H41.3843C41.6317 33.5829 41.8551 33.3621 41.8551 33.0914C41.8805 33.0174 41.8799 32.9161 41.8799 32.8188V22.2914C41.8736 21.8706 41.8465 21.4256 41.7725 21.0069C41.5759 19.7001 41.0321 18.6132 39.8479 17.9218C39.1818 17.5263 38.4436 17.3299 37.6549 17.2073C37.2848 17.1565 36.9387 17.132 36.5687 17.0834H35.3586ZM43.9119 17.0875C43.6645 17.0875 43.5411 17.3068 43.5897 17.5542C43.6384 17.753 43.714 17.9771 43.788 18.1737C45.7609 23.0584 47.7576 27.9398 49.7559 32.8478C49.9293 33.2664 49.9526 33.6144 49.7559 34.0331C49.4366 34.7711 49.1631 35.5356 48.8184 36.2757C48.5223 36.9418 48.0304 37.4378 47.2903 37.6345C46.7976 37.7592 46.2554 37.8076 45.7374 37.7336C45.49 37.7082 45.2414 37.6599 44.994 37.6345C44.6472 37.6091 44.4783 37.7559 44.4529 38.126V39.1172C44.4783 39.686 44.6503 39.9305 45.217 40.0299C45.7604 40.1272 46.3265 40.1986 46.9186 40.224C48.6441 40.2473 50.0035 39.5613 50.8917 38.0557C51.2617 37.4637 51.5585 36.8462 51.8292 36.2055C54.2208 30.162 56.5893 24.1434 58.9576 18.0746C59.0317 17.9012 59.0768 17.7261 59.1022 17.5294C59.1508 17.2334 59.0032 17.0874 58.7346 17.0916H56.7398C56.3951 17.0663 56.0736 17.2865 55.951 17.6079C55.9023 17.7559 55.8509 17.877 55.8023 18.025L52.2752 28.1147C52.0278 28.8295 51.7544 29.5686 51.507 30.3573C51.4563 30.2326 51.4333 30.1835 51.4079 30.1095C50.1011 26.5084 48.8201 22.9106 47.5133 19.3095C47.3166 18.7174 47.0952 18.1457 46.8731 17.579C46.7759 17.3062 46.5503 17.1123 46.2288 17.1123C45.4634 17.0869 44.7006 17.0875 43.9119 17.0875ZM18.9003 19.6481C20.4059 19.7708 21.638 20.5116 22.2787 22.2625C22.6741 23.3472 22.7743 24.3938 22.7743 25.5293C22.7743 26.5908 22.7013 27.5294 22.382 28.5401C21.6905 30.6864 20.1104 31.5243 18.0867 31.427C16.6551 31.353 15.4474 30.8074 14.3118 30.0187C14.1892 29.9447 14.1151 29.8254 14.1384 29.7007V21.3249C14.1151 21.1769 14.1892 21.0561 14.3118 20.9821C15.6927 20.02 17.2214 19.5255 18.9003 19.6481ZM34.9043 26.3099C35.3266 26.2729 35.7524 26.2809 36.1722 26.3305C37.0117 26.4046 37.852 26.5507 38.6915 26.6733C38.8649 26.6987 38.9104 26.7731 38.9104 26.9211C38.885 27.416 38.9104 27.8842 38.9104 28.3791C38.9104 28.8717 38.8856 29.3174 38.8856 29.8122C38.911 29.9348 38.8363 30.0314 38.7369 30.1054C37.6014 30.9195 36.3683 31.4649 34.9621 31.6129C34.3954 31.6615 33.8266 31.6614 33.2853 31.4394C32.6678 31.2174 32.2031 30.6981 32.0297 30.0806C31.8331 29.4399 31.8337 28.7741 32.005 28.1312C32.2756 27.2918 32.8661 26.8264 33.657 26.5536C34.064 26.4299 34.4819 26.3469 34.9043 26.3099Z"
@@ -624,15 +624,15 @@ export const AmazonePay: React.FC<IconType> = ({ width = '6.7rem', height = '6re
             </g>
             <defs>
                 <clipPath id="clip0_8267_10267">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const DomesticCard: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const DomesticCard: React.FC<IconType> = ({ width = '6.8rem', height = '6.8rem' }) => {
     return (
-        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_12193)">
                 <g clip-path="url(#clip1_8267_12193)">
                     <path
@@ -667,18 +667,18 @@ export const DomesticCard: React.FC<IconType> = ({ width = '6.7rem', height = '6
             </g>
             <defs>
                 <clipPath id="clip0_8267_12193">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
                 <clipPath id="clip1_8267_12193">
-                    <rect width="67.6667" height="67.6667" fill="white" transform="translate(0.166016 0.166687)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.166016 0.166687)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const VisaMasterCardLogo: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const VisaMasterCardLogo: React.FC<IconType> = ({ width = '6.8rem', height = '6.8rem' }) => {
     return (
-        <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_17518)">
                 <g clip-path="url(#clip1_8267_17518)">
                     <path d="M31.0935 18.7839H26.3652L29.3226 0.497681H34.0506L31.0935 18.7839Z" fill="#00579F" />
@@ -729,16 +729,16 @@ export const VisaMasterCardLogo: React.FC<IconType> = ({ width = '6.7rem', heigh
         </svg>
     );
 };
-export const FrameMethodPaymentBottom: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const FrameMethodPaymentBottom: React.FC<IconType> = ({ width = '3rem', height = '3.1rem' }) => {
     return (
-        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M29.3903 0L0 30.7262H29.3903V0Z" fill="#009383" />
         </svg>
     );
 };
-export const CheckWhite: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const CheckWhite: React.FC<IconType> = ({ width = '1.3rem', height = '1.2rem' }) => {
     return (
-        <svg width="13" height="12" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8267_10558)">
                 <path
                     d="M2.84961 8.48176L6.06417 11.6963L13.4117 4.34875"
@@ -750,15 +750,15 @@ export const CheckWhite: React.FC<IconType> = ({ width = '6.7rem', height = '6re
             </g>
             <defs>
                 <clipPath id="clip0_8267_10558">
-                    <rect width="14.6951" height="14.6951" fill="white" transform="translate(0.552734 0.21582)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0.552734 0.21582)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const CircleAnimaSussesTransac: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const CircleAnimaSussesTransac: React.FC<IconType> = ({ width = '10rem', height = '10rem' }) => {
     return (
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="100" height="100" rx="50" fill="url(#paint0_radial_4741_116151)" />
             <rect x="21" y="21" width="58" height="58" rx="29" fill="#FFCF33" />
             <g clip-path="url(#clip0_4741_116151)">
@@ -789,9 +789,9 @@ export const CircleAnimaSussesTransac: React.FC<IconType> = ({ width = '6.7rem',
         </svg>
     );
 };
-export const CircleAnimafailTransac: React.FC<IconType> = ({ width = '6.7rem', height = '6rem' }) => {
+export const CircleAnimafailTransac: React.FC<IconType> = ({ width = '10rem', height = '10rem' }) => {
     return (
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="100" height="100" rx="50" fill="url(#paint0_radial_4741_116187)" />
             <g clip-path="url(#clip0_4741_116187)">
                 <path
@@ -831,7 +831,7 @@ export const LeafBlue: React.FC<IconType> = ({ width = '1.5rem', height = '1.5re
 
 export const LeafPupple: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
     return (
-        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1.03484 12.8087C0.774838 13.4773 0.719104 14.0714 0.71109 14.3968C0.707394 14.545 0.589986 14.6624 0.441429 14.6664C0.285251 14.6704 0.152699 14.5472 0.144875 14.3912C0.0893448 13.2878 0.00416262 11.1502 2.39565 8.51073C5.27754 5.33011 8.26126 6.95581 10.4149 3.70999C10.4149 3.70999 9.20438 5.13513 4.8727 5.85637C1.44392 6.42699 0.258568 9.8557 0.229993 9.91125C0.219598 9.86319 -0.422023 6.77359 1.97636 4.3752C4.64471 1.70685 9.30747 4.04656 11.9663 0.552527C11.9663 0.552527 13.5855 6.06433 10.1951 9.45471C7.95714 11.6927 5.11627 11.3921 2.94045 11.464C2.08821 11.492 1.34204 12.0197 1.03484 12.8087Z"
                 fill="#9644FF"
@@ -839,9 +839,9 @@ export const LeafPupple: React.FC<{ width?: string; height?: string }> = ({ widt
         </svg>
     );
 };
-export const SearchGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const SearchGreen: React.FC<{ width?: string; height?: string }> = ({ width = '2rem', height = '2rem' }) => {
     return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
                 stroke="#009383"
@@ -859,9 +859,9 @@ export const SearchGreen: React.FC<{ width?: string; height?: string }> = ({ wid
         </svg>
     );
 };
-export const PlustGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const PlustGreen: React.FC<{ width?: string; height?: string }> = ({ width = '2.4rem', height = '2.4rem' }) => {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8317_32219)">
                 <path
                     d="M3.75 12H20.25"
@@ -886,9 +886,9 @@ export const PlustGreen: React.FC<{ width?: string; height?: string }> = ({ widt
         </svg>
     );
 };
-export const YellowStar: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const YellowStar: React.FC<{ width?: string; height?: string }> = ({ width = '3.2rem', height = '3.2rem' }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M31.9166 12.2759C31.7071 11.628 31.1324 11.1677 30.4524 11.1065L21.2164 10.2678L17.5642 1.71951C17.2949 1.09303 16.6816 0.6875 16.0002 0.6875C15.3188 0.6875 14.7055 1.09303 14.4362 1.72097L10.784 10.2678L1.54642 11.1065C0.867694 11.1692 0.294437 11.628 0.0837383 12.2759C-0.12696 12.9239 0.0676246 13.6346 0.581066 14.0826L7.56245 20.2053L5.5038 29.2737C5.35316 29.9404 5.61196 30.6297 6.16519 31.0296C6.46256 31.2444 6.81047 31.3538 7.16131 31.3538C7.46381 31.3538 7.76387 31.2723 8.03316 31.1111L16.0002 26.3495L23.9642 31.1111C24.547 31.4617 25.2817 31.4297 25.8337 31.0296C26.3871 30.6285 26.6457 29.939 26.4951 29.2737L24.4364 20.2053L31.4178 14.0838C31.9312 13.6346 32.1273 12.9251 31.9166 12.2759Z"
                 fill="#FFC107"
@@ -899,7 +899,7 @@ export const YellowStar: React.FC<{ width?: string; height?: string }> = ({ widt
 
 export const HalfAYelloStar: React.FC<{ width?: string; height?: string }> = ({ width = '32', height = '32' }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_6697_80564)">
                 <g clip-path="url(#clip1_6697_80564)">
                     <path
@@ -924,9 +924,9 @@ export const HalfAYelloStar: React.FC<{ width?: string; height?: string }> = ({ 
         </svg>
     );
 };
-export const ThumpUp: React.FC<{ width?: string; height?: string }> = ({ width = '32', height = '32' }) => {
+export const ThumpUp: React.FC<{ width?: string; height?: string }> = ({ width = '2.4', height = '2.4' }) => {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_6697_80619)">
                 <path
                     d="M3 9.75H7.5V19.5H3C2.80109 19.5 2.61032 19.421 2.46967 19.2803C2.32902 19.1397 2.25 18.9489 2.25 18.75V10.5C2.25 10.3011 2.32902 10.1103 2.46967 9.96967C2.61032 9.82902 2.80109 9.75 3 9.75Z"
@@ -952,11 +952,11 @@ export const ThumpUp: React.FC<{ width?: string; height?: string }> = ({ width =
     );
 };
 export const MagnifyingGlass: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2.4rem',
+    height = '2.4rem',
 }) => {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_4741_115940)">
                 <path
                     d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
@@ -982,11 +982,11 @@ export const MagnifyingGlass: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const ListCircleAndDash: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2.6rem',
+    height = '2.2rem',
 }) => {
     return (
-        <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M9 2.99996H25H9ZM9 11H25H9ZM9 19H19.6667H9ZM2.33333 4.33329C2.68696 4.33329 3.02609 4.19282 3.27614 3.94277C3.52619 3.69272 3.66667 3.35358 3.66667 2.99996C3.66667 2.64634 3.52619 2.3072 3.27614 2.05715C3.02609 1.8071 2.68696 1.66663 2.33333 1.66663C1.97971 1.66663 1.64057 1.8071 1.39052 2.05715C1.14048 2.3072 1 2.64634 1 2.99996C1 3.35358 1.14048 3.69272 1.39052 3.94277C1.64057 4.19282 1.97971 4.33329 2.33333 4.33329ZM2.33333 12.3333C2.68696 12.3333 3.02609 12.1928 3.27614 11.9428C3.52619 11.6927 3.66667 11.3536 3.66667 11C3.66667 10.6463 3.52619 10.3072 3.27614 10.0571C3.02609 9.8071 2.68696 9.66663 2.33333 9.66663C1.97971 9.66663 1.64057 9.8071 1.39052 10.0571C1.14048 10.3072 1 10.6463 1 11C1 11.3536 1.14048 11.6927 1.39052 11.9428C1.64057 12.1928 1.97971 12.3333 2.33333 12.3333ZM2.33333 20.3333C2.68696 20.3333 3.02609 20.1928 3.27614 19.9428C3.52619 19.6927 3.66667 19.3536 3.66667 19C3.66667 18.6463 3.52619 18.3072 3.27614 18.0571C3.02609 17.8071 2.68696 17.6666 2.33333 17.6666C1.97971 17.6666 1.64057 17.8071 1.39052 18.0571C1.14048 18.3072 1 18.6463 1 19C1 19.3536 1.14048 19.6927 1.39052 19.9428C1.64057 20.1928 1.97971 20.3333 2.33333 20.3333Z"
                 fill="#15BDD7"
@@ -1001,11 +1001,11 @@ export const ListCircleAndDash: React.FC<{ width?: string; height?: string }> = 
     );
 };
 export const ImageChoosen: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '3.2rem',
+    height = '3.2rem',
 }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_8373_11999)">
                 <path
                     d="M27 5H9C8.46957 5 7.96086 5.21071 7.58579 5.58579C7.21071 5.96086 7 6.46957 7 7V9H5C4.46957 9 3.96086 9.21071 3.58579 9.58579C3.21071 9.96086 3 10.4696 3 11V25C3 25.5304 3.21071 26.0391 3.58579 26.4142C3.96086 26.7893 4.46957 27 5 27H23C23.5304 27 24.0391 26.7893 24.4142 26.4142C24.7893 26.0391 25 25.5304 25 25V23H27C27.5304 23 28.0391 22.7893 28.4142 22.4142C28.7893 22.0391 29 21.5304 29 21V7C29 6.46957 28.7893 5.96086 28.4142 5.58579C28.0391 5.21071 27.5304 5 27 5ZM21.5 9C21.7967 9 22.0867 9.08797 22.3334 9.2528C22.58 9.41762 22.7723 9.65189 22.8858 9.92597C22.9993 10.2001 23.0291 10.5017 22.9712 10.7926C22.9133 11.0836 22.7704 11.3509 22.5607 11.5607C22.3509 11.7704 22.0836 11.9133 21.7926 11.9712C21.5017 12.0291 21.2001 11.9994 20.926 11.8858C20.6519 11.7723 20.4176 11.58 20.2528 11.3334C20.088 11.0867 20 10.7967 20 10.5C20 10.1022 20.158 9.72064 20.4393 9.43934C20.7206 9.15804 21.1022 9 21.5 9ZM23 25H5V11H7V21C7 21.5304 7.21071 22.0391 7.58579 22.4142C7.96086 22.7893 8.46957 23 9 23H23V25ZM27 21H9V16.5L13.5 12L19.7075 18.2075C19.895 18.3949 20.1493 18.5002 20.4144 18.5002C20.6795 18.5002 20.9337 18.3949 21.1213 18.2075L24.3288 15L27 17.6725V21Z"
@@ -1020,19 +1020,16 @@ export const ImageChoosen: React.FC<{ width?: string; height?: string }> = ({
         </svg>
     );
 };
-export const LineComment: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const LineComment: React.FC<{ width?: string; height?: string }> = ({ width = '3.1rem', height = '10rem' }) => {
     return (
-        <svg width="31" height="101" viewBox="0 0 31 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 31 101" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 0V82C1 91.9411 9.05888 100 19 100H31" stroke="#DBDBDB" />
         </svg>
     );
 };
-export const TitleDonation: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
-}) => {
+export const TitleDonation: React.FC<{ width?: string; height?: string }> = ({ width = '82.3', height = '20.9' }) => {
     return (
-        <svg width="823" height="209" viewBox="0 0 823 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 823 209" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M809.073 108.196C809.124 108.194 766 149 766 149L766 108.196C766 108.196 809.022 108.198 809.073 108.196Z"
                 fill="#006E62"
@@ -1080,11 +1077,11 @@ export const TitleDonation: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const TitleFundList: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '82.3rem',
+    height = '20.9rem',
 }) => {
     return (
-        <svg width="823" height="209" viewBox="0 0 823 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 823 209" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M809.073 108.196C809.124 108.194 766 149 766 149L766 108.196C766 108.196 809.022 108.198 809.073 108.196Z"
                 fill="#006E62"
@@ -1129,11 +1126,11 @@ export const TitleFundList: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const HorizonTwoCircle: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '3.2rem',
+    height = '3.2rem',
 }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_17131)">
                 <path
                     d="M13 13C14.6569 13 16 11.6569 16 10C16 8.34315 14.6569 7 13 7C11.3431 7 10 8.34315 10 10C10 11.6569 11.3431 13 13 13Z"
@@ -1162,9 +1159,9 @@ export const HorizonTwoCircle: React.FC<{ width?: string; height?: string }> = (
         </svg>
     );
 };
-export const UserGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const UserGreen: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_51_10527)">
                 <path
                     d="M14 17.5C17.866 17.5 21 14.366 21 10.5C21 6.63401 17.866 3.5 14 3.5C10.134 3.5 7 6.63401 7 10.5C7 14.366 10.134 17.5 14 17.5Z"
@@ -1189,9 +1186,9 @@ export const UserGreen: React.FC<{ width?: string; height?: string }> = ({ width
         </svg>
     );
 };
-export const CartWhite: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const CartWhite: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_51_10537)">
                 <path
                     d="M19.6875 20.125H9.09672C8.68689 20.1249 8.29008 19.981 7.97547 19.7184C7.66086 19.4558 7.44841 19.091 7.37516 18.6878L4.585 3.34359C4.54837 3.14198 4.44215 2.95962 4.28484 2.8283C4.12754 2.69698 3.92913 2.62503 3.72422 2.625H1.75"
@@ -1224,18 +1221,18 @@ export const CartWhite: React.FC<{ width?: string; height?: string }> = ({ width
             </g>
             <defs>
                 <clipPath id="clip0_51_10537">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
 export const ThreeDrawCabinet: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2.8rem',
+    height = '2.8rem',
 }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_51_10549)">
                 <g clip-path="url(#clip1_51_10549)">
                     <path
@@ -1284,18 +1281,18 @@ export const ThreeDrawCabinet: React.FC<{ width?: string; height?: string }> = (
             </g>
             <defs>
                 <clipPath id="clip0_51_10549">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
                 <clipPath id="clip1_51_10549">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const LogoutRed: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const LogoutRed: React.FC<{ width?: string; height?: string }> = ({ width = '2.1rem', height = '2.1rem' }) => {
     return (
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M8 15L12.6667 10.3333M12.6667 10.3333L8 5.66667M12.6667 10.3333H1M10.3333 1H15.9333C17.2401 1 17.8935 1 18.3926 1.25432C18.8317 1.47802 19.1886 1.83498 19.4123 2.27402C19.6667 2.77315 19.6667 3.42654 19.6667 4.73333V15.9333C19.6667 17.2401 19.6667 17.8935 19.4123 18.3926C19.1886 18.8317 18.8317 19.1886 18.3926 19.4123C17.8935 19.6667 17.2401 19.6667 15.9333 19.6667H10.3333"
                 stroke="#FF4444"
@@ -1306,12 +1303,9 @@ export const LogoutRed: React.FC<{ width?: string; height?: string }> = ({ width
         </svg>
     );
 };
-export const ArrowLeftWhite: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
-}) => {
+export const ArrowLeftWhite: React.FC<{ width?: string; height?: string }> = ({ width = '0.8', height = '1.4rem' }) => {
     return (
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1.54693 1.70508L7.00293 7.00008L1.54693 12.2951"
                 stroke="white"
@@ -1323,11 +1317,11 @@ export const ArrowLeftWhite: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const ArrowLeftBlack: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '0.8rem',
+    height = '1.4rem',
 }) => {
     return (
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1.54693 1.70508L7.00293 7.00008L1.54693 12.2951"
                 stroke="#505050"
@@ -1340,11 +1334,11 @@ export const ArrowLeftBlack: React.FC<{ width?: string; height?: string }> = ({
 };
 
 export const ArrowLeftRed: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '0.8rem',
+    height = '1.4rem',
 }) => {
     return (
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1.54693 1.70508L7.00293 7.00008L1.54693 12.2951"
                 stroke="#FF4444"
@@ -1356,11 +1350,11 @@ export const ArrowLeftRed: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const MagnifyingGlassBlack: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2rem',
+    height = '2rem',
 }) => {
     return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
                 stroke="#505050"
@@ -1378,9 +1372,9 @@ export const MagnifyingGlassBlack: React.FC<{ width?: string; height?: string }>
         </svg>
     );
 };
-export const BarCode: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const BarCode: React.FC<{ width?: string; height?: string }> = ({ width = '2.4rem', height = '2.4rem' }) => {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_31444)">
                 <path
                     d="M17.25 4.5H21V8.25"
@@ -1435,18 +1429,18 @@ export const BarCode: React.FC<{ width?: string; height?: string }> = ({ width =
             </g>
             <defs>
                 <clipPath id="clip0_1_31444">
-                    <rect width="24" height="24" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
 export const SignEditWhite: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2.8rem',
+    height = '2.8rem',
 }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M12.8337 4.66675H10.267C8.30681 4.66675 7.32672 4.66675 6.57803 5.04823C5.91946 5.38378 5.38403 5.91921 5.04847 6.57778C4.66699 7.32647 4.66699 8.30656 4.66699 10.2667V17.7334C4.66699 19.6936 4.66699 20.6737 5.04847 21.4224C5.38403 22.0809 5.91946 22.6164 6.57803 22.9519C7.32672 23.3334 8.30681 23.3334 10.267 23.3334H17.7337C19.6938 23.3334 20.6739 23.3334 21.4226 22.9519C22.0812 22.6164 22.6166 22.0809 22.9522 21.4224C23.3337 20.6737 23.3337 19.6936 23.3337 17.7334V14.5834M12.2725 16.2104L13.8065 15.9073C14.6341 15.7437 15.048 15.6619 15.4339 15.5113C15.7765 15.3775 16.102 15.2038 16.4038 14.9936C16.7437 14.7569 17.042 14.4586 17.6386 13.862L23.6451 7.8555C24.4469 7.0537 24.4469 5.75373 23.6451 4.95193C22.8433 4.15014 21.5433 4.15014 20.7415 4.95193L14.6324 11.0611C14.0733 11.6201 13.7938 11.8996 13.5681 12.2165C13.3677 12.4978 13.1991 12.8004 13.0655 13.1189C12.915 13.4777 12.8245 13.8625 12.6436 14.6321L12.2725 16.2104Z"
                 stroke="white"
@@ -1457,9 +1451,9 @@ export const SignEditWhite: React.FC<{ width?: string; height?: string }> = ({
         </svg>
     );
 };
-export const BlockCircle: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const BlockCircle: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_32165)">
                 <path
                     fillRule="evenodd"
@@ -1470,15 +1464,15 @@ export const BlockCircle: React.FC<{ width?: string; height?: string }> = ({ wid
             </g>
             <defs>
                 <clipPath id="clip0_1_32165">
-                    <rect width="28" height="27.0391" fill="white" transform="translate(0 0.480469)" />
+                    <rect width={width} height={height} fill="white" transform="translate(0 0.480469)" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const PlusWhite: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const PlusWhite: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M7 14.0002H21M14 7.00024V21.0002"
                 stroke="white"
@@ -1489,9 +1483,9 @@ export const PlusWhite: React.FC<{ width?: string; height?: string }> = ({ width
         </svg>
     );
 };
-export const DeleteUser: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const DeleteUser: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -1502,9 +1496,9 @@ export const DeleteUser: React.FC<{ width?: string; height?: string }> = ({ widt
         </svg>
     );
 };
-export const AZArrange: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const AZArrange: React.FC<{ width?: string; height?: string }> = ({ width = '2rem', height = '2.1rem' }) => {
     return (
-        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M5.84047 3.06982V17.7548M5.84047 17.7548L2.57715 14.4914M5.84047 17.7548L9.10378 14.4914M12.775 12.0439H16.8542L12.775 17.7548H16.8542M13.1829 7.9648H16.4463M12.3671 8.78063L14.8146 3.06982L17.2621 8.78063"
                 stroke="white"
@@ -1515,9 +1509,9 @@ export const AZArrange: React.FC<{ width?: string; height?: string }> = ({ width
         </svg>
     );
 };
-export const UserWhite: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const UserWhite: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_85_30369)">
                 <path
                     d="M14 17.5C17.866 17.5 21 14.366 21 10.5C21 6.63401 17.866 3.5 14 3.5C10.134 3.5 7 6.63401 7 10.5C7 14.366 10.134 17.5 14 17.5Z"
@@ -1536,15 +1530,16 @@ export const UserWhite: React.FC<{ width?: string; height?: string }> = ({ width
             </g>
             <defs>
                 <clipPath id="clip0_85_30369">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const CartGreen: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+
+export const CartGreen: React.FC<{ width?: string; height?: string }> = ({ width = '2.8rem', height = '2.8rem' }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_85_30379)">
                 <path
                     d="M19.6875 20.125H9.09672C8.68689 20.1249 8.29008 19.981 7.97547 19.7184C7.66086 19.4558 7.44841 19.091 7.37516 18.6878L4.585 3.34359C4.54837 3.14198 4.44215 2.95962 4.28484 2.8283C4.12754 2.69698 3.92913 2.62503 3.72422 2.625H1.75"
@@ -1577,7 +1572,7 @@ export const CartGreen: React.FC<{ width?: string; height?: string }> = ({ width
             </g>
             <defs>
                 <clipPath id="clip0_85_30379">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
@@ -1585,11 +1580,11 @@ export const CartGreen: React.FC<{ width?: string; height?: string }> = ({ width
 };
 
 export const ThreeDrawCabinetWhite: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2.8',
+    height = '2.9rem',
 }) => {
     return (
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_85_18991)">
                 <g clip-path="url(#clip1_85_18991)">
                     <path
@@ -1638,18 +1633,18 @@ export const ThreeDrawCabinetWhite: React.FC<{ width?: string; height?: string }
             </g>
             <defs>
                 <clipPath id="clip0_85_18991">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
                 <clipPath id="clip1_85_18991">
-                    <rect width="28" height="28" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
-export const CloseXBlack: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const CloseXBlack: React.FC<{ width?: string; height?: string }> = ({ width = '2.4rem', height = '2.4rem' }) => {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -1660,11 +1655,11 @@ export const CloseXBlack: React.FC<{ width?: string; height?: string }> = ({ wid
     );
 };
 export const CrossHatchedEyes: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '2.4rem',
+    height = '2.4rem',
 }) => {
     return (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M12.0005 5.49994C11.6202 5.49941 11.2404 5.52809 10.8644 5.58571L10.6463 5.61915C10.584 5.60368 10.525 5.57665 10.4726 5.53945C10.4175 5.50037 10.3706 5.45082 10.3347 5.39363C10.2988 5.33644 10.2744 5.27273 10.2631 5.20614C10.2518 5.13955 10.2537 5.07139 10.2687 5.00553C10.2837 4.93968 10.3116 4.87743 10.3507 4.82234C10.3898 4.76725 10.4393 4.7204 10.4965 4.68446C10.5537 4.64851 10.6174 4.62419 10.684 4.61287L10.684 4.61288L10.6878 4.61221C11.1201 4.5353 11.5585 4.49772 11.9977 4.49994H12.0002C15.8464 4.49994 19.496 7.2357 21.4608 11.7974C21.4877 11.8598 21.5015 11.927 21.5015 11.9949C21.5015 12.0629 21.4877 12.1301 21.4608 12.1924L21.46 12.1944C21.1314 12.9677 20.7395 13.7126 20.2884 14.4215L20.2842 14.4281L20.2802 14.4348C20.2245 14.5287 20.1396 14.6018 20.0386 14.6429C19.9375 14.684 19.8257 14.6909 19.7203 14.6626C19.6149 14.6343 19.5217 14.5722 19.4549 14.486C19.3882 14.3999 19.3515 14.2945 19.3502 14.1857C19.3496 14.0884 19.3774 13.993 19.4302 13.9113L19.4302 13.9113L19.4329 13.907C19.7772 13.3619 20.0876 12.7962 20.3625 12.2131L20.4627 12.0005L20.3629 11.7876C18.5706 7.96624 15.4363 5.50011 12.0005 5.49994ZM12.0005 5.49994C12.0004 5.49994 12.0003 5.49994 12.0002 5.49994V5.99994L12.0009 5.49994C12.0008 5.49994 12.0007 5.49994 12.0005 5.49994ZM5.73694 7.16017L6.10469 6.80617L5.74317 6.44582L2.64374 3.35639C2.64367 3.35632 2.64359 3.35624 2.64352 3.35617C2.54912 3.26166 2.49609 3.13353 2.49609 2.99994C2.49609 2.86625 2.5492 2.73803 2.64374 2.64349C2.69055 2.59669 2.74612 2.55955 2.80728 2.53422C2.86844 2.50889 2.93399 2.49585 3.00019 2.49585C3.06638 2.49585 3.13193 2.50889 3.19309 2.53422C3.25425 2.55955 3.30982 2.59669 3.35663 2.64349L21.3566 20.6435L21.3581 20.6449C21.405 20.6914 21.4421 20.7467 21.4675 20.8077C21.4929 20.8686 21.506 20.9339 21.506 20.9999C21.506 21.0659 21.4929 21.1313 21.4675 21.1922C21.4421 21.2532 21.405 21.3085 21.3581 21.3549L21.3552 21.3578C21.3087 21.4047 21.2534 21.4419 21.1925 21.4673C21.1315 21.4927 21.0662 21.5057 21.0002 21.5057C20.9342 21.5057 20.8688 21.4927 20.8079 21.4673C20.747 21.4419 20.6917 21.4047 20.6452 21.3578L20.6443 21.3569L17.4043 18.1069L17.1153 17.8171L16.7741 18.0431C15.3572 18.9817 13.6979 19.4879 11.9984 19.4999C8.15275 19.4991 4.50393 16.7634 2.53941 12.2022L2.53844 12.1999C2.51091 12.1369 2.4967 12.0688 2.4967 11.9999C2.4967 11.9311 2.51091 11.863 2.53844 11.7999L2.53846 11.7999L2.54014 11.796C3.28367 10.0518 4.37088 8.47513 5.73694 7.16017ZM10.4237 11.1264L9.82353 10.5262L9.58956 11.3421C9.52797 11.5569 9.49787 11.7794 9.50019 12.0028C9.50095 12.6648 9.76426 13.2996 10.2324 13.7677C10.7006 14.2359 11.3353 14.4992 11.9973 14.4999C12.2207 14.5023 12.4433 14.4722 12.658 14.4106L13.4739 14.1766L12.8737 13.5764L10.4237 11.1264ZM12.0002 18.4999V18.5L12.0059 18.4999C13.3565 18.4846 14.6797 18.116 15.8438 17.4308L16.4042 17.101L15.9415 16.6442L14.3515 15.0742L14.0865 14.8125L13.7599 14.9914C13.096 15.3552 12.332 15.4939 11.5825 15.3867C10.8331 15.2795 10.1386 14.9322 9.60326 14.3969C9.06793 13.8615 8.72061 13.167 8.61341 12.4176C8.5062 11.6681 8.6449 10.9041 9.00868 10.2402L9.18775 9.91337L8.92572 9.64838L7.15572 7.85838L6.81169 7.51046L6.4564 7.84688C5.27245 8.96798 4.31755 10.3084 3.64474 11.7936L3.54991 12.003L3.64703 12.2113C5.42949 16.0337 8.56431 18.4999 12.0002 18.4999Z"
                 fill="#0A0A0A"
@@ -1674,11 +1669,11 @@ export const CrossHatchedEyes: React.FC<{ width?: string; height?: string }> = (
     );
 };
 export const BackgroundRipple: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '19.2rem',
+    height = '10.8rem',
 }) => {
     return (
-        <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1206 508.501C1380 -89.4991 1880 -9.96671 2081.76 23.1025C2113.71 533.823 2226 1080 2226 1080H-213V610C309.5 733.5 973.946 790.937 1206 508.501Z"
                 fill="#009383"
@@ -1687,11 +1682,11 @@ export const BackgroundRipple: React.FC<{ width?: string; height?: string }> = (
     );
 };
 export const ArrowTopWhite: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
+    width = '2.6rem',
     height = '1.5rem',
 }) => {
     return (
-        <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1.75 13L13 1.75L24.25 13"
                 stroke="white"
@@ -1703,11 +1698,11 @@ export const ArrowTopWhite: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const RectangularWarm: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '10.5rem',
+    height = '12.6rem',
 }) => {
     return (
-        <svg width="150" height="126" viewBox="0 0 150 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 150 126" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_15568)">
                 <path
                     d="M84.4446 11.5664L135.691 100.553C139.282 106.822 134.642 114.562 127.247 114.562H24.7551C17.3606 114.562 12.7199 106.822 16.3117 100.553L67.5578 11.5664C71.2492 5.14453 80.7531 5.14453 84.4446 11.5664Z"
@@ -1737,11 +1732,11 @@ export const RectangularWarm: React.FC<{ width?: string; height?: string }> = ({
     );
 };
 export const RestoreCircle: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '3.2rem',
+    height = '3.2rem',
 }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -1752,9 +1747,9 @@ export const RestoreCircle: React.FC<{ width?: string; height?: string }> = ({
         </svg>
     );
 };
-export const CoinCircle: React.FC<{ width?: string; height?: string }> = ({ width = '1.5rem', height = '1.5rem' }) => {
+export const CoinCircle: React.FC<{ width?: string; height?: string }> = ({ width = '3.3rem', height = '3.2rem' }) => {
     return (
-        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="17.0013" cy="15.9994" r="14.3158" stroke="#009383" strokeWidth="2" />
             <path
                 fillRule="evenodd"
@@ -1766,11 +1761,11 @@ export const CoinCircle: React.FC<{ width?: string; height?: string }> = ({ widt
     );
 };
 export const DeliveryTruck: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '3.2rem',
+    height = '3.2rem',
 }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_15584)">
                 <path
                     d="M24 10H29.3225C29.5218 9.99991 29.7165 10.0594 29.8818 10.1707C30.0471 10.2821 30.1753 10.4403 30.25 10.625L32 15"
@@ -1812,18 +1807,18 @@ export const DeliveryTruck: React.FC<{ width?: string; height?: string }> = ({
             </g>
             <defs>
                 <clipPath id="clip0_1_15584">
-                    <rect width="32" height="32" fill="white" />
+                    <rect width={width} height={height} fill="white" />
                 </clipPath>
             </defs>
         </svg>
     );
 };
 export const BottomTornPaper: React.FC<{ width?: string; height?: string }> = ({
-    width = '1.5rem',
-    height = '1.5rem',
+    width = '3.2rem',
+    height = '3.2rem',
 }) => {
     return (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1_15612)">
                 <path d="M11 13H23" stroke="#009383" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M11 17H23" stroke="#009383" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

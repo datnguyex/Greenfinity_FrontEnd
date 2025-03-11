@@ -1,7 +1,6 @@
-export const AuthValidate = (
-    infoSignUp: { fullName: string; phoneNumber: string; password: string; checkedClause: boolean },
-    setErrorInfom: React.Dispatch<React.SetStateAction<any>>,
-) => {
+import { SetErrorInfo, SignUpInfo } from '~/Types/AuthType';
+
+export const AuthValidate = (infoSignUp: SignUpInfo, setErrorInfom: SetErrorInfo) => {
     const { fullName, phoneNumber, password, checkedClause } = infoSignUp;
 
     if (!fullName.trim()) {

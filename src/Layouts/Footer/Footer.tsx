@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { LanguageSwitcher } from '~/assets/CustomHooks/LanguageSwitcher';
+import { LanguageSwitcher } from '~/CustomHooks/LanguageSwitcher';
 import { LogoFooterText, LogoFooterImages, Facebook, Messenger, Youtube } from '~/assets/Icons';
 
 function Footer() {

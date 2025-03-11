@@ -65,6 +65,8 @@ import ProductMenuVIE from './Locales/ProductMenu/ProductMenuVIE.json';
 import ProductMenuENG from './Locales/ProductMenu/ProductMenuENG.json';
 import UserMenuENG from './Locales/UserMenu/UserMenuENG.json';
 import UserMenuVIE from './Locales/UserMenu/UserMenuVIE.json';
+import ErrorsVIE from './Locales/Errors/ErrorsVIE.json';
+import ErrorsENG from './Locales/Errors/ErrorsENG.json';
 import UserMenu from '~/component/Menu/UserMenu/UserMenu';
 export const locales = {
     ENG: EnglandIfomation,
@@ -105,6 +107,7 @@ const resources = {
         Collection: CollectionENG,
         ProductMenu: ProductMenuENG,
         UserMenu: UserMenuENG,
+        Errors: ErrorsENG,
     },
     VIE: {
         header: HeaderVIE,
@@ -139,6 +142,7 @@ const resources = {
         Collection: CollectionVIE,
         ProductMenu: ProductMenuVIE,
         UserMenu: UserMenuVIE,
+        Errors: ErrorsVIE,
     },
 };
 
@@ -178,6 +182,7 @@ i18n.use(initReactI18next).init({
         'Collection',
         'ProductMenu',
         'UserMenu',
+        'Errors',
     ],
     interpolation: {
         escapeValue: false,
