@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '~/CustomHooks/LanguageSwitcher';
+import { socialIcons } from '~/assets/Arrays/IconsArr';
 import { LogoFooterText, LogoFooterImages, Facebook, Messenger, Youtube } from '~/assets/Icons';
 
 function Footer() {
@@ -39,15 +40,14 @@ function Footer() {
                         Copyright © by Alta Plastics and Unigons Vietnam Limited. All rights reserved.
                     </p>
                     <div className="flex items-center gap-[20px]">
-                        <span className="cursor-pointer">
-                            <Facebook />
-                        </span>
-                        <span className="cursor-pointer">
-                            <Messenger />
-                        </span>
-                        <span className="cursor-pointer">
-                            <Youtube />
-                        </span>
+                        {socialIcons.map((item) => {
+                            const Icon = item.icon;
+                            return (
+                                <span key={item.id} className="cursor-pointer">
+                                    <Icon />
+                                </span>
+                            );
+                        })}
                     </div>
                 </div>
             </div>

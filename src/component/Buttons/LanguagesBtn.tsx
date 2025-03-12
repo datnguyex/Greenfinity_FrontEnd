@@ -1,12 +1,6 @@
 // LanguageItem.tsx
 import React from 'react';
-
-interface LanguagesBtnProps {
-    language: string;
-    currentLanguage: { name: string; image: string };
-    imageSrc: string;
-    onClick: (language: string) => void;
-}
+import { LanguagesBtnProps } from '~/Types/btnType';
 
 const LanguagesBtn: React.FC<LanguagesBtnProps> = ({ language, currentLanguage, imageSrc, onClick }) => {
     return (

@@ -1,23 +1,13 @@
-import {
-    leafHomeLeft,
-    leafHomeRight,
-    Headerleft,
-    RecycleWithGreez,
-    AquafinaLogo,
-    AltaPlasticLogo,
-    AltaMediaLogo,
-    AltaSoftwareLogo,
-    uniGonLogo,
-    DataSLogo,
-} from '~/assets/Images/';
+import { leafHomeLeft, leafHomeRight, RecycleWithGreez, AquafinaLogo } from '~/assets/Images/';
 import Header from '~/Layouts/Header/Header';
 import Footer from '~/Layouts/Footer/Footer';
 import Gift from '~/component/Gift/Gift';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import TitleBar from '~/component/TittleBar/TittleBar';
+import { SponsorlogosImg } from '~/assets/Arrays/ImagesArr';
 
 function WorldRebirth() {
     const { t } = useTranslation(['WorldRebirth']);
@@ -79,24 +69,14 @@ function WorldRebirth() {
                             {t('counterPart')}
                         </h3>
                         <div className="flex items-center gap-[8rem] mx-auto justify-center mt-[4rem] pb-[12rem max-w-[142.5rem]">
-                            <img
-                                className="object-cover block w-[20%] h-auto max-w-[100%]"
-                                src={AltaPlasticLogo}
-                                alt=""
-                            />
-                            <img
-                                className="object-cover block w-[20%] h-auto max-w-[100%]"
-                                src={AltaMediaLogo}
-                                alt=""
-                            />
-                            <img
-                                className="object-cover block w-[20%] h-auto max-w-[100%]"
-                                src={AltaSoftwareLogo}
-                                alt=""
-                            />
-                            <img className="object-cover block w-[20%] h-auto max-w-[100%]" src={uniGonLogo} alt="" />
-
-                            <img className="object-cover block w-[20%] h-auto max-w-[100%]" src={DataSLogo} alt="" />
+                            {SponsorlogosImg.map((logo, index) => (
+                                <img
+                                    key={index}
+                                    className="object-cover block w-[20%] h-auto max-w-[100%]"
+                                    src={logo.src}
+                                    alt={logo.alt}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>

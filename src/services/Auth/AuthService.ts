@@ -3,11 +3,13 @@ import Cookies from 'js-cookie';
 import axios from 'axios';
 import { StoreReducer } from '~/Redux/Store';
 import { authenticationAction } from '~/Redux/Action';
-import { SigninType, TimerSetters } from '~/Types/AuthType';
+import { SigninType, InfoSignup, TimerSetters } from '~/Types/AuthType';
 import API_URL from '..';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '~/CustomHooks/LanguageSwitcher';
 
 export const createTemporaryAccount = async (
-    infoSignUp: SigninType,
+    infoSignUp: InfoSignup,
     setErrorInfom: React.Dispatch<React.SetStateAction<any>>,
 ) => {
     try {
@@ -48,7 +50,8 @@ export const createTemporaryAccount = async (
 
 export const CreateAccount = async (otp: string) => {
     const infoSignUp = sessionStorage.getItem('infoSignUp');
-
+    LanguageSwitcher();
+    const { t } = useTranslation(['Alert']);
     try {
         if (infoSignUp) {
             const parsedInfoSignUp = JSON.parse(infoSignUp);
@@ -66,10 +69,10 @@ export const CreateAccount = async (otp: string) => {
 
             if (response.status === 201) {
                 Swal.fire({
-                    title: 'Thành công',
-                    text: 'Tạo tài khoản thành công',
+                    title: t('successTitle'),
+                    text: t('successContent'),
                     icon: 'success',
-                    confirmButtonText: 'OK',
+                    confirmButtonText: t('close'),
                     timer: 3000,
                     timerProgressBar: true,
                 }).then(() => {
@@ -140,11 +143,9 @@ export const DeleteAuthCode = async (infoSignUp: any) => {
         }
     }
 };
-export const Signin = async (
-    phoneNumber: string | undefined,
-    password: string | undefined,
-    setErrorInfom: React.Dispatch<React.SetStateAction<any>>,
-) => {
+export const Signin = async ({ phoneNumber, password, setErrorInfom }: SigninType) => {
+    LanguageSwitcher();
+    const { t } = useTranslation(['Alert']);
     try {
         console.log('API_URL:', API_URL);
         const response = await axios.post(`${API_URL}/authentications/signin`, {
@@ -170,11 +171,11 @@ export const Signin = async (
                     authenticationAction({ phoneNumber: phone_number, fullName: full_name, image: image }),
                 );
                 Swal.fire({
-                    title: 'Success!',
-                    text: 'You have logged in successfully.',
+                    title: t('successTitle'),
+                    text: t('successContent'),
                     icon: 'success',
-                    confirmButtonText: 'OK',
-                    timer: 2000,
+                    confirmButtonText: t('close'),
+                    timer: 3000,
                     timerProgressBar: true,
                 }).then(() => {
                     // Redirect after the alert closes

@@ -1,18 +1,10 @@
-import {
-    leafHomeLeft,
-    leafHomeRight,
-    recycleGreezStaion,
-    recycleMachine,
-    startRecycleApp,
-    startRecycleMachine,
-    qrRecycleApp,
-    finishRecycleApp,
-} from '~/assets/Images/';
+import { leafHomeLeft, leafHomeRight, recycleGreezStaion } from '~/assets/Images/';
 import Header from '~/Layouts/Header/Header';
 import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import RecyclingSteps from '~/component/GreezStation/RecylingSteeps';
 
 function GreezStation() {
     const { t } = useTranslation(['GreezStaion']);
@@ -51,59 +43,7 @@ function GreezStation() {
                             </span>
                         </div>
                         {/* //item */}
-                        <div className="mb-[140px] w-[100%] ">
-                            {/* //item child*/}
-                            <div className="flex justify-start w-[95rem] px-[20px] py-[40px] max-h-[24rem] mx-auto my-[32px] showdown-instruct-station rounded-[1.2rem]  items-center bg-[#fff] gap-[1.5rem]">
-                                <div className="w-[25%]">
-                                    <img className="object-cover w-[100%]" src={recycleMachine} alt="" />
-                                </div>
-                                <div className="text-[#494949] flex items-start flex-col justify-center w-[70%] gap-[5px]">
-                                    <div className="text-[23px] font-bold">{t('step1')}</div>
-                                    <div className="text-[22px] text-[#494949]">{t('doStep1')}</div>
-                                </div>
-                            </div>
-                            {/* //item child*/}
-                            <div className="flex justify-start w-[95rem] px-[20px] py-[40px] max-h-[24rem] mx-auto my-[32px] showdown-instruct-station rounded-[1.2rem]  items-center bg-[#fff] gap-[1.5rem]">
-                                <div className="w-[25%]">
-                                    <img className="object-cover w-[100%]" src={startRecycleApp} alt="" />
-                                </div>
-                                <div className="text-[#494949] flex items-start flex-col justify-center w-[70%] gap-[5px]">
-                                    <div className="text-[23px] font-bold">{t('step2')}</div>
-                                    <div className="text-[22px] text-[#494949]">{t('doStep2')}</div>
-                                </div>
-                            </div>
-
-                            {/* //item child*/}
-                            <div className="flex justify-start w-[95rem] px-[20px] py-[40px] max-h-[24rem] mx-auto my-[32px] showdown-instruct-station rounded-[1.2rem]  items-center bg-[#fff] gap-[1.5rem]">
-                                <div className="w-[25%]">
-                                    <img className="object-cover w-[100%]" src={startRecycleMachine} alt="" />
-                                </div>
-                                <div className="text-[#494949] flex items-start flex-col justify-center w-[70%] gap-[5px]">
-                                    <div className="text-[23px] font-bold">{t('step3')}</div>
-                                    <div className="text-[22px] text-[#494949]">{t('doStep3')}</div>
-                                </div>
-                            </div>
-                            {/* //item child*/}
-                            <div className="flex justify-start w-[95rem] px-[20px] py-[40px] max-h-[24rem] mx-auto my-[32px] showdown-instruct-station rounded-[1.2rem]  items-center bg-[#fff] gap-[1.5rem]">
-                                <div className="w-[25%]">
-                                    <img className="object-cover w-[100%]" src={qrRecycleApp} alt="" />
-                                </div>
-                                <div className="text-[#494949] flex items-start flex-col justify-center w-[70%] gap-[5px]">
-                                    <div className="text-[23px] font-bold">{t('step4')}</div>
-                                    <div className="text-[22px] text-[#494949]">{t('doStep4')}</div>
-                                </div>
-                            </div>
-                            {/* //item child*/}
-                            <div className="flex justify-start w-[95rem] px-[20px] py-[40px] max-h-[24rem] mx-auto my-[32px] showdown-instruct-station rounded-[1.2rem]  items-center bg-[#fff] gap-[1.5rem]">
-                                <div className="w-[25%]">
-                                    <img className="object-cover w-[100%]" src={finishRecycleApp} alt="" />
-                                </div>
-                                <div className="text-[#494949] flex items-start flex-col justify-center w-[70%] gap-[5px]">
-                                    <div className="text-[23px] font-bold">{t('step5')}</div>
-                                    <div className="text-[22px] text-[#494949]">{t('doStep5')}</div>
-                                </div>
-                            </div>
-                        </div>
+                        <RecyclingSteps t={t} />
                         {/* items */}
                         <div className="mt-[12rem] items-center flex flex-col justify-center pb-[120px] gap-[15px]">
                             <div className="text-[#373737] text-[3.8rem] font-semibold">{t('itemSlogan1')}</div>
