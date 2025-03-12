@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 //sign in type in sign in page
-export interface SigninType {
+export interface InfoSignup {
     fullName: string;
     phoneNumber: string;
     password: string;
@@ -37,10 +37,17 @@ export interface AuthLayoutProps {
 }
 //input auth prop type in input auth component
 export interface InputAuthProps {
-    label: string;
-    type: string;
-    placeholder: string;
-    value: string;
+    label: string | undefined;
+    type: string | undefined;
+    placeholder: string | undefined;
+    value: string | undefined;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     error: string | undefined;
 }
+
+//sign in type in sign in page
+export type SigninType = {
+    phoneNumber: string | undefined;
+    password: string | undefined;
+    setErrorInfom: React.Dispatch<React.SetStateAction<any>>;
+};

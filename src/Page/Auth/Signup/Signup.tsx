@@ -1,8 +1,6 @@
 import { UnknowUSer } from '~/assets/Images/';
 import { useTranslation } from 'react-i18next';
-
 import { useEffect, useState } from 'react';
-
 import { AuthValidate } from '~/Validator';
 import { createTemporaryAccount } from '~/services';
 import { LanguageSwitcher } from '~/CustomHooks/LanguageSwitcher';
@@ -10,6 +8,7 @@ import Swal from 'sweetalert2';
 import AuthLayout from '~/Layouts/Auth/Auth';
 import InputAuth from '~/component/Inputs/InputAuth';
 import { Link } from 'react-router-dom';
+import FlexibleBtn from '~/component/Buttons/FlexibleBtn';
 
 function Signup() {
     //language
@@ -170,13 +169,15 @@ function Signup() {
                         </span>
                     </div>
                 </div>
-                <div className="flex justify-center">
-                    <button
-                        onClick={() => handleSubmitSignUp()}
-                        className="font-roboto-condensed  mt-10 bg-[#009383] text-[#FFFFFF] text-[18px] leading-['21.78px'] font-semibold rounded-[8px] w-[80%] h-20"
-                    >
-                        {t('SignUp')}
-                    </button>
+                <div className="flex justify-center mt-10">
+                    <FlexibleBtn
+                        onClick={handleSubmitSignUp}
+                        width="80%"
+                        height="h-20"
+                        bg="bg-[#009383]"
+                        color="text-[#FFFFFF]"
+                        title="SignUp"
+                    />
                 </div>
             </AuthLayout>
         </>

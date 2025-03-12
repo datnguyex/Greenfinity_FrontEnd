@@ -1,13 +1,5 @@
 import React from 'react';
-
-interface FlexibleBtnProps {
-    width?: string;
-    height?: string;
-    color?: string;
-    bg?: string;
-    title?: string;
-    icon?: React.ReactNode;
-}
+import { FlexibleBtnProps } from '~/Types/btnType';
 
 const FlexibleBtn: React.FC<FlexibleBtnProps> = ({
     width = 'full',
@@ -16,14 +8,16 @@ const FlexibleBtn: React.FC<FlexibleBtnProps> = ({
     bg = 'bg-[#009383]',
     title,
     icon: Icon,
+    onClick,
 }) => {
     return (
         <button
+            onClick={onClick}
             className={`flex justify-center rounded-lg px-[12px] py-[12px] text-[20px] font-semibold gap-2 ${bg} ${color}`}
             style={{ width, height }}
         >
             {Icon && <span className="mr-2">{Icon}</span>}
-            <span> {title}</span>
+            <span className="font-roboto-condensed"> {title}</span>
         </button>
     );
 };

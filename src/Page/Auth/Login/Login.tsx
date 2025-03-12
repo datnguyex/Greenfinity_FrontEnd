@@ -8,6 +8,8 @@ import { Signin } from '~/services';
 import { AuthValidate } from '~/Validator';
 import { LanguageSwitcher } from '~/CustomHooks/LanguageSwitcher';
 import AuthLayout from '~/Layouts/Auth/Auth';
+import FlexibleBtn from '~/component/Buttons/FlexibleBtn';
+import InputAuth from '~/component/Inputs/InputAuth';
 
 function Login() {
     // language
@@ -43,7 +45,7 @@ function Login() {
         if (!checkErrorInput()) {
             return;
         }
-        Signin(phoneNumber, password, setErrorInfom);
+        Signin({ phoneNumber, password, setErrorInfom });
     };
 
     //reset error input phone number
@@ -90,41 +92,34 @@ function Login() {
                 </div>
                 <div className="flex justify-center mt-20">
                     <div className="flex flex-col items-start justify-center gap-2 max-w-[80] w-[80%]">
-                        <p className="text-[16px] leading-6 font-medium text-[#494949]"> {t('phoneNumber')}:</p>
-                        <input
-                            onChange={enterPhoneNumber}
-                            className="font-roboto-condensed rounded-lg border-[1px] border-[#BBBBBB] outline-[#BBBBBB] px-[18px] w-[100%] h-[48px] 
-                            placeholder:font-normal leading-6 placeholder:text-[16px] focus:outline-none"
+                        <InputAuth
+                            label={t('phoneNumber')}
                             type="text"
                             placeholder={t('inputPhoneNumber')}
+                            value={phoneNumber}
+                            onChange={enterPhoneNumber}
+                            error={errorInfom.phoneNumber}
                         />
-                        <p className="font-roboto-condensed mb-1 text-[16px] leading-6 font-medium text-red-600">
-                            {errorInfom.phoneNumber}
-                        </p>
-                        <p className="font-roboto-condensed text-[16px] leading-6 font-medium text-[#494949] mt-[5px]">
-                            {' '}
-                            {t('password')}:
-                        </p>
-                        <input
-                            onChange={enterPassword}
-                            className="font-roboto-condensed rounded-lg border-[1px] z-[10] border-[#BBBBBB] outline-[#BBBBBB] px-[18px] w-[100%] h-[48px] 
-                            placeholder:font-normal leading-6 placeholder:text-[16px] focus:outline-none"
+                        <InputAuth
+                            label={t('password')}
                             type="password"
                             placeholder={t('enterPass')}
+                            value={password}
+                            onChange={enterPassword}
+                            error={errorInfom.password}
                         />
-                        <p className="font-roboto-condensed mb-1 text-[16px] leading-6 font-medium text-red-600 h-1">
-                            {errorInfom.password}
-                        </p>
                     </div>
                 </div>
 
-                <div className="flex justify-center">
-                    <button
+                <div className="flex justify-center absolute w-full bottom-[5%]">
+                    <FlexibleBtn
                         onClick={handleSignin}
-                        className="font-roboto-condensed absolute bottom-[5%] bg-[#009383] text-[#FFFFFF] text-[18px] leading-['21.78px'] font-semibold rounded-[8px] w-[80%] h-20"
-                    >
-                        {t('Login')}
-                    </button>
+                        width="80%"
+                        height="h-20"
+                        bg="bg-[#009383]"
+                        color="text-[#FFFFFF]"
+                        title={t('Login')}
+                    />
                 </div>
             </AuthLayout>
         </>
