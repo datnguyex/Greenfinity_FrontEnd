@@ -1,7 +1,7 @@
 import { leafHomeLeft, leafHomeRight } from '~/assets/Images/';
 import Header from '~/Layouts/Header/Header';
 import Footer from '~/Layouts/Footer/Footer';
-import Contribute from '~/component/Contribute/Contribute';
+import Contribute from '~/Layouts/Contribute/Contribute';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';

@@ -17,15 +17,15 @@ function GreezStation() {
         <>
             <Header></Header>
             <div
-                className="bg-[#f2fffd] py-[56px] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto]"
+                className="bg-[#f2fffd] py-[10vh] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto]"
                 style={{
                     backgroundImage: `url(${leafHomeLeft}), url(${leafHomeRight})`,
                     backgroundPosition: '0 100%, 100% 100%',
                     backgroundSize: '10% auto, 10% auto',
                 }}
             >
-                <div className="my-[140px]">
-                    <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%] ">
+                <div className="my-[15vh]">
+                    <div className="mx-auto max-w-[68%] w-[100%]">
                         {/* //item */}
                         <div className="flex flex-col my-[40px] justify-center items-center">
                             <div className="text-[#333] text-[3.6rem] font-bold text-center">{t('tile')}</div>

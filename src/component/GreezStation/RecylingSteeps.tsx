@@ -5,7 +5,7 @@ function RecyclingSteps({ t }: any) {
     return (
         <>
             {/* //item */}
-            <div className="mb-[140px] w-[100%]">
+            <div className="w-[100%]">
                 {StepImg.map((item) => (
                     <div
                         key={item.step}

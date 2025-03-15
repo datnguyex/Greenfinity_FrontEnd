@@ -8,7 +8,7 @@ import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner'
 import { ArrowLeft, ArrowRight, BackgroundRipple } from '~/assets/Icons';
 import Footer from '~/Layouts/Footer/Footer';
 import Header from '~/Layouts/Header/Header';
-import TitleBar from '~/component/TittleBar/TittleBar';
+import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 import {
     BeNgai,
     CatChair,
@@ -152,7 +152,7 @@ function Story() {
                 {/* //item */}
                 <div className="max-w-[134rem] mx-auto px-[30px] mt-[100px] flex flex-col items-center">
                     {/* //item */}
-                    <TitleBar title={t('buyNow')} />
+                    <TitleBarTypeWhite title={t('buyNow')} />
                     <div className="flex flex-wrap gap-6  mt-[100px]">
                         {products.map((product, index) => (
                             <div
@@ -191,7 +191,7 @@ function Story() {
                         <div className="text-[#494949] text-[20px] font-medium font-['Roboto']">{t('SeeAll')}</div>
                     </Link>
                     {/* //item */}
-                    <TitleBar title={t('Collection')} />
+                    <TitleBarTypeWhite title={t('Collection')} />
                 </div>
 
                 <div className="w-[100%] overflow-hidden relative">

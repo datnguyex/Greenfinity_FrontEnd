@@ -15,7 +15,7 @@ function NotFound() {
     return (
         <>
             <div
-                className="bg-[#f2fffd] py-[56px] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto] h-[100vhx]"
+                className="bg-[#f2fffd] py-[56px] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto] h-[100vh]"
                 style={{
                     backgroundImage: `url(${leafHomeLeft}), url(${leafHomeRight})`,
                     backgroundPosition: '0 100%, 100% 100%',
