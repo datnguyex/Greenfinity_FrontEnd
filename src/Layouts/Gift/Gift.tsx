@@ -1,13 +1,12 @@
-import Title from 'antd/es/skeleton/Title';
-import { Headerleft, HomeVoucer } from '~/assets/Images/';
-import TitleBar from '../TittleBar/TittleBar';
+import { HomeVoucer } from '~/assets/Images/';
+import TitleBarTypeWhite from '../../component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 
 function Gift({ t }: { t: (key: string) => string }) {
     return (
         <>
-            <TitleBar title={t('title')} />
-            <div className="mb-[120px] h-[50rem] mx-auto] max-w-[145.5rem relative]">
-                <div className="flex items-center w-[100%] p-[100px] gap-[4.5rem] height-[50rem]">
+            <TitleBarTypeWhite title={t('title')} />
+            <div className="mb-[10%]  mx-auto max-w-[95%] relative">
+                <div className="flex items-center w-[100%] p-[100px] gap-[4.5rem]">
                     <div className="w-[50%]">
                         <img src={HomeVoucer} alt="" />
                     </div>
@@ -17,8 +16,8 @@ function Gift({ t }: { t: (key: string) => string }) {
                         <button
                             className="flex items-center bg-[#009383] border
                                                              border-[#fff] text-[#fff] text-[1.8rem] gap-[0.8rem] min-h-[5.2rem]
-                                                                min-w-[20rem] justify-center whitespace-nowrap
-                                                                p-[1rem] w-[16rem] rounded-[0.8rem]
+                                                                justify-center whitespace-nowrap
+                                                                p-[1rem] w-[50%] rounded-[0.8rem]
                                                              "
                         >
                             {t('exchangeGifts')}

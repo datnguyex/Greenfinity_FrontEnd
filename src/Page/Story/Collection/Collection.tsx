@@ -5,7 +5,7 @@ import { ArrowTopWhite } from '~/assets/Icons/Icon';
 import Footer from '~/Layouts/Footer/Footer';
 import Header from '~/Layouts/Header/Header';
 import ProductMenu from '~/component/Menu/ProductMenu/ProductMenu';
-import TitleBar from '~/component/TittleBar/TittleBar';
+import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 import { Dragon1, Dragon2, Dragon3, Dragon4, Dragon5, Headerleft, leafHomeLeft, leafHomeRight } from '~/assets/Images/';
 
 function Collection() {
@@ -45,7 +45,7 @@ function Collection() {
                 <div className="my-[140px]">
                     <div className="px-[30px] mx-auto max-w-[150.7rem] w-[100%] relative">
                         <div className="flex flex-col">
-                            <TitleBar title={t('newProduct')} />
+                            <TitleBarTypeWhite title={t('newProduct')} />
                         </div>
                         <div className="flex justify-center items-start gap-[40px]">
                             {/* left menu */}

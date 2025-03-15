@@ -1,29 +1,5 @@
-import { LatLngTuple, Marker } from 'leaflet';
 import React from 'react';
-
-type Depot = {
-    id: number | string;
-    name: string;
-    location: string;
-    coordinates: any;
-};
-
-interface RecycleDepotListProps {
-    listRecycleDepot: Depot[];
-    t: (key: string) => string; // Hàm dịch, có thể thay đổi kiểu này tùy vào thư viện bạn đang sử dụng
-    getLocationSelectedHandler: (args: {
-        id: any;
-        coordinates: LatLngTuple;
-        mapRef: React.RefObject<any>;
-        markerRefs: React.RefObject<any>;
-        setSelectedDepot: React.Dispatch<React.SetStateAction<any>>;
-    }) => () => void;
-    selectedDepot: string | null;
-    setSelectedDepot: React.Dispatch<React.SetStateAction<string | null>>;
-    mapRef: React.RefObject<any>; // Thay thế any nếu bạn có kiểu cụ thể cho mapRef
-    markerRefs: React.MutableRefObject<{ [id: string]: Marker<any> }>;
-    IconLocationMap: string; // Đường dẫn hoặc URL của icon
-}
+import { RecycleDepotListProps } from '~/Types/Map';
 
 const RecycleDepotList: React.FC<RecycleDepotListProps> = ({
     listRecycleDepot,
@@ -36,8 +12,8 @@ const RecycleDepotList: React.FC<RecycleDepotListProps> = ({
     IconLocationMap,
 }) => {
     return (
-        <div className="w-[33%] h-[56rem] overflow-hidden">
-            <h2 className="flex items-center text-[#494949] flex-wrap text-[2rem] font-bold text-center px-[24px] pb-[5px] justify-center">
+        <div className="w-[33%] h-[20%] overflow-hidden">
+            <h2 className="flex items-center text-[#494949] flex-wrap text-[2rem] font-bold text-center pb-[5px] justify-center">
                 {t('currentAvailable')}
                 <div className="text-[#009383]">{listRecycleDepot.length} Recycle Depot</div>
             </h2>
@@ -52,7 +28,7 @@ const RecycleDepotList: React.FC<RecycleDepotListProps> = ({
                             markerRefs,
                             setSelectedDepot,
                         })}
-                        className={`bg-[#fff] border-[2px] rounded-[1.2rem] cursor-pointer mt-[16px] mb-[10px] p-[24px] relative showdown-location-map
+                        className={`bg-[#fff] border-[2px] rounded-[1.2rem] cursor-pointer mt-[5%] mb-[4%] p-[10%] relative showdown-location-map
               ${selectedDepot === depot.id ? 'border-[#009383] bg-[#f4f9ff]' : 'border-transparent'}`}
                     >
                         <img

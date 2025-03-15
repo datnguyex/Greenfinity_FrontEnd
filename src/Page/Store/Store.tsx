@@ -11,7 +11,7 @@ import AllProductStore from '~/component/AllProductStore/AllProductStore';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import TitleBar from '~/component/TittleBar/TittleBar';
+import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 
 function Store() {
     const products = [
@@ -163,7 +163,7 @@ function Store() {
                 </div>
                 {/* //item */}
                 <div className="max-w-[134rem] mx-auto px-[30px] mt-[100px]">
-                    <TitleBar title={t('newProduct')} />
+                    <TitleBarTypeWhite title={t('newProduct')} />
                 </div>
                 <div className="flex justify-end items-center gap-[15px]">
                     {/* itemLeft */}

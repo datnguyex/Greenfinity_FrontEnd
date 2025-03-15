@@ -1,14 +1,5 @@
-import { LatLngTuple } from 'leaflet';
+import { getLocationSelectedHandlerProps } from '~/Types/CustomHook';
 
-interface getLocationSelectedHandlerProps {
-    id: any;
-    coordinates: LatLngTuple;
-    mapRef: React.RefObject<any>;
-    markerRefs: React.RefObject<any>;
-    setSelectedDepot: React.Dispatch<React.SetStateAction<any>>;
-}
-
-// This is no longer a React component, it's just a regular function
 const getLocationSelectedHandler = ({
     id,
     coordinates,

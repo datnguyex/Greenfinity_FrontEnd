@@ -10,10 +10,10 @@ import { leafHomeRight, leafHomeLeft, Headerleft, plasticbottle, AluminumCan } f
 import Banner1 from '~/component/Banner/HomeBanner/Banner1';
 import Banner2 from '~/component/Banner/HomeBanner/Banner2';
 import Banner3 from '~/component/Banner/HomeBanner/Banner3';
-import Contribute from '~/component/Contribute/Contribute';
+import Contribute from '~/Layouts/Contribute/Contribute';
 import { useTranslation } from 'react-i18next';
-import Gift from '~/component/Gift/Gift';
-import TitleBar from '~/component/TittleBar/TittleBar';
+import Gift from '~/Layouts/Gift/Gift';
+import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 
 const cx = classNames.bind(style);
 
@@ -127,7 +127,7 @@ function HomePage() {
                     <div className="max-w-[134rem] mx-auto px-[30px]">
                         {/* //cac thanh phan */}
                         {/* thanh phan */}
-                        <TitleBar title={t('titleTotalCollect')} />
+                        <TitleBarTypeWhite title={t('titleTotalCollect')} />
                         {/* chai nhua ,lon nhom */}
                         {/* item1 */}
                         <div className="flex items-center justify-center gap-[80px] w-[100%] mb-[120px]">
@@ -186,7 +186,7 @@ function HomePage() {
                             </div>
                         </div>
                         {/* thanh phan */}
-                        <TitleBar title={t('titleContribute')} />
+                        <TitleBarTypeWhite title={t('titleContribute')} />
                         {/* thanh phan */}
 
                         <div className="mb-[120px]">

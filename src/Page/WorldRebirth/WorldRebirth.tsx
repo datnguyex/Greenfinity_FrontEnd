@@ -1,12 +1,12 @@
 import { leafHomeLeft, leafHomeRight, RecycleWithGreez, AquafinaLogo } from '~/assets/Images/';
 import Header from '~/Layouts/Header/Header';
 import Footer from '~/Layouts/Footer/Footer';
-import Gift from '~/component/Gift/Gift';
+import Gift from '~/Layouts/Gift/Gift';
 import { useTranslation } from 'react-i18next';
 
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import TitleBar from '~/component/TittleBar/TittleBar';
+import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 import { SponsorlogosImg } from '~/assets/Arrays/ImagesArr';
 
 function WorldRebirth() {
@@ -22,21 +22,21 @@ function WorldRebirth() {
         <>
             <Header />
             <div
-                className="bg-[#f2fffd] py-[56px] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto]"
+                className="bg-[#f2fffd] py-[10vh] bg-no-repeat bg-[position:0_100%] bg-[size:10%_auto]"
                 style={{
                     backgroundImage: `url(${leafHomeLeft}), url(${leafHomeRight})`,
                     backgroundPosition: '0 100%, 100% 100%',
                     backgroundSize: '10% auto, 10% auto',
                 }}
             >
-                <div className="my-[140px]">
-                    <div className="px-[30px] mx-auto max-w-[132.7rem] w-[100%] ">
+                <div className="my-[15vh]">
+                    <div className="mx-auto max-w-[68%]  w-[100%] ">
                         {/* //item */}
                         <Gift t={t} />
                         {/* //item */}
-                        <TitleBar title={t('titleRule')} />
-                        <div className="mb-[120px] h-[50rem] mx-auto] max-w-[145.5rem relative]">
-                            <div className="flex items-center  w-[100%] p-[100px] gap-[4.5rem] height-[50rem]">
+                        <TitleBarTypeWhite title={t('titleRule')} />
+                        <div className="mb-[10%] mx-auto relative ">
+                            <div className="flex items-center w-[100%] gap-[4.5rem] height-[50rem]">
                                 <div className="w-[50%]">
                                     <img className="h-[100%] w-[100%] object-cover" src={RecycleWithGreez} alt="" />
                                 </div>
@@ -59,12 +59,12 @@ function WorldRebirth() {
                             </div>
                         </div>
                         {/* //item */}
-                        <TitleBar title={t('titleColab')} />
-                        <div className="max-w-[86.5rem] mx-auto">
+                        <TitleBarTypeWhite title={t('titleColab')} />
+                        <div className="max-w-[55%] mx-auto">
                             <img className="w-[75%] mx-auto" src={AquafinaLogo} alt="" />
                         </div>
                     </div>
-                    <div className="mt-[2.4rem]">
+                    <div className="mt-[5%]">
                         <h3 className="text-[#009383] text-[4rem] font-bold uppercase text-center">
                             {t('counterPart')}
                         </h3>
