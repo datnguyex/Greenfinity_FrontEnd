@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from './../../assets/Icons/Icon';
 import { CustomArrowProps } from '~/Types/Slider';
 
 export const CustomArrowNext: React.FC<CustomArrowProps> = ({ elements, handleNextClick, sliderRef }) => {
+    console.log('sliderRef', sliderRef);
     return (
         <div style={elements} onClick={() => handleNextClick?.(sliderRef)}>
             <ArrowLeft />

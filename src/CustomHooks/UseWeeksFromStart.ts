@@ -11,7 +11,7 @@ const UseWeeksFromStart = () => {
         const weeksArray: Week[] = [];
         const startDate = new Date(2024, 0, 1);
         const currentDate = new Date();
-        const totalWeeksInYear = differenceInCalendarWeeks(currentDate, startDate) + 1;
+        const totalWeeksInYear = differenceInCalendarWeeks(currentDate, startDate);
 
         for (let i = 1; i <= totalWeeksInYear; i++) {
             const weekStartDate = addWeeks(startDate, i - 1);

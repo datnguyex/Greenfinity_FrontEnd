@@ -11,10 +11,14 @@ function Gift({ t }: { t: (key: string) => string }) {
                         <img src={HomeVoucer} alt="" />
                     </div>
                     <div className="flex flex-col w-[50%] gap-[1.7rem]">
-                        <h3 className="text-[#009383] text-[4.4rem] font-bold w-[90%]">{t('introduce')}</h3>
-                        <div className="text-[#13250] text-[2.4rem] font-bold">{t('content')}</div>
+                        <h3 className="text-[#009383] font-roboto-condensed text-[4.4rem] font-bold w-[90%]">
+                            {t('introduce')}
+                        </h3>
+                        <div className="text-[#13250] font-roboto-condensed text-[2.4rem] font-bold">
+                            {t('content')}
+                        </div>
                         <button
-                            className="flex items-center bg-[#009383] border
+                            className="font-roboto-condensed flex items-center bg-[#009383] border
                                                              border-[#fff] text-[#fff] text-[1.8rem] gap-[0.8rem] min-h-[5.2rem]
                                                                 justify-center whitespace-nowrap
                                                                 p-[1rem] w-[50%] rounded-[0.8rem]

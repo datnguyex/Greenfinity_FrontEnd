@@ -2,14 +2,10 @@ import { leafHomeLeft, leafHomeRight, IconLocationMap } from '~/assets/Images/';
 import Header from '~/Layouts/Header/Header';
 import Footer from '~/Layouts/Footer/Footer';
 import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import * as React from 'react';
 import { useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import './LocationMap.css';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { LatLngExpression, Icon, LatLngTuple, Map } from 'leaflet';
+import { Icon, Map } from 'leaflet';
 import { MakerGreenMap, PopupFrameMap } from '~/assets/Images/';
 import { useRef } from 'react';
 import { listRecycleDepot } from '~/assets/Arrays/Locations';
@@ -60,12 +56,12 @@ function LocationMap() {
                 <div className="my-[15vh]">
                     <div className="mx-auto max-w-[68%] px-[30px] w-[100%]">
                         <div className="text-[1.6rem] gap-[15px] flex flex-col">
-                            <div className="text-[6.4rem] font-bold text-center uppercase text-[#009383]">
+                            <div className="text-[6.4rem] font-roboto-condensed font-bold text-center uppercase text-[#009383]">
                                 {t('titleMap')}
                             </div>
                             <div
                                 className="flex items-center mx-auto justify-center bg-[#15bdd7] rounded-[0.8rem] text-[#fff] font-bold
-                                h-[6.8rem] text-center uppercase w-[70%] px-[24px] mb-[33px] text-[4rem]"
+                                h-[6.8rem] text-center uppercase w-[70%] font-roboto-condensed  px-[24px] mb-[33px] text-[4rem]"
                             >
                                 {t('titleLocation')}
                             </div>

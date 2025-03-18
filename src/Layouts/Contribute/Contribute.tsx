@@ -1,9 +1,9 @@
-import React, { useRef, useState, useMemo } from 'react';
-import classNames from 'classnames/bind';
-import style from './Contribute.module.scss';
+import React, { useRef, useState } from 'react';
+// import classNames from 'classnames/bind';
+// import style from './Contribute.module.scss';
 import './Contribute.css';
 import Slider from 'react-slick';
-import { ManRankAvatar, Headerleft, cornerTitle } from '~/assets/Images/';
+import { ManRankAvatar } from '~/assets/Images/';
 import { Pagination } from 'antd';
 import { handleNextClick, handlePrevClick } from '../../component/Slider/HandleClick';
 import { CustomArrowNext, CustomArrowPrev } from '../../component/Slider/CustomArrow';
@@ -11,15 +11,14 @@ import UseWeeksFromStart from '~/CustomHooks/UseWeeksFromStart';
 import { ContributeArrowNext, ContributeArrowPrev } from '../../component/Slider/ArrowStyle/ContributeArrow';
 import ThreeHighestRank from '~/component/Contribute/ThreeHighestRank';
 import OthersRank from '~/component/Contribute/OthersRank';
-import RequireLogin from '~/component/RequireLogin/RequireLogin';
 import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
 import TitleBarTypeGreen from '~/component/TittleBar/TitleBarTypeGreen/TitleBarTypeGreen';
-
-const cx = classNames.bind(style);
+import SliderWeeksContribute from '~/component/Slider/SliderCustom/SliderContribute/SliderWeekContribute';
+// const cx = classNames.bind(style);
 
 function Contribute({ t }: { t: (key: string) => string }) {
     //useRef slider
-    const sliderRef = useRef<Slider | null>(null);
+    const sliderRef = useRef<any>();
 
     //weeks from start
     const weeks = UseWeeksFromStart();
@@ -66,23 +65,15 @@ function Contribute({ t }: { t: (key: string) => string }) {
                 {/* //child2 */}
                 <TitleBarTypeWhite title={t('weekContribute')} />
             </div>
-            <div className="contribute-time-slider">
-                <Slider ref={sliderRef} {...settings} className="gap-[10px] w-full">
-                    {weeks.map((week, index) => (
-                        <div key={index} className="inline-block">
-                            <div
-                                onClick={() => handleTimeActive(week.weekNumber)}
-                                className={`items-center flex justify-center border-solid border-[1px] border-[#009383]
-                 text-[#009383] cursor-pointer text-[20px] font-semibold overflow-hidden
-                 py-[22px] mx-[12px] transition-all ease-out duration-200 gap-[10px] rounded-[12px] px-[11px] ${
-                     timeActive === week.weekNumber ? 'text-[#fff] bg-[#009383]' : ''
-                 }`}
-                            >
-                                {t('week')} {week.weekNumber} - {week.date}
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+            <div className="contribute-time-slider w-[95%] mx-auto">
+                <SliderWeeksContribute
+                    sliderRef={sliderRef}
+                    handleTimeActive={handleTimeActive}
+                    weeks={weeks}
+                    timeActive={timeActive}
+                    t={t}
+                    settings={settings}
+                />
                 {/* //highest rank */}
                 <ThreeHighestRank />
                 {/* //others rank */}
@@ -91,8 +82,12 @@ function Contribute({ t }: { t: (key: string) => string }) {
                 {/* <RequireLogin t={t} cx={cx} /> */}
             </div>
             {/* //paginate */}
-            <div className="mx-auto text-center mt-[40px]">
-                <Pagination defaultCurrent={1} total={30} className="flex justify-center ant-paginate-contribute" />
+            <div className="mx-auto text-center mt-[7%]">
+                <Pagination
+                    defaultCurrent={1}
+                    total={30}
+                    className="flex justify-center ant-paginate-contribute font-roboto-condensed"
+                />
             </div>
         </>
     );

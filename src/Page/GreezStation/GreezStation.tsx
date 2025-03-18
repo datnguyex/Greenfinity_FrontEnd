@@ -7,9 +7,14 @@ import { useEffect } from 'react';
 import RecyclingSteps from '~/component/GreezStation/RecylingSteeps';
 
 function GreezStation() {
+    //use language of home page
     const { t } = useTranslation(['GreezStaion']);
-    const languageState = useSelector((state: any) => state.language.language);
+    //get i18n instance
     const { i18n } = useTranslation();
+    //get language from store
+    const languageState = useSelector((state: any) => state.language.language);
+
+    //change language
     useEffect(() => {
         i18n.changeLanguage(languageState);
     }, [languageState]);
@@ -29,7 +34,9 @@ function GreezStation() {
                         {/* //item */}
                         <div className="flex flex-col my-[40px] justify-center items-center">
                             <div className="text-[#333] text-[3.6rem] font-bold text-center">{t('tile')}</div>
-                            <h1 className="text-[#009383] text-[4.8rem] font-bold text-center">{t('introduce')}</h1>
+                            <h1 className="font-roboto-condensed text-[#009383] text-[4.8rem] font-bold text-center">
+                                {t('introduce')}
+                            </h1>
                         </div>
                         {/* //item */}
                         <div className="mx-auto max-w-[86.5rem]">
@@ -37,8 +44,10 @@ function GreezStation() {
                         </div>
                         {/* //item */}
                         <div className="flex items-center justify-center">
-                            <span className="text-[4rem] font-bold text-[#009383]">{t('procedure')}</span>
-                            <span className="bg-[#15bdd7] py-[9px] rounded-[0.6rem] font-bold ml-[1rem] px-[10px] uppercase border-[#e5e7eb] text-[#fff] text-[4.8rem] ">
+                            <span className="text-[4rem] font-roboto-condensed font-bold text-[#009383]">
+                                {t('procedure')}
+                            </span>
+                            <span className="bg-[#15bdd7] font-roboto-condensed py-[9px] rounded-[0.6rem] font-bold ml-[1rem] px-[10px] uppercase border-[#e5e7eb] text-[#fff] text-[4.8rem] ">
                                 RECYCLE DEPOT
                             </span>
                         </div>
@@ -46,17 +55,19 @@ function GreezStation() {
                         <RecyclingSteps t={t} />
                         {/* items */}
                         <div className="mt-[12rem] items-center flex flex-col justify-center pb-[120px] gap-[15px]">
-                            <div className="text-[#373737] text-[3.8rem] font-semibold">{t('itemSlogan1')}</div>
-                            <div className="text-[5.4rem] uppercase font-extrabold text-[#009383]">
+                            <div className="text-[#373737] font-roboto-condensed text-[3.8rem] font-semibold">
+                                {t('itemSlogan1')}
+                            </div>
+                            <div className="text-[5.4rem] font-roboto-condensed uppercase font-extrabold text-[#009383]">
                                 {t('itemSlogan2')}
                             </div>
-                            <div className="text-[#373737] text-[4.8rem] font-semibold">
+                            <div className="text-[#373737] font-roboto-condensed text-[4.8rem] font-semibold">
                                 {t('itemSlogan3')}{' '}
-                                <span className="uppercase font-[900] text-[5.5rem] text-[#009383]">
+                                <span className="uppercase font-[900] font-roboto-condensed text-[5.5rem] text-[#009383]">
                                     {t('itemSlogan4')}
                                 </span>{' '}
                                 {t('itemSlogan5')}{' '}
-                                <span className="uppercase font-[900] text-[5.5rem] text-[#009383]">
+                                <span className="uppercase font-[900] font-roboto-condensed text-[5.5rem] text-[#009383]">
                                     {t('itemSlogan6')}
                                 </span>
                             </div>

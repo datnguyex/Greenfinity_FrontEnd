@@ -14,8 +14,12 @@ function ThreeHighestRank() {
                     />
                 </div>
                 <div className="text-[#556ce7]">
-                    <h1 className="text-[25px] font-semibold mb-[6px] text-center break-words">Thạch Đỗ Khôi Nguyên</h1>
-                    <h2 className="text-[21px] font-semibold mb-[6px] text-center break-words">96</h2>
+                    <h1 className="font-roboto-condensed text-[25px] font-semibold mb-[6px] text-center break-words">
+                        Thạch Đỗ Khôi Nguyên
+                    </h1>
+                    <h2 className="font-roboto-condensed text-[21px] font-semibold mb-[6px] text-center break-words">
+                        96
+                    </h2>
                 </div>
             </div>
             {/* no1 */}
@@ -29,8 +33,12 @@ function ThreeHighestRank() {
                     />
                 </div>
                 <div className="text-[#ffb800]">
-                    <h1 className="text-[25px] font-semibold mb-[6px] text-center break-words">My</h1>
-                    <h2 className="text-[21px] font-semibold mb-[6px] text-center break-words">440</h2>
+                    <h1 className="font-roboto-condensed text-[25px] font-semibold mb-[6px] text-center break-words">
+                        My
+                    </h1>
+                    <h2 className="font-roboto-condensed text-[21px] font-semibold mb-[6px] text-center break-words">
+                        440
+                    </h2>
                 </div>
             </div>
             {/* no3 */}
@@ -45,8 +53,12 @@ function ThreeHighestRank() {
                 </div>
 
                 <div className="text-[#556ce7]">
-                    <h1 className="text-[25px] font-semibold mb-[6px] text-center break-words">Ngọc Hà</h1>
-                    <h2 className="text-[21px] font-semibold mb-[6px] text-center break-words">96</h2>
+                    <h1 className="font-roboto-condensed text-[25px] font-semibold mb-[6px] text-center break-words">
+                        Ngọc Hà
+                    </h1>
+                    <h2 className="font-roboto-condensed text-[21px] font-semibold mb-[6px] text-center break-words">
+                        96
+                    </h2>
                 </div>
             </div>
         </div>

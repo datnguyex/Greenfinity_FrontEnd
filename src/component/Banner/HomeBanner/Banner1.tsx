@@ -1,10 +1,11 @@
 import { banner1 } from '~/assets/Images/';
+
 function Banner1({ t }: { t: (key: string) => string }) {
     return (
         <>
-            <div className="h-[1080px] relative">
+            <div className="h-[131vh] relative">
                 <img className="w-[100%] h-[100%]" src={banner1} alt="" />
-                <div className="absolute left-[50%] top-[50%] translate-x-[-12%] translate-y-[-50%] max-w-[795px] h-[306px] flex-col justify-start items-start gap-8 inline-flex">
+                <div className="absolute left-[50%] top-[50%] translate-x-[-12%] translate-y-[-50%]  max-w-[40%] max-h-[30%] flex-col justify-start items-start gap-8 inline-flex">
                     <div className="flex-col justify-start items-start gap-6 flex">
                         <div className="justify-start items-center gap-5 inline-flex">
                             <div className="text-white text-[54px] font-extrabold  uppercase leading-[60px]">
