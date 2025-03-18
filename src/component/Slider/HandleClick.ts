@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 export const handleNextClick = (sliderRef: React.RefObject<Slider>): void => {
+    console.log('sliderRef', sliderRef);
     if (sliderRef.current) {
         sliderRef.current.slickNext();
     }

@@ -1,7 +1,7 @@
 import Header from '~/Layouts/Header/Header';
 import Footer from '~/Layouts/Footer/Footer';
 import './Store.css';
-import { SunflowerProduct, SharkProduct, OreonProduct, CatChair, Headerleft, dumplingsProduct } from '~/assets/Images/';
+import { SunflowerProduct, SharkProduct, OreonProduct, CatChair } from '~/assets/Images/';
 import StoreFlowerBanner from '~/component/Banner/StoreBanner/StoreFlowerBanner';
 import Slider from 'react-slick';
 import StoreBanner from '~/component/Banner/StoreBanner/StoreBanner';
@@ -12,114 +12,23 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import TitleBarTypeWhite from '~/component/TittleBar/TitleBarTypeWhite/TitleBarTypeWhite';
+import { StoreProductsArr } from '~/assets/Arrays/Products';
+import { CustomArrowNext, CustomArrowPrev } from '~/component/Slider/CustomArrow';
+import { StoreArrowNext, StoreArrowPrev } from '~/component/Slider/ArrowStyle/StoreArrow';
+import { handleNextClick, handlePrevClick } from '~/component/Slider/HandleClick';
+import { LanguageSwitcher } from '~/CustomHooks/LanguageSwitcher';
 
 function Store() {
-    const products = [
-        {
-            category: 'Household',
-            title: 'S’MORE COASTER SET',
-            price: '800.000đ',
-            image: OreonProduct,
-        },
-        {
-            category: 'Kitchen',
-            title: 'SHARK COASTER SET',
-            price: '500.000đ',
-            image: dumplingsProduct,
-        },
-        {
-            category: 'Living Room',
-            title: 'OREON COASTER SET',
-            price: '600.000đ',
-            image: CatChair,
-        },
-        {
-            category: 'Bedroom',
-            title: 'CAT CHAIR SET',
-            price: '700.000đ',
-            image: CatChair,
-        },
-        {
-            category: 'Outdoor',
-            title: 'BEACH COASTER SET',
-            price: '900.000đ',
-            image: OreonProduct,
-        },
-        {
-            category: 'Office',
-            title: 'OFFICE COASTER SET',
-            price: '750.000đ',
-            image: dumplingsProduct,
-        },
-    ];
+    //products
+    const products = StoreProductsArr;
 
+    //ref slider
     const sliderRef = useRef<Slider | null>(null);
+    //use languages
     const { t } = useTranslation(['Store']);
-    const languageState = useSelector((state: any) => state.language.language);
-    const { i18n } = useTranslation();
+    LanguageSwitcher();
 
-    // Custom Next Arrow
-    const CustomArrowNext = (props: any) => {
-        const { onClick } = props;
-        return (
-            <div
-                style={{
-                    background: '#FFFFFF',
-                    position: 'absolute',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    right: '60px',
-                    color: 'red',
-                    width: '50px',
-                    height: '50px',
-                    textAlign: 'center',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    borderRadius: '50%',
-                    cursor: 'pointer',
-                    boxShadow: '2px 2px 10px 0px #006F6221',
-                    border: '2px solid #009383',
-                    zIndex: 10,
-                }}
-                onClick={onClick} // Use the onClick passed by the slider
-            >
-                <ArrowLeft /> {/* Ensure ArrowRight is a valid React component */}
-            </div>
-        );
-    };
-
-    // Custom Prev Arrow
-    const CustomArrowPrev = (props: any) => {
-        const { onClick } = props;
-        return (
-            <div
-                style={{
-                    background: '#FFFFFF',
-                    position: 'absolute',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    left: '60px',
-                    color: 'red',
-                    width: '50px',
-                    height: '50px',
-                    textAlign: 'center',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    borderRadius: '50%',
-                    cursor: 'pointer',
-                    boxShadow: '2px 2px 10px 0px #006F6221',
-                    border: '2px solid #009383',
-                    zIndex: 10,
-                }}
-                onClick={onClick} // Use the onClick passed by the slider
-            >
-                <ArrowRight /> {/* Ensure ArrowLeft is a valid React component */}
-            </div>
-        );
-    };
-
+    // setting slider
     const settings = {
         dots: true,
         infinite: true,
@@ -127,42 +36,27 @@ function Store() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-        nextArrow: <CustomArrowNext />,
-        prevArrow: <CustomArrowPrev />,
-    };
-    const settingsBestseller = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 10,
-        slidesToScroll: 1,
-        autoplay: false,
-        nextArrow: <CustomArrowNext />,
-        prevArrow: <CustomArrowPrev />,
+        nextArrow: (
+            <CustomArrowNext elements={StoreArrowNext} handleNextClick={handleNextClick} sliderRef={sliderRef} />
+        ),
+        prevArrow: (
+            <CustomArrowPrev elements={StoreArrowPrev} handlePrevClick={handlePrevClick} sliderRef={sliderRef} />
+        ),
     };
 
-    useEffect(() => {
-        i18n.changeLanguage(languageState);
-    }, [languageState]);
     return (
         <>
             <Header />
-            <div className="max-w-[120vw] bg-[#f2fffd] pb-[120px]">
+            <div className="max-w-[100vw] bg-[#f2fffd] pb-[5%]">
                 <div className="store-banner-slider">
                     <Slider ref={sliderRef} {...settings}>
-                        <StoreFlowerBanner
-                            t={t}
-                            image={SunflowerProduct}
-                            title={'Coaster Set'}
-                            subTitle={'SUNFLOWER'}
-                        />
                         <StoreBanner t={t} image={SharkProduct} title={'Multipurpose container'} subTitle={'Shark'} />
                         <StoreBanner t={t} image={OreonProduct} title={'COOKIE COASTER'} subTitle={'Set'} />
                         <StoreBanner t={t} image={CatChair} title={'Multipurpose container'} subTitle={'Cat'} />
                     </Slider>
                 </div>
                 {/* //item */}
-                <div className="max-w-[134rem] mx-auto px-[30px] mt-[100px]">
+                <div className="max-w-[65%] mx-auto px-[30px] mt-[100px">
                     <TitleBarTypeWhite title={t('newProduct')} />
                 </div>
                 <div className="flex justify-end items-center gap-[15px]">

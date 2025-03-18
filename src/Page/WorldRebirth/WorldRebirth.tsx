@@ -41,13 +41,13 @@ function WorldRebirth() {
                                     <img className="h-[100%] w-[100%] object-cover" src={RecycleWithGreez} alt="" />
                                 </div>
                                 <div className="flex flex-col w-[50%] gap-[2rem]">
-                                    <h3 className="text-[#009383] text-[4.8rem] font-bold w-[90%]">
+                                    <h3 className="text-[#009383] text-[4.8rem] font-bold w-[90%] font-roboto-condensed">
                                         {t('recycleWith')} <br /> {t('Comunity')}{' '}
                                         <span className="text-[#15bdd7]">{t('Greez')}</span>
                                     </h3>
 
                                     <button
-                                        className="flex items-center bg-[#009383] border
+                                        className="flex items-center bg-[#009383] border font-roboto-condensed
                                                              border-[#fff] text-[#fff] text-[2rem] gap-[0.8rem] min-h-[5.2rem]
                                                                 min-w-[20rem] justify-center whitespace-nowrap
                                                                 p-[1rem] w-[16rem] rounded-[0.8rem]
@@ -65,7 +65,7 @@ function WorldRebirth() {
                         </div>
                     </div>
                     <div className="mt-[5%]">
-                        <h3 className="text-[#009383] text-[4rem] font-bold uppercase text-center">
+                        <h3 className="text-[#009383] font-roboto-condensed text-[4rem] font-bold uppercase text-center">
                             {t('counterPart')}
                         </h3>
                         <div className="flex items-center gap-[8rem] mx-auto justify-center mt-[4rem] pb-[12rem max-w-[142.5rem]">

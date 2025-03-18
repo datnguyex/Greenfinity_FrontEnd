@@ -15,8 +15,10 @@ function RecyclingSteps({ t }: any) {
                             <img className="object-cover w-[100%]" src={item.img} alt={`Step ${item.step}`} />
                         </div>
                         <div className="text-[#494949] flex items-start flex-col justify-center w-[70%] gap-[5px]">
-                            <div className="text-[23px] font-bold">{t(item.textKey)}</div>
-                            <div className="text-[22px] text-[#494949]">{t(item.descriptionKey)}</div>
+                            <div className="text-[23px] font-bold font-roboto-condensed">{t(item.textKey)}</div>
+                            <div className="text-[22px] text-[#494949] font-roboto-condensed">
+                                {t(item.descriptionKey)}
+                            </div>
                         </div>
                     </div>
                 ))}

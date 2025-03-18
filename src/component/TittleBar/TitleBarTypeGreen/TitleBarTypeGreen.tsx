@@ -17,7 +17,7 @@ function TitleBarTypeGreen({ t }: { t: (key: string) => string }) {
                          </h2> */}
                 <img className="h-[100%] ml-[-1px] w-auto" src={cornerTitle} alt="" />
                 <h2
-                    className="flex-1 items-center bg-[#33a99c] text-[#fff] 
+                    className="flex-1 items-center bg-[#33a99c] text-[#fff] font-roboto-condensed
                          flex h-[100%] justify-center text-4xl text-center uppercase"
                 >
                     {t('weekContribute')}

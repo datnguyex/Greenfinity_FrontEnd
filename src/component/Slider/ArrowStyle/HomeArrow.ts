@@ -1,6 +1,12 @@
-export const ContributeArrowNext = {
+export const HomeArrowNext = {
     background: '#FFFFFF',
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    right: '4%',
     color: 'red',
+    width: '50px',
+    height: '50px',
     textAlign: 'center',
     display: 'flex',
     alignItems: 'center',
@@ -9,20 +15,13 @@ export const ContributeArrowNext = {
     cursor: 'pointer',
     boxShadow: '2px 2px 10px 0px #006F6221',
     zIndex: 10,
-    position: 'absolute',
-    top: '50%',
-    right: '-4%',
-    width: '50px',
-    height: '50px',
-    padding: '10px',
-    transform: 'translateY(-50%)',
 };
-export const ContributeArrowPrev = {
+export const HomeArrowPrev = {
     background: '#FFFFFF',
     position: 'absolute',
     top: '50%',
     transform: 'translateY(-50%)',
-    left: '-4%',
+    left: '4%',
     color: 'red',
     width: '50px',
     height: '50px',
@@ -33,5 +32,5 @@ export const ContributeArrowPrev = {
     borderRadius: '50%',
     cursor: 'pointer',
     boxShadow: '2px 2px 10px 0px #006F6221',
-    zIndex: 1,
+    zIndex: 10,
 };

@@ -53,10 +53,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
                             <div className="mb-[20px] relative min-h-[170px] min-w-[300px]">
                                 <img src={PopupFrameMap} alt="" />
                                 <div className="absolute px-[23px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[100%]">
-                                    <h2 className="font-bold text-[20px] text-center uppercase text-[#009383]">
+                                    <h2 className="font-bold font-roboto-condensed text-[20px] text-center uppercase text-[#009383]">
                                         {depot.name}
                                     </h2>
-                                    <div className="text-center text-[#6d6d6d] text-[16px] font-normal">
+                                    <div className="text-center font-roboto-condensed text-[#6d6d6d] text-[16px] font-normal">
                                         {depot.location}
                                     </div>
                                 </div>
